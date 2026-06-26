@@ -1,0 +1,179 @@
+
+Μαθηματικά Γ Γυμνασίου
+Συλλογή emails για το newsletter.
+
+Αρθρο για το wxmaxima ή σύστημα βοήθειας
+
+https://chem.noesis.edu.gr/
+https://www.chemistry.uoc.gr/eclass/modules/document/file.php/CHEM-UNDER130/%CE%93.%20%CE%A0%CF%81%CE%BF%CF%83%CE%BF%CE%BC%CE%BF%CE%B9%CF%8E%CF%83%CE%B5%CE%B9%CF%82.pdf
+https://www.noesis.edu.gr/eikonika-ergastiria-fysikis/ilektrismos/ ------>Δεν λειτουργεί!
+http://www.fhw.gr/cosmos/
+https://kotsanasmuseum.com/
+Προβολή στο facebook
+Προβολή στο blogspot
+https://matematikk17.neocities.org/
+
+Εισαγωγή Ημερομηνίας και ώρας
+
+
+JS CALCULATOR
+	https://www.javatpoint.com/oprweb/test.jsp?filename=javascript-calculator1
+	https://www.geeksforgeeks.org/javascript-calculator/
+
+--------------- Πρότυπο για mathjax και Latex-----------------
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MathJax example</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+<p>
+  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+</p>
+</body>
+</html>
+-----------------------------------------------------
+
+Για μαθηματικά μέσα σε html βλέπε και 
+1. https://mathscribe.com/author/jqmath.html
+2. https://www.mathjax.org/
+3. http://jkorpela.fi/math/
+4. Latex, MathML, AsciiMath
+5. http://asciimath.org/
+
+-------------- Πρότυπο για mathjax και asciimath ----------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax AsciiMath Test Page</title>
+<script>
+MathJax = {
+  loader: {load: ['input/asciimath', 'output/chtml']}
+}
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+</script>
+<body>
+
+<p>When `a != 0`, there are two solutions to `ax^2 + bx + c = 0` and
+they are</p>
+<p style="text-align:center">
+  `x = (-b +- sqrt(b^2-4ac))/(2a) .`
+</p>
+
+</body>
+</html>
+----------------------------------------------------------------------
+
+-------------Πρότυπο ώστε ο χρήστης να στέλνει το email  αυτόματα -----
+<form action="https://fabform.io/f/{form-id}" method="post">
+  <label for="firstName">First Name</label>
+  <input name="firstName" type="text" required>
+  <label for="lastName">Last Name</label>
+  <input name="lastName" type="text" required>
+  <label for="email">Email</label>
+  <input name="email" type="email" required>
+  <button type="submit">Send</button>
+</form>   
+___________________________________________________
+
+Πιθανά πρόσωπα για το NewsLetter
+Μπορώ να αλιεύσω τις διεύθύνσεις μέσα από το facebook.
+
+Κουφονικολάκος Δημήτρης
+Θεοφιλάκος Γιάννης
+Θεοφικάλος Νίκος
+Καραγιανάκος Κώστας
+Βέλμαχος Παναγιώτης 
+Βέλμαχου Γιάννα
+Λαμπράκη Αλεξάνδρα
+Λαμπράκη Μαριάννα
+Λαμπράκη Παναγιώτα
+Βαβαρούτσου Γιωργία
+Αργυροπούλου Σοφία
+Κουτσοβίτη Χριστίνα
+Βαβαρούτσος Ηλίας
+Βασιλάκος Τάκης
+Βασιλάκος Σωτήρος
+Βασιλάκου Πηνελόπη
+Γρηγοριάδης Βασίλης
+Γεωργιάδη Βάσω
+Βαχαβιώλος Ηλίας
+Κουμουνδούρου Βικυ 
+Βοζόλας Γιώργος
+Γάβαρης Χριστόδουλος
+Γιαννόπουλος Τάσος
+Στρατηγέα Γιώτα
+Γκούζος Κώστας
+Γούτος Γιάννης
+Γριβόγιαννης Βασίλης
+Δημητρακάκη Βάσω
+Δημητρακάκη Ειρήνη
+Δημητρίού Μαρία
+Δούκα Ερμιόνη
+Παινέσης Θύμιος
+Παντελάκου Ευριδίκη
+Ζορμπάς Αντώνης
+Γεωργιάδης Θεοχάρης
+Μαζαράκος Νίκος
+Ιωάννου Εφη
+Ιερέας Γιώργιος
+Ιερέας Παναγιώτης
+Καραγιαννάκος Αποστόλης
+Κάρκουλας Τάσος
+Κοκκοσίδου Μαρία
+Κόντος Σταύρος
+Κοντουλάκος Νίκος
+Κουδούνης Ντίνος
+Κουδούνης Χρήστος
+Λαμπρινός Ανδρέας
+Λαμπρινός Αποστόλης
+Λαμπρινού Γιωργία
+Λερίκου Ελένη
+Λιναρδάκη Λίτσα
+Λιναρδάκης Βασίλης
+Πλαγάκη Μαρία
+Μαυρακάκος Ηλίας
+Μηνακάκη Μαρία
+Μπειντού Αντουέλα
+Νικολέτου Ποτούλα
+Νικόλαρος Πάνος
+Νικόλαρος Ηλίας
+Παπαδάκος Νίκος
+Παπαδόπουλος Γιώργης
+Παυλάκου Ελένη
+Τζανετάκης Περικλής
+Πλευρίτης Σαράντος
+Ρεμπής Θανάσης
+Ρουμελιώτης Θανάσης
+Σακελάρη Γιωργία
+Σελιτσάνου Μαρία
+Σκιαδά Γιωργία
+Σκιαδάς Γιώργης
+Αιβαλιώτης Σοφοκλής
+Τσαγκαρούλη Βάλια
+Τσούβαλη Ευγενία
+Φιλιππόπουλος Στέλιος
+Πολυμενάκος Χρήστος
+Λουκουζά Χριστίνα
+
+
+
+
+
+
+
+
+
+
+
+
