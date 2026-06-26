@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+	
+	John Koumoundouros, <johnkscience@yahoo.com> 
+	Πρότυπο αρχείο για την μετατροπή των σημειώσεων των Μαθηματικών
+	της Β Γυμνασίου από μορφή Writer σε html/asciimath
+	
+	+ Αποθηκεύστε το αρχείο με το νέο όνομα
+	+ Με τις ρουτίνες της LibreWriter-Basic μετατρέψτε το κείμενο writer σε html/asciimath
+	+ Με copy/paste μεταφέρετε το κείμενο από το writer εδώ
+	+ Κωδικοποίηση > UTF-8
+	+ Πρόσθετα > IndentByFold > Reindent
+	+ Χειροκίνητα αλλάζουμε τον τίτλο, μορφοποιούμε, ελέγχουμε
+	
+	Το σύστημα αρχείων έχει την δομή: math_2, math_2_0, math_2_0_1, κτλ
+	
+-->
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+		<title>Μαθηματικά Β Γυμνασίου, Βασικές Πράξεις και Έννοιες, Ασκήσεις</title>
+		<meta name="description" content="Μαθηματικά Β Γυμνασίου, Βασικές Πράξεις και Έννοιες, Ασκήσεις">
+		<meta name="keywords" content="Μαθηματικά Β Γυμνασίου, Σημειώσεις, Βοήθημα">
+		<meta name="author" content="Γιάννης Κουμουνδούρος">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="generator" content="notepad++" />
+		<link href="./math_2.css" type="text/css" rel="stylesheet"/>
+		<!--MathJax Αρχή-->
+		<script>
+			MathJax = {
+				loader: {load: ['input/asciimath', 'output/chtml']}
+			}
+		</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"></script>
+		<!--MathJax Τέλος-->
+	</head>
+	
+	<body >
+		
+		<!--Πλοήγηση -->
+		<div>
+			<ul class="menuList">
+				<li><a href="../../../../notes.html">.notes</a></li>
+				<li><a href="./math_2_3_3.html"> &lt &lt &lt  </a></li><!--Προηγούμενο-->
+				<li><a href="./math_2_4_2.html"> &gt &gt &gt  </a></li><!--Επόμενο-->
+				<li><a href="./math_2.html">Περιεχόμενα</a></li>
+			</ul>
+		</div>
+		
+		<!--Περιεχόμενα -->
+		<h3>4. Εξισώσεις 1ου Βαθμού</h3>
+		
+		<h4>Θεωρία</h4>
+		
+		<ol class="level1">
+			<li class="numberedItem"><span class="emphasisPortion">Εξίσωση 1ου βαθμού</span> είναι η εξίσωση της μορφής <span class="inlineMath">`α x +β =0`</span> με <span class="inlineMath">`α ne 0`</span></li>
+			<li class="numberedItem">Μια εξίσωση περιέχει το σύμβολο της ισότητα (=) και τουλάχιστον μία μεταβλητή, π.χ. οι παρακάτω είναι εξισώσεις:</li>
+			<ol class="level2">
+				<li class="numberedItem"><span class="inlineMath">`2χ +5 =0`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`3χ -4 = 5`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`3χ -4χ = 7χ -9`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`3(χ-2) -4χ= 9(χ -1)`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`{:χ-1:} / 3 = 4 - {: 2χ-1:} / 6`</span></li>
+			</ol>
+			<li class="numberedItem">Μία εξίσωση αποτελείται πάντα από δύο <span class="emphasisPortion">μέλη</span>.</li>
+			<li class="numberedItem"><span class="emphasisPortion">Λύση</span> ή <span class="emphasisPortion">Ρίζα</span> μίας εξίσωσης είναι ο αριθμός που την επαληθεύει. Δηλαδή εάν αντικαταστήσουμε αυτόν τον αριθμό στην μεταβλητή της εξίσωσης και κάνουμε τις πράξεις ξεχωριστά σε κάθε μέλος θα βρούμε το ίδιο αποτέλεσμα.</li>
+			<li class="numberedItem">Σε μία εξίσωση μπορούμε να κάνουμε τις παρακάτω πράξεις (<span class="emphasisPortion">ιδιότητες</span>)</li>
+			<ol class="level2"><li class="numberedItem">Να προσθέσουμε τον ίδιο αριθμό και στα δύο μέλη της</li>
+				<li class="numberedItem">Να αφαιρέσουμε τον ίδιο αριθμό και από τα δύο μέλη της</li>
+				<li class="numberedItem">Να πολλαπλασιάσουμε τον ίδιο αριθμό και στα δύο μέλη και τέλος</li>
+				<li class="numberedItem">Να διαιρέσουμε ένα αριθμό διάφορο το μηδενός και στα δύο μέλη της.</li>
+			</ol><li class="numberedItem">Σε όλες αυτές τις περιπτώσεις προκύπτει μια νέα εξίσωση ισοδύναμη με την προηγούμενη.</li>
+			<li class="numberedItem">Για να λύσουμε μια εξίσωση αρκεί να βρούμε έναν αριθμό που εάν τον αντικαταστήσουμε στην μεταβλητή της τότε αυτός την επαληθεύει.</li>
+			<li class="numberedItem"><span class="emphasisPortion">Επίλυση</span> ονομάζουμε την διαδικασία που βρίσκουμε την λύση μιας εξίσωσης.</li>
+			<li class="numberedItem">Για να λύσουμε μια εξίσωση</li>
+			<ol class="level2"><li class="numberedItem">Κάνουμε απαλοιφή των παρανομαστών πολλαπλασιάζοντας με το ΕΚΠ.</li>
+				<li class="numberedItem">Απαλείφουμε τις παρενθέσεις με την επιμεριστική ιδιότητα</li>
+				<li class="numberedItem">Χωρίζουμε γνωστούς από αγνώστους</li>
+				<li class="numberedItem">Διαιρούμε με τον συντελεστή του αγνώστου.</li>
+			</ol><li class="numberedItem">Εξισώσεις της μορφής <span class="inlineMath">`0x=0`</span> ονομάζονται <span class="emphasisPortion">ταυτότητες</span> και έχουν άπειρες λύσεις, δηλαδή όποιον αριθμό και να αντικαταστήσουμε στο <span class="inlineMath">` x`</span> τότε αυτός την επαληθεύει. </li>
+			<li class="numberedItem">Εξισώσεις της μορφής <span class="inlineMath">`0 x =α`</span>, <span class="inlineMath">`α ne 0`</span> ονομάζονται <span class="emphasisPortion">αδύνατες</span> και δεν έχουν καμία λύση.</li>
+			<li class="numberedItem">Η παράσταση της μορφής <span class="inlineMath">`(x+a)=0`</span> ή <span class="inlineMath">`x+a =0`</span> έχει λύση την <span class="inlineMath">`x=-a`</span></li>
+			<li class="numberedItem">Η παράσταση της μορφής <span class="inlineMath">`(x-a)=0`</span> ή <span class="inlineMath">`x-a =0`</span> έχει λύση την <span class="inlineMath">`x=a`</span></li>
+			<li class="numberedItem">Η παράσταση της μορφής <span class="inlineMath">`(ax+b)=0`</span> ή <span class="inlineMath">`ax+b =0`</span> έχει λύση την <span class="inlineMath">`x=-{:b / a:}`</span></li>
+			<li class="numberedItem">Η παράσταση της μορφής <span class="inlineMath">`(ax-b)=0`</span> ή <span class="inlineMath">`ax-b =0`</span> έχει λύση την <span class="inlineMath">`x={:b / a:}`</span></li>
+			<li class="numberedItem">Μια εξίσωση ονομάζετε <span class="emphasisPortion">παραμετρική</span> όταν εκτός από την κύρια μεταβλητή (π.χ. x) υπάρχει και μια δευτερεύουσα μεταβλητή (π.χ. μ) που ονομάζουμε παράμετρο μ. Παρακάτω βλέπουμε μερικά παραδείγματα:</li>
+			<ol class="level2"><li class="numberedItem"><span class="inlineMath">`2μx -3=0`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`μ( x -1 ) + 2 x = 3`</span></li>
+			</ol>
+			
+			<li class="numberedItem">Το μ μπορεί να παίρνει διάφορες τιμές και για κάθε τιμή που βάζουμε (στο μ) προκύπτει και μια διαφορετική εξίσωση, π.χ. στον τύπο <span class="inlineMath">`μ( x -1 ) + 2 x = 3`</span> για <span class="inlineMath">`μ=0`</span> έχουμε την εξίσωση <span class="inlineMath">`2 x =3`</span> ενώ για <span class="inlineMath">`μ=1`</span> την εξίσωση <span class="inlineMath">`x -1 + 2 x =3`</span>. Επομένως από τον αρχικό τύπο θα προκύψουν πάρα πολλές εξισώσεις και αφού έχουν κάτι κοινό θα λέμε ότι ανήκουν στην ίδια οικογένεια. Δηλαδή ο τύπος  <span class="inlineMath">`μ( x -1 ) + 2 x = 3`</span> αντιστοιχεί στην οικογένεια και οι εξισώσεις <span class="inlineMath">`2 x =3`</span>, <span class="inlineMath">`x -1 + 2 x =3`</span>, …  στα μέλη της οικογένειας. Το μ δεν θεωρείτε άγνωστος. Άγνωστος είναι το x.</li>
+			
+			<li class="numberedItem"><span class="emphasisPortion">Τύπος</span> είναι μια εξίσωση που περιέχει πολλά γράμματα. Μόνο ένα από αυτά τα γράμματα είναι ο άγνωστος που ψάχνουμε να βρούμε. Τα υπόλοιπα είναι γνωστοί αριθμοί που απλά τυχαίνει αυτή την στιγμή να μην τους έχουμε αλλά πρέπει να τους θεωρούμε ως δεδομένους, π.χ. στον τύπο <span class="inlineMath">`u = s / {:Δt:}`</span> αν ψάχνουμε το s τότε αυτός είναι ο άγνωστος και τα υπόλοιπα ( u, Δt) είναι γνωστά. Για να επιλύσουμε ένα τύπο ακολουθούμε τους γνωστούς κανόνες επίλυσης των εξισώσεων.</li>
+			</div>
+			
+			<!--Επίλογος-->
+			<div class="footerCard">
+				Κουμουνδούρος Γιάννης, <a href="mailto:johnkscience@yahoo.com">johnkscience@yahoo.com</a>
+			</div>
+			
+		</body>
+	</html>																							

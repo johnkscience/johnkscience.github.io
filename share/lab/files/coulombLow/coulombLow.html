@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="https://unpkg.com/konva@9.3.15/konva.min.js"></script> -->
+    <title>johnkscience.Lab -- Νόμος του Coulomb</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="generator" content="notepad++" />
+		<meta name="description" content="johnkscience.blog. Νέα από την εκπαίδευση, άρθρα επιστημονικού ενδιαφέροντος, σημειώσεις Μαθηματικών, Φυσικής και Χημείας">
+		<meta name="keywords" content="johnkscience.blog, Blog, Νέα, Εκπαίδευση, Δευτεροβάθμια, Σημειώσεις, Βοηθήματα, Γυμνάσιο, Λύκειο, Σπάρτη">
+		<meta name="author" content="Γιάννης Κουμουνδούρος">
+		<link href="./lab.css" type="text/css" rel="stylesheet"/>
+
+    <script src="johnkscienceMath.js"></script>
+    <script src="konva.js"></script>
+    <script src="johnkscienceWindows.js"></script>
+    <script src="johnkscienceSim2.js"></script>
+    
+  </head>
+  <body>
+
+    <div id="container" style="background-image: url('./background.png'); background-size: cover; width:1200px; height:600px;"></div>
+
+    <script>
+      var width =  1200;
+      var height = 600;
+
+      let stage = new Konva.Stage({
+        container: 'container',
+        width: width,
+        height: height,
+      });
+
+      let layer = new Konva.Layer();
+      stage.add(layer);
+
+
+
+      let charge, anim, timeScale;
+
+//ΠΙΝΑΚΑΣ ΕΛΕΓΧΟΥ
+
+
+      //Κύριος Τίτλος
+      let labelTitle = new Konva.Text({
+        x:50,
+        y:10,
+        text:'Νόμος του Coulomb',
+        fontSize: 48,
+        fontFamily: 'Calibri',
+        stroke:'gray',
+        fill:'yellow',
+        strokeWidth:2,
+      });
+      layer.add(labelTitle);
+
+
+      //Τίτλος επιλογής φορτίου A
+      let labelRadioChargeΑ = new Konva.Text({
+        x:50,
+        y:70,
+        text:'Φορτίο σφαίρας Α',
+        fontSize: 14,
+        fontFamily: 'Calibri',
+        stroke:'gray',
+        strokeWidth:1,
+      });
+      layer.add(labelRadioChargeΑ);
+
+      //Το στοιχείο radio επιλογής του φορτίου της σφαίρας Α
+      let radioChargeA = new johnkscienceRadio({
+        x:50,
+        y:100,
+        name:'radioChargeΒ',
+        fill:'red',
+        stroke:"blue",
+        values:[ 'Θετικό', 'Αρνητικό'],
+        fontSize:14,
+        fontFamily:'Calibri',
+        fontColor:'black',
+        padding:5,
+        listener: layer,
+      })
+      layer.add(radioChargeA);
+      
+      //Το στοιχείο επιλογής του φορτίου qA
+      let rangeChargeA = new johnkscienceRange({
+        x:140,
+        y:100,
+        name: 'range',
+        lineWidth: 100,
+        fill:'lightgreen',
+        stroke:'gray',
+        fontSize:14,
+        fontFamily:'Calibri',
+        fontColor:'blue',
+        padding:5,
+        initialValue:1,
+        startValue:1,
+        endValue:2,
+        startText:'1',
+        endText:'2',
+        approx:1,
+        });
+        layer.add(rangeChargeA);
+
+      //Τίτλος επιλογής φορτίου B
+      let labelRadioChargeB = new Konva.Text({
+        x:50,
+        y:180,
+        text:'Φορτίο σφαίρας Β',
+        fontSize: 14,
+        fontFamily: 'Calibri',
+        stroke:'gray',
+        strokeWidth:1,
+      });
+      layer.add(labelRadioChargeB);
+
+      //Το στοιχείο radio επιλογής του φορτίου της σφαίρας Α
+      let radioChargeB = new johnkscienceRadio({
+        x:50,
+        y:200,
+        name:'radioChargeΒ',
+        fill:'red',
+        stroke:"blue",
+        values:[ 'Θετικό', 'Αρνητικό'],
+        fontSize:14,
+        fontFamily:'Calibri',
+        fontColor:'black',
+        padding:5,
+        listener: layer,
+      })
+      layer.add(radioChargeB);
+
+      //Το στοιχείο επιλογής του φορτίου qB
+      let rangeChargeB = new johnkscienceRange({
+        x:140,
+        y:200,
+        name: 'range',
+        lineWidth: 100,
+        fill:'lightgreen',
+        stroke:'gray',
+        fontSize:14,
+        fontFamily:'Calibri',
+        fontColor:'blue',
+        padding:5,
+        initialValue:1,
+        startValue:1,
+        endValue:2,
+        startText:'1',
+        endText:'2',
+        approx:1,
+        });
+        layer.add(rangeChargeB);
+
+      //Τίτλος κλιμάκωσης δύναμης
+      let labelRadiok = new Konva.Text({
+        x:50,
+        y:280,
+        text:'Κλιμάκωση δύναμης',
+        fontSize: 14,
+        fontFamily: 'Calibri',
+        stroke:'gray',
+        strokeWidth:1,
+      });
+      layer.add(labelRadiok);
+
+      //Το στοιχείο κλιμάκωσης της δύναμης
+      let radiok = new johnkscienceRadio({
+        x:50,
+        y:300,
+        name:'radiok',
+        fill:'red',
+        stroke:"blue",
+        values:[ 'Κανονικά', 'Σμίκρυνση', 'Μεγέθυνση'],
+        fontSize:14,
+        fontFamily:'Calibri',
+        fontColor:'black',
+        padding:5,
+        listener: layer,
+      })
+      layer.add(radiok);
+      
+      //Το φορτίο Α
+      let qA = rangeChargeA.getValue();
+      let chargeA = new johnkscienceCharge({
+        x:500,
+        y:300,
+        radius:50,
+        stroke:'gray',
+        strokeWidth:1,
+        positiveFill:'red',
+        negativeFill:'blue',
+        charge: '+',
+        draggable: true,
+      });
+      layer.add(chargeA);
+      let rA =chargeA.getRadius();
+
+      //Το φορτίο B
+      let qB = rangeChargeB.getValue();
+      let chargeB = new johnkscienceCharge({
+        x:800,
+        y:250,
+        radius:50,
+        stroke:'gray',
+        strokeWidth:1,
+        positiveFill:'red',
+        negativeFill:'blue',
+        charge: '+',
+        draggable: true,
+      });
+      layer.add(chargeB);
+      let rB =chargeB.getRadius();
+
+      //Το τετράγωνο της απόστασης
+      let r2 = (chargeA.x()-chargeB.x())**2 + (chargeA.y()-chargeB.y())**2;
+
+      //Ο συνετελεστής αναλογίας
+      let k = 10000000/2 ;
+
+      //Η κετεύθυνση των δυνάμεων
+      //+1 για ελκτικές -1 για απωστικές
+      let sign = -1;
+
+      //Οι δυνάμεις
+      //Μέτρο δύναμης
+      let forceMag =  k * qA * qB / r2;
+      //Οι θέσεις των φορτίων
+      let v1 = Vector.create(chargeA.x(), chargeA.y());
+      let v2 = Vector.create(chargeB.x(), chargeB.y());
+      //Η δύναμη στο φορτίο Α
+      let force1 =Vector.sub(v2,v1);
+      force1 = Vector.mult(Vector.normalise(force1), sign*forceMag);
+      force1 = Vector.add(force1, v1);
+      //Η δύναμη στο φορτίο Β
+      let force2 =Vector.sub(v1,v2);
+      force2 = Vector.mult(Vector.normalise(force2), sign*forceMag);
+      force2 = Vector.add(force2, v2);
+      //Σχεδιάζω την δύναμη στο φορτίο Α
+      let forceA = new Konva.Arrow({
+        //x: chargeA.x(),
+        //y: chargeA.y(),
+        points: [chargeA.x(), chargeA.y(), force1.x, force1.y],
+        pointerLength: 20,
+        pointerWidth: 10,
+        fill: 'yellow',
+        stroke: 'yellow',
+        strokeWidth: 5,
+        opacity:0.7,
+        shadowColor: 'gray',
+        shadowBlur: 2,
+        shadowOffset: { x: 5, y: 5 },
+        shadowOpacity: 0.5,
+        
+      });
+      layer.add(forceA);
+      //Σχεδιάζω την δύναμη στο φορτίο Β
+      let forceB = new Konva.Arrow({
+        points: [chargeB.x(), chargeB.y(), force2.x, force2.y],
+        pointerLength: 20,
+        pointerWidth: 10,
+        fill: 'yellow',
+        stroke: 'yellow',
+        strokeWidth: 5,
+        opacity: 0.7,
+        shadowColor: 'gray',
+        shadowBlur: 2,
+        shadowOffset: { x: 5, y: 5 },
+        shadowOpacity: 0.5,
+        
+      });
+      layer.add(forceB);
+
+      //Κατά την μετακίνηση του φορτίου Α
+      chargeA.on('dragmove', ()=>{
+        //Το τετράγωνο της απόστασης
+        r2 = (chargeA.x()-chargeB.x())**2 + (chargeA.y()-chargeB.y())**2;
+        //Μέτρο δύναμης
+        forceMag =  k * qA * qB / r2;
+        //Οι θέσεις των φορτίων
+        v1 = Vector.create(chargeA.x(), chargeA.y());
+        v2 = Vector.create(chargeB.x(), chargeB.y());
+        //Η δύναμη στο φορτίο Α
+        force1 =Vector.sub(v2,v1);
+        force1 = Vector.mult(Vector.normalise(force1), sign*forceMag);
+        force1 = Vector.add(force1, v1);
+        //Η δύναμη στο φορτίο Β
+        force2 =Vector.sub(v1,v2);
+        force2 = Vector.mult(Vector.normalise(force2), sign*forceMag);
+        force2 = Vector.add(force2, v2);
+        forceA.points([chargeA.x(), chargeA.y(), force1.x, force1.y]);
+        forceB.points([chargeB.x(), chargeB.y(), force2.x, force2.y]);
+      })
+      //Κατά την μετακίνηση του φορτίου B
+      chargeB.on('dragmove', ()=>{
+        //Το τετράγωνο της απόστασης
+        r2 = (chargeA.x()-chargeB.x())**2 + (chargeA.y()-chargeB.y())**2;
+        //Μέτρο δύναμης
+        forceMag =  k * qA * qB / r2;
+        //Οι θέσεις των φορτίων
+        v1 = Vector.create(chargeA.x(), chargeA.y());
+        v2 = Vector.create(chargeB.x(), chargeB.y());
+        //Η δύναμη στο φορτίο Α
+        force1 =Vector.sub(v2,v1);
+        force1 = Vector.mult(Vector.normalise(force1), sign*forceMag);
+        force1 = Vector.add(force1, v1);
+        //Η δύναμη στο φορτίο Β
+        force2 =Vector.sub(v1,v2);
+        force2 = Vector.mult(Vector.normalise(force2), sign*forceMag);
+        force2 = Vector.add(force2, v2);
+        forceA.points([chargeA.x(), chargeA.y(), force1.x, force1.y]);
+        forceB.points([chargeB.x(), chargeB.y(), force2.x, force2.y]);
+      });
+
+      //Αλλάγή του φορτίου Α
+      radioChargeA.on('click', ()=>{
+        if(radioChargeA.getValue()=='Θετικό'){
+          chargeA.setChargeType(1);
+        }else{
+          chargeA.setChargeType(-1);
+        }
+        sign = - chargeA.getChargeType() * chargeB.getChargeType();
+        //Το τετράγωνο της απόστασης
+        r2 = (chargeA.x()-chargeB.x())**2 + (chargeA.y()-chargeB.y())**2;
+        //Μέτρο δύναμης
+        forceMag =  k * qA * qB / r2;
+        //Οι θέσεις των φορτίων
+        v1 = Vector.create(chargeA.x(), chargeA.y());
+        v2 = Vector.create(chargeB.x(), chargeB.y());
+        //Η δύναμη στο φορτίο Α
+        force1 =Vector.sub(v2,v1);
+        force1 = Vector.mult(Vector.normalise(force1), sign*forceMag);
+        force1 = Vector.add(force1, v1);
+        //Η δύναμη στο φορτίο Β
+        force2 =Vector.sub(v1,v2);
+        force2 = Vector.mult(Vector.normalise(force2), sign*forceMag);
+        force2 = Vector.add(force2, v2);
+        forceA.points([chargeA.x(), chargeA.y(), force1.x, force1.y]);
+        forceB.points([chargeB.x(), chargeB.y(), force2.x, force2.y]);
+      });
+
+      //Αλλαγή του φορτίου Β
+      radioChargeB.on('click', ()=>{
+        if(radioChargeB.getValue()=='Θετικό'){
+          chargeB.setChargeType(1);
+        }else{
+          chargeB.setChargeType(-1);
+        }
+        sign = - chargeA.getChargeType() * chargeB.getChargeType();
+        //Το τετράγωνο της απόστασης
+        r2 = (chargeA.x()-chargeB.x())**2 + (chargeA.y()-chargeB.y())**2;
+        //Μέτρο δύναμης
+        forceMag =  k * qA * qB / r2;
+        //Οι θέσεις των φορτίων
+        v1 = Vector.create(chargeA.x(), chargeA.y());
+        v2 = Vector.create(chargeB.x(), chargeB.y());
+        //Η δύναμη στο φορτίο Α
+        force1 =Vector.sub(v2,v1);
+        force1 = Vector.mult(Vector.normalise(force1), sign*forceMag);
+        force1 = Vector.add(force1, v1);
+        //Η δύναμη στο φορτίο Β
+        force2 =Vector.sub(v1,v2);
+        force2 = Vector.mult(Vector.normalise(force2), sign*forceMag);
+        force2 = Vector.add(force2, v2);
+        forceA.points([chargeA.x(), chargeA.y(), force1.x, force1.y]);
+        forceB.points([chargeB.x(), chargeB.y(), force2.x, force2.y]);
+      });
+
+      rangeChargeA.on('dragmove', ()=>{
+        qA = rangeChargeA.getValue();
+        chargeA.setRadius(rA*qA);
+        //Το τετράγωνο της απόστασης
+        r2 = (chargeA.x()-chargeB.x())**2 + (chargeA.y()-chargeB.y())**2;
+        //Μέτρο δύναμης
+        forceMag =  k * qA * qB / r2;
+        //Οι θέσεις των φορτίων
+        v1 = Vector.create(chargeA.x(), chargeA.y());
+        v2 = Vector.create(chargeB.x(), chargeB.y());
+        //Η δύναμη στο φορτίο Α
+        force1 =Vector.sub(v2,v1);
+        force1 = Vector.mult(Vector.normalise(force1), sign*forceMag);
+        force1 = Vector.add(force1, v1);
+        //Η δύναμη στο φορτίο Β
+        force2 =Vector.sub(v1,v2);
+        force2 = Vector.mult(Vector.normalise(force2), sign*forceMag);
+        force2 = Vector.add(force2, v2);
+        forceA.points([chargeA.x(), chargeA.y(), force1.x, force1.y]);
+        forceB.points([chargeB.x(), chargeB.y(), force2.x, force2.y]);
+        
+      });
+
+      rangeChargeB.on('dragmove', ()=>{
+        qB = rangeChargeB.getValue();
+        chargeB.setRadius(rA*qB);
+        //Το τετράγωνο της απόστασης
+        r2 = (chargeA.x()-chargeB.x())**2 + (chargeA.y()-chargeB.y())**2;
+        //Μέτρο δύναμης
+        forceMag =  k * qA * qB / r2;
+        //Οι θέσεις των φορτίων
+        v1 = Vector.create(chargeA.x(), chargeA.y());
+        v2 = Vector.create(chargeB.x(), chargeB.y());
+        //Η δύναμη στο φορτίο Α
+        force1 =Vector.sub(v2,v1);
+        force1 = Vector.mult(Vector.normalise(force1), sign*forceMag);
+        force1 = Vector.add(force1, v1);
+        //Η δύναμη στο φορτίο Β
+        force2 =Vector.sub(v1,v2);
+        force2 = Vector.mult(Vector.normalise(force2), sign*forceMag);
+        force2 = Vector.add(force2, v2);
+        forceA.points([chargeA.x(), chargeA.y(), force1.x, force1.y]);
+        forceB.points([chargeB.x(), chargeB.y(), force2.x, force2.y]);
+        
+      })
+
+      radiok.on('click', ()=>{
+        if(radiok.getValue() ==='Σμίκρυνση'){
+          k = 10000000/4;
+        }else if(radiok.getValue() ==='Μεγέθυνση'){
+          k = 10000000;
+        }
+        //Το τετράγωνο της απόστασης
+        r2 = (chargeA.x()-chargeB.x())**2 + (chargeA.y()-chargeB.y())**2;
+        //Μέτρο δύναμης
+        forceMag =  k * qA * qB / r2;
+        //Οι θέσεις των φορτίων
+        v1 = Vector.create(chargeA.x(), chargeA.y());
+        v2 = Vector.create(chargeB.x(), chargeB.y());
+        //Η δύναμη στο φορτίο Α
+        force1 =Vector.sub(v2,v1);
+        force1 = Vector.mult(Vector.normalise(force1), sign*forceMag);
+        force1 = Vector.add(force1, v1);
+        //Η δύναμη στο φορτίο Β
+        force2 =Vector.sub(v1,v2);
+        force2 = Vector.mult(Vector.normalise(force2), sign*forceMag);
+        force2 = Vector.add(force2, v2);
+        forceA.points([chargeA.x(), chargeA.y(), force1.x, force1.y]);
+        forceB.points([chargeB.x(), chargeB.y(), force2.x, force2.y]);
+         
+      });
+        
+    </script>
+
+
+    <h1>Νόμος του Coulomb</h1>
+		
+		<p>Με αυτό το εικονικό εργαστήριο μπορείτε να πειραματιστείτε με την ηλεκτρική δύναμη που ασκείται μεταξύ δύο φορτίων.</p>
+		
+		<p><button onclick="expand('p1')"> + </button><span class="h2"> Εξοικείωση με τα χειριστήρια - Βοήθεια</span></p>
+		<div class="experiment" id="p1">
+		
+		<h3>Υλικά και χειριστήρια</h3>
+		
+		<p>Το εργαστήριο αυτό περιλαμβάνει δύο <span class = 'emphasize'>φορτισμένες σφαίρες</span> που μπορείτε να σύρετε με την βοήθεια του δείκτη (mouse). </p>
+		
+		<p>Με αυτό τον τρόπο αλλάζετε την απόσταση μεταξύ των σφαιρών. Παρατηρήστε ότι <span class = 'emphasize'>η δύναμη είναι αντιστρόφως ανάλογη με το τετράγωνο αυτής της απόστασης</span></p>
+		
+		<p>Από τα χειριστήρια που βρίσκονται στην αριστερή πλευρά του εργαστηρίου μπορείτε να αλλάξετε το είδος του φορτίου. Παρατηρήστε ότι <span class = 'emphasize'>τα ομώνυμα απωθούνται και τα ετερώνυμα έλκονται</span></p>
+		
+		<p>Ακόμα, από τα ίδια χειριστήρια μπορείτε να αλλάξετε την ποσότητα του φορτίου, παρατηρήστε ότι <span class = 'emphasize'>η δύναμη είναι ανάλογη του γινομένου των δύο φορτίων</span></p>
+		
+		<p>Επίσης, παρατηρήστε ότι η <span class = 'emphasize'>δύναμη είναι διανυσματικό μέγεθος</span> (μέτρο, διεύθυνση, φορά και σημείο εφαρμογής) και ότι ισχύει ο <span class = 'emphasize'>τρίτος νόμος του Νεύτωνα</span> </p>
+		
+		<p>Αν κάτι πάει στραβά πατήστε το κουμπί ανανέωσης του φυλλομετρητή.</p>
+		
+		
+		</div>
+		
+		
+		<script>
+			function expand( id ){
+				const par = document.getElementById(id);
+				if(par.style.display=="block"){
+					par.style.display="none";
+				}else{
+					par.style.display="block";
+				}
+			}
+		</script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+	
+	John Koumoundouros, <johnkscience@yahoo.com> 
+	Πρότυπο αρχείο για την μετατροπή των σημειώσεων των Μαθηματικών
+	της Β Γυμνασίου από μορφή Writer σε html/asciimath
+	
+	+ Αποθηκεύστε το αρχείο με το νέο όνομα
+	+ Με τις ρουτίνες της LibreWriter-Basic μετατρέψτε το κείμενο writer σε html/asciimath
+	+ Με copy/paste μεταφέρετε το κείμενο από το writer εδώ
+	+ Κωδικοποίηση > UTF-8
+	+ Πρόσθετα > IndentByFold > Reindent
+	+ Χειροκίνητα αλλάζουμε τον τίτλο, μορφοποιούμε, ελέγχουμε
+	
+	Το σύστημα αρχείων έχει την δομή: math_2, math_2_0, math_2_0_1, κτλ
+	
+-->
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+		<title>Μαθηματικά Β Γυμνασίου, Βασικές Πράξεις και Έννοιες, Ασκήσεις</title>
+		<meta name="description" content="Μαθηματικά Β Γυμνασίου, Βασικές Πράξεις και Έννοιες, Ασκήσεις">
+		<meta name="keywords" content="Μαθηματικά Β Γυμνασίου, Σημειώσεις, Βοήθημα">
+		<meta name="author" content="Γιάννης Κουμουνδούρος">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="generator" content="notepad++" />
+		<link href="./math_2.css" type="text/css" rel="stylesheet"/>
+		<!--MathJax Αρχή-->
+		<script>
+			MathJax = {
+				loader: {load: ['input/asciimath', 'output/chtml']}
+			}
+		</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"></script>
+		<!--MathJax Τέλος-->
+	</head>
+	
+	<body >
+		
+		<!--Πλοήγηση -->
+		<div>
+			<ul class="menuList">
+				<li><a href="../../../../notes.html">.notes</a></li>
+				<li><a href="./math_2_3_2.html"> &lt &lt &lt  </a></li><!--Προηγούμενο-->
+				<li><a href="./math_2_4_1.html"> &gt &gt &gt  </a></li><!--Επόμενο-->
+				<li><a href="./math_2.html">Περιεχόμενα</a></li>
+			</ul>
+		</div>
+		
+		<!--Περιεχόμενα -->
+		<h3>3. Η έννοια της Μεταβλητής</h3>
+		
+		<h4>Μάθημα 2 – Βασικές Έννοιες</h4>
+		
+		<div class="problemCard"> Να απαντήσετε στις παρακάτω ερωτήσεις:
+			<ol class="level1"><li class="numberedItem">Τι ονομάζουμε μεταβλητή;</li>
+				<li class="numberedItem">Ποια γράμματα μπορούμε να χρησιμοποιήσουμε για μια μεταβλητή;</li>
+				<li class="numberedItem">Τι είναι η τιμή μιας μεταβλητής;</li>
+				<li class="numberedItem">Αν θα μπορούσατε να κάνετε μία παρομοίωση, τι θα λέγατε ότι είναι μια μεταβλητή</li>
+			</ol>
+		</div>
+		
+		<div class="problemCard"> Ποια από τα παρακάτω σύμβολα μπορεί να είναι μεταβλητές;
+			<ol class="level1"><li class="numberedItem"><span class="inlineMath">`α, β, γ, δ, ...`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`x,ψ,ω`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`a, b, c, ...`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`κ, λ, μ, ...`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`ν, n`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`x, y, z`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`$, %, @`</span></li>
+			</ol>
+		</div>
+		
+		<div class="problemCard"> Εάν <span class="inlineMath">`α=1`</span> και <span class="inlineMath">`β=-3`</span> να βρείτε τις τιμές των παρακάτω παραστάσεων:
+			<ol class="level1"><li class="numberedItem"><span class="inlineMath">`α+β`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`α-β`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`-α`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`-β`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`α- ( -β)`</span></li>
+			</ol>
+		</div>
+		
+		<div class="problemCard"> Εάν <span class="inlineMath">`α=2`</span> και <span class="inlineMath">`β=-4`</span> να βρείτε τις τιμές των παρακάτω παραστάσεων:
+			<ol class="level1"><li class="numberedItem"><span class="inlineMath">`2α`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`β:2`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`β / 2`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`α / β`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`2α+β`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`2α-3β`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`3+αβ`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`α( α+β)`</span></li>
+			</ol>
+		</div>
+		
+		<div class="problemCard"> Εάν <span class="inlineMath">`α=1`</span> και <span class="inlineMath">`β=2`</span> να βρείτε τις τιμές των παρακάτω παραστάσεων:
+			<ol class="level1"><li class="numberedItem"><span class="inlineMath">`α^2+3`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`αβ^2-αβ`</span>, <span class="inlineMath">`αβ(β-1)`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`(α-β)^2`</span>, <span class="inlineMath">`α^2-2αβ+β^2`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`(α-β)(α+β)`</span>, <span class="inlineMath">`α^2-β^2`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`(α+β)^2`</span>, <span class="inlineMath">`α^2+2αβ+β^2`</span></li>
+			</ol>
+		</div>
+		
+		<div class="problemCard"> Nα βρείτε τις τιμές των παρακάτω παραστάσεων:
+			<ol class="level1">
+				<li class="numberedItem"><span class="inlineMath">`x^2+2x-3`</span>, <span class="inlineMath">`x=1`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`2x^2-3x+5`</span>, <span class="inlineMath">`x=2`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`-2x^2+3x -1`</span>, <span class="inlineMath">`x= -1`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`x^2-x+1`</span>, <span class="inlineMath">`x=-2`</span></li>
+			</ol>
+		</div>
+		
+		<div class="problemCard"> Να βρείτε την τιμή της παράστασης:
+			<p><span class="inlineMath">`{:(-x)^2-x^2+y:} / {:3 cdot (-y +4)^2 cdot {:{:-y^3+y^3-4:} / {:2 cdot x+y^2:}:}:}`</span>
+			για  <span class="inlineMath">`x=2`</span>, <span class="inlineMath">`y=3`</span>.</p>
+		</div>
+		
+		<div class="problemCard">  Να κάνετε τις πράξεις:
+			<ol class="level1"><li class="numberedItem"><span class="inlineMath">`x+x`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`2x+x`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`3x+2x -3x +2x`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`4x -3x +2x+5x`</span></li>
+			</ol>
+		</div>
+		
+		<div class="problemCard"> Να κάνετε τις πράξεις:
+			<ol class="level1"><li class="numberedItem"><span class="inlineMath">`2x+x +y+3y`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`2x+2x +y +3x -y`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`4y +4x -4x - 4y`</span></li>
+				<li class="numberedItem"><span class="inlineMath">`-4x +2x – y – 3y + x`</span></li>
+			</ol>
+		</div>
+		
+		<!--Επίλογος-->
+		<div class="footerCard">
+			Κουμουνδούρος Γιάννης, <a href="mailto:johnkscience@yahoo.com">johnkscience@yahoo.com</a>
+		</div>
+		
+		</body>
+	</html>																				

@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Κουμουνδούρος Ιωάννης" />
+  <meta name="keywords" content="Σημειώσεις Μαθηματικών, Α Λυκείου,
+Ρίζες, Ιδιότητες, Ασκήσεις" />
+  <title>Α Λυκείου ΡΙΖΕΣ</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Α Λυκείου ΡΙΖΕΣ</h1>
+<p class="author">Κουμουνδούρος Ιωάννης</p>
+<p class="date">10 Νοεμβρίου 2025</p>
+<div class="abstract">
+<div class="abstract-title">Περίληψη</div>
+<p>Σημειώσεις Μαθηματικών Α Λυκείου, λύσεις των ασκήσεων του σχολικού
+βιβλίου και αναλυτική θεωρία. Στην ενότητα αυτή αναλύονται οι ρίζες και
+οι ιδιότητες τους.</p>
+</div>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#ριζεσ-πραγματικων-αριθμων"
+id="toc-ριζεσ-πραγματικων-αριθμων">ΡΙΖΕΣ ΠΡΑΓΜΑΤΙΚΩΝ ΑΡΙΘΜΩΝ</a>
+<ul>
+<li><a href="#βασικη-θεωρια" id="toc-βασικη-θεωρια">ΒΑΣΙΚΗ
+ΘΕΩΡΙΑ</a></li>
+<li><a href="#απλοποιηση-ριζασ" id="toc-απλοποιηση-ριζασ">ΑΠΛΟΠΟΙΗΣΗ
+ΡΙΖΑΣ</a></li>
+<li><a href="#ιδιοτητεσ-των-ριζων"
+id="toc-ιδιοτητεσ-των-ριζων">ΙΔΙΟΤΗΤΕΣ ΤΩΝ ΡΙΖΩΝ</a></li>
+<li><a href="#λυση-τησ-εξισωσησ-xnu-alpha"
+id="toc-λυση-τησ-εξισωσησ-xnu-alpha">ΛΥΣΗ ΤΗΣ ΕΞΙΣΩΣΗΣ <span
+class="math inline">\(x^{\nu} = \alpha\)</span></a></li>
+<li><a href="#δυναμεισ-με-ρητο-εκθετη"
+id="toc-δυναμεισ-με-ρητο-εκθετη">ΔΥΝΑΜΕΙΣ ΜΕ ΡΗΤΟ ΕΚΘΕΤΗ</a>
+<ul>
+<li><a href="#ασκηση-1-άσκηση-α1-σελ.-74"
+id="toc-ασκηση-1-άσκηση-α1-σελ.-74">ΑΣΚΗΣΗ 1 (Άσκηση Α1 σελ.
+74)</a></li>
+<li><a href="#ασκηση-2-άσκηση-α2-σελ.-74"
+id="toc-ασκηση-2-άσκηση-α2-σελ.-74">ΑΣΚΗΣΗ 2 (Άσκηση Α2 σελ.
+74)</a></li>
+<li><a href="#ασκηση-3-άσκηση-α3-σελ.-74"
+id="toc-ασκηση-3-άσκηση-α3-σελ.-74">ΑΣΚΗΣΗ 3 (Άσκηση Α3 σελ.
+74)</a></li>
+<li><a href="#ασκηση-4-άσκηση-α4-σελ.-74"
+id="toc-ασκηση-4-άσκηση-α4-σελ.-74">ΑΣΚΗΣΗ 4 (Άσκηση Α4 σελ.
+74)</a></li>
+<li><a href="#ασκηση-5-άσκηση-α5-σελ.-74"
+id="toc-ασκηση-5-άσκηση-α5-σελ.-74">ΑΣΚΗΣΗ 5 (Άσκηση Α5 σελ.
+74)</a></li>
+<li><a href="#ασκηση-6-άσκηση-α6-σελ.-74"
+id="toc-ασκηση-6-άσκηση-α6-σελ.-74">ΑΣΚΗΣΗ 6 (Άσκηση Α6 σελ.
+74)</a></li>
+<li><a href="#ασκηση-7-άσκηση-α7-σελ.-74"
+id="toc-ασκηση-7-άσκηση-α7-σελ.-74">ΑΣΚΗΣΗ 7 (Άσκηση Α7 σελ.
+74)</a></li>
+<li><a href="#ασκηση-8-άσκηση-α8-σελ.-74"
+id="toc-ασκηση-8-άσκηση-α8-σελ.-74">ΑΣΚΗΣΗ 8 (Άσκηση Α8 σελ.
+74)</a></li>
+<li><a href="#ασκηση-9-άσκηση-α9-σελ.-74"
+id="toc-ασκηση-9-άσκηση-α9-σελ.-74">ΑΣΚΗΣΗ 9 (Άσκηση Α9 σελ.
+74)</a></li>
+<li><a href="#ασκηση-10-άσκηση-α10-σελ.-75"
+id="toc-ασκηση-10-άσκηση-α10-σελ.-75">ΑΣΚΗΣΗ 10 (Άσκηση Α10 σελ.
+75)</a></li>
+<li><a href="#ασκηση-11-άσκηση-α11-σελ.-75"
+id="toc-ασκηση-11-άσκηση-α11-σελ.-75">ΑΣΚΗΣΗ 11 (Άσκηση Α11 σελ.
+75)</a></li>
+<li><a href="#ασκηση-12-άσκηση-β1-σελ.-75"
+id="toc-ασκηση-12-άσκηση-β1-σελ.-75">ΑΣΚΗΣΗ 12 (Άσκηση Β1 σελ.
+75)</a></li>
+<li><a href="#ασκηση-13-άσκηση-β2-σελ.-75"
+id="toc-ασκηση-13-άσκηση-β2-σελ.-75">ΑΣΚΗΣΗ 13 (Άσκηση Β2 σελ.
+75)</a></li>
+<li><a href="#ασκηση-14-άσκηση-β3-σελ.-75"
+id="toc-ασκηση-14-άσκηση-β3-σελ.-75">ΑΣΚΗΣΗ 14 (Άσκηση Β3 σελ.
+75)</a></li>
+<li><a href="#ασκηση-15-άσκηση-β4-σελ.-75"
+id="toc-ασκηση-15-άσκηση-β4-σελ.-75">ΑΣΚΗΣΗ 15 (Άσκηση Β4 σελ.
+75)</a></li>
+<li><a href="#ασκηση-16-άσκηση-β5-σελ.-75"
+id="toc-ασκηση-16-άσκηση-β5-σελ.-75">ΑΣΚΗΣΗ 16 (Άσκηση Β5 σελ.
+75)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h2 id="ριζεσ-πραγματικων-αριθμων">ΡΙΖΕΣ ΠΡΑΓΜΑΤΙΚΩΝ ΑΡΙΘΜΩΝ</h2>
+<h4 id="βασικη-θεωρια">ΒΑΣΙΚΗ ΘΕΩΡΙΑ</h4>
+<p>Η <strong>τετραγωνική ρίζα</strong> ενός <em>μη αρνητικού</em>
+αριθμού α συμβολίζεται με<span
+class="math inline">\(\sqrt{\alpha}\)</span> και είναι ο <em>μη
+αρνητικός αριθμός</em> που, αν υψωθεί στο τετράγωνο, δίνει τον α.</p>
+<p>Καταρχάς μη αρνητικός αριθμός είναι αυτός που μπορεί να είναι μηδέν ή
+θετικός.</p>
+<p>Επίσης για να υπολογίσουμε μία τετραγωνική ρίζα κάνουμε τον επόμενο
+συλλογισμό:</p>
+<p>Αν <span class="math inline">\(\alpha \geq 0\)</span>, τότε η <span
+class="math inline">\(\sqrt{\alpha}\)</span> παριστάνει τη μη αρνητική
+λύση της εξίσωσης <span class="math inline">\(x^{2} =
+\alpha\)</span>.</p>
+<p>Δηλαδή, π.χ. για να υπολογίσουμε την τετραγωνική ρίζα του 9 αρκεί να
+λύσουμε την εξίσωση</p>
+<p><span class="math display">\[{x^{2} = 9}\Leftrightarrow\{{x = 3}\quad
+ή \quad {x = {- 3}}\}\]</span></p>
+<p>και από τις δύο λύσεις που βρήκαμε πρέπει να πάρουμε την μη αρνητική,
+δηλαδή</p>
+<p><span class="math display">\[x = 3\]</span> ή <span
+class="math display">\[\sqrt{9} = 3\]</span></p>
+<p>Στα πλαίσια αυτού του μαθήματος και σύμφωνα με τον προηγούμενο ορισμό
+δεν θα κληθούμε να υπολογίσουμε τετραγωνικές ρίζες αρνητικών αριθμών,
+π.χ. δεν θα μάθουμε πως υπολογίζεται η <span
+class="math inline">\(\sqrt{({- 2})}\)</span> στο σύνολο των μιγαδικών
+αριθμών.</p>
+<p>Σύμφωνα λοιπόν με αυτόν τον ορισμό για τον υπολογισμό των ριζών:</p>
+<ol type="i">
+<li><p>Ως υπόριζη ποσότητα πρέπει να βάλουμε έναν μη αρνητικό αριθμό
+και</p></li>
+<li><p>Το αποτέλεσμα που υπολογίζουμε πρέπει να είναι ένα και μη
+αρνητικό.</p></li>
+</ol>
+<p>Η περίπτωση</p>
+<p><span class="math display">\[\sqrt{\alpha^{2}}, \quad \alpha &lt;
+0\]</span></p>
+<p>δεν έρχεται σε αντίθεση με αυτόν τον ορισμό, διότι η υπόριζη ποσότητα
+εξακολουθεί να είναι μη αρνητική, αφού</p>
+<p><span class="math display">\[\alpha^{2} \geq 0, \quad \alpha \in
+\mathbb{R}\]</span></p>
+<p>Με όμοιο τρόπο στα πλαίσια του σχολικού βιβλίου ορίζεται και η
+ν-ιοστή ρίζα, δηλαδή:</p>
+<p>Η <strong>ν-οστή ρίζα</strong> ενός <em>μη αρνητικού</em> αριθμού α
+συμβολίζεται με</p>
+<p><span class="math display">\[\sqrt[\nu]{\alpha}\]</span></p>
+<p>και είναι ο <em>μη αρνητικός αριθμός</em> που, όταν τον υψώσουμε στην
+ν, δίνει τον α.</p>
+<p>Όπως και πριν πρέπει να υπολογίσουμε τον παρακάτω συλλογισμό:</p>
+<p>Αν <span class="math inline">\(\alpha \geq 0\)</span>, τότε η <span
+class="math inline">\(\sqrt[\nu]{\alpha}\)</span> παριστάνει τη
+μηαρνητική λύση της εξίσωσης <span class="math inline">\(x^{\nu} =
+\alpha\)</span></p>
+<p>π.χ. για να υπολογίσουμε την <span
+class="math inline">\(\sqrt[3]{8}\)</span> αρκεί να λύσουμε την εξίσωση
+<span class="math inline">\(x^{3} = 8\)</span> η οποία έχει την λύση
+<span class="math inline">\(x = 2\)</span></p>
+<p>προφανώς υπάρχουν και οι ρίζες αρνητικών αριθμών αλλά στα πλαίσια
+αυτής της τάξης δεν θα μάθουμε να τις υπολογίσουμε.</p>
+<h3 id="απλοποιηση-ριζασ">ΑΠΛΟΠΟΙΗΣΗ ΡΙΖΑΣ</h3>
+<p>Με τους παρακάτω τύπους μπορούμε να <strong>απλοποιούμε τις
+ρίζες</strong>:</p>
+<p>Αν <span class="math inline">\(\alpha \geq 0\)</span>, τότε <span
+class="math inline">\({(\sqrt[\nu]{\alpha})}^{\nu} = \alpha\)</span> και
+<span class="math inline">\(\sqrt[\nu]{\alpha^{\nu}} =
+\alpha\)</span></p>
+<p>Αν <span class="math inline">\(\alpha &lt; 0\)</span> και ν άρτιος
+τότε <span class="math inline">\(\sqrt[\nu]{\alpha^{\nu}} =
+|a|\)</span></p>
+<p>Δεν θα ασχοληθούμε με τις ρίζες της μορφής <span
+class="math inline">\(\sqrt[\nu]{\alpha^{\nu}}\)</span> με <span
+class="math inline">\(\alpha &lt; 0\)</span> και <span
+class="math inline">\(\alpha\)</span> περιττός, αφού σε αυτή την
+περίπτωση η υπόριζη ποσότητα είναι αρνητική.</p>
+<p>Δηλαδή σε πρώτη φάση θα πρέπει να προσέχεται αν έχουμε θετικό ή
+αρνητικό αριθμό και δεύτερον αν η δύναμη είναι έξω από την ρίζα ή μέσα
+στην ρίζα.</p>
+<p>Ορίστε μερικά παραδείγματα:</p>
+<p>Σαν πρώτη περίπτωση βλέπουμε ότι ο αριθμός που είναι κάτω από την
+ρίζα είναι θετικός, επομένως απλά απλοποιούμε χωρίς πρόβλημα.</p>
+<p><span class="math display">\[\sqrt{5^{2}} = 5\]</span> και <span
+class="math display">\[{(\sqrt{5})}^{2} = 5\]</span></p>
+<p>Ακόμα</p>
+<p><span class="math display">\[\sqrt[3]{2^{3}} = 2\]</span> και <span
+class="math display">\[{(\sqrt[3]{2})}^{3} = 2\]</span></p>
+<p>και τέλος</p>
+<p><span class="math display">\[\sqrt{{({- 5})}^{2}} = \left| {- 5}
+\right| = 5\]</span></p>
+<p>Ενώ δεν θα ασχοληθούμε με ρίζες της μορφής:</p>
+<p><span class="math display">\[\sqrt{- 4}\]</span></p>
+<p><span class="math display">\[{(\sqrt{- 4})}^{2}\]</span></p>
+<p><span class="math display">\[\sqrt[3]{- 8}\]</span></p>
+<p><span class="math display">\[\sqrt[3]{{({- 2})}^{3}}\]</span></p>
+<p><span class="math display">\[{(\sqrt[3]{- 2})}^{3}\]</span></p>
+<p>διότι έχουν αρνητικές υπόριζες ποσότητες.</p>
+<h3 id="ιδιοτητεσ-των-ριζων">ΙΔΙΟΤΗΤΕΣ ΤΩΝ ΡΙΖΩΝ</h3>
+<p>Παρακάτω δίνουμε τις <strong>ιδιότητες των ριζών</strong>:</p>
+<p><strong>(1)</strong> Αν <span class="math inline">\(\alpha,{\beta
+\geq 0}\)</span>, τότε:</p>
+<p><span class="math display">\[{\sqrt[\nu]{\alpha} \cdot
+\sqrt[\nu]{\beta}} = \sqrt[\nu]{\alpha \cdot \beta}\]</span></p>
+<p>Για να αποδείξουμε αυτή την ιδιότητα ξεκινάμε από την πρόταση της
+οποίας της ορθότητα ακόμα δεν γνωρίζουμε:</p>
+<p><span class="math display">\[{\sqrt[\nu]{\alpha} \cdot
+\sqrt[\nu]{\beta}} = \sqrt[\nu]{\alpha \cdot
+\beta}\Leftrightarrow\]</span></p>
+<p>υψώνουμε στην νιοστή δύναμη , λάβετε υπόψιν σας ότι οι ρίζες είναι
+πάντα θετικές ή μηδέν και ο αριθμός <span class="math inline">\(\nu &gt;
+0\)</span>, επομένως:</p>
+<p><span class="math display">\[{({\sqrt[\nu]{\alpha} \cdot
+\sqrt[\nu]{\beta}})}^{\nu} = {(\sqrt[\nu]{\alpha \cdot
+\beta})}^{\nu}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{{(\sqrt[\nu]{\alpha})}^{\nu} \cdot
+{(\sqrt[\nu]{\beta})}^{\nu}} = {(\sqrt[\nu]{\alpha \cdot
+\beta})}^{\nu}\Leftrightarrow\]</span></p>
+<p>και απλοποιούμε, αφού τα <span class="math inline">\(\alpha,{\beta
+\geq 0}\)</span>:</p>
+<p><span class="math display">\[{\alpha \cdot \beta} = {\alpha \cdot
+\beta}\]</span></p>
+<p>που προφανώς ισχύει, επομένως θα ισχύει και η πρώτη πρόταση που
+θέλουμε να αποδείξουμε μίας και όλες οι προτάσεις συνδέονται με
+ισοδυναμίες.</p>
+<p><strong>(2)</strong> Αν <span class="math inline">\(\alpha,{\beta
+\geq 0}\)</span>, τότε:</p>
+<p><span
+class="math display">\[\frac{\sqrt[\nu]{\alpha}}{\sqrt[\nu]{\beta}} =
+\sqrt[\nu]{\frac{\alpha}{\beta}}\]</span></p>
+<p>η απόδειξη είναι ακριβώς ίδια με την (1)</p>
+<h3 id="λυση-τησ-εξισωσησ-xnu-alpha">ΛΥΣΗ ΤΗΣ ΕΞΙΣΩΣΗΣ <span
+class="math inline">\(x^{\nu} = \alpha\)</span></h3>
+<p>Ενδιαφέρον παρουσιάζει η λύση της εξίσωσης <span
+class="math inline">\(x^{\nu} = \alpha\)</span> για <span
+class="math inline">\(\alpha \geq 0\)</span> που συνοψίζεται στον
+παρακάτω πίνακα:</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align: left;">ν περιττός</td>
+<td style="text-align: left;"><span class="math inline">\(x =
+\sqrt[\nu]{\alpha}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">ν άρτιος</td>
+<td style="text-align: left;"><span class="math inline">\(x = {\pm
+\sqrt[\nu]{\alpha}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Τέλος να τονίζουμε ότι το ν είναι ένας φυσικός αριθμός μεγαλύτερος
+του 1, <span class="math inline">\({\nu \in \{}1,2,3,...\}\)</span></p>
+<h3 id="δυναμεισ-με-ρητο-εκθετη">ΔΥΝΑΜΕΙΣ ΜΕ ΡΗΤΟ ΕΚΘΕΤΗ</h3>
+<p>Στην συνέχεια θα ορίσουμε τις <strong>δυνάμεις με ρητό
+εκθέτη</strong></p>
+<p>Αν <span class="math inline">\(\alpha &gt; 0\)</span>, μ
+<em>ακέραιος</em> και ν <em>θετικός ακέραιος</em>, τότε ορίζουμε <span
+class="math display">\[\alpha^{\frac{\mu}{\nu}} =
+\sqrt[\nu]{\alpha^{\mu}}\]</span></p>
+<p>και εάν μ,ν <em>θετικοί ακέραιοι</em> τότε <span
+class="math display">\[0^{\frac{\mu}{\nu}} = 0\]</span></p>
+<p>Για παράδειγμα:</p>
+<p><span class="math display">\[27^{- \frac{4}{3}} = \sqrt[3]{27^{- 4}}
+= \sqrt[3]{\frac{1}{27^{4}}} = \frac{1}{\sqrt[3]{27^{4}}} =
+\frac{1}{{(\sqrt[3]{3^{3}})}^{4}} = \frac{1}{3^{4}}\]</span></p>
+<p>Ακόμα:</p>
+<p><span class="math display">\[27^{- \frac{4}{3}} = {(3^{3})}^{-
+\frac{4}{3}} = 3^{\frac{- {3 \cdot 4}}{3}} = 3^{- 4} =
+\frac{1}{3^{4}}\]</span></p>
+<p>Επίσης:</p>
+<p><span class="math display">\[{\sqrt[4]{a} \cdot \sqrt[3]{a}} =
+{a^{\frac{1}{4}} \cdot a^{\frac{1}{3}}} = a^{\frac{1}{4} + \frac{1}{3}}
+= a^{\frac{7}{12}} = \sqrt[12]{a^{7}}\]</span></p>
+<p>Ακόμα αν α και β είναι <em>μη αρνητικοί</em> αριθμοί ισχύει η
+σχέση:</p>
+<p><span class="math display">\[{\alpha &lt;
+\beta}\Leftrightarrow{\sqrt[\nu]{\alpha} &lt;
+\sqrt[\nu]{\beta}}\]</span></p>
+<p>που αποδεικνύεται ως εξής:</p>
+<p><span class="math display">\[{\sqrt[\nu]{\alpha} &lt;
+\sqrt[\nu]{\beta}}\Leftrightarrow{{(\sqrt[\nu]{\alpha})}^{\nu} &lt;
+{(\sqrt[\nu]{\beta})}^{\nu}}\Leftrightarrow{a &lt; \beta}\]</span> που
+ισχύει.</p>
+<p>Εδώ πρέπει να καταλάβετε ότι αυτή η απόδειξη έχει δύο σκέλη:</p>
+<p><strong>(1)</strong> Αν γνωρίζουμε ότι <span
+class="math inline">\(\alpha &lt; \beta\)</span> τότε πρέπει να δείξουμε
+ότι</p>
+<p><span class="math display">\[\sqrt[\nu]{\alpha} &lt;
+\sqrt[v]{\beta}\]</span></p>
+<p>πράγματι, Η σχέση</p>
+<p><span class="math display">\[α&lt;β\]</span></p>
+<p>γράφετε</p>
+<p><span class="math display">\[{(\sqrt[\nu]{\alpha})}^{\nu} &lt;
+{(\sqrt[\nu]{\beta})}^{\nu}\]</span></p>
+<p>αφού είναι <span class="math inline">\(\alpha =
+{(\sqrt[\nu]{\alpha})}^{\nu}\)</span> και <span
+class="math inline">\(\beta = {(\sqrt[\nu]{\beta})}^{\nu}\)</span></p>
+<p>Ύστερα λόγω της <span class="math inline">\(α&lt;β \Leftrightarrow
+α^ν &lt; β^ν\)</span> η σχέση <span
+class="math inline">\({(\sqrt[\nu]{\alpha})}^{\nu} &lt;
+{(\sqrt[\nu]{\beta})}^{\nu}\)</span> γράφετε:</p>
+<p><span class="math display">\[\sqrt[\nu]{\alpha} &lt;
+\sqrt[v]{\beta}\]</span></p>
+<p><strong>(2)</strong> Με παρόμοιο συλλογισμό αν γνωρίζουμε ότι <span
+class="math inline">\(\sqrt[\nu]{\alpha} &lt; \sqrt[v]{\beta}\)</span>
+μπορούμε να δείξουμε ότι <span class="math inline">\(\alpha &lt;
+\beta\)</span></p>
+<p>Δηλαδή αποδείξαμε και τις δύο κατευθύνσεις (ισοδυναμία).</p>
+<h4 id="ασκηση-1-άσκηση-α1-σελ.-74">ΑΣΚΗΣΗ 1 (Άσκηση Α1 σελ. 74)</h4>
+<p>Να υπολογίσετε τις ρίζες:</p>
+<ol type="i">
+<li><p><span class="math inline">\(\sqrt{100}\)</span>, <span
+class="math inline">\(\sqrt[3]{1000}\)</span>, <span
+class="math inline">\(\sqrt[4]{10000}\)</span>, <span
+class="math inline">\(\sqrt[5]{100000}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{4}\)</span>, <span
+class="math inline">\(\sqrt[3]{8}\)</span>, <span
+class="math inline">\(\sqrt[4]{16}\)</span>, <span
+class="math inline">\(\sqrt[5]{32}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{0.01}\)</span>, <span
+class="math inline">\(\sqrt[3]{0.001}\)</span>, <span
+class="math inline">\(\sqrt[4]{0.0001}\)</span>, <span
+class="math inline">\(\sqrt[5]{0.00001}\)</span></p></li>
+</ol>
+<p><strong>Λύση:</strong></p>
+<ol type="i">
+<li>Για να βρούμε την <span class="math inline">\(\sqrt{100}\)</span>,
+αρκεί να λύσουμε την εξίσωση <span class="math inline">\(x^{2} =
+100\)</span>, η εξίσωση αυτή έχει δύο ρίζες τις -10 και 10. Κρατάμε την
+θετική δηλαδή: <span class="math inline">\(\sqrt{100} =
+10\)</span>.</li>
+</ol>
+<p>Όμοια η <span class="math inline">\(\sqrt[3]{1000}\)</span> είναι η
+μη αρνητική λύση της εξίσωσης <span class="math inline">\(x^{3} =
+1000\)</span>, (βέβαια αυτή η εξίσωση δεν έχει αρνητικές ρίζες), δηλαδή
+<span class="math inline">\(\sqrt[3]{1000} = 10\)</span>.</p>
+<p>Όμοια έχουμε <span class="math inline">\(\sqrt[4]{10000} =
+10\)</span> και <span class="math inline">\(\sqrt[5]{100000} =
+10\)</span></p>
+<ol start="2" type="i">
+<li><p>με τον ίδιο τρόπο έχουμε: <span class="math inline">\(\sqrt{4} =
+2\)</span>, <span class="math inline">\(\sqrt[3]{8} = 2\)</span> , <span
+class="math inline">\(\sqrt[4]{16} = 2\)</span>, <span
+class="math inline">\(\sqrt[5]{32} = 2\)</span>.</p></li>
+<li><p>με τον ίδιο τρόπο έχουμε <span class="math inline">\(\sqrt{0.01}
+= \sqrt{\frac{1}{100}} = \frac{1}{10}\)</span> και <span
+class="math inline">\(\sqrt[3]{0.001} = \sqrt[3]{\frac{1}{1000}} =
+\frac{1}{10}\)</span>, <span class="math inline">\(\sqrt[4]{0.0001} =
+\sqrt[4]{\frac{1}{10000}} = \frac{1}{10}\)</span> και τέλος <span
+class="math inline">\(\sqrt[5]{0.00001} = \sqrt[5]{\frac{1}{100000}} =
+\frac{1}{10}\)</span>.</p></li>
+</ol>
+<h4 id="ασκηση-2-άσκηση-α2-σελ.-74">ΑΣΚΗΣΗ 2 (Άσκηση Α2 σελ. 74)</h4>
+<p>Να γράψετε τις παρακάτω παραστάσεις χωρίς ριζικά:</p>
+<ol type="i">
+<li><span class="math inline">\(\sqrt{{({\pi - 4})}^{2}}\)</span></li>
+<li><span class="math inline">\(\sqrt{{({- 20})}^{2}}\)</span></li>
+<li><span class="math inline">\(\sqrt{{({x - 1})}^{2}}\)</span>
+(iv)<span class="math inline">\(\sqrt{\frac{x^{2}}{4}}\)</span></li>
+</ol>
+<p><strong>Λύση:</strong></p>
+<p>Παρατηρούμε ότι είναι όλες τετραγωνικές ρίζες και έτσι θα
+εκμεταλλευτούμε την ιδιότητα: <span
+class="math inline">\(\sqrt{x^2}=|x|, \quad x \in \R\)</span>.</p>
+<ol type="i">
+<li><p><span class="math inline">\(\sqrt{{({\pi - 4})}^{2}} = \left|
+{\pi - 4} \right| = {- {({\pi - 4})}} = {4 - \pi}\)</span>, εδώ πρέπει
+να παρατηρήσουμε ότι <span class="math inline">\({\pi - 4} &lt;
+0\)</span>, αφού <span class="math inline">\({\pi =
+3.14}...\)</span>.</p></li>
+<li><p>Όμοια: <span class="math display">\[\sqrt{{({- 20})}^{2}} =
+\left| {- 20} \right| = 20\]</span></p></li>
+<li><p>Με παρόμοιο τρόπο είναι:</p></li>
+</ol>
+<p><span class="math display">\[\sqrt{{({x - 1})}^{2}} = \left| {x - 1}
+\right| = \begin{Bmatrix}
+{{x - 1},{x \geq 1}} \\
+{{{- x} + 1},{x &lt; 0}}
+\end{Bmatrix}\]</span></p>
+<p>Εδώ εξετάσαμε και τις δύο περιπτώσεις, δηλαδή όταν το <span
+class="math inline">\({{x - 1} \geq 0}\Leftrightarrow{x \geq 1}\)</span>
+και <span class="math inline">\({{x - 1} &lt; 0}\Leftrightarrow{x &lt;
+1}\)</span> αφού δεν γνωρίζουμε ακριβώς ποια τιμή έχει το x. Σε
+αντιπαράθεση στις (i) και (ii) γνωρίζαμε το πρόσημο της υπόριζης
+ποσότητας.</p>
+<ol start="4" type="i">
+<li>Με παρόμοιο τρόπο:</li>
+</ol>
+<p><span class="math display">\[\sqrt{\frac{x^{2}}{4}} = \sqrt{\left(
+\frac{x}{2} \right)^{2}} = \left| \frac{x}{2} \right| = \begin{Bmatrix}
+{\frac{x}{2},{x \geq 0}} \\
+{{- \frac{x}{2}},{x &lt; 0}}
+\end{Bmatrix}\]</span></p>
+<p>Εξετάσαμε δύο περιπτώσεις πρώτον για <span
+class="math inline">\({\frac{x}{2} \geq 0}\Leftrightarrow{x \geq
+0}\)</span> και δεύτερον για <span class="math inline">\({\frac{x}{2}
+&lt; 0}\Leftrightarrow{x &lt; 0}\)</span>.</p>
+<h4 id="ασκηση-3-άσκηση-α3-σελ.-74">ΑΣΚΗΣΗ 3 (Άσκηση Α3 σελ. 74)</h4>
+<p>Να αποδείξετε ότι:</p>
+<p><span class="math display">\[{\sqrt{{({2 - \sqrt{5}})}^{2}} +
+\sqrt{{({3 - \sqrt{5}})}^{2}}} = 1\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Θα αρχίσουμε φυσικά από το πρώτο μέλος με σκοπό να κάνουμε τις
+πράξεις και να προκύψει το δεύτερο μέλος.</p>
+<p>Αρχικά θα εκμεταλλευτούμε την ιδιότητα για να απλοποιήσουμε τα
+ριζικά.</p>
+<p><span class="math display">\[{\sqrt{{({2 - \sqrt{5}})}^{2}} +
+\sqrt{{({3 - \sqrt{5}})}^{2}}} = {\left| {2 - \sqrt{5}} \right| + \left|
+{3 - \sqrt{5}} \right|}\]</span></p>
+<p>Τώρα παρατηρούμε ότι <span class="math inline">\({2 - \sqrt{5}} &lt;
+0\)</span> και <span class="math inline">\({3 - \sqrt{5}} &gt;
+0\)</span> αφού με ένα πρόχειρο υπολογισμό είναι <span
+class="math inline">\(3 &gt; \sqrt{5} &gt; 2\)</span>. Επομένως:</p>
+<p><span class="math display">\[\begin{array}{l}
+{{\left| {2 - \sqrt{5}} \right| + \left| {3 - \sqrt{5}} \right|} = {{-
+{({2 - \sqrt{5}})}} + 3 - \sqrt{5}} =} \\
+{= {{- 2} + \sqrt{5} + 3 - \sqrt{5}} = 1}
+\end{array}\]</span></p>
+<h4 id="ασκηση-4-άσκηση-α4-σελ.-74">ΑΣΚΗΣΗ 4 (Άσκηση Α4 σελ. 74)</h4>
+<p>Να αποδείξετε ότι:</p>
+<p><span class="math display">\[{{({\sqrt{x - 5} - \sqrt{x + 3}})} \cdot
+{({\sqrt{x - 5} + \sqrt{x + 3}})}} = {- 8}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Θα αρχίσουμε με τις πράξεις στο πρώτο μέλος. Παρατηρούμε ότι έχουμε
+την “διαφορά τετραγώνων”, επομένως:</p>
+<p><span class="math display">\[{({\sqrt{x - 5} - \sqrt{x + 3}})} \cdot
+{({\sqrt{x - 5} + \sqrt{x + 3}})}= {}\]</span></p>
+<p><span class="math display">\[{(\sqrt{x - 5})}^{2} - {(\sqrt{x +
+3})}^{2} = {}\]</span></p>
+<p><span class="math display">\[ (x - 5) - ( x + 3) ={}\]</span></p>
+<p><span class="math display">\[ x-5-x-3 = -8\]</span></p>
+<p>Εδώ προσέξτε ότι το τετράγωνο είναι έξω από την τετραγωνική ρίζα και
+είναι <span class="math inline">\(\sqrt{x}^2=x, \quad
+x&gt;=0\)</span></p>
+<p>Επομένως τα παραπάνω ισχύουν για <span
+class="math inline">\(x-5&gt;=0\)</span> και <span
+class="math inline">\(x+3&gt;=0\)</span>, δηλαδή για <span
+class="math inline">\(x&gt;=5\)</span> και <span
+class="math inline">\(x&gt;=-3\)</span>, επομένως για <span
+class="math inline">\(x&gt;=5\)</span></p>
+<h4 id="ασκηση-5-άσκηση-α5-σελ.-74">ΑΣΚΗΣΗ 5 (Άσκηση Α5 σελ. 74)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li><p><span class="math display">\[{{({\sqrt{8} - \sqrt{18}})} \cdot
+{({{\sqrt{50} + \sqrt{72}}–\sqrt{32}})}} = {- 14}\]</span></p></li>
+<li><p><span class="math display">\[{{({\sqrt{28} + \sqrt{7} +
+\sqrt{32}})} \cdot {({\sqrt{63} - \sqrt{32}})}} = 31\]</span></p></li>
+</ol>
+<p><strong>Λύση:</strong></p>
+<p>Σε κάθε ερώτημα θα πρέπει να απλοποιήσουμε κάπως τις ρίζες. Αυτό θα
+γίνει ως εξής: Αν έχουμε την <span
+class="math inline">\(\sqrt{8}\)</span> θα προσπαθήσουμε να αναλύσουμε
+το 8 ως γινόμενο δύο αριθμών που ο ένας εξ αυτών να είναι τέλειο
+τετράγωνο. Δηλαδή:</p>
+<p><span class="math display">\[\sqrt{8} = \sqrt{({4 \cdot 2})} =
+{\sqrt{4} \cdot \sqrt{2}} = {2 \cdot \sqrt{2}}\]</span></p>
+<p>Με παρόμοιο τρόπο έχουμε:</p>
+<p><span class="math display">\[\sqrt{18} = \sqrt{({9 \cdot 2})} =
+{\sqrt{9} \cdot \sqrt{2}} = {3 \cdot \sqrt{2}}\]</span></p>
+<p><span class="math display">\[\sqrt{50} = \sqrt{({25 \cdot 2})} =
+{\sqrt{25} \cdot \sqrt{2}} = {5 \cdot \sqrt{2}}\]</span></p>
+<p><span class="math display">\[\sqrt{72} = \sqrt{({36 \cdot 2})} =
+{\sqrt{36} \cdot \sqrt{2}} = {6 \cdot \sqrt{2}}\]</span></p>
+<p><span class="math display">\[\sqrt{32} = \sqrt{({16 \cdot 2})} =
+{\sqrt{16} \cdot \sqrt{2}} = {4 \cdot \sqrt{2}}\]</span></p>
+<p>και ακόμα:</p>
+<p><span class="math display">\[\sqrt{28} = \sqrt{({4 \cdot 7})} =
+{\sqrt{4} \cdot \sqrt{7}} = {2 \cdot \sqrt{7}}\]</span></p>
+<p><span class="math display">\[\sqrt{63} = \sqrt{({9 \cdot 7})} =
+{\sqrt{9} \cdot \sqrt{7}} = {3 \cdot \sqrt{7}}\]</span></p>
+<p>Επομένως για το <strong>(i) ερώτημα</strong> έχουμε:</p>
+<p><span class="math display">\[{({\sqrt{8} - \sqrt{18}})} \cdot
+{({{\sqrt{50} + \sqrt{72}}–\sqrt{32}})} = {}\]</span></p>
+<p><span class="math display">\[{({2{\sqrt{2} -
+3}\sqrt{2}})}{({5{\sqrt{2} + 6}{\sqrt{3} - 4}\sqrt{2}})}=
+{}\]</span></p>
+<p><span class="math display">\[{- \sqrt{2}} \cdot 7 \cdot \sqrt{2}=
+{}\]</span></p>
+<p><span class="math display">\[{- 7} \cdot {(\sqrt{2})}^{2} =
+{}\]</span></p>
+<p><span class="math display">\[{- 7} \cdot 2 = {}\]</span></p>
+<p><span class="math display">\[14\]</span></p>
+<p>Και με ίδιο τρόπο, για το <strong>ερώτημα (ii)</strong> έχουμε:</p>
+<p><span class="math display">\[{({\sqrt{28} + \sqrt{7} + \sqrt{32}})}
+\cdot {({\sqrt{63} - \sqrt{32}})} = {}\]</span></p>
+<p><span class="math display">\[{({2{\sqrt{7} + \sqrt{7} +
+4}\sqrt{2}})}{({3{\sqrt{7} - 4}\sqrt{2}})} = {}\]</span></p>
+<p><span class="math display">\[{({3{\sqrt{7} +
+4}\sqrt{2}})}{({3{\sqrt{7} - 4}\sqrt{2}})}= {}\]</span></p>
+<p><span class="math display">\[{({3\sqrt{7}})}^{2} -
+{({4\sqrt{2}})}^{2} = {}\]</span></p>
+<p><span class="math display">\[{9 \cdot 7} - {16 \cdot 2} =
+{}\]</span></p>
+<p><span class="math display">\[63 - 32= {}\]</span></p>
+<p><span class="math display">\[31\]</span></p>
+<h4 id="ασκηση-6-άσκηση-α6-σελ.-74">ΑΣΚΗΣΗ 6 (Άσκηση Α6 σελ. 74)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li><p><span class="math display">\[{\sqrt{2} \cdot \sqrt{2 - \sqrt{2}}
+\cdot \sqrt{2 + \sqrt{2}}} = 2\]</span></p></li>
+<li><p><span class="math display">\[{\sqrt[3]{2} \cdot \sqrt[3]{3 +
+\sqrt{5}} \cdot \sqrt[3]{3 - \sqrt{5}}} = 2\]</span></p></li>
+</ol>
+<p><strong>Λύση:</strong></p>
+<p>Εδώ θα εκμεταλλευτούμε την ιδιότητα και την ταυτότητα: “διαφορά
+τετραγώνων”. Επομένως για το <strong>πρώτο ερώτημα</strong> έχουμε:</p>
+<p><span class="math display">\[\sqrt{2} \cdot \sqrt{2 - \sqrt{2}} \cdot
+\sqrt{2 + \sqrt{2}} = {}\]</span></p>
+<p><span class="math display">\[\sqrt{2 \cdot {({2 - \sqrt{2}})} \cdot
+{({2 + \sqrt{2}})}} = {}\]</span></p>
+<p><span class="math display">\[\sqrt{2 \cdot {({2^{2} -
+{(\sqrt{2})}^{2}})}} = {}\]</span></p>
+<p><span class="math display">\[\sqrt{2 \cdot {({4 - 2})}} =
+{}\]</span></p>
+<p><span class="math display">\[\sqrt{4} = {}\]</span></p>
+<p><span class="math display">\[2\]</span></p>
+<p>Και με παρόμοιο τρόπο για το <strong>δεύτερο ερώτημα</strong>:</p>
+<p><span class="math display">\[\sqrt[3]{2} \cdot \sqrt[3]{3 + \sqrt{5}}
+\cdot \sqrt[3]{3 - \sqrt{5}} = {}\]</span></p>
+<p><span class="math display">\[\sqrt[3]{2 \cdot {({3 + \sqrt{5}})}
+\cdot {({3 - \sqrt{5}})}} = {}\]</span></p>
+<p><span class="math display">\[\sqrt[3]{2 \cdot {({3^{2} -
+{(\sqrt{5})}^{2}})}}= {}\]</span></p>
+<p><span class="math display">\[\sqrt[3]{2 \cdot {({9 - 5})}} =
+{}\]</span></p>
+<p><span class="math display">\[\sqrt[3]{8} = {}\]</span></p>
+<p><span class="math display">\[2\]</span></p>
+<h4 id="ασκηση-7-άσκηση-α7-σελ.-74">ΑΣΚΗΣΗ 7 (Άσκηση Α7 σελ. 74)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\sqrt{\sqrt{2 \cdot \sqrt[3]{2}}} =
+\sqrt[3]{2}\]</span></p>
+<ol start="2" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\sqrt[5]{2\sqrt{2\sqrt[3]{2}}} =
+\sqrt[3]{2}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Ο λογισμός θα διευκολυνθεί αν αναλύσουμε της ρίζες ως δυνάμεις με
+ρητούς εκθέτες:</p>
+<p>Για το πρώτο ερώτημα έχουμε:</p>
+<p><span class="math display">\[\sqrt{\sqrt{2 \cdot \sqrt[3]{2}}} =
+{({({2 \cdot 2^{\frac{1}{3}}})}^{\frac{1}{2}})}^{\frac{1}{2}} =
+{({(2^{\frac{4}{3}})}^{\frac{1}{2}})}^{\frac{1}{2}} = 2^{\frac{4}{12}} =
+2^{\frac{1}{3}} = \sqrt[3]{2}\]</span></p>
+<p>Και για το δεύτερο ερώτημα αντίστοιχα:</p>
+<p><span class="math display">\[\begin{array}{l}
+{\sqrt[5]{2\sqrt{2\sqrt[3]{2}}} = {({2 \cdot {({2 \cdot
+2^{\frac{1}{3}}})}^{\frac{1}{2}}})}^{\frac{1}{5}} = {({2 \cdot
+{(2^{\frac{4}{3}})}^{\frac{1}{2}}})}^{\frac{1}{5}} = {({2 \cdot
+2^{\frac{4}{6}}})}^{\frac{1}{5}} =} \\
+{= {(2^{\frac{10}{6}})}^{\frac{1}{5}} = 2^{\frac{10}{30}} =
+2^{\frac{1}{3}} = \sqrt[3]{2}}
+\end{array}\]</span></p>
+<h4 id="ασκηση-8-άσκηση-α8-σελ.-74">ΑΣΚΗΣΗ 8 (Άσκηση Α8 σελ. 74)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[{\sqrt[4]{3^{3}} \cdot \sqrt[3]{3}} = {3
+\cdot \sqrt[12]{3}}\]</span></p>
+<ol start="2" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[{\sqrt[9]{2^{8}} \cdot \sqrt[6]{2^{5}}}
+= {2 \cdot \sqrt[18]{2^{13}}}\]</span></p>
+<ol start="3" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[{\sqrt{5^{3}} \cdot \sqrt[3]{5} \cdot
+\sqrt[6]{5^{4}}} = {25 \cdot \sqrt{5}}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Ο λογισμός θα διευκολυνθεί αν αναλύσουμε της ρίζες ως δυνάμεις με
+ρητούς εκθέτες:</p>
+<p>Για το πρώτο ερώτημα έχουμε:</p>
+<p><span class="math display">\[{{\sqrt[4]{3^{3}} \cdot \sqrt[3]{3}} =
+{3^{\frac{3}{4}} \cdot 3^{\frac{1}{3}}} = 3^{\frac{13}{12}} =
+3^{\frac{{1 \cdot 12} + 1}{12}} = 3^{1 + \frac{1}{12}} = {3 \cdot
+3^{\frac{1}{12}}} = 3}\sqrt[12]{3}\]</span></p>
+<p>Παρατηρήστε την Ευκλείδεια διαίρεση</p>
+<p><span class="math display">\[13:{12 = {{1 \cdot 12} +
+1}}\]</span></p>
+<p>για να επιτευχθεί η απλοποίηση.</p>
+<p>Και για το <strong>δεύτερο ερώτημα</strong> αντίστοιχα:</p>
+<p><span class="math display">\[\begin{matrix}
+{{\sqrt[9]{2^{8}} \cdot \sqrt[6]{2^{5}}} = {2^{\frac{8}{9}} \cdot
+2^{\frac{5}{6}}} = 2^{\frac{31}{18}} = 2^{\frac{{1 \cdot 18} + 13}{18}}
+= 2^{1 + \frac{13}{18}} = {2 \cdot 2^{\frac{13}{18}}} =} \\
+{{= 2}\sqrt[18]{2^{13}}}
+\end{matrix}\]</span></p>
+<p>Τέλος για το <strong>τρίτο ερώτημα</strong> εργαζόμαστε
+αντίστοιχα:</p>
+<p><span class="math display">\[\begin{matrix}
+{{\sqrt{5^{3}} \cdot \sqrt[3]{5} \cdot \sqrt[6]{5^{4}}} = 5^{\frac{3}{2}
++ \frac{1}{3} + \frac{4}{6}} = 5^{\frac{15}{6}} = 5^{\frac{{2 \cdot 6} +
+3}{6}} = {5^{2} \cdot 5^{\frac{3}{6}}} =} \\
+{{= {25 \cdot 5^{\frac{1}{2}}} = 25}\sqrt{5}}
+\end{matrix}\]</span></p>
+<h4 id="ασκηση-9-άσκηση-α9-σελ.-74">ΑΣΚΗΣΗ 9 (Άσκηση Α9 σελ. 74)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\frac{25 \cdot \sqrt{12}}{\sqrt{75}} =
+10\]</span></p>
+<ol start="2" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\frac{\sqrt{216} \cdot
+\sqrt{75}}{\sqrt{50}} = 18\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Θα χρειαστεί να αναλύσουμε τις υπόριζες ποσότητες σε γινόμενα πρώτων
+παραγόντων.</p>
+<table>
+<tbody>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">:2</td>
+<td></td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">:3</td>
+<td></td>
+<td style="text-align: right;">216</td>
+<td style="text-align: left;">:2</td>
+<td></td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">:2</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">:2</td>
+<td></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">:5</td>
+<td></td>
+<td style="text-align: right;">108</td>
+<td style="text-align: left;">:2</td>
+<td></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">:5</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">:3</td>
+<td></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">:5</td>
+<td></td>
+<td style="text-align: right;">54</td>
+<td style="text-align: left;">:2</td>
+<td></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">:5</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">:3</td>
+<td></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">:3</td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">:3</td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;"></td>
+<td></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Επομένως:</p>
+<p><span class="math display">\[12 = {2^{2} \cdot 3}\]</span></p>
+<p><span class="math display">\[75 = {3 \cdot 5^{2}}\]</span></p>
+<p><span class="math display">\[216 = {2^{3} \cdot 3^{3}}\]</span></p>
+<p><span class="math display">\[50 = {2 \cdot 5^{2}}\]</span></p>
+<p>Επομένως για το <strong>πρώτο ερώτημα</strong> έχουμε:</p>
+<p><span class="math display">\[\frac{25 \cdot \sqrt{12}}{\sqrt{75}} =
+\frac{25 \cdot \sqrt{2^{2} \cdot 3}}{\sqrt{3 \cdot 5^{2}}} = \frac{25
+\cdot 2 \cdot \sqrt{3}}{5 \cdot \sqrt{3}} = 10\]</span></p>
+<p>Και για το <strong>δεύτερο ερώτημα</strong> έχουμε:</p>
+<p><span class="math display">\[
+{\frac{\sqrt{216} \cdot \sqrt{75}}{\sqrt{50}} = \frac{\sqrt{2^{3} \cdot
+3^{3}} \cdot \sqrt{3 \cdot 5^{2}}}{\sqrt{2 \cdot 5^{2}}} =
+\sqrt{\frac{2^{3} \cdot 3^{3} \cdot 3 \cdot 5^{2}}{2 \cdot 5^{2}}} =}
+\]</span></p>
+<p><span class="math display">\[{= \sqrt{2^{2}3^{4}} = {2 \cdot 3^{2}} =
+18}
+\]</span></p>
+<h4 id="ασκηση-10-άσκηση-α10-σελ.-75">ΑΣΚΗΣΗ 10 (Άσκηση Α10 σελ.
+75)</h4>
+<p>Να μετατρέψετε τις παρακάτω παραστάσεις σε ισοδύναμες με ρητούς
+παρονομαστές:</p>
+<ol type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\frac{4}{5 - \sqrt{3}}\]</span></p>
+<ol start="2" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\frac{8}{\sqrt{7} -
+\sqrt{5}}\]</span></p>
+<ol start="3" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\frac{\sqrt{7} + \sqrt{6}}{\sqrt{7} -
+\sqrt{6}}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<ol type="i">
+<li>Η συζυγή παράσταση είναι αυτή που συμπληρώνει την ταυτότητα “διαφορά
+τετραγώνου”, π.χ. η συζυγή παράσταση του <span class="math inline">\(5 -
+\sqrt{3}\)</span> είναι η <span class="math inline">\(5 +
+\sqrt{3}\)</span>, γιατί</li>
+</ol>
+<p><span class="math display">\[{({5 - \sqrt{3}})}{{({5 + \sqrt{3}})} =
+{5^{2} - {(\sqrt{3})}^{2}}}\]</span></p>
+<p>Για να φύγουν τα ριζικά από τον παρανομαστή ώστε οι παραστάσεις να
+μετατραπούν σε ισοδύναμες με ρητούς παρανομαστές αρκεί να
+πολλαπλασιάσουμε τον αριθμητή και τον παρανομαστή με την συζυγή
+παράσταση του παρανομαστή.</p>
+<p>Επομένως:</p>
+<p><span class="math display">\[\frac{4}{5 - \sqrt{3}} = {}\]</span></p>
+<p><span class="math display">\[\frac{4{({5 + \sqrt{3}})}}{{({5 -
+\sqrt{3}})}{({5 + \sqrt{3}})}} = \frac{4{({5 + \sqrt{3}})}}{5^{2} -
+{(\sqrt{3})}^{2}} = {}\]</span></p>
+<p><span class="math display">\[\frac{4{({5 + \sqrt{3}})}}{22} =
+\frac{2{({5 + \sqrt{3}})}}{11} = {}\]</span></p>
+<p><span class="math display">\[\frac{{10 + 2}\sqrt{3}}{11}\]</span></p>
+<ol start="2" type="i">
+<li>Εργαζόμαστε αναλόγως:</li>
+</ol>
+<p><span class="math display">\[\frac{8}{\sqrt{7} - \sqrt{5}} =
+{}\]</span></p>
+<p><span class="math display">\[\frac{8{({\sqrt{7} +
+\sqrt{5}})}}{{({\sqrt{7} - \sqrt{5}})}{({\sqrt{7} + \sqrt{5}})}} =
+{}\]</span></p>
+<p><span class="math display">\[\frac{8{({\sqrt{7} + \sqrt{5}})}}{7 - 5}
+= {}\]</span></p>
+<p><span class="math display">\[4{({\sqrt{7} - \sqrt{5}})}\]</span></p>
+<ol start="3" type="i">
+<li>Εργαζόμαστε αναλόγως:</li>
+</ol>
+<p><span class="math display">\[\frac{\sqrt{7} + \sqrt{6}}{\sqrt{7} -
+\sqrt{6}} = {}\]</span></p>
+<p><span class="math display">\[\frac{{({\sqrt{7} +
+\sqrt{6}})}{({\sqrt{7} + \sqrt{6}})}}{{({\sqrt{7} +
+\sqrt{6}})}{({\sqrt{7} - \sqrt{6}})}} = {}\]</span></p>
+<p><span class="math display">\[\frac{{({\sqrt{7} + \sqrt{6}})}^{2}}{7 -
+6} = {}\]</span></p>
+<p><span class="math display">\[{{(\sqrt{7})}^{2} + 2}\sqrt{7}{\sqrt{6}
++ {(\sqrt{6})}^{2}} = {}\]</span></p>
+<p><span class="math display">\[{13 + 2}\sqrt{42}\]</span></p>
+<h4 id="ασκηση-11-άσκηση-α11-σελ.-75">ΑΣΚΗΣΗ 11 (Άσκηση Α11 σελ.
+75)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\frac{\sqrt{162} + \sqrt{98}}{\sqrt{50}
+= \sqrt{32}} = 16\]</span></p>
+<ol start="2" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\sqrt{\frac{9^{12} + 3^{20}}{9^{11} +
+27^{6}}} = 3\]</span></p>
+<p>**Λύση:</p>
+<ol type="i">
+<li>Θα χρειαστεί να αναλύσουμε τις υπόριζες ποσότητες σε γινόμενα πρώτων
+παραγόντων.</li>
+</ol>
+<table>
+<tbody>
+<tr>
+<td style="text-align: center;">162</td>
+<td style="text-align: center;">:2</td>
+<td></td>
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">:2</td>
+<td></td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">:2</td>
+<td></td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">:2</td>
+</tr>
+<tr>
+<td style="text-align: center;">81</td>
+<td style="text-align: center;">:3</td>
+<td></td>
+<td style="text-align: center;">49</td>
+<td style="text-align: center;">:7</td>
+<td></td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">:2</td>
+<td></td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">:5</td>
+</tr>
+<tr>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">:3</td>
+<td></td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">:7</td>
+<td></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">:2</td>
+<td></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">:5</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">:3</td>
+<td></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">:2</td>
+<td></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">:3</td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">:2</td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[162 = {2 \cdot 3^{4}}\]</span></p>
+<p><span class="math display">\[98 = {2 \cdot 7^{2}}\]</span></p>
+<p><span class="math display">\[32 = 2^{5}\]</span></p>
+<p><span class="math display">\[50 = {2 \cdot 5^{2}}\]</span></p>
+<p>Επομένως:</p>
+<p><span class="math display">\[{\frac{\sqrt{162} + \sqrt{98}}{\sqrt{50}
+- \sqrt{32}} = \frac{\sqrt{2 \cdot 3^{4}} + \sqrt{2 \cdot
+7^{2}}}{\sqrt{2 \cdot 5^{2}} - \sqrt{2^{5}}} = \frac{3^{2}{\sqrt{2} +
+7}\sqrt{2}}{5{\sqrt{2} - 2^{2}}\sqrt{2}} =}\]</span></p>
+<p><span class="math display">\[{= \frac{16\sqrt{2}}{\sqrt{2}} =
+16}\]</span></p>
+<ol start="2" type="i">
+<li>Παρατηρήστε ότι:</li>
+</ol>
+<p><span class="math display">\[{{9^{12} + 3^{20}} = {{(3^{2})}^{12} +
+3^{20}} = {3^{24} + 3^{20}} = 3^{20}}{{({3^{4} + 1})} = {3^{20} \cdot
+82}}\]</span></p>
+<p><span class="math display">\[{{9^{11} + 27^{6}} = {3^{22} + 3^{18}} =
+3^{18}}{{({3^{4} + 1})} = {3^{18} \cdot 82}}\]</span></p>
+<p>Επομένως:</p>
+<p><span class="math display">\[\sqrt{\frac{9^{12} + 3^{20}}{9^{11} +
+27^{6}}} = \sqrt{\frac{3^{20} \cdot 82}{3^{18} \cdot 82}} = \sqrt{3^{2}}
+= 3\]</span></p>
+<h4 id="ασκηση-12-άσκηση-β1-σελ.-75">ΑΣΚΗΣΗ 12 (Άσκηση Β1 σελ. 75)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\frac{3{\sqrt{3} -
+2}\sqrt{2}}{\sqrt{3}–\sqrt{2}} = {5 + \sqrt{6}}\]</span></p>
+<ol start="2" type="i">
+<li>Αν <span class="math inline">\(\alpha,{\beta &gt; 0}\)</span> να
+αποδείξετε ότι</li>
+</ol>
+<p><span
+class="math display">\[\frac{\alpha\sqrt{\alpha}–\beta\sqrt{\beta}}{\sqrt{\alpha}–\sqrt{\beta}}
+= {{({\alpha + \beta})} + \sqrt{\mathit{\alpha\beta}}}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Και στις δύο περιπτώσεις θα πολλαπλασιάσουμε με την συζυγή παράσταση
+του παρανομαστή.</p>
+<ol type="i">
+<li>Η συζυγή παράσταση είναι: <span class="math inline">\(\sqrt{3} -
+\sqrt{2}\)</span>, επομένως:</li>
+</ol>
+<p><span class="math display">\[\frac{3{\sqrt{3} -
+2}\sqrt{2}}{\sqrt{3}–\sqrt{2}} = {}\]</span></p>
+<p><span class="math display">\[\frac{{({3{\sqrt{3} -
+2}\sqrt{2}})}{({\sqrt{3} +
+\sqrt{2}})}}{{({\sqrt{3}–\sqrt{2}})}{({\sqrt{3} + \sqrt{2}})}} =
+{}\]</span></p>
+<p><span class="math display">\[\frac{3{\sqrt{9} + 3}{\sqrt{6} -
+2}{\sqrt{6} - 2}\sqrt{4}}{3 - 2} = {}\]</span></p>
+<p><span class="math display">\[{9 + \sqrt{6} - 4} = {}\]</span></p>
+<p><span class="math display">\[5 + \sqrt{6}\]</span></p>
+<ol start="2" type="i">
+<li>Το πρόβλημα είναι ακριβώς ίδιο, μόνο που στην θέση των αριθμών
+έχουμε μεταβλητές:</li>
+</ol>
+<p><span class="math display">\[\frac{\alpha{\sqrt{\alpha} -
+\beta}\sqrt{\beta}}{\sqrt{\alpha}–\sqrt{\beta}}= {}\]</span></p>
+<p><span class="math display">\[\frac{{({\alpha{\sqrt{\alpha} -
+\beta}\sqrt{\beta}})}{({\sqrt{\alpha} +
+\sqrt{\beta}})}}{{({\sqrt{\alpha}–\sqrt{\beta}})}{({\sqrt{\alpha} +
+\sqrt{\beta}})}} = {}\]</span></p>
+<p><span class="math display">\[\frac{\alpha{\sqrt{\alpha^{2}} +
+\alpha}{\sqrt{\mathit{\alpha\beta}} - \beta}{\sqrt{\mathit{\alpha\beta}}
+- \beta}\sqrt{\beta^{2}}}{\alpha - \beta} = {}\]</span></p>
+<p><span class="math display">\[\frac{{\alpha^{2} - \beta^{2} +
+{({\alpha - \beta})}}\sqrt{\mathit{\alpha\beta}}}{\alpha - \beta} =
+{}\]</span></p>
+<p><span class="math display">\[\frac{{({\alpha - \beta})}{{({\alpha +
+\beta})} + {({\alpha - \beta})}}\sqrt{\mathit{\alpha\beta}}}{\alpha -
+\beta} = {}\]</span></p>
+<p><span class="math display">\[\frac{{({\alpha -
+\beta})}{\lbrack{{({\alpha + \beta})} +
+\sqrt{\mathit{\alpha\beta}}}\rbrack}}{\alpha - \beta} = {}\]</span></p>
+<p><span class="math display">\[{({\alpha + \beta})} +
+\sqrt{\mathit{\alpha\beta}}\]</span></p>
+<p>Η προϋπόθεση <span class="math inline">\(α,β&gt;0\)</span> πρέπει να
+ισχύει ώστε να ορίζονται τα ριζικά. Πρέπειοι υπόριζες ποσότητες να είναι
+μη αρνητικές.</p>
+<p>Επιπλέων πρέπει προφανώς <span class="math inline">\(\alpha \neq
+\beta\)</span> ώστε να μην μηδενίζεται ο παρανομαστής.</p>
+<h4 id="ασκηση-13-άσκηση-β2-σελ.-75">ΑΣΚΗΣΗ 13 (Άσκηση Β2 σελ. 75)</h4>
+<ol type="i">
+<li>Να βρείτε τα αναπτύγματα των:</li>
+</ol>
+<p><span class="math display">\[{({{3 + 2}\sqrt{7}})}^{2}\]</span></p>
+<p>και</p>
+<p><span class="math display">\[{({{3 - 2}\sqrt{7}})}^{2}\]</span></p>
+<ol start="2" type="i">
+<li>Να αποδείξετε ότι:</li>
+</ol>
+<p><span class="math display">\[{\sqrt{{37 + 12}\sqrt{7}} - \sqrt{{37 -
+12}\sqrt{7}}} = 6\]</span></p>
+<p><strong>Λύση:</strong></p>
+<ol type="i">
+<li>Το <strong>πρώτο ερώτημα</strong> είναι τετριμμένο. Εφαρμόζουμε την
+ταυτότητα “τετράγωνο αθροίσματος”.</li>
+</ol>
+<p><span class="math display">\[{{({{3 + 2}\sqrt{7}})}^{2} = {9 + {2
+\cdot 3 \cdot 2}}}{{\sqrt{7} + {({2\sqrt{7}})}^{2}} = {37 +
+12}}\sqrt{7}\]</span></p>
+<p>και</p>
+<p><span class="math display">\[{{({{3 - 2}\sqrt{7}})}^{2} = {9 - {2
+\cdot 3 \cdot 2}}}{{\sqrt{7} + {({2\sqrt{7}})}^{2}} = {37 -
+12}}\sqrt{7}\]</span></p>
+<ol start="2" type="i">
+<li>Με την βοήθεια των παραπάνω κάνουμε τον εξής λογισμό:</li>
+</ol>
+<p><span class="math display">\[\sqrt{{37 + 12}\sqrt{7}} - \sqrt{{37 -
+12}\sqrt{7}} = {}\]</span></p>
+<p><span class="math display">\[\sqrt{{({3 + \sqrt{7}})}^{2}} -
+\sqrt{{({3 - \sqrt{7}})}^{2}} = {}\]</span></p>
+<p><span class="math display">\[\left| {3 + \sqrt{7}} \right| + \left|
+{3 - \sqrt{7}} \right| = {}\]</span></p>
+<p><span class="math display">\[3 + \sqrt{7} + 3 - \sqrt{7}\]</span>
+<span class="math display">\[6\]</span></p>
+<h4 id="ασκηση-14-άσκηση-β3-σελ.-75">ΑΣΚΗΣΗ 14 (Άσκηση Β3 σελ. 75)</h4>
+<ol type="i">
+<li>Να αποδείξετε ότι ο αριθμός</li>
+</ol>
+<p><span class="math display">\[\left( {\sqrt{\frac{2}{3}} +
+\sqrt{\frac{3}{2}}} \right)^{2}\]</span></p>
+<p>είναι ρητός.</p>
+<ol start="2" type="i">
+<li>Αν α θετικός ρητός, να αποδείξετε ότι ο</li>
+</ol>
+<p><span class="math display">\[\left( {\sqrt{\alpha} +
+\frac{1}{\sqrt{a}}} \right)^{2}\]</span></p>
+<p>είναι ρητός.</p>
+<p><strong>Λύση:</strong></p>
+<p>Ρητός είναι κάθε αριθμός που μπορεί να γραφεί με την μορφή κλάσματος
+<span class="math inline">\(\frac{\mu}{\nu}\)</span> με μ,ν ακέραιοι και
+<span class="math inline">\(\nu \neq 0\)</span>.</p>
+<p>Επομένως θα προσπαθήσουμε να γράψουμε τους παραπάνω αριθμούς με την
+μορφή κλάσματος.</p>
+<ol type="i">
+<li>Έχουμε διαδοχικά:</li>
+</ol>
+<p><span class="math display">\[\left( {\sqrt{\frac{2}{3}} +
+\sqrt{\frac{3}{2}}} \right)^{2} = {}\]</span></p>
+<p><span class="math display">\[{\frac{2}{3} +
+2}\sqrt{\frac{2}{3}}{{\sqrt{\frac{3}{2}} + \frac{3}{2}} =}\]</span></p>
+<p><span class="math display">\[{\frac{2}{3} + 2 + \frac{3}{2}} =
+{}\]</span></p>
+<p><span class="math display">\[{\frac{4}{6} + \frac{12}{6} +
+\frac{9}{6}} = {}\]</span></p>
+<p><span class="math display">\[\frac{25}{6}\]</span></p>
+<p>που είναι ρητός αριθμός.</p>
+<ol start="2" type="i">
+<li>Με όμοιο τρόπο έχουμε:</li>
+</ol>
+<p><span class="math display">\[\left( {\sqrt{\alpha} +
+\frac{1}{\sqrt{a}}} \right)^{2}= {}\]</span></p>
+<p><span class="math display">\[{\alpha +
+2}\sqrt{\alpha}{{\frac{1}{\sqrt{a}} + \frac{1}{a}} =}\]</span></p>
+<p><span class="math display">\[{a + 2 + \frac{1}{a}} = {}\]</span></p>
+<p><span class="math display">\[{\frac{a^{2}}{a} + \frac{2a}{a} +
+\frac{1}{a}} = {}\]</span></p>
+<p><span class="math display">\[\frac{{a^{2} + 2}{a + 1}}{a} =
+{}\]</span></p>
+<p><span class="math display">\[\frac{{({a + 1})}^{2}}{a}\]</span></p>
+<p>Ας δεχτούμε χωρίς απόδειξη ότι το άθροισμα και το γινόμενο δύο
+ακεραίων αριθμών είναι ακέραιος αριθμός. Δηλαδή:</p>
+<p>Αν <span class="math inline">\(\alpha,{\beta \in
+{\mathbb{Z}}}\)</span> τότε <span class="math inline">\({({\alpha +
+\beta})} \in {\mathbb{Z}}\)</span> και <span
+class="math inline">\({({\alpha \cdot \beta})} \in
+{\mathbb{Z}}\)</span></p>
+<p>Προσοχή! Η διαφορά δύο ακεραίων είναι επίσης ακέραιος, όμως το πηλίκο
+δυο ακεραίων μπορεί να μην είναι ακέραιος.</p>
+<p>Ρητός είναι κάθε αριθμός που μπορεί να γραφεί με την μορφή κλάσματος
+<span class="math inline">\(\frac{\alpha}{\beta}\)</span> με <span
+class="math inline">\(\alpha,{\beta \in {\mathbb{Z}}}\)</span> και <span
+class="math inline">\(\beta \neq 0\)</span>.</p>
+<p>Το άθροισμα ή η διαφορά δύο ρητών είναι ρητός διότι αν <span
+class="math inline">\(\frac{\alpha}{\beta},{\frac{\gamma}{\delta} \in
+{\mathbb{Q}}}\)</span> τότε</p>
+<p><span class="math display">\[{\frac{\alpha}{\beta} \pm
+\frac{\gamma}{\delta}} = \frac{\mathit{\alpha\delta} \pm
+\mathit{\beta\gamma}}{\mathit{\beta\delta}}\]</span></p>
+<p>που είναι ρητός αφού τα</p>
+<p><span class="math display">\[\mathit{\alpha\delta} \pm
+\mathit{\beta\gamma}\]</span></p>
+<p>και</p>
+<p><span class="math display">\[\mathit{\beta\delta}\]</span></p>
+<p>είναι ακέραιοι ως άθροισμα και γινόμενο ακεραίων</p>
+<p>Το γινόμενο δύο ρητών είναι επίσης ρητός αφού</p>
+<p><span class="math display">\[{\frac{\alpha}{\beta} \cdot
+\frac{\gamma}{\delta}} =
+\frac{\mathit{\alpha\gamma}}{\mathit{\beta\delta}}\]</span></p>
+<p>που είναι ρητός για τον ίδιο λόγο.</p>
+<p>Το πηλίκο δύο ρητών είναι ρητός αφού <span
+class="math display">\[\frac{\alpha}{\beta}:{\frac{\gamma}{\delta} =
+\frac{\mathit{\alpha\delta}}{\mathit{\beta\gamma}}}\]</span> είναι
+επίσης ρητός για τον ίδιο λόγο.</p>
+<p>Επομένως το άθροισμα, η διαφορά, το γινόμενο και το πηλίκο δύο ρητών
+είναι επίσης ρητός αριθμός.</p>
+<p>Μετά από αυτή την παρένθεση ας επανέρθουμε τώρα στην άσκηση</p>
+<p>Αφού ο α είναι ρητός αριθμός θα είναι και ο <span
+class="math inline">\(\frac{{({a + 1})}^{2}}{a}\)</span> ρητός
+διότι:</p>
+<p>Ο <span class="math inline">\(\alpha + 1\)</span> είναι ρητός ως
+άθροισμα ρητών και ο <span class="math inline">\({{({\alpha + 1})}^{2} =
+{({\alpha + 1})}}{({\alpha + 1})}\)</span> είναι ρητός ως γινόμενο ρητών
+και ο <span class="math inline">\({({\alpha + 1})}^{2} \cdot
+\frac{1}{\alpha}\)</span> είναι και αυτός ρητός ως πηλίκο ρητών.</p>
+<h4 id="ασκηση-15-άσκηση-β4-σελ.-75">ΑΣΚΗΣΗ 15 (Άσκηση Β4 σελ. 75)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[{\frac{\sqrt{3}}{\sqrt{5} - \sqrt{3}} +
+\frac{\sqrt{5}}{\sqrt{5} + \sqrt{3}}} = 4\]</span></p>
+<ol start="2" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[{{\frac{1}{{({2 - \sqrt{3}})}^{2}} -
+\frac{1}{{({2 + \sqrt{3}})}^{2}}} = 8}\sqrt{3}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<ol type="i">
+<li>Θα χρησιμοποιήσουμε τις συζυγείς παραστάσεις των παρανομαστών.</li>
+</ol>
+<p><span class="math display">\[\frac{\sqrt{3}}{\sqrt{5} - \sqrt{3}} +
+\frac{\sqrt{5}}{\sqrt{5} + \sqrt{3}}\]</span></p>
+<p><span class="math display">\[\frac{\sqrt{3}{({\sqrt{5} +
+\sqrt{3}})}}{{(\sqrt{5})}^{2} - {(\sqrt{3})}^{2}} +
+\frac{\sqrt{5}{({\sqrt{5} - \sqrt{3}})}}{{(\sqrt{5})}^{2} -
+{(\sqrt{3})}^{2}} = {}\]</span></p>
+<p><span class="math display">\[\frac{\sqrt{15} + 3 + 5 - \sqrt{15}}{2}
+\]</span></p>
+<p><span class="math display">\[\frac{8}{2}=4\]</span></p>
+<ol start="2" type="i">
+<li>Όμοια</li>
+</ol>
+<p><span class="math display">\[\frac{1}{{({2 - \sqrt{3}})}^{2}} -
+\frac{1}{{({2 + \sqrt{3}})}^{2}}\]</span></p>
+<p><span class="math display">\[\frac{{({2 + \sqrt{3}})}^{2}}{{({2 -
+\sqrt{3}})}^{2}{({2 + \sqrt{3}})}^{2}} - \frac{{({2 -
+\sqrt{3}})}^{2}}{{({2 + \sqrt{3}})}^{2}{({2 - \sqrt{3}})}^{2}}=
+{}\]</span></p>
+<p><span class="math display">\[\frac{{4 + 4}{\sqrt{3} + 3 - {({{4 -
+4}{\sqrt{3} + 3}})}}}{{\lbrack{{({2 - \sqrt{3}})}{({2 +
+\sqrt{3}})}}\rbrack}^{2}} = {}\]</span></p>
+<p><span class="math display">\[\frac{8\sqrt{3}}{{({2 -
+3})}^{2}}\]</span></p>
+<p><span class="math display">\[8\sqrt{3}\]</span></p>
+<h4 id="ασκηση-16-άσκηση-β5-σελ.-75">ΑΣΚΗΣΗ 16 (Άσκηση Β5 σελ. 75)</h4>
+<p>Σε ένα ορθογώνιο τρίγωνο οι κάθετες πλευρές του είναι <span
+class="math inline">\(\mathit{ΑΒ} = \sqrt{\alpha}\)</span> και <span
+class="math inline">\(\mathit{Α\Gamma} = \sqrt{\beta}\)</span>.</p>
+<ol type="i">
+<li><p>Να υπολογίσετε την υποτείνουσα ΒΓ του τριγώνου.</p></li>
+<li><p>Με τη βοήθεια της τριγωνικής ανισότητας να αποδείξετε
+ότι:</p></li>
+</ol>
+<p><span class="math display">\[\sqrt{\alpha + \beta} &lt;
+{\sqrt{\alpha} + \sqrt{\beta}}\]</span></p>
+<ol start="3" type="i">
+<li>Για μη αρνητικούς αριθμούς α και β, να αποδείξετε ότι <span
+class="math inline">\(\sqrt{\alpha\beta} \leq {\sqrt{\alpha} +
+\sqrt{\beta}}\)</span> . Πότε ισχύει η ισότητα;</li>
+</ol>
+<p><strong>Λύση:</strong></p>
+<ol type="i">
+<li>Θα υπολογίσουμε την υποτείνουσα από το πυθαγόρειο θεώρημα:</li>
+</ol>
+<p>Σε ένα ορθογώνιο τρίγωνο, το τετράγωνο της υποτείνουσας είναι ίσο με
+το άθροισμα των τετραγώνων των δύο κάθετων πλευρών.</p>
+<p>Επομένως:</p>
+<p><span class="math display">\[\mathit{Β\Gamma}^{2} = {\mathit{ΑΒ}^{2}
++ \mathit{Α\Gamma}^{2}} = {{(\sqrt{\alpha})}^{2} + {(\sqrt{\beta})}^{2}}
+= {\alpha + \beta}\]</span></p>
+<p>δηλαδή:</p>
+<p><span class="math display">\[\mathit{Β\Gamma} = \sqrt{\alpha +
+\beta}\]</span></p>
+<ol start="2" type="i">
+<li>Για να λύσουμε αυτό το ερώτημα θα χρειαστεί η τριγωνική ανισότητα
+όπως αυτή διατυπώνεται στην Ευκλείδεια γεωμετρία.</li>
+</ol>
+<p>Αρχικά ας διατυπώσουμε την τριγωνική ανισότητα στην Ευκλείδεια
+Γεωμετρία χωρίς απόδειξη:</p>
+<p>Κάθε πλευρά σε τρίγωνο είναι μικρότερη από το άθροισμα των δύο άλλων
+πλευρών και μεγαλύτερη από την διαφορά τους.</p>
+<p>Ενώ στην μαθηματική ανάλυση, για δύο πραγματικούς αριθμούς x, y η
+τριγωνική ανισότητα γράφεται:</p>
+<p><span class="math display">\[\left| {|x| - |y|} \right| \leq \left|
+{x + y} \right| \leq {|x| + |y|}\]</span></p>
+<p>Επομένως, στο τρίγωνο ΑΒΓ σύμφωνα με την τριγωνική ανισότητα η πλευρά
+ΒΓ θα είναι μικρότερη από το άθροισμα των πλευρών ΑΒ και ΑΓ, δηλαδή:</p>
+<p><span class="math display">\[\mathit{Β\Gamma} &lt; {\mathit{ΑΒ} +
+\mathit{Α\Gamma}}\]</span></p>
+<p><span class="math display">\[\sqrt{\alpha + \beta} &lt;
+{\sqrt{\alpha} + \sqrt{\beta}}\]</span></p>
+<ol start="3" type="i">
+<li>Αρχίζοντας με την σχέση που θέλουμε να αποδείξουμε και με διαδοχικές
+ισοδυναμίες έχουμε:</li>
+</ol>
+<p><span class="math display">\[\sqrt{\alpha + \beta} \leq
+{\sqrt{\alpha} + \sqrt{\beta}}\Leftrightarrow{}\]</span></p>
+<p><span class="math display">\[{(\sqrt{\alpha + \beta})}^{2} \leq
+{({\sqrt{\alpha} + \sqrt{\beta}})}^{2}\Leftrightarrow{}\]</span></p>
+<p><span class="math display">\[{\left| {\alpha + \beta} \right| \leq
+{\alpha + 2}}{\sqrt{\mathit{\alpha\beta}} +
+\beta}\Leftrightarrow{}\]</span></p>
+<p><span class="math display">\[{{\alpha + \beta} \leq {\alpha +
+2}}{\sqrt{\mathit{\alpha\beta}} + \beta}\Leftrightarrow{}\]</span></p>
+<p><span class="math display">\[{0 \leq
+2}\sqrt{\mathit{\alpha\beta}}\Leftrightarrow{}\]</span></p>
+<p><span class="math display">\[0 \leq
+\sqrt{\mathit{\alpha\beta}}\]</span></p>
+<p>Η σχέση στην γραμμή 6 είναι αληθής από τον ορισμό των ριζικών που
+επιβάλει ότι όλες οι ριζικές ποσότητες είναι θετικές, επομένως θα είναι
+αληθής και η πρώτη.</p>
+<p>Στην γραμμή 2 υψώσαμε στο τετράγωνο και στις δύο πλευρές.</p>
+<p>Στην γραμμή 4 είναι</p>
+<p><span class="math display">\[\left| {\alpha + \beta} \right| =
+{\alpha + \beta}\]</span></p>
+<p>αφού τα α και β είναι μη αρνητικοί αριθμοί αφού στα <span
+class="math inline">\(\sqrt{a}\)</span> και <span
+class="math inline">\(\sqrt{\beta}\)</span> στα αρχικά μήκη πλευρών οι
+υπόριζες ποσότητες είναι μη αρνητικοί αριθμοί.</p>
+<p>Τέλος η ισότητα ισχύει όταν: <span
+class="math inline">\(\sqrt{\mathit{\alpha\beta}} = 0\)</span> ή <span
+class="math inline">\(\mathit{\alpha\beta} = 0\)</span> δηλαδή όταν
+<span class="math inline">\(\{{\alpha = 0}\quad ή \quad {\beta =
+0}\}\)</span></p>
+</body>
+</html>

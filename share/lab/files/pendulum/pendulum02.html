@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>johnkscience.Lab -- Εκκρεμές</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="generator" content="notepad++" />
+		<meta name="description" content="johnkscience.blog. Νέα από την εκπαίδευση, άρθρα επιστημονικού ενδιαφέροντος, σημειώσεις Μαθηματικών, Φυσικής και Χημείας, Εικονικά Εργαστήρια">
+		<meta name="keywords" content="johnkscience.blog, Blog, Νέα, Εκπαίδευση, Δευτεροβάθμια, Σημειώσεις, Βοηθήματα, Γυμνάσιο, Λύκειο, Σπάρτη, Εικονικά Εργαστήρια">
+		<meta name="author" content="Γιάννης Κουμουνδούρος">
+		<link href="./lab.css" type="text/css" rel="stylesheet"/>
+
+    <script src="./lib01/konva/konva.js"></script>
+
+    <!--MathJax Αρχή-->
+	<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"></script>
+      <script>
+        MathJax = {
+          loader: {load: ['input/asciimath', 'output/chtml']}
+        }
+      </script>
+	  <!--MathJax Τέλος-->
+    
+  </head>
+  <body>
+
+    <div id="container" style="background-image: url('./background.png'); background-size: cover; width:1200px; height:600px;"></div>
+
+    <script type="module">
+      
+      import {Range, Button, Pendulum, Stopwatch, SpreadSheet, 
+		ScatterPlot, TextGroup, HelpPopup} from './lib01/widgets/index.js';
+      
+      let width =  1200;
+      let height = 600;
+	  let row = 1;
+	  let points = [];
+
+      let stage = new Konva.Stage({
+        container: 'container',
+        width: width,
+        height: height,
+      });
+
+      let layer = new Konva.Layer();
+      stage.add(layer);
+
+	  // 1) Range και ετικέτα "Αρχική Γωνία Ταλάντωσης"
+	  let textGroup = new TextGroup({
+		x: 20,
+		y: 20,
+		text: 'Μαζα Σώματος',
+		fontColor: "darkblue",
+		width: 220,
+		height: 120,
+		stroke: 'darkblue',
+		cornerRadius: 10,
+	});
+	layer.add(textGroup);
+
+        let massRange = new Range({
+            x: 50,
+            y: 90,
+            min: 0.3,
+            max: 1.5,
+            value: 0.6,
+            step: 0.1,
+            width: 150,
+            height: 20,
+			minLabel: "0.3Kg",
+			maxLabel: "1.5 Kg",
+			barFill:"darkorchid",
+			tooltipFill:"lavender",
+			tooltipTextFill:"darkblue",
+            decimals:2,
+			onChange: (event)=>{
+				pendulum.setMass(massRange.getValue());
+			}
+        });
+        layer.add(massRange);
+
+        // 2) Κουμπιά "Έναρξη Προσομοίωσης", "Παύση Προσομοίωσης", "Επανεκίνηση"
+        let startButton = new Button({
+            x: 20,
+            y: 180,
+           //text: 'Έναρξη Προσομοίωσης',
+		   imageSrc:'./lib01/widgets/icons/start01.png',
+            width: 50,
+			height: 50,
+			fill:"limegreen",
+			stroke: "gray", 
+			mouseoverFill: "lightgreen",
+			cornerRadius: 5,
+			fontColor: "darkgreen",
+			onClick: (event)=>{
+				pendulum.startAnimation();
+			}
+        });
+        layer.add(startButton);
+
+        let pauseButton = new Button({
+            x: 80,
+            y: 180,
+            //text: 'Παύση Προσομοίωσης',
+			imageSrc:'./lib01/widgets/icons/stop01.png',
+            width: 50,
+			height: 50,
+			fill:"limegreen",
+			stroke: "gray", 
+			mouseoverFill: "lightgreen",
+			cornerRadius: 5,
+			fontColor: "darkgreen",
+			onClick: (event)=>{
+				pendulum.stopAnimation();
+			}
+        });
+        layer.add(pauseButton);
+		
+
+        let resetButton = new Button({
+            x: 730,
+            y: 40,
+            //text: 'Επανεκίνηση',
+			imageSrc:'./lib01/widgets/icons/bin.png',
+            width: 50,
+			height: 50,
+			fill:"salmon",
+			stroke: "gray", 
+			mouseoverFill: "crimson",
+			cornerRadius: 5,
+			fontColor: "darkred",
+			onClick: (enent)=>{
+				spreadsheet.setData( [["Γωνία", "Χρόνος 10 ταλ.", "Περίοδος"],
+					["","",""], ["","",""], ["","",""], ["","",""],
+					["","",""], ["","",""], ["","",""], ["","",""],
+					["","",""], ["","",""], ["","",""], ["","",""]]);
+				row=1;
+				points = [];
+				scatterplot.setData(points);
+			}
+
+        });
+        layer.add(resetButton);
+
+        // 3) Κουμπί "Οδηγίες Εργαστηρίου"
+        let instructionsButton = new Button({
+            x: 190,
+            y: 180,
+            //text: 'Οδηγίες Εργαστηρίου',
+			imageSrc:'./lib01/widgets/icons/info.png',
+            width: 50,
+			height: 50,
+			fill:"deepskyblue",
+			stroke: "gray", 
+			mouseoverFill: "lightblue",
+			cornerRadius: 5,
+			fontColor: "darkblue",
+			onClick: (event)=>{
+				helpPopup.showPopup();
+			}
+        });
+        layer.add(instructionsButton);
+
+        // 4) Pendulum
+        let pendulum = new Pendulum({
+			x: 200, // Αρχική θέση στο κέντρο του stage
+			y: 20, // Αρχική θέση στο πάνω μέρος του stage
+			ropeLength: 1, // Μήκος σχοινιού σε εκατοστα.
+			maxAngle: 12 * Math.PI / 180, // Αρχική γωνία 
+			mass: 0.6, // Μάζα σε κιλα
+			gravity: 9.81, // Επιτάχυνση βαρύτητας SI
+			material: 'wood', // Υλικό σφαίρας (wood, metal, κ.λπ.)
+			scaleFactor:400,
+			timeScale:1,
+			protractorRadius:120,
+        });
+        layer.add(pendulum);
+		//pendulum.startAnimation();
+
+		
+        // 5) Κουμπί "Καταγραφή μέτρησης"
+        let recordButton = new Button({
+            x: 560,
+            y: 40,
+            text: 'Καταγραφή μέτρησης',
+            width: 160,
+			height: 50,
+			fill:"deepskyblue",
+			stroke: "gray", 
+			mouseoverFill: "lightblue",
+			cornerRadius: 5,
+			fontColor: "darkblue",
+			fontSize:14,
+			onClick: (event)=>{
+				let time = myStopwatch.getValue() / 1000; //s
+				let mass = massRange.getValue(); //μοίρες
+				spreadsheet.setCellValue(row, 0, mass);
+				spreadsheet.setCellValue(row, 1, time);
+				spreadsheet.setCellValue(row,2, time/10);
+				row<12 ? row++ : row=1;
+				points.push(mass);
+				points.push(time/10);
+				scatterplot.setData(points);
+			}
+        });
+        layer.add(recordButton);
+
+        // 6) SpreadSheet
+        let spreadsheet = new SpreadSheet({
+            x: 560,
+			y: 100,
+			data: [["Μάζα", "Χρόνος 10 ταλ.", "Περίοδος"],
+					["","",""], ["","",""], ["","",""], ["","",""],
+					["","",""], ["","",""], ["","",""], ["","",""],
+					["","",""], ["","",""], ["","",""], ["","",""]],
+			cellWidth: 100,
+			cellHeight: 25,
+			decimalPlaces: 1,
+			draggable:false,
+			align:'left',
+			tableStrokeWidth:3,
+			tableStroke: 'gray',
+			tableStrokeEnabled: false,
+			cellStrokeWidth:1,
+			cellStroke: 'gray',
+			cellBackgroundColor:'rgba(255, 250, 250, 0.2)',
+			cellStrokeEnabled: true,
+			stripedRowColor1:'orange',
+			stripedRowColor2:'yellow',
+			cornerRadius:10,
+            });
+        layer.add(spreadsheet);
+		//spreadsheet.applyTableStyle('stripedRowsNoBorders');
+		spreadsheet.setRowStyle(0, {fontStyle:"bold", fontColor:"white", backgroundColor:"red"});
+
+        // 7) ScatterPlot
+        let scatterplot = new ScatterPlot({
+            x: 1200-300-10,
+            y: 100,
+			width:300,
+			height:300,
+			fill: 'rgba(255, 250, 250, 0.2)',
+			originOffsetX:1, //δινει σφάλμα για 0
+			originOffsetY:300,
+			majorScaleXWidth:  20,
+            majorScaleYWidth: 40,
+            majorScaleXUnit: 0.12,
+            majorScaleYUnit: 0.50,
+            xAxisLabel: "Μάζα (Κιλά)",
+            yAxisLabel: "Περίοδος (s)",
+			data: [],
+			fontFamily:"Arial",
+        });
+        layer.add(scatterplot);
+
+		//Χρονομετρο
+		const myStopwatch = new Stopwatch({
+			x: 20,
+			y: 300,
+			imageSrc: "./lib01/widgets/icons/stop.png",
+			draggable:true,
+			//width: 150,
+			rectCornerRadius:5,
+			rectFill:"yellow",
+			rectStroke:"gray",
+			buttonFill:"red",
+			buttonMouseoverFill:"pink",
+			buttonCornerRadius:3,
+			buttonStroke:"lightgray",
+			padding:10,
+			//height: 80,
+			fontSize: 30,
+			fill: "lightgray",
+			stroke: "gray",
+			fontColor: "blue"
+		});
+		layer.add(myStopwatch);
+
+		//Βοήθεια
+		const helpPopup = new HelpPopup({
+			x: 430,
+			y: 135,
+			draggable:true,
+			width: 500,
+			height: 500,
+			fontSize:10,
+			cornerRadius:2,
+			titleFill: 'lightgreen',
+			buttonFill: "red",
+			buttonMouseoverFill: 'pink',
+			title:"Οδηγίες Εργαστηρίου",
+			text: `Οδηγίες Εργαστηρίου: Μελέτη της Περιόδου του Απλού Αρμονικού Ταλαντωτή
+
+Σκοπός του εργαστηρίου είναι να μελετήσουμε την επίδραση της μάζας στην περίοδο ταλάντωσης ενός απλού αρμονικού ταλαντωτή.
+
+Βήμα 1: Ρύθμιση Μάζας Σώματος: Χρησιμοποιήστε το ρυθμιστικό "Μάζα Σώματος" για να ρυθμίσετε την μάζα του σώματος του εκκρεμούς στα 1.3 κιλά.
+
+Βήμα 2: Έναρξη Προσομοίωσης: Πατήστε το κουμπί "Έναρξη Προσομοίωσης" για να θέσετε το εκκρεμές σε κίνηση.
+
+Βήμα 3: Μέτρηση Χρόνου: Χρησιμοποιήστε ένα χρονόμετρο για να μετρήσετε το χρόνο που χρειάζονται 10 πλήρεις ταλαντώσεις του εκκρεμούς.
+Προσπαθήστε να είστε όσο το δυνατόν ακριβέστεροι στη μέτρηση του χρόνου.
+
+Βήμα 4: Καταγραφή Μέτρησης: Πατήστε το κουμπί "Καταγραφή μέτρησης" για να καταγράψετε τη μέτρηση στον πίνακα δεδομένων.
+
+Βήμα 5: Επανάληψη Διαδικασίας: Ρυθμίστε την μάζα του του εκκρεμούς στην επόμενη τιμή (0.4 κιλά). Επαναλάβετε τα βήματα 2 έως 4 για κάθε νέα μάζα, αυξάνωντας την 
+τιμή κατά 0.1 κιλά κάθε φορά, μέχρι να φτάσετε στα 1.5 κιλά.
+
+Συμβουλές:
+    
+	Α) Προσπαθήστε να είστε όσο το δυνατόν ακριβέστεροι στις μετρήσεις σας.
+	
+	Β) Παρατηρήστε πώς η περίοδος ταλάντωσης μεταβάλλεται με την αλλαγή της μάζας.
+
+Σημείωση:
+    Μπορείτε να χρησιμοποιήσετε τα κουμπιά "Παύση Προσομοίωσης" και "Επανεκίνηση" για να ελέγξετε την προσομοίωση.`,
+		});
+		layer.add(helpPopup);
+		
+
+        layer.draw();
+
+    </script>
+
+
+    <h1>Μελέτη της Περιόδου του Εκκρεμούς σε σχέση με την μάζα.</h1>
+		
+		<p>Με αυτό το εικονικό εργαστήριο μπορείτε να πειραματιστείτε 
+			με το εκκρεμές και να βρείτε την σχέση που υπάρχει μεταξύ 
+			της <span class="emphasize">μάζας</span> του σώματος 
+			και της <span class="emphasize">περιόδου</span> του εκκρεμούς.</p>
+		
+		<p><button onclick="expand('p1')"> + </button><span class="h2"> Εξοικείωση με τα χειριστήρια</span></p>
+		<div class="experiment" id="p1">
+			<h3>Υλικά και Χειριστήρια</h3>
+		
+			<p>Στο εικονικό εργαστήριο "Μελέτη της Περιόδου του Απλού Αρμονικού Ταλαντωτή" έχετε στη διάθεσή σας τα εξής υλικά και χειριστήρια:</p>
+		
+			<ul>
+				<li>
+					<span class="emphasize">Εκκρεμές:</span> Αποτελείται από μια σφαίρα (μάζα) που κρέμεται από ένα αβαρές και μη εκτατό σχοινί. Μπορείτε να παρατηρήσετε την ταλάντωσή του και να μελετήσετε την περίοδό του.
+				</li>
+				<li>
+					<span class="emphasize">Ρυθμιστικό "Μάζα Σώματος":</span> Σας επιτρέπει να ρυθμίσετε την μάζα του εκκρεμούς σε κιλά. 
+                    Η μάζα μπορεί να ρυθμιστεί από 0.3 έως 1.5 κιλά.
+				</li>
+				<li>
+					<span class="emphasize">Κουμπί "Έναρξη Προσομοίωσης":</span> Ξεκινά την προσομοίωση της ταλάντωσης του εκκρεμούς με την τρέχουσα ρυθμισμένη γωνία.
+				</li>
+				<li>
+					<span class="emphasize">Κουμπί "Παύση Προσομοίωσης":</span> Σταματά την προσομοίωση και επαναφέρει το εκκρεμές στην θέση ισορροπίας.
+				</li>
+				<li>
+					<span class="emphasize">Κουμπί "Κάδος ανακύκλωσης":</span> Μηδενίζει τα δεδομένα του πίνακα και της γραφικής παράστασης.
+				</li>
+				<li>
+					<span class="emphasize">Κουμπί "Οδηγίες Εργαστηρίου":</span> Εμφανίζει ένα αναδυόμενο παράθυρο με λεπτομερείς οδηγίες για τη διεξαγωγή του 
+                    εργαστηρίου.
+				</li>
+				<li>
+					<span class="emphasize">Χρονόμετρο:</span> Σας επιτρέπει να μετρήσετε το χρόνο που απαιτείται για 10 πλήρεις ταλαντώσεις του εκκρεμούς.
+				</li>
+				<li>
+					<span class="emphasize">Κουμπί "Καταγραφή Μέτρησης":</span> Καταγράφει την τρέχουσα τιμή της γωνίας και του χρόνου 10 ταλαντώσεων στον πίνακα 
+                    δεδομένων.
+				</li>
+				<li>
+					<span class="emphasize">Πίνακας Δεδομένων:</span> Εμφανίζει τις μετρήσεις σας, συμπεριλαμβανομένης της μάζας, του χρόνου 10 ταλαντώσεων και της
+                     υπολογισμένης περιόδου.
+				</li>
+				<li>
+					<span class="emphasize">Γράφημα Διασποράς:</span> Απεικονίζει γραφικά τη σχέση μεταξύ της μάζας και της περιόδου ταλάντωσης.
+				</li>
+			</ul>
+		
+			<p>Χρησιμοποιήστε αυτά τα εργαλεία για να μελετήσετε πώς η μάζα επηρεάζει την περίοδο ταλάντωσης του απλού αρμονικού ταλαντωτή.</p>
+		</div>
+
+		<p><button onclick="expand('p2')"> + </button><span class="h2"> Μαθηματικό και Φυσικό Υπόβαθρο</span></p>
+		<div class="experiment" id="p2">
+			<h3>Μαθηματικό και Φυσικό Υπόβαθρο</h3>
+		
+			<p>Το απλό εκκρεμές αποτελεί ένα κλασικό παράδειγμα περιοδικής κίνησης και ταλάντωσης στη φυσική. Για να κατανοήσουμε τη συμπεριφορά του, είναι απαραίτητο να εξοικειωθούμε με ορισμένες βασικές έννοιες.</p>
+		
+			<h4>Περιοδική Κίνηση και Ταλάντωση</h4>
+		
+			<p>Μια <span class="emphasize">περιοδική κίνηση</span> είναι μια κίνηση που επαναλαμβάνεται σε τακτά χρονικά διαστήματα. Η <span class="emphasize">ταλάντωση</span> είναι ένα ειδικό είδος περιοδικής κίνησης, όπου ένα σώμα κινείται πέρα δώθε γύρω από μια θέση ισορροπίας.</p>
+		
+			<h4>Γωνία, Περίοδος και Συχνότητα</h4>
+		
+			<p>Η <span class="emphasize">γωνία</span> (θ) μετρά την απόκλιση του εκκρεμούς από την κατακόρυφη θέση ισορροπίας. Η <span class="emphasize">περίοδος</span> (T) είναι ο χρόνος που απαιτείται για μια πλήρη ταλάντωση, ενώ η <span class="emphasize">συχνότητα</span> (f) είναι ο αριθμός των ταλαντώσεων ανά μονάδα χρόνου. Οι δύο αυτές ποσότητες συνδέονται με τη σχέση:</p>
+		
+			<p>`T = 1/f`</p>
+		
+			<h4>Παράγοντες που Επηρεάζουν την Περίοδο</h4>
+		
+			<p>Η περίοδος ενός απλού εκκρεμούς εξαρτάται από:</p>
+		
+			<ul>
+				<li>Το <span class="emphasize">μήκος του σχοινιού</span> (L): Όσο μεγαλύτερο είναι το μήκος, τόσο μεγαλύτερη είναι η περίοδος.</li>
+				<li>Την <span class="emphasize">επιτάχυνση της βαρύτητας</span> (g): Όσο μεγαλύτερη είναι η βαρύτητα, τόσο μικρότερη είναι η περίοδος.</li>
+			</ul>
+		
+			<p>Η περίοδος δεν εξαρτάται από τη μάζα του εκκρεμούς ή από την αρχική γωνία (για μικρές γωνίες).</p>
+		
+			<h4>Τύπος Περιόδου Απλού Εκκρεμούς</h4>
+		
+			<p>Για μικρές γωνίες ταλάντωσης, η περίοδος ενός απλού εκκρεμούς δίνεται από τον τύπο:</p>
+		
+			<p>`T = 2π sqrt{L/g}`</p>
+		
+			<p>όπου:</p>
+		
+			<ul>
+				<li>T είναι η περίοδος,</li>
+				<li>L είναι το μήκος του σχοινιού,</li>
+				<li>g είναι η επιτάχυνση της βαρύτητας.</li>
+			</ul>
+		
+			<h4>Συμπέρασμα</h4>
+		
+			<p>Με αυτό το εικονικό εργαστήριο, μπορείτε να εξερευνήσετε πώς η μάζα επηρεάζει την περίοδο ταλάντωσης ενός απλού εκκρεμούς και να επιβεβαιώσετε
+                 τους παραπάνω τύπους.</p>
+		</div>
+
+		<p><button onclick="expand('p3')"> + </button><span class="h2"> Οδηγίες Διεξαγωγής Πειράματος</span></p>
+		<div class="experiment" id="p3">
+			<h3>Οδηγίες Διεξαγωγής Πειράματος</h3>
+		
+			<p>Σκοπός του πειράματος είναι να μελετήσουμε την επίδραση της μάζας στην περίοδο ταλάντωσης ενός απλού αρμονικού ταλαντωτή.</p>
+		
+			<ol>
+				<li>
+					<h4>Ρύθμιση Μάζας</h4>
+					<p>Χρησιμοποιήστε το ρυθμιστικό "Μάζα Σώματος" για να ρυθμίσετε την μάζα του εκκρεμούς στις 0.3 κιλά.</p>
+				</li>
+				<li>
+					<h4>Έναρξη Προσομοίωσης</h4>
+					<p>Πατήστε το κουμπί "Έναρξη Προσομοίωσης" για να θέσετε το εκκρεμές σε κίνηση.</p>
+				</li>
+				<li>
+					<h4>Μέτρηση Χρόνου</h4>
+					<p>Χρησιμοποιήστε το χρονόμετρο για να μετρήσετε το χρόνο που χρειάζονται 10 πλήρεις ταλαντώσεις του εκκρεμούς. 
+						Προσπαθήστε να είστε όσο το δυνατόν ακριβέστεροι στη μέτρηση του χρόνου.</p>
+				</li>
+				<li>
+					<h4>Καταγραφή Μέτρησης</h4>
+					<p>Πατήστε το κουμπί "Καταγραφή μέτρησης" για να καταγράψετε τη μέτρηση στον πίνακα δεδομένων. Θα καταγραφούν αυτόματα η μάζα, 
+						ο χρόνος των 10 ταλαντώσεων, και η περίοδος.</p>
+				</li>
+				<li>
+					<h4>Επανάληψη Διαδικασίας</h4>
+					<p>Ρυθμίστε την μάζα του εκκρεμούς στην επόμενη τιμή (0.4 κιλά). Επαναλάβετε τα βήματα 2 έως 4 για κάθε νέα μάζα,
+						 αυξάνοντας την τιμή κατά 0.1 κιλά κάθε φορά, μέχρι να φτάσετε στα 1.5 κιλά.</p>
+				</li>
+			</ol>
+		
+			<h4>Συμβουλές</h4>
+		
+			<ul>
+				<li>Προσπαθήστε να είστε όσο το δυνατόν ακριβέστεροι στις μετρήσεις σας.</li>
+				<li>Παρατηρήστε πώς η περίοδος ταλάντωσης μεταβάλλεται με την αλλαγή της μάζας.</li>
+			</ul>
+		
+			<h4>Σημείωση</h4>
+		
+			<p>Μπορείτε να χρησιμοποιήσετε τα κουμπιά "Παύση Προσομοίωσης" και "Κάδος Ανακύκλωσης" για να ελέγξετε την προσομοίωση.</p>
+		</div>
+		
+		
+		<script>
+			function expand( id ){
+				const par = document.getElementById(id);
+				if(par.style.display=="block"){
+					par.style.display="none";
+				}else{
+					par.style.display="block";
+				}
+			}
+		</script>
+  </body>
+</html>

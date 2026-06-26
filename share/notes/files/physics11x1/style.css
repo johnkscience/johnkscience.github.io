@@ -1,0 +1,62 @@
+body {
+  font-family: 'Times';
+  padding: 10px;
+  background-color:#77ff6a;
+  background-image: url(background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width:1200px;
+  margin:auto;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+.emphasize{
+	color: Fuchsia;
+}
+
+h1 {
+}
+
+h2 {
+	font-size: 22px;
+	color:blue;
+	font-weight: bold;
+}
+
+ol{
+	list-style-type: lower-greek;
+}
+ol li{
+	margin-left: 5px;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+.greek-list {
+  counter-reset: greek;
+}
+
+.greek-list li {
+  list-style: none;
+  position: relative;
+  padding-left: 25px;
+}
+
+.greek-list li:before {
+  content: attr(data-greek) ".";
+  position: absolute;
+  left: 0;
+}
+
+.experiment{
+	display:none;
+	max-width:800px;
+}

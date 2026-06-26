@@ -1,0 +1,124 @@
+body {
+	padding:0px 1% 0px 2%;
+	margin:0px auto 0px auto;
+	background-color:white;
+	font-family:Times New Roman;
+	color:#28475D;
+	max-width:760px;
+	}
+
+h1 {
+	text-align:center;
+}
+
+h2 {
+	color:DodgerBlue;
+	margin:40px 0px 0px 0px;
+	text-align:center;
+}
+
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+li{
+	display:inline;
+	padding:0 10px 0 0;
+}
+
+li a {
+	text-decoration:none;
+}
+
+
+.pContent {
+}
+
+	
+.summary {
+	font-style:italic;
+	letter-spacing:0.2em;
+	margin: 40px 0px 0px 0px;
+}
+
+.author {
+	font-weight:bold;
+	font-style:oblique;
+	text-indent:20px;
+	text-align:center;
+}
+
+.date {
+	font-weight:bold;
+	font-style:italic;
+	text-indent:20px;
+	text-align:center;
+}
+
+.exerciseGallery{
+}
+
+.exerciseTitle{
+	color:hotpink;
+}
+
+.exerciseImg{
+	margin-top:20px;
+	width:100%;
+	max-width:21cm;
+}
+
+.menu div {
+	background-color:lightgreen;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+.menu div:hover {
+	opacity:0.9;
+}
+
+.menu {
+	margin:0;
+	padding:0;
+}
+
+.menu2 div {
+	background-color:pink;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+}
+
+.menu2 div:hover {
+	opacity:0.9;
+}
+
+
+.menu2 {
+	margin:0;
+	padding:0;
+}
+
+.formChapter{
+	background-color:yellow;
+	margin:10px;
+	padding:5px;
+	border-radius:5px;
+}
+
+.footer{
+	font-size:10px;
+}
+
+.output{
+	border-top: solid 3px gray;
+	border-bottom: solid 3px gray;
+	margin-bottom:30px;
+}
+	

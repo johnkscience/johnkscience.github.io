@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Κουμουνδούρος Ιωάννης" />
+  <meta name="keywords" content="Σημειώσεις Μαθηματικών, Α Λυκείου,
+Διάταξη, Ιδιότητες, Ασκήσεις" />
+  <title>Α Λυκείου ΔΙΑΤΑΞΗ ΠΡΑΓΜΑΤΙΚΩΝ ΑΡΙΘΜΩΝ</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Α Λυκείου ΔΙΑΤΑΞΗ ΠΡΑΓΜΑΤΙΚΩΝ ΑΡΙΘΜΩΝ</h1>
+<p class="author">Κουμουνδούρος Ιωάννης</p>
+<p class="date">10 Νοεμβρίου 2025</p>
+<div class="abstract">
+<div class="abstract-title">Περίληψη</div>
+<p>Σημειώσεις Μαθηματικών Α Λυκείου, λύσεις των ασκήσεων του σχολικού
+βιβλίου και αναλυτική θεωρία. Στην ενότητα αυτή αναλύονται η διάταξη και
+οι ιδιότητες της.</p>
+</div>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#διαταξη-πραγματικων-αριθμων"
+id="toc-διαταξη-πραγματικων-αριθμων">ΔΙΑΤΑΞΗ ΠΡΑΓΜΑΤΙΚΩΝ ΑΡΙΘΜΩΝ</a>
+<ul>
+<li><a href="#βασικα" id="toc-βασικα">ΒΑΣΙΚΑ</a></li>
+<li><a href="#ιδιοτητεσ-των-ανισοτητων"
+id="toc-ιδιοτητεσ-των-ανισοτητων">ΙΔΙΟΤΗΤΕΣ ΤΩΝ ΑΝΙΣΟΤΗΤΩΝ</a></li>
+<li><a href="#ασκησεισ" id="toc-ασκησεισ">ΑΣΚΗΣΕΙΣ</a>
+<ul>
+<li><a href="#παράδειγμα-1-εφαρμογή-1-σελ.-58"
+id="toc-παράδειγμα-1-εφαρμογή-1-σελ.-58">Παράδειγμα 1 (Εφαρμογή 1 σελ.
+58)</a></li>
+<li><a href="#ασκηση-1-άσκηση-α1-σελ.-59"
+id="toc-ασκηση-1-άσκηση-α1-σελ.-59">ΑΣΚΗΣΗ 1 (Άσκηση Α1 σελ.
+59)</a></li>
+<li><a href="#ασκηση-2-άσκηση-α2-σελ.-59"
+id="toc-ασκηση-2-άσκηση-α2-σελ.-59">ΑΣΚΗΣΗ 2 (Άσκηση Α2 σελ.
+59)</a></li>
+<li><a href="#ασκηση-3-άσκηση-α3-σελ.-59"
+id="toc-ασκηση-3-άσκηση-α3-σελ.-59">ΑΣΚΗΣΗ 3 (Άσκηση Α3 σελ.
+59)</a></li>
+<li><a href="#παράδειγμα-2-εφαρμογή-2-σελ.-59"
+id="toc-παράδειγμα-2-εφαρμογή-2-σελ.-59">Παράδειγμα 2 (Εφαρμογή 2 σελ.
+59)</a></li>
+<li><a href="#ασκηση-4-άσκηση-α4-σελ.-60"
+id="toc-ασκηση-4-άσκηση-α4-σελ.-60">ΑΣΚΗΣΗ 4 (Άσκηση Α4 σελ.
+60)</a></li>
+<li><a href="#ασκηση-5-άσκηση-α5-σελ.-60"
+id="toc-ασκηση-5-άσκηση-α5-σελ.-60">ΑΣΚΗΣΗ 5 (Άσκηση Α5 σελ.
+60)</a></li>
+<li><a href="#ασκηση-6-άσκηση-α6-σελ.-60"
+id="toc-ασκηση-6-άσκηση-α6-σελ.-60">ΑΣΚΗΣΗ 6 (Άσκηση Α6 σελ.
+60)</a></li>
+<li><a href="#ασκηση-7-άσκηση-α7-σελ.-60"
+id="toc-ασκηση-7-άσκηση-α7-σελ.-60">ΑΣΚΗΣΗ 7 (Άσκηση Α7 σελ.
+60)</a></li>
+<li><a href="#ασκηση-8-άσκηση-b1-σελ.-60"
+id="toc-ασκηση-8-άσκηση-b1-σελ.-60">ΑΣΚΗΣΗ 8 (Άσκηση B1 σελ.
+60)</a></li>
+<li><a href="#ασκηση-9-άσκηση-b2-σελ.-60"
+id="toc-ασκηση-9-άσκηση-b2-σελ.-60">ΑΣΚΗΣΗ 9 (Άσκηση B2 σελ.
+60)</a></li>
+<li><a href="#ασκηση-10-άσκηση-b3-σελ.-60"
+id="toc-ασκηση-10-άσκηση-b3-σελ.-60">ΑΣΚΗΣΗ 10 (Άσκηση B3 σελ.
+60)</a></li>
+<li><a href="#ασκηση-11-άσκηση-b4-σελ.-60"
+id="toc-ασκηση-11-άσκηση-b4-σελ.-60">ΑΣΚΗΣΗ 11 (Άσκηση B4 σελ.
+60)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h2 id="διαταξη-πραγματικων-αριθμων">ΔΙΑΤΑΞΗ ΠΡΑΓΜΑΤΙΚΩΝ ΑΡΙΘΜΩΝ</h2>
+<h3 id="βασικα">ΒΑΣΙΚΑ</h3>
+<p>Για να καταλάβουμε ποιος από τους αριθμούς α ή β είναι μεγαλύτερος
+αρκεί να τους αφαιρέσουμε:</p>
+<p><span class="math display">\[\alpha - \beta\]</span></p>
+<p>και αν το αποτέλεσμα είναι μεγαλύτερο από το μηδέν τότε ο α είναι
+μεγαλύτερος από τον β. Γράφουμε:</p>
+<p><span class="math display">\[{\alpha &gt; \beta}\Leftrightarrow{{a -
+\beta} &gt; 0}\]</span></p>
+<p>ενώ, αν το αποτέλεσμα είναι μικρότερο του μηδενός τότε ο α είναι
+μικρότερος από τον β. Γράφουμε:</p>
+<p><span class="math display">\[{\alpha &lt; \beta}\Leftrightarrow{{a -
+\beta} &lt; 0}\]</span></p>
+<p>Ισχύουν και τα αντίστροφα.</p>
+<p>Όπως γνωρίζετε οι πραγματικοί αριθμοί μπορούν να τοποθετηθούν πάνω σε
+μία ευθεία. Τοποθετούμε του μεγαλύτερους δεξιότερα από τους μικρότερους.
+Δηλαδή αν <span class="math inline">\(\alpha &gt; \beta\)</span> τότε ο
+α είναι δεξιότερα από τον β. Γιαυτό τον λόγο έχουμε και ο άξονας
+αναπαριστάτε με ένα βέλος που έχει κατεύθυνση προς τα δεξιά.</p>
+<p>Με ανάλογο τρόπο μπορούμε να πούμε ότι δύο αριθμοί είναι ίσοι
+όταν:</p>
+<p><span class="math display">\[{\alpha = \beta}\Leftrightarrow{{a -
+\beta} = 0}\]</span></p>
+<p>Αν για τους αριθμούς α και β ισχύει ότι</p>
+<p><span class="math display">\[\alpha &gt; \beta\]</span> ή <span
+class="math display">\[\alpha = \beta\]</span></p>
+<p>τότε γράφουμε <span class="math inline">\(\alpha\geq\beta\)</span>
+και διαβάζουμε: «α μεγαλύτερος ή ίσος του β».</p>
+<p>Όταν δύο ή περισσότεροι αριθμοί είναι θετικοί τότε και το άθροισμά
+τους θα είναι θετικός. Σκεφτείτε το αριθμητικό παράδειγμα: <span
+class="math inline">\({2 + 4} = 6\)</span>. Γράφουμε:</p>
+<p><span class="math display">\[\{{\alpha &gt; 0}\mathit\quad
+{\kappa\alpha\iota}\quad {\beta &gt; 0}\}\Rightarrow{{\alpha + \beta}
+&gt; 0}\]</span></p>
+<p>Προσέξτε ότι έχουμε το μονό βέλος (συνεπάγεται) διότι το αντίστροφο
+δεν ισχύει πάντα, π.χ.</p>
+<p><span class="math inline">\({{- 2} + 4} &gt; 0\)</span> ενώ <span
+class="math inline">\({- 2} &lt; 0\)</span> και <span
+class="math inline">\(4 &gt; 0\)</span></p>
+<p>Όμοια αν δύο αριθμοί είναι και οι δύο αρνητικοί τότε υποχρεωτικά και
+το άθροισμά τους θα είναι αρνητικός αριθμός. Σκεφτείτε:</p>
+<p><span class="math display">\[{{- 2} - 4} = {- 6}\]</span>.</p>
+<p>Εδώ γράφουμε:</p>
+<p><span class="math display">\[\{{\alpha &lt; 0}\mathit\quad
+{\kappa\alpha\iota}\quad{\beta &lt; 0}\}\Rightarrow{{\alpha + \beta}
+&lt; 0}\]</span></p>
+<p>Πάλι δεν ισχύει το αντίστροφο.</p>
+<p>Αν ο ένα αριθμός είναι θετικός και ο άλλος αρνητικός τότε το
+αποτέλεσμα μπορεί να είναι θετικό ή αρνητικό ανάλογα ποιος αριθμός θα
+έχει την μεγαλύτερη απόλυτη τιμή. Σκεφτείτε:</p>
+<p><span class="math inline">\({{- 4} + 4} = {+ 2}\)</span> ενώ <span
+class="math inline">\({{+ 2} - 4} = {- 2}\)</span></p>
+<p>Όπως γνωρίζετε από τον πολλαπλασιασμό αν δύο αριθμοί είναι και οι δύο
+θετικοί ή αρνητικοί (δηλαδή είναι ομόσημοι) τότε το γινόμενό τους είναι
+μεγαλύτερο του μηδενός, δηλαδή:</p>
+<p><span class="math display">\[\alpha,\beta \quad \mathit{ο\mu
+ό\sigma\eta\mu ο\iota}\Leftrightarrow{{\alpha \cdot \beta} &gt;
+0}\Leftrightarrow{\frac{a}{\beta} &gt; 0}\]</span></p>
+<p>αν οι δύο αριθμοί είναι ο ένας θετικός και ο άλλος αρνητικός (δηλαδή
+ετερόσημοι) τότε το γινόμενό τους είναι μικρότερο του μηδενός,
+δηλαδή:</p>
+<p><span class="math display">\[\alpha,\beta \quad
+\mathit{\varepsilon\tau\varepsilon\rho ό\sigma\eta\mu
+ο\iota}\Leftrightarrow{{\alpha \cdot \beta} &lt;
+0}\Leftrightarrow{\frac{a}{\beta} &lt; 0}\]</span></p>
+<p>Κάτι που είναι πολύ σημαντικό και θα το χρησιμοποιήσουμε στις
+ασκήσεις είναι ότι το τετράγωνο ενός αριθμού ( που δεν είναι όμως το
+μηδέν) είναι πάντα θετικό. Αν ο αριθμός είναι το μηδέν τότε το τετράγωνό
+του είναι ίσο μηδέν. Δηλαδή:</p>
+<p><span class="math display">\[{\alpha^{2} \geq 0},  \quad {\alpha \in
+{\mathbb{R}}}\]</span></p>
+<p>Δηλαδή το παραπάνω ισχύει για κάθε (<span
+class="math inline">\(\forall\)</span>) αριθμό <span
+class="math inline">\(α\)</span></p>
+<p>Παρακάτω δίνουμε μερικά αριθμητικά παραδείγματα:</p>
+<ul>
+<li><span class="math inline">\(0^{2} = 0\)</span>,</li>
+<li><span class="math inline">\({({- 1})}^{2} = 1 &gt; 0\)</span>,</li>
+<li><span class="math inline">\(3^{2} = 9 &gt; 0\)</span></li>
+</ul>
+<p>Ας μελετήσουμε τώρα την ποσότητα:</p>
+<p><span class="math display">\[\alpha^{2} + \beta^{2} \quad  με \quad
+\alpha,{\beta \in {\mathbb{R}}}\]</span></p>
+<p>αρχίζουμε π.χ. με μερικά αριθμητικά παραδείγματα:</p>
+<ul>
+<li><span class="math inline">\({{({- 1})}^{2} + 2^{2}} = 5 &gt;
+0\)</span></li>
+<li><span class="math inline">\({{({- 2})}^{2} + 2^{2}} = 8 &gt;
+0\)</span></li>
+<li><span class="math inline">\({3^{2} + 2^{2}} = 13 &gt;
+0\)</span></li>
+<li><span class="math inline">\({0^{2} + 0^{2}} = 0\)</span></li>
+<li><span class="math inline">\({0^{2} + {({- 1})}^{2}} = 1 &gt;
+0\)</span></li>
+<li><span class="math inline">\({3^{2} + 0^{2}} = 9 &gt; 0\)</span></li>
+</ul>
+<p>Παρατηρείστε λοιπόν ότι όποιον αριθμό βάλουμε στα α και β (που να μην
+είναι μηδέν και οι δύο ταυτόχρονα) το αποτέλεσμα προκύπτει πάντα
+θετικό.</p>
+<p>Υπάρχει μόνο μία περίπτωση όπου και οι δύο αριθμοί είναι ταυτόχρονα
+μηδέν και έτσι το παραπάνω άθροισμα είναι μηδέν. Δηλαδή συνολικά
+γράφουμε:</p>
+<p><span class="math display">\[{{\alpha^{2} + \beta^{2}} =
+0}\Leftrightarrow \{{a = 0} \quad \mathit{\kappa\alpha\iota}\quad {\beta
+= 0}\}\]</span></p>
+<p>και</p>
+<p><span class="math display">\[{{\alpha^{2} + \beta^{2}} &gt;
+0}\Leftrightarrow \{{a \neq 0}\mathit\quad{\kappa\alpha\iota}\quad{\beta
+\neq 0}\}\]</span></p>
+<h3 id="ιδιοτητεσ-των-ανισοτητων">ΙΔΙΟΤΗΤΕΣ ΤΩΝ ΑΝΙΣΟΤΗΤΩΝ</h3>
+<p>Θα συνεχίσουμε τώρα με τις <strong>ιδιότητες των
+ανισοτήτων</strong>.</p>
+<p><strong>(1)</strong> Αρχικά αν έχουμε τρεις αριθμούς και ο πρώτος
+είναι μεγαλύτερος από τον δεύτερο, ενώ ο δεύτερος μεγαλύτερος από τον
+τρίτο τότε θα είναι και ο πρώτος μεγαλύτερος από τον τρίτο. Ορίστε ένα
+αριθμητικό παράδειγμα:</p>
+<p>αν <span class="math inline">\(10 &gt; 4\)</span> και <span
+class="math inline">\(4 &gt; 2\)</span> επομένως <span
+class="math inline">\(10 &gt; 2\)</span></p>
+<p>με την χρήση συμβόλων αυτό γράφεται ως εξής:</p>
+<p><span class="math display">\[\{{\alpha &gt; \beta}\mathit \quad
+{\kappa\alpha\iota} \quad {\beta &gt; \gamma}\}\Rightarrow{\alpha &gt;
+\gamma}\]</span></p>
+<p><strong>(2)</strong> Αν έχουμε μία ανισότητα α&gt;β τότε μπορούμε
+<strong>να προσθέσουμε και στα δύο μέλη έναν οποιοδήποτε
+αριθμό</strong>. Η ανισότητα που θα προκύψει με αυτόν τον τρόπο
+εξακολουθεί να είναι αληθής. Ορίστε ένα αριθμητικό παράδειγμα:</p>
+<p>αν <span class="math inline">\(10 &gt; 5\)</span> τότε και <span
+class="math inline">\({10 + 2} &gt; {5 + 2}\)</span></p>
+<p>με την χρήση συμβόλων γράφουμε:</p>
+<p><span class="math display">\[{\alpha &gt; \beta
+\Leftrightarrow}{{\alpha + \gamma} &gt; {\beta + \gamma}}\]</span></p>
+<p><strong>(3)</strong> Αν έχουμε μία ανισότητα τότε μπορούμε να
+<strong>πολλαπλασιάσουμε και στα δύο μέλη έναν αριθμό</strong>, αρκεί να
+μην είναι το μηδέν. Αν ο αριθμός που πολλαπλασιάζουμε είναι θετικός τότε
+η φορά της ανισότητας (η διάταξη των αριθμών) παραμένει ίδια ενώ αν
+είναι αρνητικός η φορά αλλάζει.</p>
+<p>Ορίστε ένα αριθμητικό παράδειγμα:</p>
+<p>αν <span class="math inline">\(10 &gt; 5\)</span> τότε <span
+class="math inline">\({10 \cdot 2} &gt; {5 \cdot 2}\)</span> ή <span
+class="math inline">\(20 &gt; 10\)</span>, ενώ</p>
+<p>αν <span class="math inline">\(10 &gt; 5\)</span> τότε <span
+class="math inline">\({10 \cdot {({- 2})}} &lt; {5 \cdot {({-
+2})}}\)</span> ή <span class="math inline">\({- 20} &lt; {-
+10}\)</span></p>
+<p>παρατηρείστε όμως τι θα γίνει αν πολλαπλασιάσουμε με το μηδέν:</p>
+<p><span class="math inline">\(10 &lt; 5\)</span> τότε <span
+class="math inline">\({10 \cdot 0} = {5 \cdot 0}\)</span> ή <span
+class="math inline">\(0 = 0\)</span></p>
+<p>με την χρήση συμβόλων γράφουμε:</p>
+<p>Αν <span class="math inline">\(\gamma &gt; 0\)</span> τότε:</p>
+<p><span class="math display">\[{\alpha &gt;
+\beta}\Leftrightarrow{\mathit{\alpha\gamma} &gt;
+\mathit{\beta\gamma}}\]</span></p>
+<p>ενώ</p>
+<p>Αν <span class="math inline">\(\gamma &lt; 0\)</span> τότε:</p>
+<p><span class="math display">\[{\alpha &gt;
+\beta}\Leftrightarrow{\mathit{\alpha\gamma} &lt;
+\mathit{\beta\gamma}}\]</span></p>
+<p><strong>(4)</strong> Αν έχουμε δύο ανισότητες τότε μπορούμε να τις
+<strong>προσθέσουμε κατά μέλη</strong>. Τότε η ανισότητα που θα προκύψει
+είναι επίσης αληθής. Ορίστε ένα αριθμητικό παράδειγμα:</p>
+<p>Αν <span class="math inline">\(10 &gt; 5\)</span> και <span
+class="math inline">\(9 &gt; 8\)</span> τότε <span
+class="math inline">\({10 + 9} &gt; {5 + 8}\)</span> ή <span
+class="math inline">\(19 &gt; 13\)</span></p>
+<p>Το λάθος που γίνεται εδώ πολλές φορές είναι να έχουμε γράψει τις
+ανισότητες με λάθος κατεύθυνση. Ορίστε τι εννοούμε:</p>
+<p>Αν <span class="math inline">\(10 &gt; 5\)</span> και <span
+class="math inline">\(8 &lt; 9\)</span> τότε <span
+class="math inline">\({10 + 8}{(?)}{5 + 9}\)</span></p>
+<p>Γράφουμε με την χρήση συμβόλων:</p>
+<p><span class="math display">\[\{{\alpha &gt; \beta}\quad
+\mathit{\kappa\alpha\iota}\quad {\gamma &gt;
+\delta}\}\Rightarrow{{\alpha + \gamma} &gt; {\beta +
+\delta}}\]</span></p>
+<p><strong>(5)</strong> Αν έχουμε δύο ανισότητες τότε μπορούμε αυτές να
+τις <strong>πολλαπλασιάσουμε κατά μέλη</strong>. Σε αυτή την περίπτωση
+θα πρέπει να προσέξουμε αρκετά πράγματα.</p>
+<ul>
+<li>(α) οι ανισότητες να έχουν ίδια κατεύθυνση</li>
+<li>(β) όλοι οι αριθμοί να είναι θετικοί.</li>
+</ul>
+<p>Για α,β,γ,δ θετικούς γράφουμε με την χρήση συμβόλων:</p>
+<p><span class="math display">\[\{{\alpha &gt; \beta}\quad
+\mathit{\kappa\alpha\iota}\quad{\gamma &gt;
+\delta}\}\Rightarrow\alpha\cdot{\gamma &gt; {\beta \cdot
+\delta}}\]</span></p>
+<p><strong>(6)</strong> Για θετικούς αριθμούς α και β και για θετικό
+ακέραιο ν ισχύει η ισοδυναμία:</p>
+<p><span class="math display">\[{\alpha &gt;
+\beta}\Leftrightarrow{\alpha^{\nu} &gt; \beta^{\nu}}\]</span></p>
+<p><strong>(7)</strong> Για θετικούς αριθμούς α και β και για θετικό
+ακέραιο ν ισχύει η ισοδυναμία:</p>
+<p><span class="math display">\[{\alpha =
+\beta}\Leftrightarrow{\alpha^{\nu} = \beta^{\nu}}\]</span></p>
+<h3 id="ασκησεισ">ΑΣΚΗΣΕΙΣ</h3>
+<p>Θα κάνουμε τώρα μερικά παραδείγματα από το σχολικό βιβλίο.</p>
+<h4 id="παράδειγμα-1-εφαρμογή-1-σελ.-58">Παράδειγμα 1 (Εφαρμογή 1 σελ.
+58)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li>Αν α,β ομόσημοι αριθμοί τότε</li>
+</ol>
+<p><span class="math display">\[{\alpha &lt;
+\beta}\Leftrightarrow{\frac{1}{a} &gt; \frac{1}{\beta}}\]</span></p>
+<ol start="2" type="i">
+<li>Για όλους τους πραγματικούς αριθμούς α,β ισχύει</li>
+</ol>
+<p><span class="math display">\[{{\alpha^{2} + \beta^{2}} \geq
+2}\mathit{\alpha\beta}\]</span></p>
+<ol start="3" type="i">
+<li>Αν <span class="math inline">\(\alpha &gt; 0\)</span>, τότε</li>
+</ol>
+<p><span class="math display">\[{\alpha + \frac{1}{\alpha}} \geq
+2\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Για να λύσουμε την <strong>πρώτη περίπτωση</strong> πρέπει αρχικά να
+καταλάβουμε ότι οι αριθμοί α και β είναι ομόσημοι, οπότε έχουμε:</p>
+<p><span class="math display">\[\mathit{\alpha\beta} &gt; 0\]</span> ή
+<span class="math display">\[\frac{1}{\mathit{\alpha\beta}} &gt;
+0\]</span></p>
+<p>Θα κάνουμε μία ευθεία απόδειξη ξεκινώντας από το πρώτο μέλος της
+ισοδυναμίας με σκοπό να φτάσουμε στο δεύτερο. Εδώ αφού υπάρχει η
+ισοδυναμία πρέπει να εξεταστεί και η αντίθετη πορεία. Επομένως:</p>
+<p><span class="math display">\[\alpha &lt; \beta\]</span></p>
+<p>σύμφωνα με την ιδιότητα πολλαπλασιάζουμε και στα δύο μέλη την θετική
+ποσότητα <span
+class="math inline">\(\frac{1}{\mathit{\alpha\beta}}\)</span></p>
+<p><span class="math display">\[{\alpha \cdot
+\frac{1}{\mathit{\alpha\beta}}} &lt; {\beta \cdot
+\frac{1}{\mathit{\alpha\beta}}}\]</span></p>
+<p>κάνουμε τις απλοποιήσεις</p>
+<p><span class="math display">\[\frac{1}{\beta} &lt;
+\frac{1}{\alpha}\]</span></p>
+<p>προφανώς οι πράξεις μπορούν να γίνουν και αντίθετα, επομένως γράφουμε
+την ισοδυναμία:</p>
+<p>Αν <span class="math inline">\(α&gt;0\)</span> και <span
+class="math inline">\(β&gt;0\)</span> τότε</p>
+<p><span class="math display">\[{\alpha &lt;
+\beta}\Leftrightarrow{\frac{1}{a} &gt; \frac{1}{\beta}}\]</span></p>
+<p>Για την <strong>δεύτερη περίπτωση</strong> θα κάνουμε τον δεύτερο
+τρόπο της ευθείας απόδειξης.</p>
+<p>Θα ξεκινήσουμε με την σχέση που μας δίνει. Σε αυτό το σημείο δεν
+γνωρίζουμε αν είναι αληθής ή ψευδής. Θα συνεχίσουμε με ισοδυναμίες μέχρι
+να φτάσουμε σε μία αποδεδειγμένα αληθής σχέση. Λόγω των ισοδυναμιών θα
+είναι αληθείς και όλες οι προηγούμενες σχέσεις. Επομένως:</p>
+<p><span class="math display">\[{{\alpha^{2} + \beta^{2}} \geq
+2}\mathit{\alpha\beta} \Leftrightarrow\]</span></p>
+<p>προσθέτω και τις δύο πλευρές το $ {- 2} $. Προφανώς γίνεται και η
+αντίθετη πράξη.</p>
+<p><span class="math display">\[{\alpha^{2} + \beta^{2} -
+2}{\mathit{\alpha\beta} \geq 2}{\mathit{\alpha\beta} -
+2}\mathit{\alpha\beta}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{\alpha^{2} + \beta^{2} -
+2}{\mathit{\alpha\beta} \geq 0}\Leftrightarrow\]</span></p>
+<p>το πρώτο μέλος είναι το τετράγωνο της διαφοράς (ταυτότητα). Όλες οι
+παραπάνω πράξεις γίνονται και αντίθετα.</p>
+<p><span class="math display">\[{({\alpha - \beta})}^{2} \geq
+0\]</span></p>
+<p>Η τελευταία σχέση λόγω είναι αληθής. Επομένως λόγω των ισοδυναμιών
+είναι αληθής και η πρώτη.</p>
+<p>Για την <strong>τρίτη περίπτωση</strong> θα εργαστούμε αναλόγως με
+την (ii).</p>
+<p>Η πρόταση που μας δίνει αποτελείται από:</p>
+<ol type="1">
+<li><p>την υπόθεση: <span class="math inline">\(\alpha &gt; 0\)</span>
+που μπορούμε να το χρησιμοποιήσουμε σαν δεδομένο και</p></li>
+<li><p>από το συμπέρασμα όπου θέλουμε να καταλήξουμε: <span
+class="math display">\[{\alpha + \frac{1}{\alpha}} \geq
+2\]</span></p></li>
+</ol>
+<p>Ξεκινάμε από το συμπέρασμα χωρίς να γνωρίζουμε αν είναι αληθής ή
+ψευδής:</p>
+<p><span class="math display">\[{\alpha + \frac{1}{\alpha}} \geq
+2\Leftrightarrow\]</span></p>
+<p>πολλαπλασιάζουμε με <span class="math inline">\(\alpha &gt;
+0\)</span> σύμφωνα με την ιδιότητα . Προφανώς γίνεται και η αντίστροφη
+πράξη (δηλαδή να πολλαπλασιάσουμε με <span
+class="math inline">\(\frac{1}{a} &gt; 0\)</span>). Αρα:</p>
+<p><span class="math display">\[{({\alpha + \frac{1}{\alpha}})}{\alpha
+\geq 2}\alpha\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{{\alpha^{2} + 1} \geq
+2}\alpha\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{\alpha^{2} - 2}{{\alpha + 1} \geq
+0}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{({\alpha - 1})}^{2} \geq 0\]</span></p>
+<p>το οποίο ισχύει πάντα.</p>
+<p>προφανώς όλες οι παραπάνω πράξεις γίνονται και με την αντίστροφη
+πορεία, επομένως λόγω των ισοδυναμιών θα είναι αληθής και η πρώτη που
+θέλουμε να δείξουμε.</p>
+<h4 id="ασκηση-1-άσκηση-α1-σελ.-59">ΑΣΚΗΣΗ 1 (Άσκηση Α1 σελ. 59)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li><p><span class="math display">\[{{\alpha^{2} + 9} \geq
+6}\alpha\]</span></p></li>
+<li><p><span class="math display">\[2{{({\alpha^{2} + \beta^{2}})} \geq
+{({\alpha + \beta})}^{2}}\]</span></p></li>
+</ol>
+<p><strong>Λύση:</strong></p>
+<p>Για την <strong>πρώτη περίπτωση</strong> θα κάνουμε μία ευθεία
+απόδειξη σύμφωνα με την δεύτερη μέθοδο. Δηλαδή θα αρχίσουμε από την
+ανισότητα που μας δίνει χωρίς να γνωρίζουμε αν αρχικά είναι αληθής ή
+ψευδής και θα καταλήξουμε σε μία πρόταση που είναι αληθής, επομένως θα
+είναι αληθής και η αρχική αφού έχουμε χρησιμοποιήσει τις ισοδυναμίες.
+Δηλαδή:</p>
+<p><span class="math display">\[{{\alpha^{2} + 9} \geq
+6}\alpha\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{\alpha^{2} - 6}{{\alpha + 9} \geq
+0}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{({a - 3})}^{2} \geq 0\]</span></p>
+<p>Η τελευταία πρόταση ισχύει για όλους τους πραγματικούς αριθμούς.
+Επομένως λόγω των ισοδυναμιών θα είναι αληθής και η πρώτη.</p>
+<p>Για την <strong>δεύτερη περίπτωση</strong> θα εργαστούμε
+αναλόγως:</p>
+<p><span class="math display">\[2{{({\alpha^{2} + \beta^{2}})} \geq
+{({\alpha + \beta})}^{2}}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[2{\alpha^{2} + 2}{\beta^{2} \geq
+{\alpha^{2} + 2}}{\mathit{\alpha\beta} +
+\beta^{2}}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{\alpha^{2} - 2}{{\mathit{\alpha\beta} +
+\beta^{2}} \geq 0}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{({\alpha - \beta})}^{2} \geq
+0\]</span></p>
+<p>που ισχύει πάντα.</p>
+<h4 id="ασκηση-2-άσκηση-α2-σελ.-59">ΑΣΚΗΣΗ 2 (Άσκηση Α2 σελ. 59)</h4>
+<p>Να αποδείξετε ότι</p>
+<p><span class="math display">\[{\alpha^{2} + \beta^{2} -
+2}{{\mathit{\alpha\beta} + 1} \geq 0}\]</span></p>
+<p>Πότε ισχύει η ισότητα;</p>
+<p><strong>Λύση:</strong></p>
+<p>Θα εργαστούμε με την μέθοδο της ευθείας απόδειξης και μάλιστα με την
+δεύτερη περίπτωση. Θα αρχίσουμε λοιπόν με την πρόταση που ακόμα δεν
+γνωρίζουμε αν είναι αληθής ή ψευδής:</p>
+<p><span class="math display">\[{\alpha^{2} + \beta^{2} - 2}{{\alpha +
+1} \geq 0}\Leftrightarrow\]</span></p>
+<p>ομαδοποιούμε τους όρους κάνοντας χρήση της αντιμεταθετικής ιδιότητας
+της πρόσθεσης:</p>
+<p><span class="math display">\[{{({{\alpha^{2} - 2}{\alpha + 1}})} +
+\beta^{2}} \geq 0\Leftrightarrow\]</span></p>
+<p>η πρώτη παρένθεση είναι η ταυτότητα: τετράγωνο διαφοράς:</p>
+<p><span class="math display">\[{{({\alpha - 1})}^{2} + \beta^{2}} \geq
+0\]</span></p>
+<p>Η τελευταία όμως πρόταση είναι αληθής για όλους τους πραγματικούς
+αριθμούς. Έτσι αφού έχουμε χρησιμοποιήσει τις ισοδυναμίες για να
+φτάσουμε σε αυτή την σχέση θα είναι αληθείς και όλες οι προηγούμενες,
+δηλαδή και η πρώτη από αυτές.</p>
+<p>Η ισότητα:</p>
+<p><span class="math display">\[{{({\alpha - 1})}^{2} + \beta^{2}} =
+0\]</span></p>
+<p>ισχύει όταν:</p>
+<p><span class="math inline">\({\alpha - 1} = 0\)</span> και
+(ταυτόχρονα) <span class="math inline">\(\beta = 0\)</span></p>
+<p>δηλαδή</p>
+<p><span class="math inline">\(\alpha = 1\)</span> και <span
+class="math inline">\(\beta = 0\)</span></p>
+<h4 id="ασκηση-3-άσκηση-α3-σελ.-59">ΑΣΚΗΣΗ 3 (Άσκηση Α3 σελ. 59)</h4>
+<p>Να βρείτε τους πραγματικούς αριθμούς x και y στις παρακάτω
+περιπτώσεις:</p>
+<ol type="i">
+<li><p>Αν <span class="math display">\[{{({x - 2})}^{2} + {({y +
+1})}^{2}} = 0\]</span></p></li>
+<li><p>Αν <span class="math display">\[{x^{2} + y^{2} - 2}{x + 4}{{y +
+5} = 0}\]</span></p></li>
+</ol>
+<p><strong>Λύση:</strong></p>
+<p>Για την <strong>πρώτη περίπτωση</strong> έχουμε:</p>
+<p><span class="math display">\[{{({x - 2})}^{2} + {({y + 1})}^{2}} =
+0\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{x - 2} = 0 \quad και \quad {y + 1} =
+0\Leftrightarrow\]</span></p>
+<p><span class="math display">\[x = 2 \quad και \quad y = {-
+1}\]</span></p>
+<p>Για την <strong>δεύτερη περίπτωση</strong> θα εργαστούμε αναλόγως
+αφού πρώτα κάνουμε μερικές πράξεις:</p>
+<p><span class="math display">\[{x^{2} + y^{2} - 2}{x + 4}{{y + 5} =
+0}\Leftrightarrow\]</span></p>
+<p>ομαδοποιούμε κατάλληλα ώστε να εμφανιστούν οι ταυτότητες. Αλλά
+προσέξτε ότι έχουμε ένα μικρό πρόβλημα αφού οι όροι είναι 5 και όχι 6
+που χρειαζόμαστε για να κατασκευάσουμε τις δύο ταυτότητες. Μπορούμε να
+ξεπεράσουμε αυτό το πρόβλημα με το να αντικαταστήσουμε το 5 με <span
+class="math inline">\(4 + 1\)</span></p>
+<p><span class="math display">\[{x^{2} + y^{2} - 2}{x + 4}{{y + 4 + 1} =
+0}\Leftrightarrow\]</span></p>
+<p>και τώρα ομαδοποιούμε κατάλληλα:</p>
+<p><span class="math display">\[{{({{x^{2} - 2}{x + 1}})} + {({{y^{2} +
+4}{y + 4}})}} = 0\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{{({x - 1})}^{2} + {({y + 2})}^{2}} =
+0\Leftrightarrow\]</span></p>
+<p>Επομένως λόγω της έχουμε:</p>
+<p><span class="math display">\[{x - 1} = 0\quad και \quad {y + 2} =
+0\Leftrightarrow\]</span></p>
+<p><span class="math display">\[x = 1\quad και \quad y = {-
+2}\]</span></p>
+<p>Μια ανισότητα που έχει τρία μέλη όπως η παρακάτω:</p>
+<p><span class="math display">\[\alpha &lt; \beta &lt;
+\gamma\]</span></p>
+<p>είναι στην πραγματικότητα δύο ανισότητες τοποθετημένες μαζί:</p>
+<p><span class="math display">\[\alpha &lt; \beta \quad και \quad \beta
+&lt; \gamma\]</span></p>
+<p>Για αυτές τις πολλαπλές ανισότητες μπορούμε να κάνουμε τις ίδιες
+πράξεις και με τις απλές.</p>
+<h4 id="παράδειγμα-2-εφαρμογή-2-σελ.-59">Παράδειγμα 2 (Εφαρμογή 2 σελ.
+59)</h4>
+<p>Αν <span class="math display">\[{- \frac{1}{2}} &lt; x &lt;
+\frac{3}{4}\]</span></p>
+<p>και</p>
+<p><span class="math display">\[{- \frac{2}{3}} &lt; y &lt;
+\frac{5}{6}\]</span></p>
+<p>να αποδείξετε ότι:</p>
+<p><span class="math display">\[{{- 11} &lt; 8}{x - 12}{{y + 3} &lt;
+17}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Σκοπός αυτής της ομάδας ασκήσεων είναι να μάθουμε τον τρόπο που
+μπορούμε να κατασκευάσουμε μία ανισότητα ξεκινώντας με πρώτη ύλη κάποιες
+άλλες ανισότητες.</p>
+<p>Σε αυτό το παράδειγμα πρέπει να κατασκευάσουμε την ανισότητα
+(συμπέρασμα):</p>
+<p><span class="math display">\[{{- 11} &lt; 8}{x - 12}{{y + 3} &lt;
+17}\]</span></p>
+<p>ξεκινώντας και χρησιμοποιώντας τις σχέσεις:</p>
+<p><span class="math display">\[{- \frac{1}{2}} &lt; x &lt;
+\frac{3}{4}\]</span></p>
+<p>και</p>
+<p><span class="math display">\[{- \frac{2}{3}} &lt; y &lt;
+\frac{5}{6}\]</span></p>
+<p>Παρατηρούμε ότι στην ανισότητα που θέλουμε να κατασκευάσουμε υπάρχει
+το <span class="math inline">\(8x\)</span>. Επομένως θα πάρουμε την
+πρώτη ανισότητα που μας δίνεται:</p>
+<p><span class="math display">\[{- \frac{1}{2}} &lt; x &lt;
+\frac{3}{4}\]</span></p>
+<p>και θα πολλαπλασιάσουμε όλα τα μέλη σύμφωνα με την ιδιότητα τον
+θετικό αριθμό 8, ώστε να εμφανιστεί το 8x.</p>
+<p><span class="math display">\[{{8 \cdot {({- \frac{1}{2}})}} &lt; 8}{x
+&lt; {8 \cdot \frac{3}{4}}}\]</span></p>
+<p><span class="math display">\[{{- 4} &lt; 8}{x &lt; 6}\quad\quad
+(I)\]</span></p>
+<p>Δεύτερον, παρατηρούμε ότι στην ανισότητα που θέλουμε να
+κατασκευάσουμε υπάρχει το -12x. Επομένως θα πάρουμε την δεύτερη
+ανισότητα που μας δίνεται:</p>
+<p><span class="math display">\[{- \frac{2}{3}} &lt; y &lt;
+\frac{5}{6}\]</span></p>
+<p>και θα πολλαπλασιάσουμε σε όλα τα μέλη τον αριθμό <span
+class="math display">\[{({- 12})} &lt; 0\]</span>. Προσέξτε ότι λόγω του
+αρνητικού αριθμού που πολλαπλασιάζουμε η φορά της ανισότητα αλλάζει.</p>
+<p><span class="math display">\[{{{({- 12})} \cdot {({- \frac{2}{3}})}}
+&gt; {- 12}}{y &gt; {{- 12} \cdot \frac{5}{6}}}\]</span></p>
+<p><span class="math display">\[{8 &gt; {- 12}}{y &gt; {- 10}}\quad\quad
+(II)\]</span></p>
+<p>παρατηρούμε ότι οι σχέσεις Ι και ΙΙ έχουν αντίθετες κατευθύνσεις,
+εννοούμε ότι στην σχέση Ι έχουμε το σύμβολο <span
+class="math inline">\({} &lt; {}\)</span> ενώ στην ΙΙ το σύμβολο <span
+class="math inline">\({} &gt; {}\)</span>.</p>
+<p>Αυτό θα πρέπει να το αλλάξουμε. Απλά γράφουμε την σχέση ΙΙ
+αντίθετα:</p>
+<p><span class="math display">\[{{- 10} &lt; {- 12}}{x &lt; 8}\quad\quad
+(III)\]</span></p>
+<p>προσθέτουμε τώρα κατά μέλη τις σχέσει Ι και ΙΙΙ:</p>
+<p><span class="math display">\[{{{- 4} + {({- 10})}} &lt; 8}{x - 12}{y
+&lt; {6 + 8}}\]</span></p>
+<p><span class="math display">\[{{- 14} &lt; 8}{x - 12}{y &lt;
+14}\]</span></p>
+<p>μέχρι τώρα έχουμε κατασκευάσει το <span class="math inline">\(8{x -
+12}y\)</span> και μας μένει να εμφανιστεί και ένα <span
+class="math inline">\(+ 3\)</span> μέσα στην ανισότητα που θέλουμε να
+κατασκευάσουμε:</p>
+<p>Αυτό θα το καταφέρουμε με το να προσθέσουμε τον ίδιο αριθμό (το +3)
+σε όλα τα μέλη:</p>
+<p><span class="math display">\[{{{- 14} + 3} &lt; 8}{x - 12}{{y + 3}
+&lt; {14 + 3}}\]</span></p>
+<p><span class="math display">\[{{- 11} &lt; 8}{x - 12}{{y + 3} &lt;
+17}\]</span></p>
+<h4 id="ασκηση-4-άσκηση-α4-σελ.-60">ΑΣΚΗΣΗ 4 (Άσκηση Α4 σελ. 60)</h4>
+<p>Αν <span class="math inline">\(4,5 &lt; x &lt; 4,6\)</span> και <span
+class="math inline">\(5,3 &lt; y &lt; 5,4\)</span> να βρείτε τα όρια
+μεταξύ των οποίων περιέχεται η τιμή καθεμιάς από τις παραστάσεις:</p>
+<ol type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[x + y\]</span></p>
+<ol start="2" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[x - y\]</span></p>
+<ol start="3" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[\frac{x}{y}\]</span></p>
+<ol start="4" type="i">
+<li></li>
+</ol>
+<p><span class="math display">\[x^{2} + y^{2}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Για την <strong>πρώτη περίπτωση (i)</strong> απλά θα προσθέσουμε κατά
+μέλη τις ανισότητες που μας δίνονται. Απλά προσέχουμε ότι οι ανισότητες
+έχουν την ίδια κατεύθυνση.</p>
+<p><span class="math display">\[{4,5 + 5,3} &lt; {x + y} &lt; {4,6 +
+5,4}\]</span></p>
+<p><span class="math display">\[9,8 &lt; {x + y} &lt; 10,0\]</span></p>
+<p>Για την <strong>δεύτερη περίπτωση (ii)</strong> ίσως μπείτε στον
+πειρασμό να αφαιρέσετε κατά μέλη, αλλά προσέξτε ότι δεν αναφέρεται
+πουθενά τέτοια ιδιότητα και έτσι δεν μπορούμε να αφαιρούμε κατά
+μέλη!</p>
+<p>Η αφαίρεση όμως είναι η πρόσθεση του αντιθέτου επομένως αρχικά
+πολλαπλασιάζουμε με <span class="math display">\[- 1\]</span> την
+δεύτερη ανίσωση ώστε το <span class="math inline">\(y\)</span> να
+μετατραπεί σε <span class="math inline">\(- y\)</span>:</p>
+<p><span class="math display">\[5,3 &lt; y &lt; 5,4\]</span></p>
+<p><span class="math display">\[{{({- 1})} \cdot 5,3} &gt; {- y} &gt;
+{{({- 1})} \cdot 5,4}\]</span></p>
+<p><span class="math display">\[{- 5,3} &gt; {- y} &gt; {-
+5,4}\]</span></p>
+<p>και γράφουμε την ανισότητα αντίθετα, ώστε να ταιριάζει με την
+πρώτη:</p>
+<p><span class="math display">\[{- 5,4} &lt; {- y} &lt; {-
+5,3}\]</span></p>
+<p>τώρα προσθέτουμε κατά μέλη:</p>
+<p><span class="math display">\[4,5 &lt; x &lt; 4,6\quad και \quad {-
+5,4} &lt; {- y} &lt; {- 5,3}\]</span></p>
+<p>και έχουμε:</p>
+<p><span class="math display">\[{4,5 + {({- 5,4})}} &lt; {x + {({- y})}}
+&lt; {4,6 + {({- 5,3})}}\]</span></p>
+<p><span class="math display">\[{- 0,9} &lt; {x - y} &lt; {-
+0,7}\]</span></p>
+<p>Στην <strong>τρίτη περίπτωση (iii)</strong> πάλι έχουμε το ίδιο
+πρόβλημα διότι δεν υπάρχει πουθενά κάποια ιδιότητα που να μας επιτρέπει
+να διαιρέσουμε κατά μέλη δύο ανισότητες.</p>
+<p>Εμείς όμως θα χρησιμοποιήσουμε τον πολλαπλασιασμό του αντιστρόφου
+γιατί η διαίρεση ορίζεται με αυτόν τον τρόπο.</p>
+<p>Επομένως παίρνουμε την δεύτερη ανισότητα:</p>
+<p><span class="math display">\[5,3 &lt; y &lt; 5,4\]</span></p>
+<p>την χωρίζουμε στις επιμέρους ανισότητες που αποτελείται:</p>
+<p><span class="math display">\[5,3 &lt; y\quad και \quad y &lt;
+5,4\]</span></p>
+<p>σε κάθε μία από αυτές πολλαπλασιάζουμε τον θετικό αριθμό <span
+class="math inline">\(\frac{1}{y}\)</span> (ο y είναι θετικός διότι μας
+το λέει η ανισότητα: <span class="math inline">\(5,3 &lt; y &lt;
+5,4\)</span>):</p>
+<p><span class="math display">\[{5,3 \cdot \frac{1}{y}} &lt; {y \cdot
+\frac{1}{y}} \quad και \quad {y \cdot \frac{1}{y}} &lt; {5,4 \cdot
+\frac{1}{y}}\]</span></p>
+<p>δηλαδή:</p>
+<p><span class="math display">\[\frac{5,3}{y} &lt; 1\quad και \quad 1
+&lt; \frac{5,4}{y}\]</span></p>
+<p>ακόμα πολλαπλασιάζω την πρώτη με <span
+class="math inline">\(\frac{1}{5,3} &gt; 0\)</span> και την δεύτερη με
+<span class="math inline">\(\frac{1}{5,4} &gt; 0\)</span>, δηλαδή:</p>
+<p><span class="math display">\[{\frac{5,3}{y} \cdot \frac{1}{5,3}} &lt;
+{1 \cdot \frac{1}{5,3}} \quad και \quad {1 \cdot \frac{1}{5,4}} &lt;
+{\frac{5,4}{y} \cdot \frac{1}{5,4}}\]</span></p>
+<p>επομένως:</p>
+<p><span class="math display">\[\frac{1}{y} &lt; \frac{1}{5,3} \quad και
+\quad \frac{1}{5,4} &lt; \frac{1}{y}\]</span></p>
+<p>και τα τοποθετώ πάλι όλα μαζί:</p>
+<p><span class="math display">\[\frac{1}{5,4} &lt; \frac{1}{y} &lt;
+\frac{1}{5,3}\]</span></p>
+<p>φυσικά εσείς για να καταλήξετε σε αυτή την σχέση μπορείτε να
+χρησιμοποιήσετε τη εφαρμογή 1i στην σελίδα 58 του σχολικού βιβλίου.</p>
+<p>Τώρα θα πάρουμε τις σχέσεις:</p>
+<p><span class="math display">\[4,5 &lt; x &lt; 4,6 \quad και
+\quad  \frac{1}{5,4} &lt; \frac{1}{y} &lt; \frac{1}{5,3}\]</span></p>
+<p>που παρατηρούμε ότι πληρούν τις προϋποθέσεις της ιδιότητας και θα τις
+πολλαπλασιάσουμε κατά μέλη:</p>
+<p><span class="math display">\[{4,5 \cdot \frac{1}{5,4}} &lt; {x \cdot
+\frac{1}{y}} &lt; {4,6 \cdot \frac{1}{5,3}}\]</span></p>
+<p><span class="math display">\[\frac{45}{54} &lt; \frac{x}{y} &lt;
+\frac{46}{53}\]</span></p>
+<p>Tέλος για την <strong>τέταρτη περίπτωση (iv)</strong> εργαζόμαστε ως
+εξής:</p>
+<p>Ξεκινάμε από τις ανισότητες</p>
+<p><span class="math display">\[4,5 &lt; x &lt; 4,6\quad και \quad 5,3
+&lt; y &lt; 5,4\]</span></p>
+<p>και εφαρμόζω την ιδιότητα υψωσης στην νιοστή δύναμη. Προσέχω ότι
+ισχύουν οι προϋποθέσεις αυτής της ιδιότητας. Δηλαδή όλες οι βάσεις ( οι
+αριθμοί 4,5, 4,6, 5,3, 5,4 και τα x,y είναι θετικά και σκοπεύω να υψώσω
+στην δεύτερη δύναμη ν=2 που είναι ένας θετικός ακέραιος αριθμός).
+Δηλαδή:</p>
+<p><span class="math display">\[4,5^{2} &lt; x^{2} &lt; 4,6^{2}\quad και
+\quad 5,3^{2} &lt; y^{2} &lt; 5,4^{2}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[20,25 &lt; x^{2} &lt; 21,16\quad και
+\quad 28,09 &lt; y^{2} &lt; 29,16\]</span></p>
+<p>και τώρα θα προσθέσω κατά μέλη αυτές τις σχέσεις:</p>
+<p><span class="math display">\[{{20,25 + 28,09} &lt; {x^{2} + y^{2}}
+&lt; {21,16 + 29,16}}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[48,34 &lt; {x^{2} + y^{2}} &lt;
+29,16\]</span></p>
+<h4 id="ασκηση-5-άσκηση-α5-σελ.-60">ΑΣΚΗΣΗ 5 (Άσκηση Α5 σελ. 60)</h4>
+<p>Το πλάτος <span class="math inline">\(x\)</span> και το μήκος <span
+class="math inline">\(y\)</span> ενός ορθογωνίου ικανοποιούν τις
+ανισότητες <span class="math inline">\(2 &lt; x &lt; 3\)</span> και
+<span class="math inline">\(3 &lt; y &lt; 5\)</span>. Αν αυξήσουμε το
+πλάτος κατά 0,2 και ελαττώσουμε το μήκος κατά 0,1, να βρείτε τις δυνατές
+τιμές:</p>
+<ol type="i">
+<li><p>της περιμέτρου του νέου ορθογωνίου</p></li>
+<li><p>του εμβαδού του νέου ορθογωνίου</p></li>
+</ol>
+<p><strong>Λύση:</strong></p>
+<p>Το νέο πλάτος του ορθογωνίου είναι <span class="math inline">\(x +
+0,2\)</span> ενώ το νέο μήκος θα είναι <span class="math inline">\(y -
+0,1\)</span>.</p>
+<p>Θα υπολογίσουμε τώρα μεταξύ ποιών τιμών κυμαίνονται το <em>νέο
+πλάτος</em> και <em>νέο μήκος</em> του ορθογωνίου:</p>
+<p>Στις σχέσεις:</p>
+<p><span class="math display">\[2 &lt; x &lt; 3\quad και \quad 3 &lt; y
+&lt; 5\]</span></p>
+<p>προσθέτουμε σε όλα τα μέλη στην μεν πρώτη τον αριθμό <span
+class="math inline">\(0,2\)</span> και στην δεύτερη τον <span
+class="math inline">\(- 0,1\)</span>.</p>
+<p><span class="math display">\[{2 + 0,2} &lt; {x + 0,2} &lt; {3 +
+0,2}\]</span></p>
+<p><span class="math display">\[{3 - 01} &lt; {y - 0,1} &lt; {5 -
+0,1}\]</span></p>
+<p>κάνουμε τις πράξεις:</p>
+<p><span class="math display">\[2,2 &lt; {x + 0,2} &lt; 3,2\quad και
+\quad 2,9 &lt; {y - 01} &lt; 4,9\]</span></p>
+<p>Στο <strong>πρώτο ερώτημα (i)</strong> για να υπολογίσουμε την
+περίμετρο του νέου ορθογωνίου θα πάρουμε τον τύπο:</p>
+<p><span class="math display">\[L = {{2 \cdot {({\mathit{Ν\varepsilon
+ο}\mathit{Μή\kappa ο\varsigma}})}} + {2 \cdot {({\mathit{Ν\varepsilon
+ο}\mathit{\Pi\lambda ά\tau ο\varsigma}})}}}\]</span></p>
+<p><span class="math display">\[{L = 2}{{({x + 0,2})} + 2}{({y -
+0,1})}\]</span></p>
+<p>Για να υπολογίσουμε τώρα μεταξύ ποιων τιμών βρίσκεται αυτή η
+ποσότητα</p>
+<p><span class="math display">\[2{{({x + 0,2})} + 2}{({y -
+0,1})}\]</span></p>
+<p>θα πάρουμε τις ανισότητες:</p>
+<p><span class="math display">\[2,2 &lt; {x + 0,2} &lt; 3,2\quad και
+\quad 2,9 &lt; {y - 01} &lt; 4,9\]</span></p>
+<p>και θα πολλαπλασιάσουμε σε όλα τα μέλη τον θετικό αριθμό 2:</p>
+<p><span class="math display">\[{4,4 &lt; 2}{{({x + 0,2})} &lt;
+6,4}\quad και \quad {5,8 &lt; 2}{{({y - 01})} &lt; 9,8}\]</span></p>
+<p>και μετά θα προσθέσουμε κατά μέλη:</p>
+<p><span class="math display">\[{10,2 &lt; 2}{{({x + 0,2})} + 2}{{({y -
+0,1})} &lt; 16,2}\]</span></p>
+<p>δηλαδή:</p>
+<p><span class="math display">\[10,2 &lt; L &lt; 16,2\]</span></p>
+<p>Στο <strong>δεύτερο ερώτημα (ii)</strong> πρέπει να υπολογίσουμε το
+εμβαδόν του νέου ορθογωνίου, από τον τύπο:</p>
+<p><span class="math display">\[Ε = {{({\mathit{Νέο}\mathit{\Pi\lambda
+ά\tau ο\varsigma}})} \cdot {({\mathit{Νέο}\mathit{Μή\kappa
+ο\varsigma}})}}\]</span></p>
+<p><span class="math display">\[{Ε = {({x + 0,2})}}{({y -
+01})}\]</span></p>
+<p>Τώρα θα πάρουμε τις σχέσεις:</p>
+<p><span class="math display">\[2,2 &lt; {x + 0,2} &lt; 3,2\quad και
+\quad 2,9 &lt; {y - 01} &lt; 4,9\]</span></p>
+<p>οι οποίες πληρούν τις προϋποθέσεις της ιδιότητας και θα τις
+πολλαπλασιάσουμε κατά μέλη:</p>
+<p><span class="math display">\[{{2,2 \cdot 2,9} &lt; {({x +
+0,2})}}{{({y - 0,1})} &lt; {3,2 \cdot 4,9}}\]</span></p>
+<p><span class="math display">\[6,38 &lt; E &lt; 16,68\]</span></p>
+<h4 id="ασκηση-6-άσκηση-α6-σελ.-60">ΑΣΚΗΣΗ 6 (Άσκηση Α6 σελ. 60)</h4>
+<p>Αν <span class="math inline">\(0 \leq \alpha &lt; \beta\)</span>, να
+δείξετε ότι <span class="math display">\[\frac{\alpha}{1 + \alpha} &lt;
+\frac{\beta}{1 + \beta}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Στην υπόθεση (δεδομένα) αυτής της άσκησης μας δίνεται ότι <span
+class="math inline">\(0 \leq \alpha &lt; \beta\)</span></p>
+<p>Αυτό σημαίνει τα παρακάτω:</p>
+<p><span class="math display">\[\alpha \geq 0\quad και \quad \beta &gt;
+0\quad και \quad \alpha &lt; \beta\]</span></p>
+<p>τα οποία και σκοπεύουμε να χρησιμοποιήσουμε για να αποδείξουμε ότι η
+πρόταση</p>
+<p><span class="math display">\[\frac{\alpha}{1 + \alpha} &lt;
+\frac{\beta}{1 + \beta}\]</span></p>
+<p>που είναι στο συμπέρασμα είναι αληθής.</p>
+<p>Πριν προχωρήσουμε θα ασχοληθούμε με το πρόσημο των ποσοτήτων</p>
+<p><span class="math display">\[1 + \alpha\quad και \quad 1 +
+\beta\]</span>.</p>
+<p>Αν στις σχέσεις</p>
+<p><span class="math display">\[\beta &gt; 0\quad και \quad \alpha \geq
+0\]</span></p>
+<p>προσθέσουμε και στα δύο μέλη τον αριθμό 1 έχουμε:</p>
+<p><span class="math display">\[{1 + \beta} &gt; {0 + 1}\quad και \quad
+{1 + \alpha} \geq {0 + 1}\]</span></p>
+<p>δηλαδή</p>
+<p><span class="math display">\[{1 + \beta} &gt; 1\quad και \quad {1 +
+\alpha} \geq 1\]</span></p>
+<p>δηλαδή και οι δύο αυτές ποσότητες είναι θετικές (αφού είναι
+μεγαλύτερες από 1). Επομένως είναι και ομόσημες, και σύμφωνα με την
+ιδιότητα είναι:</p>
+<p><span class="math display">\[{({1 + \alpha})}{{({1 + \beta})} &gt;
+0}\]</span></p>
+<p>θα πάρουμε τώρα την σχέση:</p>
+<p><span class="math display">\[{\frac{\alpha}{1 + \alpha} &lt;
+\frac{\beta}{1 + \beta}}\Leftrightarrow\]</span></p>
+<p>που ακόμα δεν γνωρίζουμε αν είναι αληθής ή ψευδής και θα κάνουμε
+πράξεις που μπορούν αν γίνουν και αντίθετα (ισοδυναμία):</p>
+<p>Θα πολλαπλασιάσουμε και στα δύο μέλη την θετική ποσότητα <span
+class="math inline">\({({1 + \alpha})}{{({1 + \beta})} &gt;
+0}\)</span></p>
+<p><span class="math display">\[{({1 + \alpha})}{({1 +
+\beta})}{\frac{\alpha}{1 + \alpha} &lt; {({1 + \alpha})}}{({1 +
+\beta})}\frac{\beta}{1 + \beta}\Leftrightarrow\]</span></p>
+<p>κάνουμε τις απλοποιήσεις:</p>
+<p><span class="math display">\[\alpha{{({1 + \beta})} &lt; \beta}{({1 +
+\alpha})}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{{\alpha + \mathit{\alpha\beta}} &lt;
+{\beta + \mathit{\alpha\beta}}}\Leftrightarrow\]</span></p>
+<p>προσθέτω και στις δύο πλευρές το <span class="math display">\[-
+\mathit{\alpha\beta}\]</span></p>
+<p><span class="math display">\[{{\alpha + \mathit{\alpha\beta} -
+\mathit{\alpha\beta}} &lt; {\beta + \mathit{\alpha\beta} -
+\mathit{\alpha\beta}}}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[\alpha &lt; \beta\]</span></p>
+<p>η οποία είναι μία αληθής πρόταση αφού μας το εγγυάται η εκφώνηση της
+άσκησης στην υπόθεση (δεδομένα).</p>
+<p>Λόγω των ισοδυναμιών θα είναι αληθής και η αρχική πρόταση που θέλουμε
+να δείξουμε.</p>
+<h4 id="ασκηση-7-άσκηση-α7-σελ.-60">ΑΣΚΗΣΗ 7 (Άσκηση Α7 σελ. 60)</h4>
+<p>Να βρείτε το λάθος στους παρακάτω συλλογισμούς:</p>
+<p>Έστω <span class="math inline">\(x &gt; 5\)</span> . Τότε έχουμε
+διαδοχικά</p>
+<p><span class="math display">\[x &gt; 5\]</span></p>
+<p><span class="math display">\[5{x &gt; 25}\]</span></p>
+<p><span class="math display">\[5x‒{x^{2} &gt; 25}‒x^{2}\]</span></p>
+<p><span class="math display">\[x{{({5‒x})} &gt; {({5 +
+x})}}{({5‒x})}\]</span></p>
+<p><span class="math display">\[x &gt; {5 + x}\]</span></p>
+<p><span class="math display">\[0 &gt; 5\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Παρατηρούμε ότι το αποτέλεσα στην τελευταία γραμμή είναι ψευδές. Θα
+εξετάσουμε λοιπόν όλες τις γραμμές για να βρούμε το λάθος.</p>
+<p>Από την πρώτη στην δεύτερη γραμμή έχουμε σωστή ισοδυναμία, αφού
+πολλαπλασιάζουμε και στις δύο πλευρές τον θετικό αριθμό 5, ιδιότητα
+:</p>
+<p><span class="math display">\[x &gt; 5\Leftrightarrow5{x &gt; {5 \cdot
+5}}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[5{x &gt; 25}\]</span></p>
+<p>Από την δεύτερη προς την τρίτη γραμμή έχουμε σωστή ισοδυναμία, αφού
+προσθέτουμε και στα δύο μέλη τον αριθμό <span class="math inline">\(-
+x^{2}\)</span>.</p>
+<p><span class="math display">\[5{x &gt; 25}\Leftrightarrow5{{x - x^{2}}
+&gt; {25 - x^{2}}}\]</span></p>
+<p>Στην επόμενη γραμμή έχουμε τις σωστές πράξεις. Κοινός παράγοντας και
+διαφορά τετραγώνου:</p>
+<p><span class="math display">\[5{{x - x^{2}} &gt; {25 -
+x^{2}}}\Leftrightarrow x{{({5 - x})} &gt; {({5 - x})}}{({5 +
+x})}\]</span></p>
+<p>Στην επόμενη γραμμή προσπαθούμε να πολλαπλασιάσουμε και στα δύο μέλη
+με τον αριθμό <span class="math inline">\(\frac{1}{5 - x}\)</span> με
+σκοπό να γίνει η απλοποίηση. Όμως θα έπρεπε να έχουμε εξετάσει το
+πρόσημο του αριθμού που πολλαπλασιάζουμε. Επομένως:</p>
+<p><span class="math display">\[{x &gt; 5}\Leftrightarrow{{5 - x} &lt;
+0}\]</span></p>
+<p>και έτσι</p>
+<p><span class="math display">\[\frac{1}{5 - x} &lt; 0\]</span></p>
+<p>Άρα θα πολλαπλασιάσουμε και τα δύο μέλη με έναν αρνητικό αριθμό,
+επομένως:</p>
+<p><span class="math display">\[x{{({5 - x})} &gt; {({5 - x})}}{({5 +
+x})}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[x{({5 - x})}{\frac{1}{5 - x} &lt; {({5 -
+x})}}{({5 + x})}\frac{1}{5 - x}\Leftrightarrow\]</span></p>
+<p>Δηλαδή σε αυτό το σημείο άλλαξε η κατεύθυνση της ανισότητας. Μετά
+απλοποιούμε:</p>
+<p><span class="math display">\[x &lt; {5 +
+x}\Leftrightarrow\]</span></p>
+<p>προσθέτουμε και στις δύο πλευρές το <span class="math inline">\(-
+x\)</span>:</p>
+<p><span class="math display">\[{{x - x} &lt; {5 + x -
+x}}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[0 &lt; 5\]</span></p>
+<p>που ισχύει.</p>
+<h4 id="ασκηση-8-άσκηση-b1-σελ.-60">ΑΣΚΗΣΗ 8 (Άσκηση B1 σελ. 60)</h4>
+<p>Δίνονται ένα κλάσμα <span
+class="math inline">\(\frac{\alpha}{\beta}\)</span> με θετικούς όρους
+και ένας θετικός αριθμός γ.</p>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li>Αν <span class="math inline">\(\frac{\alpha}{\beta} &lt; 1\)</span>
+τότε</li>
+</ol>
+<p><span class="math display">\[\frac{\alpha + \gamma}{\beta + \gamma}
+&gt; \frac{\alpha}{\beta}\]</span></p>
+<ol start="2" type="i">
+<li>Αν <span class="math inline">\(\frac{\alpha}{\beta} &gt; 1\)</span>,
+τότε</li>
+</ol>
+<p><span class="math display">\[\frac{\alpha + \gamma}{\beta + \gamma}
+&lt; \frac{\alpha}{\beta}\]</span></p>
+<p><strong>Λύση:</strong></p>
+<p>Στα δεδομένα (υπόθεση) αυτής της άσκησης έχουμε ότι <span
+class="math display">\[\alpha &gt; 0 \quad και \quad \beta &gt; 0\quad
+και \quad \frac{\alpha}{\beta} &gt; 0\quad και \quad \gamma &gt;
+0\]</span></p>
+<p>Σχετικά με το <strong>πρώτο ερώτημα (i)</strong> έχουμε ακόμα ότι</p>
+<p><span class="math display">\[\frac{\alpha}{\beta} &lt; 1\]</span> ή
+<span class="math display">\[\alpha &lt; \beta\]</span></p>
+<p>ως αληθές από την υπόθεση.</p>
+<p>Ξεκινάμε από την ανισότητα που θέλουμε να αποδείξουμε. Αυτή την
+στιγμή δεν γνωρίζουμε αν είναι αληθής ή ψευδής.</p>
+<p><span class="math display">\[\frac{\alpha + \gamma}{\beta + \gamma}
+&gt; \frac{\alpha}{\beta}\Leftrightarrow\]</span></p>
+<p>πολλαπλασιάζουμε και τα δύο μέλη με την θετική ποσότητα: <span
+class="math inline">\(\beta{{({\beta + \gamma})} &gt; 0}\)</span>. Είναι
+θετική αφού το β είναι θετικό και το β+γ είναι και αυτό θετικό ως
+άθροισμα θετικών ποσοτήτων.</p>
+<p><span class="math display">\[{\frac{\alpha + \gamma}{\beta + \gamma}
+\cdot \beta}{{({\beta + \gamma})} &gt; {\frac{\alpha}{\beta} \cdot
+\beta}}{({\beta + \gamma})}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[\beta{{({\alpha + \gamma})} &gt;
+\alpha}{({\beta + \gamma})}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{{\mathit{\alpha\beta} +
+\mathit{\beta\gamma}} &gt; {\mathit{\alpha\beta} +
+\mathit{\alpha\gamma}}}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{\mathit{\beta\gamma} &gt;
+\mathit{\alpha\gamma}}\Leftrightarrow\]</span></p>
+<p>πολλαπλασιάζω με <span class="math inline">\(\frac{1}{\gamma} &gt;
+0\)</span></p>
+<p><span class="math display">\[\beta &gt; \alpha\]</span></p>
+<p>που είναι αληθές από την υπόθεση, επομένως αφού έχουμε χρησιμοποιήσει
+τις ισοδυναμίες θα είναι αληθές και η πρώτη πρόταση που θέλουμε να
+δείξουμε ως αληθής.</p>
+<p>Προφανώς η <strong>δεύτερη περίπτωση (ii)</strong> είναι ακριβώς
+ανάλογη με την πρώτη με διαφορά την κατεύθυνση των ανισοτήτων. Σας την
+αφήνω να την κάνετε σαν εφαρμογή.</p>
+<h4 id="ασκηση-9-άσκηση-b2-σελ.-60">ΑΣΚΗΣΗ 9 (Άσκηση B2 σελ. 60)</h4>
+<p>Αν <span class="math inline">\(\alpha &gt; 1 &gt; \beta\)</span>, να
+αποδείξετε ότι</p>
+<p><span class="math display">\[{\alpha + \beta} &gt; {1 +
+\mathit{\alpha\beta}}\]</span>.</p>
+<p><strong>Λύση:</strong></p>
+<p>Στην υπόθεση έχουμε ότι</p>
+<p><span class="math display">\[\alpha &gt; 1 &gt; \beta\]</span></p>
+<p>αυτό σημαίνει τα εξής:</p>
+<p><span class="math display">\[\alpha &gt; 1\]</span> (και επομένως το
+<span class="math inline">\(α\)</span> είναι θετικός), <span
+class="math display">\[\beta &lt; 1\quad και \quad \alpha &gt;
+\beta\]</span></p>
+<p>Αρχίζουμε με την πρόταση που μας δίνεται να αποδείξουμε ότι είναι
+αληθής. Αυτή την στιγμή δεν το γνωρίζουμε ακόμα.</p>
+<p><span class="math display">\[{\alpha + \beta} &gt; {1 +
+\mathit{\alpha\beta}}\Leftrightarrow\]</span></p>
+<p>προσθέτω και στις δύο πλευρές το -1 και μετά το <span
+class="math inline">\(- \mathit{\alpha\beta}\)</span> και μετά τις
+πράξεις έχουμε:</p>
+<p><span class="math display">\[{\alpha + \beta - \mathit{\alpha\beta} -
+1} &gt; 0\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{{{({\alpha - \mathit{\alpha\beta}})} +
+{({\beta - 1})}} &gt; 0}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[\alpha{{{({1 - \beta})} + {({\beta -
+1})}} &gt; 0}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{({1 - \beta})}{{({\alpha - 1})} &gt;
+0}\]</span></p>
+<p>που είναι αληθής διότι</p>
+<p><span class="math display">\[{\alpha &gt; 1}\Leftrightarrow{{\alpha -
+1} &gt; 0}\]</span></p>
+<p>και</p>
+<p><span class="math display">\[{\beta &lt; 1}\Leftrightarrow{0 &lt; {1
+- \beta}}\]</span></p>
+<p>δηλαδή και οι δύο ποσότητες είναι θετικές (ομόσημες).</p>
+<h4 id="ασκηση-10-άσκηση-b3-σελ.-60">ΑΣΚΗΣΗ 10 (Άσκηση B3 σελ. 60)</h4>
+<p>Αν α, β θετικοί αριθμοί, να δείξετε ότι</p>
+<p><span class="math display">\[{({\alpha + \beta})}{{({\frac{1}{\alpha}
++ \frac{1}{\beta}})} \geq 4}\]</span>.</p>
+<p><strong>Λύση:</strong></p>
+<p>Αρχίζω με την παράσταση που θέλω να αποδείξω ότι είναι αληθής:</p>
+<p><span class="math display">\[{({\alpha + \beta})}{{({\frac{1}{\alpha}
++ \frac{1}{\beta}})} \geq 4}\Leftrightarrow\]</span></p>
+<p>κάνω τις πράξεις μέσα στην δεύτερη παρένθεση:</p>
+<p><span class="math display">\[{({\alpha + \beta})}{\frac{\alpha +
+\beta}{\alpha\beta} \geq 4}\Leftrightarrow\]</span></p>
+<p>πολλαπλασιάζουμε και στα δύο μέλη την θετική ποσότητα <span
+class="math inline">\(\mathit{\alpha\beta} &gt;0\)</span> αφού <span
+class="math inline">\(\alpha &gt; 0\)</span> και <span
+class="math inline">\(\beta &gt; 0\)</span> (ομόσημοι).</p>
+<p><span class="math display">\[{({\alpha + \beta})}\frac{\alpha +
+\beta}{\alpha\beta}\alpha{\beta \geq
+4}\alpha\beta\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{{({\alpha + \beta})}^{2} \geq
+4}\alpha\beta\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{\alpha^{2} + 2}{\mathit{\alpha\beta} +
+\beta^{2} - 4}{\mathit{\alpha\beta} \geq 0}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{\alpha^{2} - 2}{{\mathit{\alpha\beta} +
+\beta^{2}} \geq 0}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{({\alpha - \beta})}^{2} \geq
+0\]</span></p>
+<p>που είναι πάντα αληθής. Επομένως λόγω της χρήσης των ισοδυναμιών θα
+είναι αληθής και η πρώτη πρόταση.</p>
+<h4 id="ασκηση-11-άσκηση-b4-σελ.-60">ΑΣΚΗΣΗ 11 (Άσκηση B4 σελ. 60)</h4>
+<p>Να αποδείξετε ότι:</p>
+<ol type="i">
+<li><p><span class="math display">\[{\alpha^{2} + \mathit{\alpha\beta} +
+\beta^{2}} \geq 0\]</span></p></li>
+<li><p><span class="math display">\[{\alpha^{2} - \mathit{\alpha\beta} +
+\beta^{2}} \geq 0\]</span></p></li>
+</ol>
+<p><strong>Λύση:</strong></p>
+<p>Για να αποδείξουμε την <strong>πρώτη περίπτωση (i)</strong> ξεκινάμε
+από την ανισότητα που μας δίνεται:</p>
+<p><span class="math display">\[{\alpha^{2} + \mathit{\alpha\beta} +
+\beta^{2}} \geq 0\Leftrightarrow\]</span></p>
+<p>πολλαπλασιάζω με το 2 και τα δύο μέλη:</p>
+<p><span class="math display">\[2{\alpha^{2} + 2}{\mathit{\alpha\beta} +
+2}{\beta^{2} \geq {2 \cdot 0}}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{\alpha^{2} + \alpha^{2} +
+2}{{\mathit{\alpha\beta} + \beta^{2} + \beta^{2}} \geq
+0}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{{{({{\alpha^{2} +
+2}{\mathit{\alpha\beta} + \beta^{2}}})} + \alpha^{2} + \beta^{2}} \geq
+0}\Leftrightarrow\]</span></p>
+<p><span class="math display">\[{{({\alpha + \beta})}^{2} + \alpha^{2} +
+\beta^{2}} \geq 0\]</span></p>
+<p>η τελευταία αυτή σχέση είναι αληθής. Επομένως θα είναι αληθής και η
+πρώτη λόγω των ισοδυναμιών.</p>
+<p>Για να αποδείξουμε την <strong>δεύτερη περίπτωση (ii)</strong>
+εργαζόμαστε αναλόγως. Σαν την αφήνω ως εφαρμογή του προηγούμενου
+ερωτήματος.</p>
+</body>
+</html>

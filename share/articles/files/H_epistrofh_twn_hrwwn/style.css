@@ -1,0 +1,631 @@
+:root {
+    /* Κύριο φόντο: Το απόλυτο κενό */
+    --bg-color: #050505; 
+    
+    /* Φόντο για τις κάρτες των επεισοδίων: Το μέταλλο του Ικαρος */
+    --card-bg: #1c1c1e;
+    
+    /* Κείμενο: Καθαρό και ευανάγνωστο */
+    --text-color: #e0e0e0;
+    
+    /* Τίτλοι: Το φως του Μπλε Γίγαντα */
+    --accent-blue: #00f2ff; /* Neon Cyan */
+    
+    /* Λεπτομέρειες/Links: Το φως της Σκουληκότρυπας */
+    --accent-purple: #bd00ff; /* Neon Purple */
+    
+    /* Hover/Success: Το φως του Ήλιου στο τέλος */
+    --accent-gold: #ffd700;
+}
+
+body {
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 11pt;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 20px;
+        color: #d2cfcf;
+        background-color: #0f0f0f;
+    }
+
+    h1, h2, h3 {
+    color: var(--accent-blue);
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.3); /* Εφέ λάμψης */
+    text-align: center;
+}
+
+a {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+.episode {
+    /* Δημιουργούμε χώρο για να φανεί η αλλαγή */
+    padding: 60px 40px;
+    margin-top: 50px;
+    /* Λίγο στρογγύλεμα στις γωνίες */
+    border-radius: 20px; 
+    
+    background-color: var(--card-bg);
+    border-left: 3px solid var(--accent-purple); /* Μια μωβ γραμμή στο πλάι */
+
+    /* Μια ελαφριά σκιά για να ξεχωρίζει */
+    box-shadow: 0 -10px 50px rgba(10, 147, 150, 0.2);
+}
+
+/* Στυλ αποκλειστικά για το τελευταίο επεισόδιο */
+#episode-8 {
+    /* Δημιουργούμε χώρο για να φανεί η αλλαγή */
+    padding: 60px 40px;
+    margin-top: 50px;
+    /* Λίγο στρογγύλεμα στις γωνίες */
+    border-radius: 20px; 
+    
+    /* Η ΜΕΤΑΒΑΣΗ ΤΟΥ ΧΡΩΜΑΤΟΣ */
+    /* Ξεκινάει από το --bg-color (Μαύρο) και πάει στο Μπλε της Θάλασσας */
+    background: linear-gradient(
+        to bottom, 
+        var(--card-bg) 0%,     /* Η αρχή: Μαύρο του διαστήματος */
+        #001e2b 20%,          /* Είσοδος στην ατμόσφαιρα (Σκούρο μπλε) */
+        #005f73 60%,          /* Ο ουρανός (Πετρόλ) */
+        #0a9396 100%          /* Η θάλασσα (Φωτεινό Κυανό) */
+    );
+
+    /* Μια ελαφριά σκιά για να ξεχωρίζει */
+    box-shadow: 0 -10px 50px rgba(10, 147, 150, 0.2);
+}
+
+img{
+    /*Πλάτος εικόνας*/
+    width: 600px;
+    /*Στοίχιση στο κέντρο*/
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*ΓΛΩΣΣΑΡΙΟ*/
+
+/* --- Στυλ Γλωσσαρίου (Data Bank) --- */
+.glossary-card {
+    /* Δημιουργούμε χώρο για να φανεί η αλλαγή */
+    padding: 60px 40px;
+    margin-top: 50px;
+    /* Λίγο στρογγύλεμα στις γωνίες */
+    border-radius: 20px; 
+    
+    background-color: var(--card-bg);
+    /*border-left: 3px solid var(--accent-purple); /* Μια μωβ γραμμή στο πλάι */
+
+    /* Μια ελαφριά σκιά για να ξεχωρίζει */
+    box-shadow: 0 -10px 50px rgba(10, 147, 150, 0.2);
+}
+
+
+.glossary-card h2 {
+    color: var(--accent-blue);
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.4);
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Οι υπότιτλοι των ενοτήτων (Α, Β, Γ) */
+.glossary-category {
+    color: var(--accent-gold); /* Χρυσό για να ξεχωρίζει η κατηγορία */
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.category-desc {
+    color: #888;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Η λίστα των όρων */
+.glossary-list {
+    display: grid;
+    gap: 15px; /* Κενό μεταξύ των καρτών */
+}
+
+/* Το κουτί για κάθε όρο */
+.term-group {
+    border-left: 3px solid var(--accent-blue); /* Η μπλε γραμμή αριστερά */
+    padding: 15px 20px;
+    background: rgba(10, 10, 10, 0.6); /* Σκοτεινό ημιδιάφανο φόντο */
+    border-radius: 0 8px 8px 0; /* Στρογγύλεμα δεξιά */
+    transition: transform 0.2s ease, background 0.3s;
+}
+
+.term-group:hover {
+    background: rgba(0, 242, 255, 0.05); /* Ελαφριά λάμψη όταν περνάει το ποντίκι */
+    transform: translateX(5px); /* Μικρή κίνηση προς τα δεξιά */
+}
+
+/* Ο Όρος (Επικεφαλίδα) */
+.term-group dt {
+    color: var(--accent-blue);
+    font-family: 'Courier New', monospace; /* Γραμματοσειρά που θυμίζει κώδικα/τερματικό */
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Ο Ορισμός */
+.term-group dd {
+    color: var(--text-color);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* Έμφαση μέσα στον ορισμό */
+.term-group dd strong {
+    color: #fff;
+    font-weight: normal;
+    border-bottom: 1px dotted var(--accent-blue);
+}
+
+/*ΚΟΥΙΖ*/
+
+/* --- Στυλ Κουίζ (Simulation Mode) --- */
+.quiz-card {
+    /* Δημιουργούμε χώρο για να φανεί η αλλαγή */
+    padding: 60px 40px;
+    margin-top: 50px;
+    /* Λίγο στρογγύλεμα στις γωνίες */
+    border-radius: 20px; 
+    
+    background-color: var(--card-bg);
+    /*border-left: 3px solid var(--accent-purple); /* Μια μωβ γραμμή στο πλάι */
+
+    /* Μια ελαφριά σκιά για να ξεχωρίζει */
+    box-shadow: 0 -10px 50px rgba(10, 147, 150, 0.2);
+}
+
+.quiz-intro {
+    color: #aaa;
+    margin-bottom: 25px;
+    font-style: italic;
+    border-left: 2px solid var(--accent-gold);
+    padding-left: 10px;
+}
+
+/* Container ερωτήσεων */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Το κουτί της κάθε ερώτησης */
+.quiz-item {
+    background-color: rgba(20, 20, 20, 0.8);
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.quiz-item[open] {
+    border-color: var(--accent-gold); /* Χρυσό περίγραμμα όταν ανοίγει */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
+}
+
+/* Το ορατό μέρος (Ερώτηση) */
+.quiz-item summary {
+    padding: 20px;
+    cursor: pointer;
+    list-style: none; /* Κρύβει το default βελάκι */
+    position: relative;
+    background: linear-gradient(90deg, rgba(255,215,0,0.05) 0%, rgba(0,0,0,0) 100%);
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.quiz-item summary:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+/* Αριθμός Ερώτησης (01, 02...) */
+.q-number {
+    display: inline-block;
+    color: var(--accent-gold);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+/* Οι επιλογές (α, β, γ...) μέσα στην ερώτηση */
+.options {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #888;
+    padding-left: 35px; /* Στοίχιση κάτω από το κείμενο */
+}
+
+/* Το σύμβολο + / - δεξιά */
+.quiz-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: var(--accent-gold);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.quiz-item[open] summary::after {
+    content: '-';
+}
+
+/* Το κρυφό μέρος (Απάντηση) */
+.quiz-item .answer {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.4s ease;
+}
+
+/* Στυλ για τη σωστή απάντηση */
+.correct-choice {
+    color: var(--accent-gold);
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Στυλ για την επεξήγηση */
+.explanation {
+    color: #ccc;
+    font-size: 0.95em;
+    line-height: 1.5;
+    border-left: 3px solid #555;
+    padding-left: 15px;
+}
+
+/* Animation εμφάνισης */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Προσαρμογή για μικρές οθόνες */
+@media (max-width: 600px) {
+    .options {
+        font-size: 0.85em;
+    }
+}
+
+/*ΠΙΝΑΚΑς ΠΕΡΙΕΧΟΕΜΝΩΝ*/
+/* --- Πίνακας Περιεχομένων (Flight Plan) --- */
+
+.toc-card {
+    background-color: rgba(20, 20, 25, 0.9); /* Σκοτεινό φόντο */
+    border: 1px solid #333;
+    border-top: 3px solid var(--accent-gold); /* Χρυσή γραμμή πάνω (σαν φάκελος) */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 50px; /* Απόσταση από το 1ο επεισόδιο */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.toc-card h2 {
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    /* Grid Layout: 2 στήλες σε μεγάλες οθόνες */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
+}
+
+/* Τα Links των επεισοδίων */
+.toc-list li a {
+    display: block;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 5px;
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+/* Hover Effect */
+.toc-list li a:hover {
+    background-color: rgba(0, 242, 255, 0.1); /* Λίγο Cyan φόντο */
+    color: #fff;
+    border-left-color: var(--accent-blue); /* Cyan γραμμή αριστερά */
+    transform: translateX(5px);
+}
+
+/* Ο αριθμός του επεισοδίου (01, 02...) */
+.ep-num {
+    color: var(--accent-blue);
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+/* --- Ειδικό στυλ για τα παραρτήματα --- */
+
+/* Η διαχωριστική γραμμή πιάνει όλο το πλάτος */
+.toc-separator {
+    grid-column: 1 / -1; /* Πιάνει και τις 2 στήλες */
+    height: 1px;
+    background: #333;
+    margin: 10px 0;
+}
+
+/* Γλωσσάριο και Κουίζ */
+.toc-extra a {
+    border-left-color: var(--accent-purple) !important; /* Μωβ γραμμή μόνιμα */
+    font-weight: bold;
+    color: #e0aaff !important;
+}
+
+.toc-extra a:hover {
+    background-color: rgba(189, 0, 255, 0.1) !important;
+}
+
+/* Κινητά τηλέφωνα: Μία στήλη */
+@media (max-width: 600px) {
+    .toc-list {
+        grid-template-columns: 1fr; /* Όλα σε μία στήλη */
+    }
+}
+
+/* --- Hero Section (Ο Κεντρικός Τίτλος) --- */
+
+.hero-section {
+    position: relative;
+    /* Ένα βαθύ κυανό φως στο κέντρο που σβήνει σε μαύρο */
+    background: radial-gradient(circle at center, #0b2d35 0%, var(--bg-color) 70%);
+    padding: 120px 20px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    
+    /* Animation Εμφάνισης */
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Το ταμπελάκι πάνω από τον τίτλο */
+.series-badge {
+    display: inline-block;
+    color: var(--accent-gold);
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Ο Κύριος Τίτλος */
+.main-title {
+    font-family: 'Roboto', sans-serif; /* Ή η sci-fi γραμματοσειρά σου */
+    font-size: 4em; /* Μεγάλο μέγεθος */
+    font-weight: 900;
+    margin: 10px 0;
+    line-height: 1.1;
+    text-transform: uppercase;
+    
+    /* Χρώμα και Λάμψη (Neon Effect) */
+    color: #fff;
+    text-shadow: 
+        0 0 10px var(--accent-blue),
+        0 0 20px var(--accent-blue),
+        0 0 40px rgba(0, 242, 255, 0.4);
+}
+
+/* Ο Υπότιτλος */
+.subtitle {
+    font-size: 1.4em;
+    color: #a0a0a0;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+/* Διακοσμητική γραμμή κάτω από τον τίτλο */
+.hero-divider {
+    height: 2px;
+    width: 100px;
+    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+    margin: 30px auto 0;
+}
+
+/* --- Animation Keyframes --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* Ξεκινάει λίγο πιο κάτω */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Προσαρμογή για κινητά */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5em; /* Πιο μικρός τίτλος σε κινητά */
+    }
+    .subtitle {
+        font-size: 1.1em;
+    }
+    .hero-section {
+        padding: 80px 20px;
+    }
+}
+
+
+/* --- Author Styling (Hero) --- */
+
+.author-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column; /* Κάθετη διάταξη */
+    align-items: center;
+    gap: 5px;
+    animation: fadeInUp 2s ease-out; /* Εμφάνιση με μικρή καθυστέρηση */
+}
+
+.author-label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #666; /* Διακριτικό γκρι */
+    letter-spacing: 2px;
+    font-family: 'Courier New', monospace;
+}
+
+.author-name {
+    font-size: 1.2em;
+    color: var(--accent-gold); /* Χρυσό χρώμα */
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.2); /* Ελαφριά χρυσή λάμψη */
+}
+
+
+/* --- Floating Navigation (Αιωρούμενα Κουμπιά) --- */
+
+/* Το δοχείο που κρατάει τα κουμπιά στη γωνία */
+.floating-nav {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column-reverse; /* Το TOC πάει πάνω, το Glossary κάτω */
+    gap: 15px; /* Απόσταση μεταξύ των κουμπιών */
+    z-index: 1000; /* Πάντα πάνω από όλα */
+}
+
+/* Κοινό στυλ για τα κουμπιά */
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Κυκλικό σχήμα */
+    background-color: rgba(10, 10, 15, 0.8); /* Σκοτεινό ημιδιάφανο */
+    backdrop-filter: blur(5px); /* Θόλωμα του φόντου πίσω από το κουμπί */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Ελαστικό εφέ */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
+/* Ρυθμίσεις για τα εικονίδια SVG */
+.nav-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+    transition: transform 0.3s;
+}
+
+/* --- Ειδικό στυλ για το κουμπί Περιεχομένων (TOC) --- */
+.btn-toc {
+    border: 2px solid var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.btn-toc:hover {
+    background-color: var(--accent-blue);
+    color: #000; /* Μαύρο εικονίδιο στο hover */
+    box-shadow: 0 0 20px var(--accent-blue);
+    transform: translateY(-5px); /* Ελαφριά άνοδος */
+}
+
+/* --- Ειδικό στυλ για το κουμπί Γλωσσαρίου --- */
+.btn-glossary {
+    border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.btn-glossary:hover {
+    background-color: var(--accent-gold);
+    color: #000;
+    box-shadow: 0 0 20px var(--accent-gold);
+    transform: translateY(-5px);
+}
+
+/* Μικρό εφέ στο εικονίδιο όταν κάνεις hover */
+.nav-btn:hover svg {
+    transform: scale(1.1);
+}
+
+/* Για να μην κολλάνε στην άκρη σε κινητά */
+@media (max-width: 768px) {
+    .floating-nav {
+        bottom: 20px;
+        right: 20px;
+        gap: 10px;
+    }
+    
+    .nav-btn {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* --- Site Footer --- */
+
+.site-footer {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+    background-color: rgba(10, 10, 15, 0.9);
+    color: #777;
+    font-size: 0.9em;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+.footer-note {
+    color: var(--accent-blue); /* Μια μικρή μπλε πινελιά */
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0.7;
+}
+

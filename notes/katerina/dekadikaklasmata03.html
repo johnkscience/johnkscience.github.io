@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+		<title>Ασκήσεις</title>
+		<meta name="description" content="Μαθηματικά Α Γυμνασίου, Βασικές Πράξεις και Έννοιες, Θεωρία">
+		<meta name="keywords" content="Μαθηματικά Α Γυμνασίου, Σημειώσεις, Βοήθημα">
+		<meta name="author" content="Γιάννης Κουμουνδούρος">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="generator" content="notepad++" />
+		<link href="./style.css" type="text/css" rel="stylesheet"/>
+		<!--MathJax Αρχή-->
+		<script>
+			MathJax = {
+				loader: {load: ['input/asciimath', 'output/chtml']}
+			}
+		</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"></script>
+		<!--MathJax Τέλος-->
+	</head>
+	
+	<body >
+	<!--
+	
+	<h2>Άσκηση 1</h2>
+		<p></p>
+			<ol class="greek-list">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		
+	<h2>Άσκηση 1</h2>
+		<p></p>
+		<table>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	
+	-->
+		
+		<h1>063 Ασκήσεις</h1>
+        
+        <h2>Άσκηση 1</h2>
+        <p>Να γράψεις τους παρακάτω αριθμούς στην τυποποιημένη μορφή:</p>
+        <ol class="greek-list">
+            <li>`694000`</li>
+            <li>`5400000`</li>
+            <li>`8070000`</li>
+            <li>`4530000000`</li>
+            <li>`5900`</li>
+            <li>`8420`</li>
+            <li>`392000`</li>
+            <li>`629000000`</li>
+            <li>`242000`</li>
+            <li>`786000`</li>
+        </ol>
+        
+        <h2>Άσκηση 2</h2>
+        <p>Να γράψεις τη δεκαδική μορφή των αριθμών:</p>
+        <ol class="greek-list">
+            <li>`4,2 * 10^7`</li>
+            <li>`5,930 * 10^6`</li>
+            <li>`4,36 * 10^5`</li>
+            <li>`8,5 * 10^4`</li>
+            <li>`10,3 * 10^3`</li>
+        </ol>
+
+        <h2>Άσκηση 3</h2>
+<p>Να γράψεις τους παρακάτω αριθμούς στην τυποποιημένη μορφή:</p>
+<ol class="greek-list">
+    <li>`987654`</li>
+    <li>`12345678`</li>
+    <li>`6543210`</li>
+    <li>`9876543210`</li>
+    <li>`12345`</li>
+    <li>`67890`</li>
+    <li>`543210`</li>
+    <li>`123456789`</li>
+    <li>`876543`</li>
+    <li>`321098`</li>
+</ol>
+
+<h2>Άσκηση 4</h2>
+<p>Να γράψεις τη δεκαδική μορφή των αριθμών:</p>
+<ol class="greek-list">
+    <li>`6,7 * 10^8`</li>
+    <li>`7,890 * 10^7`</li>
+    <li>`5,67 * 10^6`</li>
+    <li>`9,6 * 10^5`</li>
+    <li>`11,4 * 10^4`</li>
+</ol>
+		
+	<!--Επίλογος-->
+	<hr>
+		Κουμουνδούρος Γιάννης, <a href="mailto:johnkscience@yahoo.com">johnkscience@yahoo.com</a>
+	
+	
+	<script>
+	function getGreekLetter(index) {
+	  const greekLetters = ['α', 'β', 'γ', 'δ', 'ε', 'στ', 'ζ', 'η', 'θ', 'ι', 'κ', 'κα', 'κβ', 'κγ', 'κδ', 'κε', 'κστ', 'κζ', 'κη', 'κθ', 'κι', 'λ', 'λα', 'λβ', 'λγ'];
+	  return greekLetters[index];
+	}
+
+	// Επιλέγουμε όλες τις λίστες με την κλάση greek-list
+	const greekLists = document.querySelectorAll('.greek-list');
+
+	// Για κάθε λίστα
+	greekLists.forEach(list => {
+	  // Επιλέγουμε όλα τα στοιχεία της λίστας
+	  const listItems = list.querySelectorAll('li');
+
+	  // Για κάθε στοιχείο της λίστας
+	  listItems.forEach((item, index) => {
+		// Ορίζουμε το χαρακτηριστικό data-greek
+		item.dataset.greek = getGreekLetter(index);
+	  });
+	});
+	
+	</script>
+</body>
+</html>

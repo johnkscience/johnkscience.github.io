@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+	
+	John Koumoundouros, <johnkscience@yahoo.com> 
+	Πρότυπο αρχείο για την μετατροπή των σημειώσεων των Μαθηματικών
+	της Β Γυμνασίου από μορφή Writer σε html/asciimath
+	
+	+ Αποθηκεύστε το αρχείο με το νέο όνομα
+	+ Με τις ρουτίνες της LibreWriter-Basic μετατρέψτε το κείμενο writer σε html/asciimath
+	+ Με copy/paste μεταφέρετε το κείμενο από το writer εδώ
+	+ Κωδικοποίηση > UTF-8
+	+ Πρόσθετα > IndentByFold > Reindent
+	+ Χειροκίνητα αλλάζουμε τον τίτλο, μορφοποιούμε, ελέγχουμε
+	
+	Το σύστημα αρχείων έχει την δομή: math_2, math_2_0, math_2_0_1, κτλ
+	
+-->
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+		<title>Μαθηματικά Β Γυμνασίου, Βασικές Πράξεις και Έννοιες, Θεωρία</title>
+		<meta name="description" content="Μαθηματικά Β Γυμνασίου, Βασικές Πράξεις και Έννοιες, Θεωρία">
+		<meta name="keywords" content="Μαθηματικά Β Γυμνασίου, Σημειώσεις, Βοήθημα">
+		<meta name="author" content="Γιάννης Κουμουνδούρος">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="generator" content="notepad++" />
+		<link href="./math_2.css" type="text/css" rel="stylesheet"/>
+		<!--MathJax Αρχή-->
+		<script>
+			MathJax = {
+				loader: {load: ['input/asciimath', 'output/chtml']}
+			}
+		</script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js"></script>
+		<!--MathJax Τέλος-->
+	</head>
+	
+	<body >
+	
+	<!--Πλοήγηση -->
+	<div>
+	<ul class="menuList">
+		<li><a href="../../../../notes.html">.notes</a></li>
+		<li><a href="./math_2.html"> &lt &lt &lt  </a></li> <!--Προηγούμενο-->
+		<li><a href="./math_2_1_2.html"> &gt &gt &gt  </a></li> <!--Επόμενο-->
+		<li><a href="./math_2.html">Περιεχόμενα</a></li>
+	</ul>
+	</div>
+	
+	<!--Περιεχόμενα -->
+		
+		<h3>1. Βασικές Πράξεις και Έννοιες</h3>
+		
+		<h4>Θεωρία</h4>
+		
+		<ol class="level1">
+		<li class="numberedItem">Το σύνολο <span class="inlineMath">`NN= { 0,1,2,3,... }`</span> περιέχει τους <span class="emphasisPortion">φυσικούς</span> αριθμούς.</li>
+		<li class="numberedItem">Το σύνολο <span class="inlineMath">`ZZ= { … -2, -1, 0, 1, 2, … }`</span> περιέχει τους <span class="emphasisPortion">ακέραιους</span> αριθμούς.</li>
+		<li class="numberedItem">Οι αριθμοί που μπορούν να γραφούν με την μορφή κλάσματος <span class="inlineMath">`μ / ν `</span> με  <span class="inlineMath">`ν ne 0`</span>ονομάζονται <span class="emphasisPortion">ρητοί</span> αριθμοί και το σύνολο που τους περιέχει συμβολίζεται με <span class="inlineMath">`QQ`</span>.</li>
+		<li class="numberedItem">Ο αριθμοί που δεν είναι ρητοί ονομάζονται <span class="emphasisPortion">άρρητοι</span>, παραδείγματα τέτοιων αριθμών είναι το <span class="inlineMath">`π=3.14…`</span>, <span class="inlineMath">`e=2,718…`</span>, <span class="inlineMath">`sqrt(2)`</span>, κτλ</li>
+		<li class="numberedItem">Το σύνολο όλων των παραπάνω αριθμών ονομάζεται σύνολο των <span class="emphasisPortion">πραγματικών αριθμών</span> περιέχει δηλαδή τους ρητούς και τους άρρητους αριθμούς. Συμβολίζεται με <span class="inlineMath">`RR`</span>.</li>
+		<li class="numberedItem">Ο <span class="emphasisPortion">άξονας</span> των πραγματικών αριθμών είναι μία ευθεία (χωρίς αρχή και τέλος). Η ευθεία αυτή αποτελείται από διαδοχικά σημεία το ένα δίπλα στο άλλο. Κάθε σημείο αναπαριστά και έναν πραγματικό αριθμό. Αφού τα σημεία της ευθείας είναι άπειρα, θα είναι άπειροι και οι αριθμοί. Το σημείο με τον αριθμό μηδέν 0 ονομάζεται <span class="emphasisPortion">αρχή</span> του άξονα. Ο άξονας αυτός έχει προσανατολισμό, που είναι ένα βέλος που γράφουμε προς τα δεξιά. Αυτό σημαίνει ότι οι αριθμοί αυξάνονται προς στα δεξιά. Αυτό ονομάζεται και διάταξη.</li>
+		<li class="numberedItem">Αλγεβρικά η <span class="emphasisPortion">απόλυτη τιμή ενός</span> αριθμού ορίζεται ώς: <span class="inlineMath">`abs( x )= { (x, αν x>=0),(-x, αν x<0)  :} `</span>, ενώ γραφικά είναι η <span class="emphasisPortion">απόσταση</span> του αριθμού από το μηδέν (την αρχή του άξονα).</li>
+		<li class="numberedItem">Για κάθε αριθμό είναι <span class="inlineMath">`abs x>=0`</span></li>
+		<li class="numberedItem">Το αποτέλεσμα της πρόσθεσης ονομάζεται <span class="emphasisPortion">άθροισμα</span> ενώ  οι αριθμοί που προσθέτουμε ονομάζονται <span class="emphasisPortion">προσθετέοι</span> ή <span class="emphasisPortion">όροι</span>.</li>
+		<li class="numberedItem"><span class="emphasisPortion">Για να προσθέσουμε δύο αριθμούς </span>παίρνουμε  πρόσημο από τον αριθμό με την μεγαλύτερη απόλυτη τιμή και εάν οι αριθμοί είναι ομόσημοι τους προσθέτουμε ενώ εάν είναι ετερόσημοι τους αφαιρούμε.</li>
+		<li class="numberedItem">Η πρόσθεση έχει τις παρακάτω ιδιότητες: (<span class="emphasisPortion">ιδιότητες της πρόσθεσης</span>)</li>
+			<ol class="level2"><li class="numberedItem"><span class="emphasisPortion">Α</span><span class="emphasisPortion">ντιμεταθετική</span> ιδιότητα η οποία με λέει ότι δεν έχει σημασία με ποια σειρά θα προσθέσουμε τους δύο προσθετέους, έχει τύπο: <span class="inlineMath">`α+β=β+α`</span>. </li>
+			<li class="numberedItem"><span class="emphasisPortion">Προσεταιριστική</span> ιδιότητα που μας λέει ότι εάν έχουμε τρεις προσθετέους μπορούμε να τους προσθέσουμε με όποια σειρά θέλουμε, με τύπο <span class="inlineMath">`(α+β)+γ=α+(β+γ)`</span>.</li>
+			<li class="numberedItem"><span class="emphasisPortion">Ουδέτερο στοιχείο</span>, που είναι ο αριθμός μηδέν, οποίος όταν προστεθεί σε οποιαδήποτε άλλον αριθμό δίνει πάλη τον ίδιο αριθμό. Έχει τύπο <span class="inlineMath">`α+0=α`</span>.</li>
+			<li class="numberedItem">Ο <span class="emphasisPortion">αντίθετος</span> ενός αριθμού <span class="inlineMath">`α`</span> είναι ο <span class="inlineMath">`-α`</span> με την ιδιότητα <span class="inlineMath">`α+(-α)=0`</span>.</li>
+			</ol>
+		<li class="numberedItem">Το αποτέλεσμα του πολλαπλασιασμού ονομάζεται <span class="emphasisPortion">γινόμενο</span> ενώ  οι αριθμοί που  πολλαπλασιάζουμε ονομάζονται <span class="emphasisPortion">παράγοντες</span>.</li>
+		<li class="numberedItem"><span class="emphasisPortion">Για να κάνουμε πολλαπλασιασμό</span> υπολογίζουμε αρχικά το πρόσημο. Αν οι παράγοντες είναι ομόσημοι τότε παίρνουμε θετικό πρόσημο ενώ εάν οι παράγοντες είναι ετερόσημοι τότε παίρνουμε αρνητικό πρόσημο. Τέλος κάνουμε κανονικά τον πολλαπλασιασμό.</li>
+		<li class="numberedItem">Ο πολλαπλασιασμός έχει τις παρακάτω ιδιότητες.(<span class="emphasisPortion">Ιδιότητες του πολ/σμού</span>)</li>
+			<ol class="level2"><li class="numberedItem"><span class="emphasisPortion">Α</span><span class="emphasisPortion">ντιμεταθετική</span> ιδιότητα η οποία με λέει ότι δεν έχει σημασία με ποια σειρά θα πολλαπλασιάσουμε τους δύο παράγοντες, έχει τύπο: <span class="inlineMath">`α cdot β=β cdot α`</span>. </li>
+			<li class="numberedItem"><span class="emphasisPortion">Προσεταιριστική</span> ιδιότητα που μας λέει ότι εάν έχουμε τρεις παράγοντες μπορούμε να τους πολλαπλασιάσουμε με όποια σειρά θέλουμε, με τύπο <span class="inlineMath">`(α cdot β) cdot γ=α cdot (β cdot γ)`</span>.</li>
+			<li class="numberedItem"><span class="emphasisPortion">Ουδέτερο στοιχείο</span>, που είναι ο αριθμός 1, οποίος όταν πολλαπλασιαστεί σε οποιαδήποτε άλλον αριθμό δίνει πάλη τον ίδιο αριθμό. Έχει τύπο <span class="inlineMath">`α cdot 1=α`</span>.</li>
+			<li class="numberedItem">Ο <span class="emphasisPortion">α</span><span class="emphasisPortion">ντίστροφος</span> ενός αριθμού <span class="inlineMath">`α`</span> είναι ο <span class="inlineMath">`1 / α`</span> με την ιδιότητα <span class="inlineMath">`α cdot (1 / α)=1`</span>.</li>
+			</ol>
+		<li class="numberedItem">Η <span class="emphasisPortion">επιμεριστική ιδιότητα</span> είναι κοινή ιδιότητα του πολλαπλασιασμού και της πρόσθεσης. Αλγεβρικά γράφουμε: <span class="inlineMath">`α cdot (β + γ)=α cdot β + α cdot γ`</span>. Ακόμα έχουμε <span class="inlineMath">`(α+β)(γ+δ)=αγ+αδ+βγ+βδ`</span> κ.τ.λ.</li>
+		<li class="numberedItem">Προσοχή πρέπει να δίνουμε όταν έχουμε διαιρέσεις</li>
+			<ol class="level2"><li class="numberedItem"><span class="inlineMath">`(α+-β):γ=α:γ+-β:γ`</span> ή <span class="inlineMath">`(α +- β) / γ = α / γ +- ( β / γ)`</span></li>
+			<li class="numberedItem">Δεν επιτρέπεται η  <span class="inlineMath">`γ: (α+-β)=γ:α +- γ:β`</span></li>
+			</ol>
+		<li class="numberedItem">Για να υπολογίσουμε τον αντίθετο (x) ενός αριθμού (α) αρκεί να λύσουμε την εξίσωση: <span class="inlineMath">`α+x=0`</span>. Ενώ για να υπολογίσουμε τον αντίστροφο (x) ενός αριθμού (α) αρκεί να λύσουμε την εξίσωση: <span class="inlineMath">`α cdot x =1`</span>.</li>
+		<li class="numberedItem"><span class="emphasisPortion">Οι πράξεις είναι δύο</span>: η πρόσθεση και ο πολλαπλασιασμός. Ορίζουμε την αφαίρεση και την διαίρεση με την βοήθεια των δύο παραπάνω. </li>
+		<li class="numberedItem">Το αποτέλεσμα της αφαίρεσης <span class="inlineMath">`α-β`</span> ονομάζεται <span class="emphasisPortion">διαφορά</span> ενώ οι δύο αριθμοί που αφαιρούμε ονομάζονται <span class="emphasisPortion">μειωτέος</span> ο πρώτος (α)  και <span class="emphasisPortion">αφαιρετέος</span> ο δεύτερος (β). Για να κάνουμε αφαίρεση προσθέτουμε στην μειωτέο τον αντίθετο του αφαιρετέου: <span class="inlineMath">`α-β=α+(-β)`</span> </li>
+		<li class="numberedItem">Το αποτέλεσμα τη διαίρεσης <span class="inlineMath">`α / β`</span> ονομάζεται και <span class="emphasisPortion">λόγος</span>, συμβολίζεται δε με την μορφή κλάσματος. Ο αριθμητής του κλάσματος (α) είναι ο <span class="emphasisPortion">διαιρετέος</span> ενώ ο παρανομαστής (β) είναι ο <span class="emphasisPortion">διαιρέτης</span>. Για να κάνουμε διαίρεση πολλαπλασιάζουμε στον διαιρετέο τον αντίστροφο του διαιρέτη: <span class="inlineMath">`α cdot β = α cdot (1 / β)`</span>. Εάν εφαρμόσουμε τον αλγόριθμο της <span class="emphasisPortion">Ευκλείδειας διαίρεσης</span> θα υπολογίζουμε το <span class="emphasisPortion">πηλίκο</span> (π) και το <span class="emphasisPortion">υπόλοιπο</span> (υ). Ισχύει η ιδιότητα της Ευκλείδειας διαίρεσης <span class="inlineMath">`α=β cdot π +υ`</span>.</li>
+		<li class="numberedItem"><span class="emphasisPortion">Κλάσμα</span> είναι ένας αριθμός της μορφής <span class="inlineMath">`α / β`</span> με <span class="inlineMath">`β ne 0`</span>. Το α ονομάζεται αριθμητής και το β παρανομαστής.</li>
+		<li class="numberedItem"><span class="emphasisPortion">Για να απλοποιήσουμε ένα κλάσμα </span>διαιρούμε τον αριθμητή και τον παρανομαστή με τον μέγιστο κοινό διαιρέτη του αριθμητή και του παρανομαστή. Το κλάσμα που δεν απλοποιείται περισσότερο ονομάζεται <span class="emphasisPortion">ανάγωγο</span>. </li>
+		<li class="numberedItem"><span class="emphasisPortion">Για να προσθέσουμε δύο κλάσματα </span>πρέπει να είναι ομώνυμα δηλαδή να έχουν ίδιο παρανομαστή. Για να κάνουμε δύο κλάσματα ομώνυμα χρησιμοποιούμε το ελάχιστο κοινό πολλαπλάσιο των δύο παρανομαστών. Για να ολοκληρώσουμε την πρόσθεση πρέπει να προσθέσουμε τους δύο αριθμητές και να βάλουμε σαν παρανομαστή τον κοινό παρανομαστή των δύο κλασμάτων.</li>
+		<li class="numberedItem"><span class="emphasisPortion">Για να πολλαπλασιάσουμε δύο κλάσματα</span> πολλαπλασιάζουμε τους αριθμητές και τους παρανομαστές των δύο κλασμάτων.</li>
+		<li class="numberedItem"><span class="emphasisPortion">Για να διαιρέσουμε δύο κλάσματα</span> αλλάζουμε την διαίρεση σε πολλαπλασιασμό και αντιστρέφουμε το δεύτερο κλάσμα.</li>
+		<li class="numberedItem"><span class="emphasisPortion">Λόγος</span> δύο αριθμών είναι το κλάσμα <span class="inlineMath">`x / y`</span> με <span class="inlineMath">`y ne 0`</span>.</li>
+		<li class="numberedItem"><span class="emphasisPortion">Αναλογία</span> είναι η ισότητα δύο λόγων: <span class="inlineMath">`x / y = φ / ω`</span>, <span class="inlineMath">`x cdot ω ne 0`</span>, οι αριθμητές ονομάζονται και <span class="emphasisPortion">ηγούμενοι όροι</span> ενώ οι παρανομαστές και <span class="emphasisPortion">επόμενοι όροι</span>. Ακόμα τα x και ω ονομάζονται <span class="emphasisPortion">άκροι</span> και οι y και φ <span class="emphasisPortion">μέσοι όροι</span>.</li>
+		<li class="numberedItem"> Οι αναλογίες έχουν τις παρακάτω <span class="emphasisPortion">ιδιότητες</span>:</li>
+			<ol class="level2"><li class="numberedItem"><span class="inlineMath">` x / y = φ / ω iff x cdot ω = y cdot φ`</span></li>
+			<li class="numberedItem"><span class="inlineMath">`x / y = φ / ω iff ω / y = φ  / x`</span>  ή <span class="inlineMath">`x / φ = y / ω`</span>  ή <span class="inlineMath">`ω / φ = y / x`</span> δηλαδή μετακινώ τις μεταβλητές διαγώνια.</li>
+			<li class="numberedItem"><span class="inlineMath">`x / y=φ / ω iff ( x+-y )/( y) =( φ+-ω )/ ω`</span>  ή <span class="inlineMath">` x /( y+-x )=φ / ( ω+-φ ) `</span> δηλαδή προσθέτω τους αριθμητές ή τους παρανομαστές.</li>
+			<li class="numberedItem"><span class="inlineMath">`x / y = φ / ω =( x+φ )/( y+ω )`</span></li>
+			</ol>
+		<li class="numberedItem">Οι πράξει γίνονται με την παρακάτω <span class="emphasisPortion">προτεραιότητα</span>:</li>
+			<ol class="level2"><li class="numberedItem">Παρενθέσεις</li>
+			<li class="numberedItem">Απόλυτες τιμές</li>
+			<li class="numberedItem">Δυνάμεις</li>
+			<li class="numberedItem">Πολλαπλασιασμοί και διαιρέσεις</li>
+			<li class="numberedItem">Προσθέσεις και αφαιρέσεις</li>
+			</ol>
+		<li class="numberedItem">Δύο αριθμοί ονομάζονται <span class="emphasisPortion">ομόσημοι</span> όταν έχουν ίδιο πρόσημο, ισχύει <span class="inlineMath">`α cdot β >0`</span> και <span class="inlineMath">`α / β >0, β ne 0`</span>. Ενώ ονομάζονται <span class="emphasisPortion">ετερόσημοι</span> όταν έχουν αντίθετο πρόσημο, ισχύει ότι <span class="inlineMath">`α cdot β <0`</span> και <span class="inlineMath">`α / β <0, β ne 0`</span></li>
+		<li class="numberedItem">Το <span class="emphasisPortion">μηδέν</span> (0) δεν έχει πρόσημο, ούτε αντίθετο και αντίστροφο. Ότι πολλαπλασιάζουμε με το μηδέν δίνει αποτέλεσμα μηδέν και ότι προσθέτουμε με το μηδέν δίνει ως αποτέλεσμα τον ίδιο τον αριθμό που προσθέτουμε.</li>
+		<li class="numberedItem">Όταν μπροστά από μία παρένθεση υπάρχει το – τότε βγάζουμε την παρένθεση αλλάζοντας όλα τα πρόσημα μέσα στην παρένθεση.</li>
+		<li class="numberedItem">Το γινόμενο άρτιου πλήθους παραγόντων έχει θετικό πρόσημο ενώ το γινόμενο περιττού πλήθους παραγόντων έχει αρνητικό πρόσημο.</li>
+		<li class="numberedItem">Ένας δεκαδικός αριθμός με άπειρο αριθμό δεκαδικών ψηφίων όπου ένα τμήμα αυτών των ψηφίων επαναλαμβάνεται ονομάζεται απειροψήφιος περιοδικός δεκαδικός αριθμός ή απλά <span class="emphasisPortion">περιοδικός αριθμός</span>, π.χ. <span class="inlineMath">`0.34565656...=0.34bar(56)`</span> Οι αριθμοί αυτοί είναι ρητοί και μπορούν να γραφούν με την μορφή κλάσματος. Για να γίνει η μετατροπή σε κλάσμα ακολουθούμε τον παρακάτω αλγόριθμο:</li>
+			<ol class="level2"><li class="numberedItem">Έστω α ο περιοδικός αριθμός</li>
+			<li class="numberedItem">Εντοπίζουμε το πρώτο και το δεύτερο μέρος της περιόδου.</li>
+			<li class="numberedItem">Πολλαπλασιάζουμε με κατάλληλες δυνάμεις του 10 ώστε η υποδιαστολή να βρεθεί μπροστά από το πρώτο και το δεύτερο μέρος της περιόδου.</li>
+			<li class="numberedItem">Αφαιρούμε τις δύο σχέσεις </li>
+			</ol>
+		<li class="numberedItem">Ακολουθεί ένα παράδειγμα μετατροπής του αριθμού 0.3456565656… </li>
+			<ol class="level2"><li class="numberedItem">Έστω α=0.34565656…</li>
+			<li class="numberedItem">Η περίοδος είναι το 56 και πρώτη φορά εμφανίζεται στο 0.34565656… και δεύτερη φορά στο 0.34565656…</li>
+			<li class="numberedItem">Πολλαπλασιάζουμε με 100 και 10000 αντίστοιχα: <span class="inlineMath">`100α=34.565656…`</span> και <span class="inlineMath">`10000α=3456.565656…`</span></li>
+			<li class="numberedItem">Αφαιρούμε κατά μέλη αυτές τις δύο σχέσεις: <span class="inlineMath">`10000α-100α=3422`</span> ή <span class="inlineMath">`9900α=3422`</span> ή <span class="inlineMath">`α=3422 / 9900`</span> </li>
+			</ol>
+		<li class="numberedItem">Για να υπολογίσουμε τον <span class="emphasisPortion">μέσο όρο</span> ή <span class="emphasisPortion">μέση τιμή</span> ενός πλήθους δεδομένων αρκεί να τα προσθέσουμε και να διαιρέσουμε με το πλήθος τους, π.χ. αν στο μάθημα των μαθηματικών έχετε πάρει τους βαθμούς 13, 15, 12, 14 και 15 τότε η μέση τιμή αυτών των βαθμολογιών είναι</li>
+		<li class="noNumberedItem"> <span class="inlineMath">`(13+15+12+14+15) / (5)=`</span><span class="inlineMath">`(12 cdot 1+13 cdot 1+14 cdot 1+ 15 cdot 2) / (5)=69 / 5=13.8`</span></li>
+		<li class="numberedItem">Σε κάθε σημείο ενός άξονα έχουμε αντιστοιχίσει και έναν αριθμό, που η απόλυτή του τιμή είναι η απόσταση του σημείου από την αρχή. Τον αριθμό αυτό μπορούμε να τον ονομάζουμε  <span class="emphasisPortion">θέση</span> και την απόλυτη τιμή του <span class="emphasisPortion">μέτρο</span> της θέσης. Έτσι εάν ένα αυτοκίνητο βρίσκεται κάποια χρονική στιγμή σε κάποιο σημείο του άξονα, το σημείο αυτό θα το ονομάζουμε θέση του αυτοκινήτου, π.χ. εάν είναι βρίσκεται στον αριθμό -3 θέση του είναι <span class="inlineMath">`x = -3`</span> και απέχει από το μηδέν <span class="inlineMath">`abs(-3)=3`</span> μονάδες. Αργότερα θα δούμε ότι η θέση είναι ένα διάνυσμα (βέλος) που έχει αρχή το σημείο αναφοράς (αρχή του άξονα) και πέρας το σημείο στο οποίο βρίσκεται το αυτοκίνητο. Τα διανύσματα έχουν μέτρο (=μήκος), διεύθυνση (=ευθεία) και φορά (=προσανατολισμός). </li>
+		<li class="numberedItem">Ας υποθέσουμε  τώρα ότι ένα αυτοκίνητο βρίσκεται αρχικά στην θέση Ο(0km). Βλέπε το σχήμα στην σελίδα 15 του σχολικού. Το αυτοκίνητο μετακινείται προς τα αριστερά στην θέση Β(-4km) και μετά προς τα δεξιά στην θέση Γ(5Km). Το συνολικό <span class="emphasisPortion">διάστημα</span> που έχει διανύσει το όχημα είναι η συνολική απόσταση που έχει κάνει σε όλη την διαδρομή, δηλαδή 4km προς τα αριστερά και 9km προς τα δεξιά, συνολικά 13km. Το διάστημα είναι μονόμετρο μέγεθος.</li>
+		<li class="numberedItem">Στο παραπάνω παράδειγμα αν το όχημα ξεκινούσε από την αρχική θέση Ο(0km) και κατευθυνόταν κατευθείαν προς την τελική θέση Γ(5km) τότε θα έκανε μόνο 5km. Αυτό είναι το μέτρο της <span class="emphasisPortion">μετατόπισης</span>. Αργότερα θα δούμε ότι η μετατόπιση είναι ένα διανυσματικό μέγεθος (βέλος) που έχει αρχή το σημείο όπου ξεκινάει την κίνηση το όχημα και τέλος το σημείο όπου τελειώνει την κίνηση το όχημα.</li>
+		<li class="numberedItem">Η έκφραση <span class="inlineMath">`x cdot y ne 0`</span> σημαίνει ότι το <span class="inlineMath">`x ne 0`</span> και ταυτόχρονα το <span class="inlineMath">`y ne 0`</span></li>
+		<li class="numberedItem">Η έκφραση <span class="inlineMath">`x cdot y > 0`</span> σημαίνει ότι οι αριθμοί x και y είναι ομόσημοι.</li>
+		<li class="numberedItem">Η έκφραση <span class="inlineMath">`x cdot y < 0`</span> σημαίνει ότι οι αριθμοί x και y είναι ετερόσημοι.</li>
+		<li class="numberedItem">Η έκφραση <span class="inlineMath">`x cdot y=0`</span>σημαίνει ότι <span class="inlineMath">`x=0 `</span> ή  <span class="inlineMath">`y=0`</span>.</li>
+		</ol>
+		
+		<!--Επίλογος-->
+		<div class="footerCard">
+			Κουμουνδούρος Γιάννης, <a href="mailto:johnkscience@yahoo.com">johnkscience@yahoo.com</a>
+		</div>
+	</body>
+	</html>															
