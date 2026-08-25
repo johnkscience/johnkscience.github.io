@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Απλό Εκκρεμές - johnkscience</title>
+    <link rel="stylesheet" href="/theme/css/blog.css">
+	
+	<script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	
+</head>
+<body>
+
+    <div class="header">
+        
+        <h1>
+            <a href="/" style="text-decoration: none; color: inherit;">
+                johnkscience.<span class="ext-labs">labs</span></a>
+        </h1>
+        <p>Νέα από την Εκπαίδευση <br>
+			Άρθρα Επιστημονικού Ενδιαφέροντος <br>
+        Σημειώσεις και Βοηθήματα για το Γυμνάσιο και το Λύκειο.</p>
+    </div>
+
+    <ul class="menu">
+        <li><a href="/">Αρχική</a></li>
+        
+            <li><a href="/category/arthra.html">Άρθρα</a></li>
+            <li><a href="/category/epikairoteta.html">Επικαιρότητα</a></li>
+            <li><a href="/category/ergasteria.html">Εργαστήρια</a></li>
+            <li><a href="/category/semeioseis.html">Σημειώσεις</a></li>
+        
+        <li><a href="about.html">Σχετικά</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="leftcolumn">
+    <div class="article">
+        <h2 style="text-align: center; margin-bottom: 5px;">Απλό Εκκρεμές</h2>
+        <h5 style="text-align: center; color: #666; margin-top: 0;">
+            Δημοσιεύτηκε: 25-08-2026 | Κατηγορία: Εργαστήρια
+        </h5>
+        
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+        
+        <div class="article-content">
+            <p>Στο παρακάτω εικονικό εργαστήριο μπορείτε να πειραματιστείτε με τις ιδιότητες του απλού εκκρεμούς. Χρησιμοποιήστε τα χειριστήρια στα αριστερά για να αλλάξετε τις παραμέτρους.</p>
+<div style="text-align: center; margin-top: 20px;">
+    <canvas id="labCanvas" width="800" height="600" style="border:1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 100%;"></canvas>
+</div>
+
+<script type="module">
+    import { Simulation } from '/labs/js/core/Simulation.js';
+    import { PendulumScene } from '/labs/js/scenes/PendulumScene.js';
+
+    window.onload = () => {
+        const sim = new Simulation('labCanvas');
+        sim.sceneManager.switchScene(new PendulumScene());
+        sim.start();
+    };
+</script>
+        </div>
+    </div>
+        </div>
+
+        <div class="rightcolumn">
+            
+            <div class="card" style="text-align: center;">
+                <h3>Σχετικά με μένα</h3>
+                <img src="/pages/images/john.jpg" alt="Ιωάννης Κουμουνδούρος" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+                <p style="font-size: 0.9em; margin-bottom: 15px;">
+                    Είμαι ο Κουμουνδούρος Ιωάννης, Φυσικός Ε.Κ.Π.Α. με αγάπη για τη διδασκαλία, τον προγραμματισμό, τα Μαθηματικά και τις θετικές επιστήμες.
+                </p>
+                <a href="/about.html" style="display: inline-block; padding: 8px 15px; background-color: var(--primary-color, #34495e); color: white; text-decoration: none; border-radius: 4px; font-size: 0.9em;">Διαβάστε περισσότερα</a>
+            </div>
+
+            <div class="card">
+                <h3>Πρόσφατα Άρθρα</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                            <a href="/allages-phases-tou-nerou.html" style="text-decoration: none; color: #333; font-weight: bold; font-size: 0.95em;">
+                                Αλλαγές Φάσης του Νερού
+                            </a>
+                            <br>
+                            <span style="font-size: 0.8em; color: #777;">
+                                28-08-2026
+                            </span>
+                        </li>
+                        <li style="margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                            <a href="/krustalliko-plegma-kai-thermoteta.html" style="text-decoration: none; color: #333; font-weight: bold; font-size: 0.95em;">
+                                Κρυσταλλικό Πλέγμα και Θερμότητα
+                            </a>
+                            <br>
+                            <span style="font-size: 0.8em; color: #777;">
+                                27-08-2026
+                            </span>
+                        </li>
+                        <li style="margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                            <a href="/kinetike-theoria-aerion.html" style="text-decoration: none; color: #333; font-weight: bold; font-size: 0.95em;">
+                                Κινητική Θεωρία Αερίων
+                            </a>
+                            <br>
+                            <span style="font-size: 0.8em; color: #777;">
+                                26-08-2026
+                            </span>
+                        </li>
+                        <li style="margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                            <a href="/aplo-ekkremes.html" style="text-decoration: none; color: #333; font-weight: bold; font-size: 0.95em;">
+                                Απλό Εκκρεμές
+                            </a>
+                            <br>
+                            <span style="font-size: 0.8em; color: #777;">
+                                25-08-2026
+                            </span>
+                        </li>
+                        <li style="margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
+                            <a href="/mathematika-a-gumnasiou.html" style="text-decoration: none; color: #333; font-weight: bold; font-size: 0.95em;">
+                                Μαθηματικά Α Γυμνασίου
+                            </a>
+                            <br>
+                            <span style="font-size: 0.8em; color: #777;">
+                                10-07-2026
+                            </span>
+                        </li>
+                </ul>
+            </div>
+
+            <div class="card" style="text-align: center;">
+                <h3>Εγγραφή</h3>
+                <p style="font-size: 0.9em;">Λάβετε ειδοποιήσεις για νέο υλικό μέσω RSS.</p>
+                <a href="/feeds/all.rss.xml" target="_blank" style="display: inline-block; padding: 8px 15px; background-color: #f26522; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 0.9em;">
+					🔔 RSS Feed
+				</a>
+            </div>
+        </div> <!-- Αυτό κλείνει το rightcolumn -->
+	</div> <!-- Αυτό κλείνει το <div class="row"> ! -->
+    
+	<div class="footer">
+        <div class="footerLeftColumn">
+            <p>&copy; 2026 johnkscience</p>
+        </div>
+    </div>
+
+	<button id="scrollTopBtn" title="Επιστροφή στην κορυφή">&#8679;</button>
+
+    <script>
+        // Παίρνουμε το κουμπί
+        let mybutton = document.getElementById("scrollTopBtn");
+
+        // Όταν ο χρήστης κάνει scroll προς τα κάτω (π.χ. 300px), εμφάνισε το κουμπί
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        // Όταν πατάει το κουμπί, πήγαινε στην κορυφή ομαλά (smooth)
+        mybutton.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+	
+</body>
+</html>
