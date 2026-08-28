@@ -1,0 +1,1726 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Γιάννης">
+      
+      
+      
+        <link rel="prev" href="../2_3_maza_pyknotita/">
+      
+      
+        <link rel="next" href="../3_1_morfes_energeias/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>2.4 Μέτρηση του χρόνου - Φυσική Α' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#24" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Φυσική Α&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Φυσική Α' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Φυσική Α' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.4 Μέτρηση του χρόνου
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Φυσική Α&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Φυσική Α' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Φυσική Α' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αρχική
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Η ΦΥΣΙΚΉ ΚΑΙ Η ΕΠΙΣΤΗΜΟΝΙΚΉ ΜΕΘΟΔΟΛΟΓΊΑ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1 Η ΦΥΣΙΚΉ ΚΑΙ Η ΕΠΙΣΤΗΜΟΝΙΚΉ ΜΕΘΟΔΟΛΟΓΊΑ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_1_methodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Οι φυσικές επιστήμες, η φυσική και η μεθοδολογία τους
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_2_mikrokosmos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Η μελέτη ενός φυσικού φαινομένου στο εργαστήριο και η ερμηνεία του με το πρότυπο του μικρόκοσμου
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 ΜΕΤΡΩΝΤΑΣ ΚΑΙ ΥΠΟΛΟΓΙΖΟΝΤΑΣ ΤΑ ΦΥΣΙΚΑ ΜΕΓΕΘΗ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2 ΜΕΤΡΩΝΤΑΣ ΚΑΙ ΥΠΟΛΟΓΙΖΟΝΤΑΣ ΤΑ ΦΥΣΙΚΑ ΜΕΓΕΘΗ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_1_fysika_megethi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Τα φυσικά μεγέθη και οι μονάδες τους
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_2_mikos_ogkos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Μετρήσεις μήκους και όγκου
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_3_maza_pyknotita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 Μάζα, μέτρηση και υπολογισμός της πυκνότητας
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Μέτρηση του χρόνου
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Μέτρηση του χρόνου
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Α: Η Έννοια του Χρόνου, Όργανα και Μονάδες Μέτρησης
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Μέρος Α: Η Έννοια του Χρόνου, Όργανα και Μονάδες Μέτρησης">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-delta-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Η Διάρκεια ως "Μεταβολή" (Το σύμβολο \(\Delta t\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ιστορία: Πώς μετρούσαν τον χρόνο οι αρχαίοι;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Μονάδες Μέτρησης και οι Κλίμακες του Χρόνου
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Σύγχρονα Όργανα Μέτρησης (και η Ακρίβειά τους)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Β: Περιοδικά Φαινόμενα, Το Εκκρεμές και οι Ζώνες Ώρας
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Μέρος Β: Περιοδικά Φαινόμενα, Το Εκκρεμές και οι Ζώνες Ώρας">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Περιοδικά Φαινόμενα και Κοσμικά Ρολόγια
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Το Απλό Εκκρεμές και η Περίοδος (\(T\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Εργαστήριο: Μελετώντας το Εκκρεμές
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Γεωγραφία &amp; Λογοτεχνία: Ο Χρόνος γύρω από τη Γη
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Δραστηριότητες για το Σπίτι (Χρόνος)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Δραστηριότητες για το Σπίτι (Χρόνος)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Κλειστού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Ανοιχτού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 ΕΝΕΡΓΕΙΑ ΚΑΙ ΥΛΗ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3 ΕΝΕΡΓΕΙΑ ΚΑΙ ΥΛΗ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_1_morfes_energeias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Μορφές ενέργειας και διεργασίες στη φύση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_2_thermokrasia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Μέτρηση της θερμοκρασίας
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_3_thermikh_isorropia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Μεταφορά θερμότητας και θερμική ισορροπία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_4_allages_katastasis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Μεταβολές της κατάστασης της ύλης
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_5_diastoli_nero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.5 Διαστολή και συστολή σωμάτων - Η ιδιαιτερότητα του νερού
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_6_thermikes_mixanes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.6 Από τη θερμότητα στη μηχανική ενέργεια. Θερμικές μηχανές
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 ΗΛΕΚΤΡΟΜΑΓΝΗΤΙΣΜΟΣ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4 ΗΛΕΚΤΡΟΜΑΓΝΗΤΙΣΜΟΣ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_1_ilektriko_kykloma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Το ηλεκτρικό κύκλωμα και τα στοιχεία του
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_2_mikro_hlektrismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Η μικροσκοπική ερμηνεία του ηλεκτρικού ρεύματος
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_3_hlektrismos_magnitismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.3 Από τον ηλεκτρισμό στον μαγνητισμό
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_4_magnitismos_hlektrismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.4 Από τον μαγνητισμό στον ηλεκτρισμό
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Α: Η Έννοια του Χρόνου, Όργανα και Μονάδες Μέτρησης
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Μέρος Α: Η Έννοια του Χρόνου, Όργανα και Μονάδες Μέτρησης">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-delta-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Η Διάρκεια ως "Μεταβολή" (Το σύμβολο \(\Delta t\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ιστορία: Πώς μετρούσαν τον χρόνο οι αρχαίοι;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Μονάδες Μέτρησης και οι Κλίμακες του Χρόνου
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Σύγχρονα Όργανα Μέτρησης (και η Ακρίβειά τους)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Β: Περιοδικά Φαινόμενα, Το Εκκρεμές και οι Ζώνες Ώρας
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Μέρος Β: Περιοδικά Φαινόμενα, Το Εκκρεμές και οι Ζώνες Ώρας">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Περιοδικά Φαινόμενα και Κοσμικά Ρολόγια
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-t" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Το Απλό Εκκρεμές και η Περίοδος (\(T\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Εργαστήριο: Μελετώντας το Εκκρεμές
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Γεωγραφία &amp; Λογοτεχνία: Ο Χρόνος γύρω από τη Γη
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Δραστηριότητες για το Σπίτι (Χρόνος)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Δραστηριότητες για το Σπίτι (Χρόνος)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Κλειστού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Ανοιχτού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="24">2.4 Μέτρηση του Χρόνου</h1>
+<hr />
+<h2 id="_1">Μέρος Α: Η Έννοια του Χρόνου, Όργανα και Μονάδες Μέτρησης</h2>
+<p><em>Τι είναι ο χρόνος; Πώς μετρούσαν τον χρόνο οι άνθρωποι πριν ανακαλυφθούν τα ρολόγια και πώς μπορούμε να υπολογίσουμε με ακρίβεια τη διάρκεια ενός φαινομένου;</em></p>
+<hr />
+<h3 id="1-delta-t">1. Η Διάρκεια ως "Μεταβολή" (Το σύμβολο <span class="arithmatex">\(\Delta t\)</span>)</h3>
+<div class="admonition info">
+<p class="admonition-title">Η χρονική μεταβολή</p>
+<p>Στη Φυσική, πολλές φορές δεν μας ενδιαφέρει τι ώρα λέει το ρολόι σε μια συγκεκριμένη στιγμή, αλλά <strong>πόσο διήρκεσε</strong> ένα φαινόμενο. Η διάρκεια (ή χρονικό διάστημα) συμβολίζεται με το <strong><span class="arithmatex">\(\Delta t\)</span></strong> (Δέλτα ταυ). </p>
+<p>Το <span class="arithmatex">\(\Delta\)</span> στα μαθηματικά σημαίνει "μεταβολή", δηλαδή η διαφορά της τελικής από την αρχική χρονική στιγμή:
+$$ \Delta t = t_{\text{τελ}} - t_{\text{αρχ}} $$</p>
+<p><em>Παράδειγμα:</em> Αν το κουδούνι του σχολείου χτύπησε στις <span class="arithmatex">\(08:15\)</span> (<span class="arithmatex">\(t_{\text{αρχ}}\)</span>) και το διάλειμμα ξεκίνησε στις <span class="arithmatex">\(09:00\)</span> (<span class="arithmatex">\(t_{\text{τελ}}\)</span>), η διάρκεια του μαθήματος ήταν <span class="arithmatex">\(\Delta t = 45 \text{ λεπτά}\)</span>.</p>
+</div>
+<hr />
+<h3 id="2">2. Ιστορία: Πώς μετρούσαν τον χρόνο οι αρχαίοι;</h3>
+<p>Πριν την εφεύρεση των μηχανικών ρολογιών, οι άνθρωποι βασίζονταν στη φύση και σε έξυπνες εφευρέσεις για να μετρήσουν τον χρόνο.</p>
+<div class="admonition quote">
+<p class="admonition-title">Φυσικά και Τεχνητά Ρολόγια της Αρχαιότητας</p>
+<ul>
+<li><strong>Η Φαινομενική κίνηση του Ήλιου:</strong> Η εναλλαγή μέρας και νύχτας, καθώς και η θέση του ήλιου στον ουρανό, ήταν το πρώτο "ρολόι" της ανθρωπότητας. Έτσι φτιάχτηκαν τα <strong>ηλιακά ρολόγια</strong>, που μετρούσαν τον χρόνο με βάση το μήκος και τη θέση μιας σκιάς.</li>
+<li><strong>Η Κλεψύδρα (Υδραυλικό ρολόι):</strong> Οι αρχαίοι Έλληνες χρησιμοποιούσαν δοχεία από τα οποία άδειαζε νερό με σταθερό ρυθμό. Το έκαναν συχνά στα δικαστήρια για να δίνουν ίσο χρόνο ομιλίας! Αργότερα δημιουργήθηκαν οι κλεψύδρες με άμμο.</li>
+<li><strong>Το Κερί - Ρολόι:</strong> Στον Μεσαίωνα, χρησιμοποιούσαν κεριά με ζωγραφισμένες γραμμές. Καθώς το κερί έκαιγε και έλιωνε, οι γραμμές έδειχναν πόσος χρόνος είχε περάσει!</li>
+<li><strong>Ο Σφυγμός:</strong> Ξέρεις ότι ο σπουδαίος επιστήμονας Γαλιλαίος, όταν ήθελε να χρονομετρήσει τα πειράματά του και δεν είχε ακριβή όργανα, χρησιμοποιούσε τον δικό του σφυγμό (χτύπους της καρδιάς) ως χρονόμετρο; </li>
+</ul>
+</div>
+<hr />
+<h3 id="3">3. Μονάδες Μέτρησης και οι Κλίμακες του Χρόνου</h3>
+<div class="admonition info">
+<p class="admonition-title">Οι Μονάδες του Χρόνου</p>
+<ul>
+<li><strong>Βασική Μονάδα (S.I.):</strong> Το δευτερόλεπτο (<strong><span class="arithmatex">\(\text{s}\)</span></strong>, από το <em>second</em>).</li>
+<li><strong>Άλλες μονάδες:</strong> Το λεπτό (<strong><span class="arithmatex">\(\text{min}\)</span></strong>), η ώρα (<strong><span class="arithmatex">\(\text{h}\)</span></strong>), η ημέρα (<strong><span class="arithmatex">\(\text{d}\)</span></strong>), το έτος (<strong><span class="arithmatex">\(\text{y}\)</span></strong>).</li>
+</ul>
+<p><em>Οι βασικές μετατροπές:</em></p>
+<ul>
+<li><span class="arithmatex">\(1 \text{ min} = 60 \text{ s}\)</span></li>
+<li><span class="arithmatex">\(1 \text{ h} = 60 \text{ min} = 3.600 \text{ s}\)</span></li>
+<li><span class="arithmatex">\(1 \text{ ημέρα} = 24 \text{ h} = 86.400 \text{ s}\)</span></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Κλίμακες του Χρόνου: Από το... τίποτα, στους Δεινόσαυρους!</p>
+<p>Ο χρόνος, όπως και το μήκος, έχει τεράστιες διακυμάνσεις:</p>
+<ul>
+<li><strong>Μικρόκοσμος:</strong> Ένα ριπή του ματιού διαρκεί περίπου <span class="arithmatex">\(0,1\text{ s}\)</span>. </li>
+<li><strong>Καθημερινότητα:</strong> Ένας αγώνας ποδοσφαίρου διαρκεί <span class="arithmatex">\(90\text{ min}\)</span>.</li>
+<li><strong>Γεωλογικός Χρόνος:</strong> Πότε έζησαν οι δεινόσαυροι; Εξαφανίστηκαν πριν από περίπου <strong>66 εκατομμύρια χρόνια</strong>! Στη Φυσική και τη Γεωλογία, χρησιμοποιούμε κλίμακες εκατομμυρίων ή δισεκατομμυρίων ετών για να μετρήσουμε την ηλικία της Γης και του Σύμπαντος.</li>
+</ul>
+</div>
+<hr />
+<h3 id="4">4. Σύγχρονα Όργανα Μέτρησης (και η Ακρίβειά τους)</h3>
+<p>Σήμερα, η επιλογή του ρολογιού εξαρτάται αποκλειστικά από την <strong>ακρίβεια (διακριτική ικανότητα)</strong> που χρειαζόμαστε. </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Είδος Ρολογιού</th>
+<th style="text-align: left;">Διακριτική Ικανότητα (Ακρίβεια)</th>
+<th style="text-align: left;">Χρήση</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ρολόι τοίχου (με δείκτες)</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(1\text{ s}\)</span> (ή <span class="arithmatex">\(1\text{ min}\)</span> αν δεν έχει δευτερολεπτοδείκτη)</td>
+<td style="text-align: left;">Σπίτι, σχολική αίθουσα.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ρολόι χειρός / Smartwatch</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(1\text{ s}\)</span> (συχνά ψηφιακό)</td>
+<td style="text-align: left;">Καθημερινές δραστηριότητες.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Αναλογικό Χρονόμετρο</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{1}{10}\text{ s}\)</span> (<span class="arithmatex">\(0,1\text{ s}\)</span>)</td>
+<td style="text-align: left;">Απλά αθλήματα, εργαστήριο.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ψηφιακό Χρονόμετρο (π.χ. κινητό)</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{1}{100}\text{ s}\)</span> (<span class="arithmatex">\(0,01\text{ s}\)</span>)</td>
+<td style="text-align: left;">Αγώνες στίβου (π.χ. 100 μέτρα), πειράματα υψηλής ακρίβειας.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ατομικό Ρολόι</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(1\)</span> νανοδευτερόλεπτο (<span class="arithmatex">\(0,000000001\text{ s}\)</span>)</td>
+<td style="text-align: left;">Είναι το πιο ακριβές ρολόι στον κόσμο! Χρησιμοποιείται στους δορυφόρους GPS. Χάνει μόλις 1 δευτερόλεπτο κάθε 100 εκατομμύρια χρόνια!</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition question">
+<p class="admonition-title">Άσκηση Εφαρμογής: Ταίριαξε τη δραστηριότητα με το σωστό ρολόι!</p>
+<p>Δίνονται οι παρακάτω 8 δραστηριότητες. Ποιο όργανο (Ατομικό ρολόι, Ψηφιακό χρονόμετρο, Ρολόι τοίχου, Ημερολόγιο) θα χρησιμοποιούσες για να μετρήσεις τον χρόνο καθεμιάς, ώστε να έχεις την ιδανική ακρίβεια;</p>
+<ol>
+<li>Ένας αγώνας δρόμου 100 μέτρων στους Ολυμπιακούς Αγώνες.</li>
+<li>Η ώρα που θα χτυπήσει το κουδούνι στο σχολείο.</li>
+<li>Ο συγχρονισμός των δορυφόρων του GPS.</li>
+<li>Ο χρόνος ψησίματος ενός κέικ στον φούρνο.</li>
+<li>Ο χρόνος πτώσης μιας σταγόνας νερού από τη βρύση στον νιπτήρα.</li>
+<li>Πόσος χρόνος μένει μέχρι τις καλοκαιρινές διακοπές;</li>
+<li>Πόση ώρα διαρκεί μια ταινία στο σινεμά.</li>
+<li>Ποιος κολυμβητής τερμάτισε πρώτος σε έναν αγώνα με διαφορά "στήθους".</li>
+</ol>
+</div>
+<details class="success">
+<summary>Απαντήσεις και Κατάταξη</summary>
+<ul>
+<li><strong>Ατομικό ρολόι (Απόλυτη Ακρίβεια):</strong> 3 (Συγχρονισμός δορυφόρων GPS).</li>
+<li><strong>Ψηφιακό Χρονόμετρο (Ακρίβεια εκατοστών του δευτερολέπτου):</strong> 1 (Σπριντ 100μ), 5 (Πτώση σταγόνας - θέλει γρήγορα αντανακλαστικά!), 8 (Οριακός τερματισμός στην κολύμβηση).</li>
+<li><strong>Ρολόι τοίχου / χειρός (Ακρίβεια λεπτού):</strong> 2 (Κουδούνι σχολείου), 4 (Ψήσιμο κέικ), 7 (Διάρκεια ταινίας).</li>
+<li><strong>Ημερολόγιο (Ακρίβεια ημερών):</strong> 6 (Αντίστροφη μέτρηση για τις διακοπές).</li>
+</ul>
+</details>
+<h2 id="_2">Μέρος Β: Περιοδικά Φαινόμενα, Το Εκκρεμές και οι Ζώνες Ώρας</h2>
+<p><em>Πώς μπορούμε να φτιάξουμε ένα ρολόι χρησιμοποιώντας μόνο έναν σπάγκο και ένα βαρίδι; Ήρθε η ώρα να ανακαλύψουμε τον ρυθμό της φύσης!</em></p>
+<hr />
+<h3 id="1">1. Περιοδικά Φαινόμενα και Κοσμικά Ρολόγια</h3>
+<p>Για να μετρήσουμε τον χρόνο με ακρίβεια, χρειαζόμαστε κάτι που να επαναλαμβάνεται ξανά και ξανά με τον ίδιο ακριβώς ρυθμό. </p>
+<div class="admonition info">
+<p class="admonition-title">Τι είναι τα Περιοδικά Φαινόμενα;</p>
+<p><strong>Περιοδικό</strong> ονομάζεται ένα φαινόμενο που επαναλαμβάνεται ακριβώς το ίδιο, σε ίσα χρονικά διαστήματα. </p>
+<ul>
+<li><em>Παραδείγματα:</em> Η εναλλαγή μέρας και νύχτας, οι φάσεις της Σελήνης, ο χτύπος της καρδιάς (σε ηρεμία), η κίνηση της κούνιας στην παιδική χαρά.</li>
+</ul>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Πάλσαρς (Pulsars): Τα πιο ακριβή ρολόγια του Σύμπαντος!</p>
+<p>Τα Πάλσαρς είναι υπολείμματα νεκρών, τεράστιων άστρων (αστέρες νετρονίων) τα οποία περιστρέφονται γύρω από τον εαυτό τους με ασύλληπτη ταχύτητα. Καθώς γυρίζουν, εκπέμπουν ραδιοκύματα (σαν φάροι στη θάλασσα) με τόσο σταθερό ρυθμό, που οι αστρονόμοι μπορούν να τα χρησιμοποιήσουν ως διαστημικά ρολόγια τεράστιας ακρίβειας!</p>
+</div>
+<hr />
+<h3 id="2-t">2. Το Απλό Εκκρεμές και η Περίοδος (<span class="arithmatex">\(T\)</span>)</h3>
+<p>Ο Γαλιλαίος, παρατηρώντας έναν πολυέλαιο να κουνιέται σε μια εκκλησία, ανακάλυψε τους νόμους του εκκρεμούς και άνοιξε τον δρόμο για τα μηχανικά ρολόγια (ρολόγια εκκρεμούς / τοίχου).</p>
+<div class="admonition tip">
+<p class="admonition-title">Τι είναι το Εκκρεμές και τι η Περίοδος;</p>
+<ul>
+<li><strong>Απλό Εκκρεμές:</strong> Είναι ένα βαρίδι κρεμασμένο από ένα νήμα. Όταν το απομακρύνουμε από την κατακόρυφη θέση του και το αφήσουμε, αρχίζει να πηγαίνει πέρα-δώθε. Αυτό λέγεται <strong>ταλάντωση</strong>.</li>
+<li><strong>Περίοδος (<span class="arithmatex">\(T\)</span>):</strong> Είναι ο χρόνος που χρειάζεται το εκκρεμές για να κάνει <strong>ΜΙΑ πλήρη ταλάντωση</strong> (δηλαδή να ξεκινήσει από μια άκρη, να πάει στην απέναντι και να ξαναγυρίσει ακριβώς στο σημείο που ξεκίνησε). Μετριέται σε δευτερόλεπτα (<span class="arithmatex">\(\text{s}\)</span>).</li>
+</ul>
+</div>
+<hr />
+<h3 id="3_1">3. Εργαστήριο: Μελετώντας το Εκκρεμές</h3>
+<div class="admonition example">
+<p class="admonition-title">Πώς μετράμε την Περίοδο (<span class="arithmatex">\(T\)</span>) στο εργαστήριο; (Η Μέθοδος της Αναγωγής)</p>
+<p>Αν προσπαθήσεις να χρονομετρήσεις με το κινητό σου <strong>μόνο μία</strong> ταλάντωση, θα κάνεις μεγάλο σφάλμα γιατί τα αντανακλαστικά σου (το πότε πατάς start/stop) δεν είναι τέλεια.</p>
+<p><strong>Η λύση:</strong></p>
+<ol>
+<li>Απομακρύνουμε το νήμα σε μια μικρή γωνία (π.χ. <strong>10 μοίρες</strong>), χρησιμοποιώντας ένα μοιρογνωμόνιο.</li>
+<li>Αφήνουμε το βαρίδι και χρονομετρούμε τον χρόνο (<span class="arithmatex">\(t\)</span>) για <strong>5 πλήρεις ταλαντώσεις</strong>. (Έστω ότι βρίσκουμε <span class="arithmatex">\(t = 10\text{ s}\)</span>).</li>
+<li><strong>Διαιρούμε</strong> τον συνολικό χρόνο με το πλήθος των ταλαντώσεων (αυτό λέγεται "αναγωγή"):
+   $$ T = \frac{t}{N} = \frac{10\text{ s}}{5} = \mathbf{2\text{ s}} $$
+Έτσι, το τυχαίο σφάλμα των αντανακλαστικών μας "μοιράζεται" στις 5 ταλαντώσεις και γίνεται πολύ μικρότερο!</li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Τι επηρεάζει την Περίοδο ενός Εκκρεμούς;</p>
+<p>Αν κάνεις το πείραμα αλλάζοντας τα υλικά σου, θα ανακαλύψεις κάτι εκπληκτικό:</p>
+<ul>
+<li><strong>Επηρεάζει η Μάζα;</strong> ΟΧΙ! Αν βάλεις ένα βαρύ παξιμάδι ή μια ελαφριά πλαστελίνη, η περίοδος (<span class="arithmatex">\(T\)</span>) παραμένει η ίδια!</li>
+<li><strong>Επηρεάζει η Γωνία;</strong> ΟΧΙ! (Αρκεί να είναι μικρή, π.χ. μέχρι 10-15 μοίρες). </li>
+<li><strong>Επηρεάζει το Μήκος του νήματος;</strong> <strong>ΝΑΙ!</strong> Αυτός είναι ο ένας από τους <strong>δύο</strong> παράγοντες που επηρεάζουν την περίοδο. Όσο πιο <strong>μακρύ</strong> είναι το νήμα, τόσο πιο <strong>μεγάλη</strong> είναι η Περίοδος (<span class="arithmatex">\(T\)</span>), δηλαδή το εκκρεμές πηγαινοέρχεται πιο αργά!</li>
+<li><strong>Επηρεάζει η επιτάχυνση της βαρύτητας;</strong> <strong>ΝΑΙ!</strong> Οσο μεγαλύτερη είναι η επιτάχυνση της βαρύτητας τόσο ποιο γρήγορα κινείται το βαρίδι και έτσι τόσο ποιο μικρή είναι η περίοδος.  </li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Σύγχρονο Εργαστήριο: Η εφαρμογή Phyphox</p>
+<p>Σήμερα, δεν χρειάζεται καν να πατάμε το χρονόμετρο! Με την εφαρμογή <strong>Phyphox</strong> στο κινητό (που δημιουργήθηκε από πανεπιστήμιο ειδικά για πειράματα Φυσικής), μπορούμε να βάλουμε το ίδιο το κινητό μέσα σε ένα σακουλάκι, να το κρεμάσουμε σαν εκκρεμές, και οι αισθητήρες του (επιταχυνσιόμετρο) θα καταγράψουν την Περίοδο της ταλάντωσης με ακρίβεια χιλιοστού του δευτερολέπτου, φτιάχνοντας ταυτόχρονα και τη γραφική παράσταση!</p>
+</div>
+<hr />
+<h3 id="4_1">4. Γεωγραφία &amp; Λογοτεχνία: Ο Χρόνος γύρω από τη Γη</h3>
+<p>Αφού μετρήσαμε τον χρόνο, πρέπει να συμφωνήσουμε και τι ώρα είναι! Επειδή η Γη είναι σφαιρική και περιστρέφεται, όταν στην Ελλάδα έχουμε μεσημέρι και βλέπουμε τον Ήλιο, στην Αμερική έχουν βαθιά νύχτα.</p>
+<div class="admonition info">
+<p class="admonition-title">Ωριαίες Γήινες Άτρακτοι (Time Zones)</p>
+<p>Για να λυθεί αυτό το πρόβλημα, οι επιστήμονες χώρισαν τη Γη σε <strong>24 "φέτες"</strong> (όσες και οι ώρες της ημέρας). Αυτές οι φέτες ονομάζονται <strong>Ωριαίες Άτρακτοι</strong>. 
+Κάθε φορά που ταξιδεύεις ανατολικά και περνάς σε μια νέα άτρακτο, το ρολόι σου πάει 1 ώρα μπροστά. Αν ταξιδεύεις δυτικά, πάει 1 ώρα πίσω. </p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Ο Γύρος του Κόσμου σε 80 ημέρες (Ιούλιος Βερν)</p>
+<p>Στο διάσημο μυθιστόρημα, ο Φιλέας Φογκ στοιχηματίζει ότι μπορεί να κάνει τον γύρο της Γης σε 80 ημέρες. Επιστρέφοντας στο Λονδίνο, νομίζει ότι άργησε μία μέρα (δηλαδή ότι έκανε 81 ημέρες) και ότι έχασε το στοίχημα. 
+Όμως... κέρδισε! Επειδή ταξίδευε συνεχώς προς την <strong>Ανατολή</strong> (κόντρα στην κίνηση του Ήλιου), περνούσε συνεχώς σε άτρακτους που η ώρα ήταν "πιο μπροστά". Έτσι, "κέρδισε" αθροιστικά μια ολόκληρη μέρα χωρίς να το καταλάβει εγκαίρως. Η Φυσική και η Γεωγραφία τον έσωσαν!</p>
+</div>
+<h2 id="_3">Δραστηριότητες για το Σπίτι (Χρόνος)</h2>
+<h3 id="_4">Ερωτήσεις Κλειστού Τύπου</h3>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 1: Απλή εφαρμογή (Μετατροπές)</p>
+<p><strong>Συμπλήρωσε τα κενά:</strong></p>
+<ol>
+<li>60 min = ... s</li>
+<li>600 s = ... min</li>
+<li>72 h = ... min</li>
+<li>24 h = ... s</li>
+</ol>
+</div>
+<details class="success">
+<summary>Λύσεις Άσκησης 1</summary>
+<p>Για να μετατρέψουμε, θυμόμαστε ότι 1 min = 60 s και 1 h = 60 min = 3.600 s.</p>
+<ol>
+<li>60 min = 60 <span class="arithmatex">\(\cdot\)</span> 60 = <strong>3.600 s</strong></li>
+<li>600 s = 600 / 60 = <strong>10 min</strong></li>
+<li>72 h = 72 <span class="arithmatex">\(\cdot\)</span> 60 = <strong>4.320 min</strong></li>
+<li>24 h = 24 <span class="arithmatex">\(\cdot\)</span> 3.600 = <strong>86.400 s</strong> (τόσα δευτερόλεπτα έχει μία ολόκληρη μέρα!)</li>
+</ol>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 2: Για εξάσκηση (Υπολογισμός διάρκειας)</p>
+<p><strong>Βρες τη διάρκεια (<span class="arithmatex">\(\Delta t\)</span>) των παρακάτω φαινομένων σε δευτερόλεπτα (s).</strong></p>
+<ol>
+<li>Η πρώτη διδακτική ώρα αρχίζει στις 8:15 και τελειώνει στις 9:00.</li>
+<li>Το πρώτο σετ του αγώνα τένις άρχισε στις 11:45 και τελείωσε στις 12:52.</li>
+<li>Αρχίσαμε να τρώμε στις 14:06 και τελειώσαμε στις 14:52.</li>
+<li>Σήμερα κοιμήθηκα αρκετά. Έπεσα για ύπνο στις 22:45 και ξύπνησα 7:25.</li>
+</ol>
+</div>
+<details class="success">
+<summary>Λύσεις Άσκησης 2</summary>
+<p>Υπολογίζουμε πρώτα τη διάρκεια σε λεπτά (ή ώρες και λεπτά) και μετά μετατρέπουμε σε δευτερόλεπτα:</p>
+<ol>
+<li>Από 8:15 έως 9:00 είναι <strong>45 λεπτά</strong>. 
+  Σε δευτερόλεπτα: <span class="arithmatex">\(45 \cdot 60 = \mathbf{2.700 \text{ s}}\)</span>.</li>
+<li>Από 11:45 έως 12:00 είναι 15 λεπτά, και από 12:00 έως 12:52 είναι άλλα 52 λεπτά. Σύνολο: 67 λεπτά.
+  Σε δευτερόλεπτα: <span class="arithmatex">\(67 \cdot 60 = \mathbf{4.020 \text{ s}}\)</span>.</li>
+<li>Από 14:06 έως 14:52 είναι <span class="arithmatex">\(52 - 6 =\)</span> <strong>46 λεπτά</strong>.
+  Σε δευτερόλεπτα: <span class="arithmatex">\(46 \cdot 60 = \mathbf{2.760 \text{ s}}\)</span>.</li>
+<li>
+<p>Από τις 22:45 μέχρι τα μεσάνυχτα (24:00) μεσολαβεί 1 ώρα και 15 λεπτά. Από τα μεσάνυχτα μέχρι τις 7:25 περνούν 7 ώρες και 25 λεπτά. </p>
+<p>Συνολικός χρόνος ύπνου: 8 ώρες και 40 λεπτά = <span class="arithmatex">\((8 \cdot 60) + 40 = 480 + 40 =\)</span> <strong>520 λεπτά</strong>.</p>
+<p>Σε δευτερόλεπτα: <span class="arithmatex">\(520 \cdot 60 = \mathbf{31.200 \text{ s}}\)</span>.</p>
+</li>
+</ol>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 3: Για εξάσκηση (Ο Μαραθώνιος)</p>
+<p>Ο νικητής του Μαραθώνιου της Αθήνας το 2023 τερμάτισε μετά από χρόνο <strong>2 ώρες, 10 λεπτά και 34 δευτερόλεπτα</strong>.</p>
+<ol>
+<li>Να μετατρέψεις τον χρόνο του νικητή i) σε δευτερόλεπτα και ii) σε λεπτά.</li>
+<li>Ένας άλλος αθλητής τερμάτισε τον αγώνα σε <strong>4 ώρες, 20 λεπτά και 56 δευτερόλεπτα</strong>. Πόσα δευτερόλεπτα αργότερα τερμάτισε μετά από τον πρώτο νικητή;</li>
+</ol>
+</div>
+<details class="success">
+<summary>Λύσεις Άσκησης 3</summary>
+<ol>
+<li>
+<p><strong>Ο χρόνος του Νικητή:</strong></p>
+<ul>
+<li>
+<p><strong>Σε δευτερόλεπτα:</strong></p>
+<p>2 ώρες = <span class="arithmatex">\(2 \cdot 3.600 = 7.200 \text{ s}\)</span></p>
+<p>10 λεπτά = <span class="arithmatex">\(10 \cdot 60 = 600 \text{ s}\)</span></p>
+<p>Συνολικός χρόνος: <span class="arithmatex">\(7.200 + 600 + 34 = \mathbf{7.834 \text{ s}}\)</span>.</p>
+</li>
+<li>
+<p><strong>Σε λεπτά:</strong> </p>
+<p>2 ώρες = 120 λεπτά.</p>
+<p>Τα 34 δευτερόλεπτα είναι 34/60 του λεπτού <span class="arithmatex">\(\approx 0{,}57 \text{ min}\)</span>.</p>
+<p>Συνολικός χρόνος: <span class="arithmatex">\(120 + 10 + 0{,}57 = \mathbf{130{,}57 \text{ min}}\)</span>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Ο χρόνος του 2ου αθλητή σε δευτερόλεπτα:</strong></p>
+<p>4 ώρες = <span class="arithmatex">\(4 \cdot 3.600 = 14.400 \text{ s}\)</span></p>
+<p>20 λεπτά = <span class="arithmatex">\(20 \cdot 60 = 1.200 \text{ s}\)</span></p>
+<p>Συνολικός χρόνος 2ου αθλητή: <span class="arithmatex">\(14.400 + 1.200 + 56 = \mathbf{15.656 \text{ s}}\)</span>.</p>
+</li>
+</ol>
+<p><em>Διαφορά χρόνου:</em> <span class="arithmatex">\(15.656 - 7.834 = \mathbf{7.822 \text{ s}}\)</span> αργότερα.</p>
+</details>
+<hr />
+<h3 id="_5">Ερωτήσεις Ανοιχτού Τύπου</h3>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 4: Για ανασκόπηση (Ο Χρόνος στην Τέχνη)</p>
+<p>Να αναζητήσεις α) έργα τέχνης, β) ταινίες, γ) μυθιστορήματα, και δ) τραγούδια που αναφέρονται στον χρόνο. Να παρουσιάσεις τα αποτελέσματά σου στην τάξη.</p>
+</div>
+<details class="success">
+<summary>Ενδεικτικές Απαντήσεις</summary>
+<p>Η έννοια του χρόνου έχει εμπνεύσει πολλούς καλλιτέχνες! Μερικά παραδείγματα:</p>
+<ul>
+<li><strong>Έργα τέχνης:</strong> "Η Εμμονή της Μνήμης" (τα διάσημα "λιωμένα ρολόγια") του Σαλβαδόρ Νταλί.</li>
+<li><strong>Ταινίες:</strong> "Επιστροφή στο Μέλλον" (Back to the Future), "Interstellar" (όπου ο χρόνος κυλάει διαφορετικά λόγω της βαρύτητας).</li>
+<li><strong>Μυθιστορήματα:</strong> "Η Μηχανή του Χρόνου" του Χ. Τζ. Γουέλς, "Ο γύρος του κόσμου σε 80 ημέρες" του Ιουλίου Βερν.</li>
+<li><strong>Τραγούδια:</strong> "Time" (Pink Floyd), "Clocks" (Coldplay).</li>
+</ul>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 5: Για εμβάθυνση (Το Ηλιακό Ρολόι)</p>
+<p>Ένα ηλιόλουστο πρωινό τοποθέτησε κάθετα στο έδαφος ένα σκουπόξυλο. Ξεκινώντας από τις 11:30 περίπου, σημάδευε την άκρη της σκιάς με ένα χαλίκι κάθε 5 λεπτά μέχρι τις 13:00, μετρώντας το μήκος της σκιάς.</p>
+<p>α) Πώς αλλάζει το μήκος της σκιάς καθώς περνά η ώρα;
+β) Όταν ο Ήλιος βρίσκεται στην ψηλότερη θέση του, η σκιά είναι η μικρότερη (τότε λέμε ότι είναι μεσημέρι). Σύμφωνα με τις παρατηρήσεις σου, τι ώρα ήταν το "μεσημέρι";</p>
+</div>
+<details class="success">
+<summary>Αποτελέσματα Πειράματος (Ηλιακό Ρολόι)</summary>
+<p>Αυτή είναι μια πρακτική δραστηριότητα. Τα συμπεράσματα που θα βγάλεις είναι:</p>
+<ul>
+<li><strong>α)</strong> Καθώς η ώρα περνάει από το πρωί προς το μεσημέρι, το μήκος της σκιάς <strong>μικραίνει</strong> (γιατί ο Ήλιος ανεβαίνει πιο ψηλά στον ουρανό). Αφού περάσει το μεσημέρι, η σκιά αρχίζει πάλι να <strong>μεγαλώνει</strong>.</li>
+<li><strong>β)</strong> Η ώρα που η σκιά είχε το <em>μικρότερο δυνατό μήκος</em> είναι το αστρονομικό "μεσημέρι" (το οποίο μπορεί να διαφέρει από τις 12:00 ακριβώς στα ρολόγια μας, ανάλογα με την εποχή και την ώρα Ελλάδος!).</li>
+</ul>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 6: Για εμβάθυνση (Ο διαγωνισμός των μαθητών)</p>
+<p>Στη σχολική εφημερίδα στάλθηκαν δύο εργασίες.</p>
+<ul>
+<li>Η <strong>Ελένη</strong> ισχυρίστηκε: <em>"Αν κρεμάσουμε το ίδιο σώμα σε νήμα μεγαλύτερου μήκους, τότε η διάρκεια κάθε ταλάντωσης (Περίοδος) θα είναι μεγαλύτερη."</em></li>
+<li>Ο <strong>Λούκας</strong> ισχυρίστηκε: <em>"Η διάρκεια μιας ταλάντωσης (Περίοδος) γίνεται μεγαλύτερη αν στο ίδιο νήμα κρεμάσουμε ένα σώμα με μεγαλύτερη μάζα."</em></li>
+</ul>
+<p>α) Πραγματοποίησε τα πειράματα για να ελέγξεις τους ισχυρισμούς.
+β) Ποια εργασία θα δημοσίευες;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 6 (Το Εκκρεμές)</summary>
+<p>Αν κάνεις τα πειράματα όπως μάθαμε στη θεωρία, θα διαπιστώσεις τα εξής:</p>
+<ul>
+<li>Το πείραμα της Ελένης θα δείξει ότι όταν μακραίνουμε το νήμα, το εκκρεμές πηγαινοέρχεται πιο αργά, άρα <strong>ο χρόνος (Περίοδος) μεγαλώνει</strong>. Η Ελένη έχει δίκιο!</li>
+<li>Το πείραμα του Λούκα θα δείξει ότι αν βάλουμε πιο βαρύ αντικείμενο στο ίδιο ακριβώς νήμα, ο ρυθμός <strong>ΔΕΝ</strong> αλλάζει καθόλου. Η μάζα δεν επηρεάζει το εκκρεμές. Ο Λούκας έκανε λάθος!</li>
+</ul>
+<p><strong>Απάντηση:</strong> Θα δημοσιεύαμε την εργασία της <strong>Ελένης</strong>, γιατί επιβεβαιώνεται από την πειραματική διαδικασία.</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

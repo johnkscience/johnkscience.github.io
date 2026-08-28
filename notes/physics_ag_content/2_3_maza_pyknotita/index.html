@@ -1,0 +1,1889 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Γιάννης">
+      
+      
+      
+        <link rel="prev" href="../2_2_mikos_ogkos/">
+      
+      
+        <link rel="next" href="../2_4_xronos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>2.3 Μάζα, μέτρηση και υπολογισμός της πυκνότητας - Φυσική Α' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#23" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Φυσική Α&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Φυσική Α' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Φυσική Α' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.3 Μάζα, μέτρηση και υπολογισμός της πυκνότητας
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Φυσική Α&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Φυσική Α' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Φυσική Α' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αρχική
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Η ΦΥΣΙΚΉ ΚΑΙ Η ΕΠΙΣΤΗΜΟΝΙΚΉ ΜΕΘΟΔΟΛΟΓΊΑ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1 Η ΦΥΣΙΚΉ ΚΑΙ Η ΕΠΙΣΤΗΜΟΝΙΚΉ ΜΕΘΟΔΟΛΟΓΊΑ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_1_methodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Οι φυσικές επιστήμες, η φυσική και η μεθοδολογία τους
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_2_mikrokosmos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Η μελέτη ενός φυσικού φαινομένου στο εργαστήριο και η ερμηνεία του με το πρότυπο του μικρόκοσμου
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 ΜΕΤΡΩΝΤΑΣ ΚΑΙ ΥΠΟΛΟΓΙΖΟΝΤΑΣ ΤΑ ΦΥΣΙΚΑ ΜΕΓΕΘΗ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2 ΜΕΤΡΩΝΤΑΣ ΚΑΙ ΥΠΟΛΟΓΙΖΟΝΤΑΣ ΤΑ ΦΥΣΙΚΑ ΜΕΓΕΘΗ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_1_fysika_megethi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Τα φυσικά μεγέθη και οι μονάδες τους
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_2_mikos_ogkos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Μετρήσεις μήκους και όγκου
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 Μάζα, μέτρηση και υπολογισμός της πυκνότητας
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 Μάζα, μέτρηση και υπολογισμός της πυκνότητας
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Α: Η Μάζα (Ποσότητα Ύλης, Αδράνεια και Βάρος)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Μέρος Α: Η Μάζα (Ποσότητα Ύλης, Αδράνεια και Βάρος)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Τι είναι η Μάζα; (Δύο διαφορετικές οπτικές)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Μονάδες Μέτρησης και Όργανα
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Μάζα εναντίον Βάρους: Η μεγάλη παρεξήγηση!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ακραίες Μετρήσεις: Από τον Ιό μέχρι τον Ήλιο
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-diy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Εργαστήριο &amp; Κατασκευές στο Σπίτι (DIY)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Β: Η Πυκνότητα (Πλεύση, Βύθιση και ο "στριμωγμένος" μικρόκοσμος)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Μέρος Β: Η Πυκνότητα (Πλεύση, Βύθιση και ο &#34;στριμωγμένος&#34; μικρόκοσμος)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Κατανοώντας την Πυκνότητα (Δύο Πειράματα Σκέψης)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ορισμός, Τύπος και Μονάδες
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Πλεύση και Βύθιση (Το "μαγικό" ποτήρι)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Πυκνόμετρο: Μέτρηση με μια ματιά!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ιστορία, Ναυάγια και... Υποβρύχια!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Ασκήσεις Εμπέδωσης &amp; Γραφικές Παραστάσεις
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Δραστηριότητες για το Σπίτι (Μάζα &amp; Πυκνότητα)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Δραστηριότητες για το Σπίτι (Μάζα &amp; Πυκνότητα)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Κλειστού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Ανοιχτού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_4_xronos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Μέτρηση του χρόνου
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 ΕΝΕΡΓΕΙΑ ΚΑΙ ΥΛΗ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3 ΕΝΕΡΓΕΙΑ ΚΑΙ ΥΛΗ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_1_morfes_energeias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Μορφές ενέργειας και διεργασίες στη φύση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_2_thermokrasia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Μέτρηση της θερμοκρασίας
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_3_thermikh_isorropia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Μεταφορά θερμότητας και θερμική ισορροπία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_4_allages_katastasis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Μεταβολές της κατάστασης της ύλης
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_5_diastoli_nero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.5 Διαστολή και συστολή σωμάτων - Η ιδιαιτερότητα του νερού
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_6_thermikes_mixanes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.6 Από τη θερμότητα στη μηχανική ενέργεια. Θερμικές μηχανές
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 ΗΛΕΚΤΡΟΜΑΓΝΗΤΙΣΜΟΣ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4 ΗΛΕΚΤΡΟΜΑΓΝΗΤΙΣΜΟΣ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_1_ilektriko_kykloma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Το ηλεκτρικό κύκλωμα και τα στοιχεία του
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_2_mikro_hlektrismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Η μικροσκοπική ερμηνεία του ηλεκτρικού ρεύματος
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_3_hlektrismos_magnitismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.3 Από τον ηλεκτρισμό στον μαγνητισμό
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_4_magnitismos_hlektrismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.4 Από τον μαγνητισμό στον ηλεκτρισμό
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Α: Η Μάζα (Ποσότητα Ύλης, Αδράνεια και Βάρος)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Μέρος Α: Η Μάζα (Ποσότητα Ύλης, Αδράνεια και Βάρος)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Τι είναι η Μάζα; (Δύο διαφορετικές οπτικές)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Μονάδες Μέτρησης και Όργανα
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Μάζα εναντίον Βάρους: Η μεγάλη παρεξήγηση!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Ακραίες Μετρήσεις: Από τον Ιό μέχρι τον Ήλιο
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-diy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Εργαστήριο &amp; Κατασκευές στο Σπίτι (DIY)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Β: Η Πυκνότητα (Πλεύση, Βύθιση και ο "στριμωγμένος" μικρόκοσμος)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Μέρος Β: Η Πυκνότητα (Πλεύση, Βύθιση και ο &#34;στριμωγμένος&#34; μικρόκοσμος)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Κατανοώντας την Πυκνότητα (Δύο Πειράματα Σκέψης)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Ορισμός, Τύπος και Μονάδες
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Πλεύση και Βύθιση (Το "μαγικό" ποτήρι)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Πυκνόμετρο: Μέτρηση με μια ματιά!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ιστορία, Ναυάγια και... Υποβρύχια!
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Ασκήσεις Εμπέδωσης &amp; Γραφικές Παραστάσεις
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Δραστηριότητες για το Σπίτι (Μάζα &amp; Πυκνότητα)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Δραστηριότητες για το Σπίτι (Μάζα &amp; Πυκνότητα)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Κλειστού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Ανοιχτού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="23">2.3 Μάζα, μέτρηση και υπολογισμός της πυκνότητας</h1>
+<hr />
+<h2 id="_1">Μέρος Α: Η Μάζα (Ποσότητα Ύλης, Αδράνεια και Βάρος)</h2>
+<p><em>Τι είναι άραγε αυτό που κάνει ένα γεμάτο μπουκάλι νερό να σταματάει πιο δύσκολα από ένα άδειο αν τα κυλήσουμε στο πάτωμα; Σε αυτή την ενότητα θα γνωρίσουμε την έννοια της μάζας, τη διαφορά της από το βάρος και πώς τη μετράμε.</em></p>
+<div class="admonition info">
+<p class="admonition-title">Βουτιά στον Μικρόκοσμο: Από τι είμαστε φτιαγμένοι;</p>
+<p>Για να καταλάβουμε πραγματικά τι είναι η μάζα και η πυκνότητα, πρέπει να κάνουμε μια βουτιά βαθιά μέσα στην ύλη. Αν πάρουμε ένα υλικό (π.χ. ένα κομμάτι αλάτι ή ένα σίδερο) και το ζουμάρουμε δισεκατομμύρια φορές, τι θα δούμε;</p>
+<ol>
+<li><strong>Κρύσταλλοι &amp; Μόρια:</strong> Τα περισσότερα στερεά έχουν τα σωματίδιά τους σε τέλεια, τακτοποιημένη διάταξη, σχηματίζοντας <strong>κρυστάλλους</strong>. Σε άλλες ουσίες, τα σωματίδια κυκλοφορούν σε παρεούλες που ονομάζονται <strong>μόρια</strong> (όπως το μόριο του νερού).</li>
+<li><strong>Άτομα:</strong> Τα μόρια και οι κρύσταλλοι φτιάχνονται από τα «τουβλάκια» του σύμπαντος, τα <strong>άτομα</strong>.</li>
+<li><strong>Πυρήνας &amp; Ηλεκτρόνια:</strong> Το άτομο δεν είναι ένα συμπαγές μπαλάκι. Στο κέντρο του υπάρχει ένας μικροσκοπικός, βαρύς <strong>πυρήνας</strong>. Γύρω από τον πυρήνα γυρίζουν σαν τρελά μικροσκοπικά σωματίδια, τα <strong>ηλεκτρόνια</strong>.</li>
+<li><strong>Πρωτόνια &amp; Νετρόνια:</strong> Αν ανοίξουμε τον πυρήνα, θα δούμε ότι αποτελείται από δύο ειδών σωματίδια: τα <strong>πρωτόνια</strong> (με θετικό φορτίο) και τα <strong>νετρόνια</strong> (χωρίς φορτίο). <em>Σχεδόν όλη η μάζα του ατόμου κρύβεται εδώ μέσα!</em></li>
+</ol>
+<p>💡 <strong>Η Μεγάλη Αποκάλυψη: Η κυριαρχία του Κενού!</strong>
+Μπορεί το γραφείο σου ή το σώμα σου να σου φαίνονται συμπαγή, αλλά στην πραγματικότητα <strong>είναι φτιαγμένα κατά 99,99999% από... τίποτα!</strong> 
+Αν ο πυρήνας ενός ατόμου είχε το μέγεθος μιας <strong>μπάλας του τένις</strong> τοποθετημένης στο κέντρο ενός γηπέδου ποδοσφαίρου, τα ηλεκτρόνια θα ήταν μικροσκοπικά κουνουπάκια που πετάνε... στις τελευταίες κερκίδες του γηπέδου! Όλος ο ενδιάμεσος χώρος είναι το απόλυτο <strong>κενό</strong>. </p>
+<p><em>Σύνδεση με την Πυκνότητα:</em> Όταν λέμε ότι ο μόλυβδος έχει μεγάλη πυκνότητα, σημαίνει ότι έχει πολύ "βαριούς" πυρήνες (πολλά πρωτόνια/νετρόνια) ή ότι τα άτομά του έχουν στριμωχτεί έτσι ώστε να μειωθεί λίγο αυτός ο τεράστιος κενός χώρος. Ακόμα κι έτσι όμως, κυριαρχεί το κενό!</p>
+</div>
+<hr />
+<h3 id="1">1. Τι είναι η Μάζα; (Δύο διαφορετικές οπτικές)</h3>
+<p>Στη Φυσική, καταλαβαίνουμε την έννοια της μάζας με δύο συμπληρωματικούς τρόπους: κοιτώντας τον «μικρόκοσμο» και παρατηρώντας την κίνηση των σωμάτων!</p>
+<div class="admonition info">
+<p class="admonition-title">1. Μάζα ως Ποσότητα της Ύλης (Ο Μικρόκοσμος)</p>
+<p>Όλα τα σώματα γύρω μας είναι φτιαγμένα από μικροσκοπικά σωματίδια (άτομα και μόρια). Η <strong>μάζα</strong> είναι το φυσικό μέγεθος που μας δείχνει την <strong>ποσότητα της ύλης</strong> που περιέχεται σε ένα σώμα. Όσο περισσότερα (ή βαρύτερα) σωματίδια έχει ένα σώμα, τόσο μεγαλύτερη είναι η μάζά του.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">2. Μάζα ως Αδράνεια (Η αντίσταση στην αλλαγή)</p>
+<p><strong>Αδράνεια</strong> είναι η ιδιότητα (η... "τεμπελιά") των σωμάτων να αντιστέκονται σε οποιαδήποτε αλλαγή της κινητικής τους κατάστασης. Η μάζα είναι το μέτρο της αδράνειας. Όσο μεγαλύτερη μάζα έχει ένα σώμα, τόσο πιο δύσκολα ξεκινάει να κινείται αν είναι σταματημένο, και τόσο πιο δύσκολα σταματάει αν ήδη κινείται!</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Πειράματα Σκέψης: Νιώθοντας την Αδράνεια</p>
+<ul>
+<li><strong>Δύο κλειστά δοχεία με νομίσματα:</strong> Έχεις δύο ολόιδια αδιαφανή δοχεία. Το ένα είναι γεμάτο νομίσματα, το άλλο έχει μόνο δύο. Πώς καταλαβαίνεις ποιο είναι το γεμάτο χωρίς να τα σηκώσεις; Αρκεί να τα σπρώξεις ελαφρά (οριζόντια) πάνω στο τραπέζι! Αυτό που δυσκολεύεται να ξεκινήσει (αντιστέκεται) έχει τη μεγαλύτερη μάζα (αδράνεια). Το ίδιο ισχύει και με δύο <strong>μπουκάλια νερού</strong> (ένα γεμάτο, ένα άδειο).</li>
+<li><strong>Δοχεία στο Διάστημα (Μηδενική Βαρύτητα):</strong> Φαντάσου έναν αστροναύτη στο διάστημα, όπου τα αντικείμενα "επιπλέουν" (δεν έχουν βάρος). Αν σπρώξει ένα τεράστιο διαστημικό τηλεσκόπιο και ένα μικρό στυλό, ποιο θα κινηθεί πιο εύκολα; Προφανώς το στυλό! <strong>Η μάζα (και η αδράνεια) υπάρχει παντού στο Σύμπαν, ακόμα κι αν δεν υπάρχει βαρύτητα!</strong></li>
+</ul>
+</div>
+<hr />
+<h3 id="2">2. Μονάδες Μέτρησης και Όργανα</h3>
+<div class="admonition info">
+<p class="admonition-title">Μονάδες Μάζας &amp; Μετατροπές</p>
+<ul>
+<li><strong>Βασική Μονάδα (S.I.):</strong> Το χιλιόγραμμο ή κιλό (<strong>kg</strong>).</li>
+<li><strong>Υποπολλαπλάσια / Πολλαπλάσια:</strong> Το γραμμάριο (<strong>g</strong>), το χιλιοστόγραμμο (<strong>mg</strong>) και ο τόνος (<strong>t</strong>).</li>
+</ul>
+<p><strong>Η Σκάλα των Μετατροπών (Βήματα του 1000):</strong></p>
+<ul>
+<li>1 τόνος (t) = 1.000 kg</li>
+<li>1 κιλό (kg) = 1.000 g</li>
+<li>1 γραμμάριο (g) = 1.000 mg</li>
+</ul>
+</div>
+<p>Για να μετρήσουμε τη μάζα χρησιμοποιούμε διάφορα είδη ζυγαριών, το καθένα με διαφορετικό τρόπο λειτουργίας:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Όργανο Μέτρησης</th>
+<th style="text-align: left;">Πώς λειτουργεί;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ζυγός (Με 2 δίσκους)</strong></td>
+<td style="text-align: left;">Συγκρίνει τη μάζα του αντικειμένου με γνωστές μάζες (σταθμά). Λειτουργεί σωστά <strong>παντού στο σύμπαν</strong> (π.χ. και στη Σελήνη), αρκεί να υπάρχει λίγη βαρύτητα.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Αναλογική Ζυγαριά (Με ελατήριο)</strong></td>
+<td style="text-align: left;">Μετράει πόσο παραμορφώνεται ένα ελατήριο από το βάρος του σώματος, αλλά η κλίμακά της είναι φτιαγμένη να δείχνει "κιλά".</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ηλεκτρονική Ζυγαριά</strong></td>
+<td style="text-align: left;">Διαθέτει ειδικούς ψηφιακούς αισθητήρες. Έχει πολύ μεγάλη ακρίβεια (διακριτική ικανότητα π.χ. <span class="arithmatex">\(0{,}1\text{ g}\)</span>) και είναι ιδανική για το εργαστήριο.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="3">3. Μάζα εναντίον Βάρους: Η μεγάλη παρεξήγηση!</h3>
+<p>Στην καθημερινή μας ζωή λέμε "το βάρος μου είναι 60 κιλά". Στη Φυσική, αυτό είναι τεράστιο λάθος! </p>
+<div class="admonition warning">
+<p class="admonition-title">Οι διαφορές Μάζας και Βάρους</p>
+<ul>
+<li>Η <strong>Μάζα</strong> είναι η ποσότητα της ύλης (από πόσα άτομα φτιαχτήκαμε). <strong>Δεν αλλάζει ποτέ</strong>, όπου κι αν πάμε στο Σύμπαν! Μετριέται σε <strong>κιλά (kg)</strong>.</li>
+<li>Το <strong>Βάρος</strong> είναι <strong>δύναμη</strong>! Είναι η δύναμη με την οποία η Γη (ή ο πλανήτης που βρισκόμαστε) μας τραβάει προς το κέντρο της. Εξαρτάται από τη βαρύτητα (επιτάχυνση της βαρύτητας g). Μετριέται σε <strong>Νιούτον (N)</strong>.</li>
+</ul>
+<p><em>Σκέψου το:</em> Αν πας στη Σελήνη (που έχει μικρότερη βαρύτητα), το <em>βάρος</em> σου θα γίνει 6 φορές μικρότερο (θα νιώθεις πανάλαφρος). Όμως η <em>μάζα</em> σου θα παραμείνει ακριβώς η ίδια (αφού δεν έχασες ούτε ένα κύτταρο από το σώμα σου κατά το ταξίδι)!</p>
+<p><strong>Ο Εμπειρικός Κανόνας του Βάρους:</strong><br />
+Το βάρος ενός σώματος σχετίζεται <em>αντίστροφα</em>  με την απόστασή του από το κέντρο του πλανήτη (βασικά είναι αντιστρόφως ανάλογο με το τετράγωνο της απόστασης). Δηλαδή: <strong>Όσο πιο μακριά βρισκόμαστε από το κέντρο της Γης, τόσο λιγότερο μας τραβάει, άρα τόσο μικραίνει το βάρος μας!</strong></p>
+<p>Πού και γιατί αλλάζει το βάρος μας;</p>
+<ol>
+<li><strong>Βουνό vs. Θάλασσα:</strong> Αν ανέβεις στην κορυφή του Έβερεστ, το βάρος σου είναι ελαφρώς μικρότερο από ό,τι αν βρίσκεσαι σε μια παραλία, γιατί στο βουνό είσαι πιο μακριά από το κέντρο της Γης! Η μάζα σου όμως (τα κιλά σου) παραμένει ίδια.</li>
+<li><strong>Γεωγραφικό Πλάτος (Ισημερινός vs. Πόλοι):</strong> Η Γη δεν είναι τέλεια σφαίρα, αλλά είναι λίγο "πατικωμένη" στους πόλους και "φουσκωμένη" στον Ισημερινό. Άρα, αν ταξιδέψεις στον Ισημερινό βρίσκεσαι πιο μακριά από το κέντρο της Γης απ' ό,τι αν πας στον Βόρειο Πόλο. Συνεπώς, στον Ισημερινό ζυγίζεις (σε Νιούτον) ελαφρώς λιγότερο!</li>
+<li><strong>Άλλος Πλανήτης:</strong> Κάθε πλανήτης έχει διαφορετική βαρύτητα. Αν πας στη Σελήνη, που είναι μικρότερη, το <em>βάρος</em> σου θα γίνει 6 φορές μικρότερο (θα νιώθεις πανάλαφρος). Στον τεράστιο Δία, θα ένιωθες ότι κουβαλάς τρεις φορές τον εαυτό σου! Η <em>μάζα</em> σου όμως παραμένει ακριβώς η ίδια, αφού δεν έχασες ούτε ένα κύτταρο από το σώμα σου κατά το ταξίδι!</li>
+</ol>
+</div>
+<hr />
+<h3 id="4">4. Ακραίες Μετρήσεις: Από τον Ιό μέχρι τον Ήλιο</h3>
+<div class="admonition quote">
+<p class="admonition-title">Πώς ζυγίζουμε το Σύμπαν (ή ένα άτομο);</p>
+<p>Πώς γνωρίζουμε πόση μάζα έχει η Γη αφού δεν υπάρχει τόσο μεγάλη... ζυγαριά;</p>
+<ul>
+<li><strong>Για Πλανήτες και τον Ήλιο:</strong> Δεν τους βάζουμε σε ζυγαριά! Υπολογίζουμε τη μάζα τους έμμεσα, παρατηρώντας την τεράστια βαρυτική έλξη που ασκούν στους άλλους πλανήτες ή στους δορυφόρους που γυρίζουν γύρω τους.</li>
+<li><strong>Για τον μικρόκοσμο (Ιοί, Άτομα):</strong> Ούτε τα άτομα μπαίνουν σε ζυγαριά! Χρησιμοποιούμε ειδικά μηχανήματα που λέγονται "φασματόμετρα μάζας". Αυτά βάζουν τα σωματίδια να τρέχουν σε μια "πίστα" με μαγνήτες. Τα πιο βαριά σωματίδια δυσκολεύονται να στρίψουν (θυμήσου: αδράνεια!), κι έτσι οι επιστήμονες υπολογίζουν τη μάζα τους!</li>
+</ul>
+</div>
+<hr />
+<h3 id="5-diy">5. Εργαστήριο &amp; Κατασκευές στο Σπίτι (DIY)</h3>
+<div class="admonition question">
+<p class="admonition-title">Κατασκευή 1: Η Κρεμάστρα ως Ζυγός Σύγκρισης</p>
+<p>Μπορείς να φτιάξεις τον δικό σου αυτοσχέδιο ζυγό με απλά υλικά! 
+Πάρε μια κρεμάστρα ρούχων και κρέμασέ την από ένα πόμολο πόρτας. Δέσε με σπάγκο δύο ολόιδια πλαστικά ποτηράκια στα δύο άκρα της κρεμάστρας (ένα αριστερά, ένα δεξιά). 
+<em>Τι θα συμβεί αν βάλεις μια γόμα στο ένα ποτηράκι και συνδετήρες στο άλλο;</em></p>
+</div>
+<details class="success">
+<summary>Απάντηση Κατασκευής 1</summary>
+<p>Η κρεμάστρα θα γείρει προς το μέρος που έχει μεγαλύτερη μάζα. Αν προσθέτεις συνδετήρες στο δεύτερο ποτηράκι μέχρι η κρεμάστρα να έρθει ξανά σε τέλεια ισορροπία (οριζόντια), τότε μόλις ζύγισες τη γόμα! 
+Μπορείς να πεις: <em>"Η μάζα της γόμας ισούται με τη μάζα 14 συνδετήρων!"</em>. Μόλις χρησιμοποίησες μια "αυθαίρετη" μονάδα μέτρησης (τον συνδετήρα).</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Κατασκευή 2: Ζυγαριά με... Λαστιχάκια (Δυναμόμετρο)</p>
+<p>Αντί για ζυγό ισορροπίας, πώς θα μπορούσαμε να μετρήσουμε μάζα (μέσω του βάρους) χρησιμοποιώντας ένα κοινό λαστιχάκι γραφείου;</p>
+</div>
+<details class="success">
+<summary>Απάντηση Κατασκευής 2</summary>
+<p>Κρεμάμε ένα λαστιχάκι από ένα σταθερό σημείο και δένουμε κάτω ένα πιαστράκι. Πίσω από το λαστιχάκι βάζουμε ένα κομμάτι χαρτόνι.</p>
+<ol>
+<li>Χωρίς βάρος, κάνουμε μια γραμμή στο χαρτόνι (το <span class="arithmatex">\(0\)</span>).</li>
+<li>Κρεμάμε κάτι με γνωστή μάζα (π.χ. μια σοκολάτα των <span class="arithmatex">\(100\text{ g}\)</span>). Το λαστιχάκι θα τεντωθεί. Κάνουμε μια γραμμή στο νέο μήκος.</li>
+<li>Χωρίζοντας την απόσταση σε ίσα διαστήματα, μόλις φτιάξαμε τη δική μας κλίμακα! Η ζυγαριά με λαστιχάκι βασίζεται στο πόσο "παραμορφώνεται" το ελαστικό υλικό από το βάρος του σώματος.</li>
+</ol>
+<p><strong>Προσοχή:</strong> Τώρα φτιάξαμε μια ζυγαριά που μετράμε τη μάζα με την βοήθεια του βάρους. Όμως, όταν κατασκευάζαμε την κλίμακα, αν αντί για μάζα σε γραμμάρια βάζαμε βάρος σε Νιούτον θα φτιάχναμε ένα <strong>Δυναμόμετρο</strong>).</p>
+</details>
+<h2 id="_2">Μέρος Β: Η Πυκνότητα (Πλεύση, Βύθιση και ο "στριμωγμένος" μικρόκοσμος)</h2>
+<p><em>Τι είναι πιο βαρύ: ένα κιλό σίδερο ή ένα κιλό βαμβάκι; Η απάντηση είναι ότι έχουν την ίδια μάζα, αλλά ο σίδηρος είναι πολύ πιο "πυκνός"! Ας δούμε τι σημαίνει αυτό.</em></p>
+<hr />
+<h3 id="1_1">1. Κατανοώντας την Πυκνότητα (Δύο Πειράματα Σκέψης)</h3>
+<div class="admonition example">
+<p class="admonition-title">Πείραμα 1: Σταθερός Όγκος, Αλλάζουμε τη Μάζα</p>
+<p>Παίρνουμε δύο ολόιδια μπουκάλια του <span class="arithmatex">\(1\text{ L}\)</span> (έχουν δηλαδή τον ίδιο όγκο). Το ένα το γεμίζουμε με νερό και το άλλο με άμμο. Αν τα ζυγίσουμε, το μπουκάλι με την άμμο έχει μεγαλύτερη μάζα. Γιατί; Επειδή η άμμος έχει μεγαλύτερη πυκνότητα από το νερό!</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Πείραμα 2: Σταθερή Μάζα, Αλλάζουμε τον Όγκο</p>
+<p>Έχουμε <span class="arithmatex">\(1\text{ kg}\)</span> σίδερο και <span class="arithmatex">\(1\text{ kg}\)</span> βαμβάκι. Το σίδερο χωράει στη χούφτα μας (μικρός όγκος), ενώ για το βαμβάκι χρειαζόμαστε μια τεράστια σακούλα σκουπιδιών (μεγάλος όγκος)! Το σίδερο είναι πιο πυκνό υλικό.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Ο Μικρόκοσμος της Πυκνότητας</p>
+<p>Αν κοιτάξουμε τα υλικά με ένα υπερ-μικροσκόπιο, η πυκνότητα μας δείχνει <strong>πόσο "στριμωγμένα" είναι τα σωματίδια (άτομα/μόρια)</strong> μέσα στον διαθέσιμο χώρο. Στο σίδερο, τα άτομα είναι βαριά και κολλημένα το ένα πάνω στο άλλο. Στο βαμβάκι ή στον αέρα, υπάρχει τεράστιος κενός χώρος ανάμεσά τους.</p>
+</div>
+<hr />
+<h3 id="2_1">2. Ορισμός, Τύπος και Μονάδες</h3>
+<div class="admonition tip">
+<p class="admonition-title">Ορισμός και Μαθηματικός Τύπος</p>
+<p><strong>Πυκνότητα (<span class="arithmatex">\(\rho\)</span>)</strong> ενός υλικού ονομάζεται το πηλίκο της μάζας (<span class="arithmatex">\(m\)</span>) ενός σώματος προς τον όγκο (<span class="arithmatex">\(V\)</span>) του.</p>
+<div class="arithmatex">\[ \rho = \frac{m}{V} \]</div>
+<p><em>(Το σύμβολο <span class="arithmatex">\(\rho\)</span> διαβάζεται «ρο» από το ελληνικό αλφάβητο, ή <span class="arithmatex">\(d\)</span> από την αγγλική λέξη Density).</em></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Πώς μετατρέπουμε σύνθετες μονάδες; (Το μυστικό του κλάσματος)</p>
+<p>Η πυκνότητα είναι ένα <strong>παράγωγο μέγεθος</strong>, που σημαίνει ότι η μονάδα της προκύπτει από έναν συνδυασμό άλλων μονάδων (Μάζα διαιρούμενη με Όγκο). 
+Για να μετατρέψουμε μια τέτοια μονάδα (π.χ. από <span class="arithmatex">\(\text{kg/m}^3\)</span> σε <span class="arithmatex">\(\text{g/cm}^3\)</span>), δεν μαντεύουμε! Τη γράφουμε σαν κλάσμα και μετατρέπουμε τον αριθμητή και τον παρονομαστή ξεχωριστά.</p>
+<p><strong>Ο Αναλυτικός Τρόπος (Βήμα-Βήμα):</strong>
+Ας υποθέσουμε ότι θέλουμε να μετατρέψουμε την πυκνότητα <span class="arithmatex">\(23 \text{ kg/m}^3\)</span> σε <span class="arithmatex">\(\text{g/cm}^3\)</span>.</p>
+<ol>
+<li>Γράφουμε τον αριθμό και δίπλα τη μονάδα σε μορφή καθαρού κλάσματος:
+   $$ 23 \frac{\text{kg}}{\text{m}^3} $$</li>
+<li>Αντικαθιστούμε τα κιλά (<span class="arithmatex">\(\text{kg}\)</span>) με γραμμάρια και τα κυβικά μέτρα (<span class="arithmatex">\(\text{m}^3\)</span>) με κυβικά εκατοστά:
+   <em>(Θυμόμαστε ότι <span class="arithmatex">\(1\text{ kg} = 1000\text{ g}\)</span> και <span class="arithmatex">\(1\text{ m}^3 = 1.000.000\text{ cm}^3\)</span>)</em>
+   $$ 23 \cdot \frac{1000 \text{ g}}{1.000.000 \text{ cm}^3} $$</li>
+<li>Απλοποιούμε τα μηδενικά (διαγράφουμε τρία μηδενικά από τον αριθμητή και τρία από τον παρονομαστή):
+   $$ 23 \cdot \frac{1 \text{ g}}{1000 \text{ cm}^3} $$</li>
+<li>Κάνουμε τη διαίρεση (<span class="arithmatex">\(23 / 1000\)</span>):
+   $$ \mathbf{0{,}023 \text{ g/cm}^3} $$</li>
+</ol>
+<p><em>Συμπέρασμα:</em> Η ανάλυση του κλάσματος μας απέδειξε ότι τελικά διαιρέσαμε με το 1000!</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Ο Εμπειρικός Κανόνας (Ο γρήγορος τρόπος με το 1000)</p>
+<p>Επειδή η παραπάνω μαθηματική διαδικασία καταλήγει πάντα στο ίδιο συμπέρασμα (είτε πολλαπλασιάζουμε είτε διαιρούμε με το 1000), για συντομία στις ασκήσεις μπορούμε να θυμόμαστε τον εξής χρυσό κανόνα:</p>
+<ul>
+<li>Το νερό έχει πυκνότητα <span class="arithmatex">\(\mathbf{1 \text{ g/cm}^3}\)</span>. Στο Διεθνές Σύστημα (S.I.), αυτό είναι <span class="arithmatex">\(\mathbf{1000 \text{ kg/m}^3}\)</span>.</li>
+<li>Από <strong><span class="arithmatex">\(\text{g/cm}^3 \rightarrow \text{kg/m}^3\)</span></strong>: <strong>Πολλαπλασιάζουμε με το 1000</strong> (π.χ. <span class="arithmatex">\(2 \text{ g/cm}^3 = 2000 \text{ kg/m}^3\)</span>).</li>
+<li>Από <strong><span class="arithmatex">\(\text{kg/m}^3 \rightarrow \text{g/cm}^3\)</span></strong>: <strong>Διαιρούμε με το 1000</strong> (π.χ. <span class="arithmatex">\(500 \text{ kg/m}^3 = 0{,}5 \text{ g/cm}^3\)</span>).</li>
+</ul>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Εξάσκηση: Η Πυκνότητα του Χρυσού</p>
+<p>Ο χρυσός είναι ένα από τα πιο πυκνά υλικά στη φύση, με πυκνότητα <span class="arithmatex">\(19{,}3 \text{ g/cm}^3\)</span>. Να εκφράσεις την πυκνότητά του στο Διεθνές Σύστημα Μονάδων (S.I.).</p>
+</div>
+<details class="success">
+<summary>Απάντηση</summary>
+<p>Η μονάδα στο S.I. είναι το <span class="arithmatex">\(\text{kg/m}^3\)</span>.
+Για να πάμε από τα <span class="arithmatex">\(\text{g/cm}^3\)</span> στα <span class="arithmatex">\(\text{kg/m}^3\)</span>, χρησιμοποιούμε τον εμπειρικό κανόνα και πολλαπλασιάζουμε με το 1000.</p>
+<p>$$ 19{,}3 \cdot 1000 = \mathbf{19.300 \text{ kg/m}^3} $$
+<em>(Δηλαδή, αν φτιάχναμε έναν κύβο από ατόφιο χρυσό με πλευρά 1 μέτρο, θα ζύγιζε πάνω από 19 τόνους!)</em></p>
+</details>
+<hr />
+<h3 id="3_1">3. Πλεύση και Βύθιση (Το "μαγικό" ποτήρι)</h3>
+<p>Τι καθορίζει αν κάτι θα επιπλεύσει ή θα βουλιάξει σε ένα υγρό; Ο κανόνας είναι απλός: <strong>Τα πιο "ελαφριά" (μικρότερη πυκνότητα) πάνε πάνω, τα πιο "βαριά" (μεγαλύτερη πυκνότητα) πάνε κάτω!</strong></p>
+<div class="admonition example">
+<p class="admonition-title">1. Υγρά διαφορετικών πυκνοτήτων</p>
+<p>Ρίχνουμε στο ίδιο ψηλό ποτήρι 3 υγρά:</p>
+<ul>
+<li>Λάδι (<span class="arithmatex">\(\rho = 0{,}8\text{ g/cm}^3\)</span>)</li>
+<li>Νερό (<span class="arithmatex">\(\rho = 1{,}0\text{ g/cm}^3\)</span>)</li>
+<li>Μέλι (<span class="arithmatex">\(\rho = 1{,}4\text{ g/cm}^3\)</span>)</li>
+</ul>
+<p><strong>Κατάταξη:</strong> Επειδή δεν αναμειγνύονται, θα σχηματίσουν στρώματα! Το μέλι (μεγαλύτερη πυκνότητα) θα πάει στον πάτο. Στη μέση θα μείνει το νερό και το λάδι (μικρότερη πυκνότητα) θα επιπλέει στην κορυφή.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">2. Στερεά μέσα σε υγρά</p>
+<ul>
+<li>Ένα κομμάτι <strong>φελλός</strong> (<span class="arithmatex">\(\rho = 0{,}2\text{ g/cm}^3\)</span>) έχει μικρότερη πυκνότητα από το νερό, άρα <strong>επιπλέει</strong>.</li>
+<li>Ένα <strong>σιδερένιο καρφί</strong> (<span class="arithmatex">\(\rho = 7{,}8\text{ g/cm}^3\)</span>) έχει μεγαλύτερη πυκνότητα από το νερό, άρα <strong>βυθίζεται</strong>.</li>
+</ul>
+</div>
+<hr />
+<h3 id="4_1">4. Πυκνόμετρο: Μέτρηση με μια ματιά!</h3>
+<div class="admonition tip">
+<p class="admonition-title">Τι είναι το πυκνόμετρο;</p>
+<p>Το πυκνόμετρο (αραιόμετρο) είναι ένα γυάλινο όργανο σαν μεγάλο θερμόμετρο με βαρίδι στο κάτω μέρος. Όταν το ρίξουμε σε ένα υγρό, βυθίζεται μέχρι ένα σημείο. Όσο πιο μικρή είναι η πυκνότητα του υγρού, τόσο πιο βαθιά βυθίζεται το πυκνόμετρο!
+Διαβάζουμε την τιμή κατευθείαν από την κλίμακα.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Ιδιοκατασκευή: Φτιάξε το δικό σου πυκνόμετρο!</p>
+<p>Πάρε ένα χοντρό πλαστικό καλαμάκι. Κλείσε καλά τη μία άκρη του με ένα κομμάτι πλαστελίνη (ώστε να έχει βάρος στο κάτω μέρος). 
+Ζωγράφισε γραμμές ανά <span class="arithmatex">\(1\text{ cm}\)</span> πάνω στο καλαμάκι. 
+Ρίξε το στο νερό. Σημείωσε μέχρι ποια γραμμή βυθίστηκε. Αν το ρίξεις τώρα σε αλατόνερο (που έχει μεγαλύτερη πυκνότητα από το απλό νερό), το καλαμάκι θα βυθιστεί περισσότερο ή λιγότερο;</p>
+</div>
+<details class="success">
+<summary>Απάντηση DIY</summary>
+<p>Θα βυθιστεί <strong>λιγότερο</strong>! Το αλατόνερο είναι πιο πυκνό (έχει μεγαλύτερη "άνωση"), άρα το καλαμάκι-πυκνόμετρο θα επιπλέει πιο ψηλά!</p>
+</details>
+<hr />
+<h3 id="5">5. Ιστορία, Ναυάγια και... Υποβρύχια!</h3>
+<div class="admonition quote">
+<p class="admonition-title">Γιατί βυθίστηκε ο Τιτανικός;</p>
+<p>Τα καράβια είναι φτιαγμένα από ατσάλι (<span class="arithmatex">\(\rho \approx 7{,}8\text{ g/cm}^3\)</span>). Πώς επιπλέουν αφού το ατσάλι είναι πιο πυκνό από το νερό;
+Η εξήγηση κρύβεται στη <strong>μέση πυκνότητα</strong>! Το καράβι δεν είναι μασίφ ατσάλι. Το εσωτερικό του είναι γεμάτο <em>αέρα</em> (μικρότερη πυκνότητα). Έτσι, στο σύνολό του (Ατσάλι + Αέρας), το καράβι έχει μέση πυκνότητα μικρότερη από το νερό! 
+Όταν ο Τιτανικός χτύπησε στο παγόβουνο, το νερό άρχισε να μπαίνει μέσα. Ο αέρας αντικαταστάθηκε από νερό. Η μέση πυκνότητα του πλοίου αυξήθηκε, ξεπέρασε αυτήν του ωκεανού και... το καράβι βυθίστηκε.</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Ιούλιος Βερν: 20.000 Λεύγες κάτω από τη θάλασσα</p>
+<p>Ο καπετάνιος Νέμο και το υποβρύχιό του, ο "Ναυτίλος", ήταν μάστορες της πυκνότητας! Τα υποβρύχια έχουν ειδικές δεξαμενές. Όταν θέλουν να καταδυθούν (βυθιστούν), γεμίζουν τις δεξαμενές με θαλασσινό νερό (αυξάνουν τη μάζα και άρα την πυκνότητά τους). Όταν θέλουν να αναδυθούν (επιπλεύσουν), αδειάζουν το νερό με αντλίες (μειώνουν την πυκνότητά τους)!</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Ιδιοκατασκευή &amp; Πείραμα: Ο Δύτης του Καρτέσιου</p>
+<p><strong>Βήμα 1: Η ρύθμιση (το "καλιμπράρισμα")</strong>
+Παίρνουμε ένα μικρό, σκληρό/ασυμπίεστο δοχείο με άνοιγμα στο κάτω μέρος (π.χ. ένα μικρό γυάλινο φιαλίδιο, ένα καπάκι από στυλό με λίγη πλαστελίνη ή ένα σταγονόμετρο). Βάζουμε μέσα του λίγο νερό, αφήνοντας και μια μικρή φυσαλίδα αέρα. 
+Το δοκιμάζουμε πρώτα σε ένα ανοιχτό ποτήρι με νερό: προσθαφαιρούμε προσεκτικά νερό στο φιαλίδιο μέχρι αυτό να <strong>επιπλέει οριακά</strong> (δηλαδή ίσα-ίσα να στέκεται στην επιφάνεια, έτοιμο να βυθιστεί).</p>
+<p><strong>Βήμα 2: Το πείραμα</strong>
+Βάζουμε τον προσεκτικά ρυθμισμένο "δύτη" μας μέσα σε ένα μεγάλο, μαλακό πλαστικό μπουκάλι, το οποίο έχουμε γεμίσει μέχρι πάνω με νερό, και το βιδώνουμε σφιχτά.</p>
+<ul>
+<li><strong>Τι παρατηρούμε;</strong> Αν <strong>ζουλήξεις</strong> (πιέσεις) δυνατά το μεγάλο πλαστικό μπουκάλι, ο δύτης θα βουλιάξει! Αν σταματήσεις να το πιέζεις, ο δύτης θα ανέβει πάλι στην επιφάνεια!</li>
+<li><strong>Η Εξήγηση (Γιατί;):</strong> Ζουλώντας το εξωτερικό μπουκάλι, αυξάνεις την πίεση στο νερό. Επειδή το νερό δεν συμπιέζεται, αναγκάζεται να μπει μέσα από το άνοιγμα του μικρού δύτη, συμπιέζοντας τον αέρα που ήταν εγκλωβισμένος μέσα του. Αφού μπήκε επιπλέον νερό στον δύτη, η συνολική <strong>μάζα</strong> του αυξάνεται, ενώ ο εξωτερικός του <strong>όγκος</strong> παραμένει σταθερός (αφού τα τοιχώματά του είναι σκληρά). 
+Κατά συνέπεια, σύμφωνα με τον τύπο <span class="arithmatex">\(\rho = \frac{m}{V}\)</span>, <strong>η πυκνότητά του αυξάνεται</strong>, ξεπερνάει αυτή του νερού και βυθίζεται. Μόλις αφήσεις το μπουκάλι, ο αέρας στο εσωτερικό εκτονώνεται, διώχνει το περιττό νερό, η πυκνότητα μικραίνει και ο δύτης επιπλέει ξανά!</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=LTVx-FE_-N0">ΥουTube - Ο Δύτης του Καρτέσιου</a></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Προχωρημένο Πείραμα: Το μυστήριο του Δύτη που «κολλάει» στον πάτο!</p>
+<p>Αν ρυθμίσεις το πείραμα με έναν σφιγκτήρα στο εξωτερικό μπουκάλι, ώστε ο δύτης να επιπλέει <em>εντελώς οριακά</em>, μπορεί να παρατηρήσεις δύο πολύ περίεργα φαινόμενα:</p>
+<ol>
+<li>Αν πιέσεις το μπουκάλι λίγο πιο δυνατά και ο δύτης φτάσει μέχρι τον πάτο, <strong>μένει εκεί</strong>, ακόμα κι αν αφήσεις το χέρι σου!</li>
+<li>Αν μετά πιάσεις το μπουκάλι από το καπάκι και το ανασηκώσεις στον αέρα, ο δύτης ξαφνικά... <strong>ξεκολλάει και ανεβαίνει</strong> πάλι πάνω! </li>
+</ol>
+<p><em>Πώς εξηγούνται αυτά τα "μαγικά";</em></p>
+</div>
+<details class="success">
+<summary>Η Φυσική Εξήγηση του Μυστηρίου</summary>
+<p><strong>1. Γιατί μένει κάτω; (Η Υδροστατική Πίεση)</strong>
+Όπως ξέρουμε από τις βουτιές στη θάλασσα, όσο πιο βαθιά πηγαίνουμε στο νερό, τόσο μεγαλύτερη είναι η πίεση που νιώθουμε στα αυτιά μας. Αυτό λέγεται <em>υδροστατική πίεση</em>. 
+Όταν ο δύτης κατέβει στον πάτο του μπουκαλιού, το ίδιο το νερό που βρίσκεται από πάνω του τον πιέζει επιπλέον! Επειδή τον είχες ρυθμίσει να επιπλέει οριακά (με τον σφιγκτήρα), αυτή η επιπλέον πίεση του βάθους αρκεί για να κρατήσει τη φυσαλίδα του αέρα συμπιεσμένη. Έτσι, η πυκνότητά του παραμένει μεγαλύτερη από του νερού και μένει βυθισμένος, χωρίς να χρειάζεται πια την πίεση του χεριού σου!</p>
+<p><strong>2. Γιατί ανεβαίνει όταν σηκώνουμε το μπουκάλι από το καπάκι; (Ελαστικότητα)</strong>
+Το πλαστικό μπουκάλι δεν είναι εντελώς άκαμπτο. Όταν το σηκώνεις από το καπάκι, το βάρος όλου του νερού που βρίσκεται μέσα τραβάει το πλαστικό προς τα κάτω και το <strong>τεντώνει (επιμηκύνει)</strong> ελαφρώς. 
+Αυτό το ελάχιστο τέντωμα προκαλεί μια ανεπαίσθητη <em>αύξηση του συνολικού όγκου</em> του μπουκαλιού. Όταν ο όγκος μεγαλώνει, η πίεση στο εσωτερικό του νερού <em>μειώνεται</em>. Αυτή η μικρή πτώση της πίεσης επιτρέπει στον αέρα μέσα στον δύτη να διασταλεί (να φουσκώσει ξανά). Η πυκνότητα του δύτη μικραίνει, και έτσι αρχίζει το ταξίδι της επιστροφής προς την επιφάνεια!</p>
+</details>
+<hr />
+<h3 id="6">6. Ασκήσεις Εμπέδωσης &amp; Γραφικές Παραστάσεις</h3>
+<div class="admonition question">
+<p class="admonition-title">Άσκηση 1: Υπολογισμός και ταυτοποίηση υλικού</p>
+<p>Μια μεταλλική σφαίρα έχει μάζα <span class="arithmatex">\(m = 54\text{ g}\)</span> και όγκο <span class="arithmatex">\(V = 20\text{ cm}^3\)</span>. 
+α) Πόση είναι η πυκνότητά της; 
+β) Αν γνωρίζεις ότι το αλουμίνιο έχει πυκνότητα <span class="arithmatex">\(2{,}7\text{ g/cm}^3\)</span> και ο χαλκός <span class="arithmatex">\(8{,}9\text{ g/cm}^3\)</span>, από τι υλικό είναι φτιαγμένη η σφαίρα;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 1</summary>
+<p>α) Χρησιμοποιούμε τον τύπο: 
+$<span class="arithmatex">\(\rho = \frac{m}{V} = \frac{54\text{ g}}{20\text{ cm}^3} = \mathbf{2{,}7\text{ g/cm}^3}\)</span>$</p>
+<p>β) Αφού η πυκνότητα που υπολογίσαμε ταιριάζει ακριβώς με την πυκνότητα του αλουμινίου, η σφαίρα είναι φτιαγμένη από <strong>αλουμίνιο</strong>. (Η πυκνότητα είναι "ταυτότητα"!)</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Άσκηση 2: Γραφική Παράσταση Μάζας - Όγκου (m - V)</p>
+<p>Ένας μαθητής πήρε διαφορετικές ποσότητες από το ίδιο λάδι, μέτρησε τη μάζα (<span class="arithmatex">\(m\)</span>) και τον όγκο (<span class="arithmatex">\(V\)</span>) τους, και τα τοποθέτησε σε ένα διάγραμμα όπου ο κάθετος άξονας είναι η μάζα και ο οριζόντιος ο όγκος. Τα σημεία ενώθηκαν και σχημάτισαν μια <strong>ευθεία γραμμή που ξεκινάει από το μηδέν (0,0)</strong>. 
+1. Τι μας δείχνει αυτή η ευθεία γραμμή για τη σχέση Μάζας - Όγκου;
+2. Πώς μπορούμε από τη γραφική παράσταση να βρούμε την πυκνότητα;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 2 (Η κλίση της ευθείας)</summary>
+<ol>
+<li>Η ευθεία που ξεκινάει από την αρχή των αξόνων δείχνει ότι η μάζα και ο όγκος είναι ποσά <strong>ανάλογα</strong>. Δηλαδή, αν διπλασιάσουμε τον όγκο του λαδιού, θα διπλασιαστεί και η μάζα του! Έτσι, το πηλίκο τους (<span class="arithmatex">\(m/V\)</span>) παραμένει σταθερό.</li>
+<li>Η σταθερή αυτή τιμή (<span class="arithmatex">\(m/V\)</span>) δεν είναι άλλη από την <strong>πυκνότητα</strong> (<span class="arithmatex">\(\rho\)</span>). Στα μαθηματικά, αυτό το πηλίκο ονομάζεται <strong>κλίση</strong> (ή εφαπτομένη) της ευθείας. Όσο πιο "όρθια" (απότομη) είναι η ευθεία στο διάγραμμα <span class="arithmatex">\(m-V\)</span>, τόσο πιο πυκνό είναι το υλικό!</li>
+</ol>
+</details>
+<h2 id="_3">Δραστηριότητες για το Σπίτι (Μάζα &amp; Πυκνότητα)</h2>
+<h3 id="_4">Ερωτήσεις Κλειστού Τύπου</h3>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 1: Απλή εφαρμογή (Σωστό / Λάθος)</p>
+<p><strong>Χαρακτήρισε τις παρακάτω προτάσεις με (Σ), αν είναι σωστές, ή με (Λ), αν είναι λανθασμένες.</strong></p>
+<ol>
+<li>Η πυκνότητα είναι ένα παράγωγο φυσικό μέγεθος.</li>
+<li>Το βάρος του πακέτου αλευριού που αγόρασα είναι 1 kg.</li>
+<li>Για να βρεις την πυκνότητα ενός υλικού απλά διαιρείς τον όγκο με το μήκος του.</li>
+<li>Η πυκνότητα αποτελεί χαρακτηριστική ιδιότητα ενός υλικού.</li>
+</ol>
+</div>
+<details class="success">
+<summary>Λύσεις Άσκησης 1</summary>
+<ol>
+<li><strong>Σωστό (Σ).</strong> Προκύπτει από το πηλίκο δύο θεμελιωδών μεγεθών (μάζα δια όγκο).</li>
+<li><strong>Λάθος (Λ).</strong> Το κιλό (kg) είναι μονάδα <strong>μάζας</strong>, όχι βάρους! (Στην καθημερινότητα το λέμε λάθος, αλλά στη Φυσική το βάρος μετριέται σε Νιούτον).</li>
+<li><strong>Λάθος (Λ).</strong> Για να βρούμε την πυκνότητα διαιρούμε τη <strong>μάζα</strong> με τον <strong>όγκο</strong>.</li>
+<li><strong>Σωστό (Σ).</strong> Κάθε καθαρό υλικό έχει τη δική του, σταθερή πυκνότητα (σαν δακτυλικό αποτύπωμα).</li>
+</ol>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 2: Μετατροπές Μονάδων</p>
+<p><strong>Συμπλήρωσε τα κενά:</strong></p>
+<ol>
+<li>2,5 kg = ... g</li>
+<li>5 t = ... kg</li>
+<li>240 g = ... kg</li>
+<li>32,5 kg = ... t</li>
+<li>12,5 g/cm³ = ... kg/m³</li>
+<li>3 200 kg/m³ = ... g/cm³</li>
+</ol>
+</div>
+<details class="success">
+<summary>Λύσεις Άσκησης 2</summary>
+<p>Για τις μάζες (κατεβαίνουμε σκαλοπάτι = * 1000, ανεβαίνουμε = / 1000):</p>
+<ol>
+<li><strong>2500 g</strong> (2,5 * 1000)</li>
+<li><strong>5000 kg</strong> (5 * 1000)</li>
+<li><strong>0,24 kg</strong> (240 / 1000)</li>
+<li><strong>0,0325 t</strong> (32,5 / 1000)</li>
+</ol>
+<p>Για τις πυκνότητες (χρησιμοποιούμε τον εμπειρικό κανόνα):</p>
+<ul>
+<li><strong>ε) 12.500 kg/m³</strong> (Από g/cm³ σε kg/m³ πολλαπλασιάζουμε με το 1000)</li>
+<li><strong>στ) 3,2 g/cm³</strong> (Από kg/m³ σε g/cm³ διαιρούμε με το 1000)</li>
+</ul>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 3: Για εξάσκηση (Ο κιμάς!)</p>
+<p>Ο πατέρας του Κωνσταντίνου αγόρασε από το κρεοπωλείο κιμά. Η συσκευασία γράφει ότι η μάζα του κιμά είναι 1,24 kg. Αν θέλεις να μοιράσεις τον κιμά σε δύο ίσα μέρη για να αποθηκευτεί στο ψυγείο, πόσα γραμμάρια θα είναι το κάθε μέρος;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 3</summary>
+<p>Πρώτα βρίσκουμε τη μάζα του κάθε μέρους σε κιλά, διαιρώντας δια δύο:
+1,24 kg / 2 = 0,62 kg</p>
+<p>Στη συνέχεια, επειδή η άσκηση ζητάει την απάντηση σε γραμμάρια, μετατρέπουμε τα κιλά σε γραμμάρια πολλαπλασιάζοντας με το 1000:
+0,62 * 1000 = <strong>620 g</strong> το κάθε μέρος!</p>
+</details>
+<hr />
+<h3 id="_5">Ερωτήσεις Ανοιχτού Τύπου</h3>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 4: Απλή εφαρμογή</p>
+<p>Γιατί μια πετρελαιοκηλίδα επιπλέει στο νερό; Επιβεβαίωσε την υπόθεσή σου αναζητώντας κατάλληλες πληροφορίες στο διαδίκτυο.</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 4</summary>
+<p>Η πετρελαιοκηλίδα επιπλέει επειδή το πετρέλαιο έχει <strong>μικρότερη πυκνότητα</strong> (περίπου 0,8 g/cm³) από το θαλασσινό νερό (περίπου 1,02 g/cm³). Όπως μάθαμε, το υλικό με τη μικρότερη πυκνότητα μένει πάντα στην επιφάνεια.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 5: Για εξάσκηση (Ο πύργος των υγρών)</p>
+<p>Διαθέτεις οινόπνευμα, γλυκερίνη, κρασί και λάδι. Οι πυκνότητες των τεσσάρων αυτών υλικών είναι αντίστοιχα 0,80 g/cm³, 1,26 g/cm³, 0,97 g/cm³ και 0,90 g/cm³. Με ποια σειρά προβλέπεις ότι θα ισορροπήσουν τα υγρά αυτά σε ένα ποτήρι, εφόσον δεν αναμιγνύονται μεταξύ τους;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 5</summary>
+<p>Θυμόμαστε τον κανόνα: Το πιο πυκνό υλικό πάει στον πάτο και το λιγότερο πυκνό στην κορυφή. 
+Κατατάσσουμε τις πυκνότητες από τη μεγαλύτερη προς τη μικρότερη (1,26 &gt; 0,97 &gt; 0,90 &gt; 0,80).</p>
+<p>Η σειρά μέσα στο ποτήρι (από κάτω προς τα πάνω) θα είναι:
+1. <strong>Γλυκερίνη</strong> (Στον πάτο)
+2. <strong>Κρασί</strong>
+3. <strong>Λάδι</strong>
+4. <strong>Οινόπνευμα</strong> (Στην κορυφή)</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 6: Για εμβάθυνση (Το κόλπο με την πλαστελίνη)</p>
+<p>Ένας μαθητής ισχυρίζεται ότι αν χωρίσεις ένα κομμάτι πλαστελίνης σε δύο ίσα μέρη, τότε η μάζα, ο όγκος και η πυκνότητα των δύο κομματιών έχουν τιμές ίσες με τις μισές αντίστοιχες τιμές ολόκληρου του κομματιού. Συμφωνείς; Τι συμπέρασμα βγάζεις;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 6</summary>
+<p>Ο ισχυρισμός του μαθητή είναι <strong>εν μέρει σωστός και εν μέρει λάθος!</strong></p>
+<ul>
+<li><strong>Σωστό:</strong> Αν κόψουμε την πλαστελίνη στη μέση, η ποσότητά της μειώνεται στο μισό, άρα η <strong>μάζα</strong> της γίνεται η μισή. Το ίδιο συμβαίνει και με τον χώρο που πιάνει, άρα και ο <strong>όγκος</strong> της γίνεται ο μισός.</li>
+<li><strong>Λάθος:</strong> Η <strong>πυκνότητα ΔΕΝ αλλάζει!</strong> Η πλαστελίνη εξακολουθεί να είναι φτιαγμένη από το ίδιο ακριβώς υλικό. Αφού και η μάζα και ο όγκος μειώθηκαν ακριβώς στο μισό, το πηλίκο τους παραμένει σταθερό.</li>
+<li><strong>Συμπέρασμα:</strong> Η πυκνότητα είναι <em>χαρακτηριστική ιδιότητα</em> του υλικού και δεν εξαρτάται από το μέγεθος ή την ποσότητα του αντικειμένου!</li>
+</ul>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 7: Εργαστήριο - Γραφική παράσταση Μάζας - Όγκου</p>
+<p>Βρες μπουκάλια διαφόρων χωρητικοτήτων (π.χ. 0,33 L, 0,75 L, 1 L, 1,5 L) και αφού τα γεμίσεις με νερό, μέτρησε τη μάζα τους (αφαιρώντας τη μάζα του άδειου μπουκαλιού). Στη συνέχεια, σχεδίασε μια γραφική παράσταση σε χαρτί μιλιμετρέ.
+Πώς διατάσσονται τα σημεία στη γραφική παράσταση, τυχαία ή με κάποιον ιδιαίτερο τρόπο; Τι συμπέρασμα μπορείς να βγάλεις;</p>
+</div>
+<details class="success">
+<summary>Αποτελέσματα Εργαστηριακής Άσκησης 7</summary>
+<p>Αν τοποθετήσεις σωστά τα σημεία στο διάγραμμα (όπου π.χ. ο οριζόντιος άξονας είναι ο όγκος σε Λίτρα και ο κάθετος η μάζα σε κιλά), θα δεις ότι τα σημεία <strong>ΔΕΝ</strong> είναι τυχαία τοποθετημένα.</p>
+<ul>
+<li><strong>Πώς διατάσσονται;</strong> Βρίσκονται όλα πάνω σε μια <strong>ευθεία γραμμή</strong>, η οποία μάλιστα ξεκινάει από την αρχή των αξόνων (δηλαδή από το σημείο 0,0, αφού μηδέν όγκος σημαίνει μηδέν μάζα).</li>
+<li><strong>Το Συμπέρασμα:</strong> Αυτή η ευθεία αποδεικνύει ότι η μάζα και ο όγκος είναι ποσά <strong>ανάλογα</strong>. Αν διπλασιάσεις τον όγκο του νερού, διπλασιάζεται και η μάζα του. Το πηλίκο τους (που είναι η πυκνότητα) παραμένει πάντα σταθερό!</li>
+</ul>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

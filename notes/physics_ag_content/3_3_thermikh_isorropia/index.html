@@ -1,0 +1,1524 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Γιάννης">
+      
+      
+      
+        <link rel="prev" href="../3_2_thermokrasia/">
+      
+      
+        <link rel="next" href="../3_4_allages_katastasis/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>3.3 Μεταφορά θερμότητας και θερμική ισορροπία - Φυσική Α' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#33" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Φυσική Α&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Φυσική Α' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Φυσική Α' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3.3 Μεταφορά θερμότητας και θερμική ισορροπία
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Φυσική Α&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Φυσική Α' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Φυσική Α' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αρχική
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Η ΦΥΣΙΚΉ ΚΑΙ Η ΕΠΙΣΤΗΜΟΝΙΚΉ ΜΕΘΟΔΟΛΟΓΊΑ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1 Η ΦΥΣΙΚΉ ΚΑΙ Η ΕΠΙΣΤΗΜΟΝΙΚΉ ΜΕΘΟΔΟΛΟΓΊΑ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_1_methodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Οι φυσικές επιστήμες, η φυσική και η μεθοδολογία τους
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_2_mikrokosmos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Η μελέτη ενός φυσικού φαινομένου στο εργαστήριο και η ερμηνεία του με το πρότυπο του μικρόκοσμου
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 ΜΕΤΡΩΝΤΑΣ ΚΑΙ ΥΠΟΛΟΓΙΖΟΝΤΑΣ ΤΑ ΦΥΣΙΚΑ ΜΕΓΕΘΗ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2 ΜΕΤΡΩΝΤΑΣ ΚΑΙ ΥΠΟΛΟΓΙΖΟΝΤΑΣ ΤΑ ΦΥΣΙΚΑ ΜΕΓΕΘΗ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_1_fysika_megethi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Τα φυσικά μεγέθη και οι μονάδες τους
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_2_mikos_ogkos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Μετρήσεις μήκους και όγκου
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_3_maza_pyknotita/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 Μάζα, μέτρηση και υπολογισμός της πυκνότητας
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_4_xronos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Μέτρηση του χρόνου
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 ΕΝΕΡΓΕΙΑ ΚΑΙ ΥΛΗ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3 ΕΝΕΡΓΕΙΑ ΚΑΙ ΥΛΗ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_1_morfes_energeias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Μορφές ενέργειας και διεργασίες στη φύση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_2_thermokrasia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Μέτρηση της θερμοκρασίας
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Μεταφορά θερμότητας και θερμική ισορροπία
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Μεταφορά θερμότητας και θερμική ισορροπία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Α: Το Πείραμα και η Θερμική Ισορροπία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Β: Το Μεγάλο Ξεκαθάρισμα (Θερμοκρασία, Θερμική Ενέργεια, Θερμότητα)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Γ: Θερμιδομετρία και Μετεωρολογία (Η Φυσική της Φύσης)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Δ: Μεταφορά Θερμότητας και Μόνωση
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Δραστηριότητες για το Σπίτι (Θερμική Ισορροπία)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Δραστηριότητες για το Σπίτι (Θερμική Ισορροπία)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Κλειστού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Ανοιχτού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_4_allages_katastasis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Μεταβολές της κατάστασης της ύλης
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_5_diastoli_nero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.5 Διαστολή και συστολή σωμάτων - Η ιδιαιτερότητα του νερού
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_6_thermikes_mixanes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.6 Από τη θερμότητα στη μηχανική ενέργεια. Θερμικές μηχανές
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 ΗΛΕΚΤΡΟΜΑΓΝΗΤΙΣΜΟΣ
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4 ΗΛΕΚΤΡΟΜΑΓΝΗΤΙΣΜΟΣ
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_1_ilektriko_kykloma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Το ηλεκτρικό κύκλωμα και τα στοιχεία του
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_2_mikro_hlektrismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Η μικροσκοπική ερμηνεία του ηλεκτρικού ρεύματος
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_3_hlektrismos_magnitismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.3 Από τον ηλεκτρισμό στον μαγνητισμό
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_4_magnitismos_hlektrismos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.4 Από τον μαγνητισμό στον ηλεκτρισμό
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Α: Το Πείραμα και η Θερμική Ισορροπία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Β: Το Μεγάλο Ξεκαθάρισμα (Θερμοκρασία, Θερμική Ενέργεια, Θερμότητα)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Γ: Θερμιδομετρία και Μετεωρολογία (Η Φυσική της Φύσης)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μέρος Δ: Μεταφορά Θερμότητας και Μόνωση
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Δραστηριότητες για το Σπίτι (Θερμική Ισορροπία)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Δραστηριότητες για το Σπίτι (Θερμική Ισορροπία)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Κλειστού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ερωτήσεις Ανοιχτού Τύπου
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="33">3.3 Θερμότητα, Θερμική Ισορροπία και Μεταφορά</h1>
+<p><em>Γιατί το ζεστό τσάι μας κρυώνει αν το αφήσουμε στο τραπέζι, ενώ ο παγωμένος χυμός μας ζεσταίνεται; Τι είναι αυτό που "ταξιδεύει" από το ένα σώμα στο άλλο και πώς ορίζει τον καιρό του πλανήτη μας;</em></p>
+<hr />
+<h2 id="_1">Μέρος Α: Το Πείραμα και η Θερμική Ισορροπία</h2>
+<p>Ας ξεκινήσουμε παρατηρώντας τι συμβαίνει όταν φέρνουμε σε επαφή ένα κρύο και ένα ζεστό σώμα.</p>
+<div class="admonition example">
+<p class="admonition-title">Εργαστήριο: Το κρύο νερό και το ζεστό αναψυκτικό</p>
+<ol>
+<li>Παίρνουμε ένα μεγάλο εξωτερικό δοχείο και το γεμίζουμε με <strong>κρύο νερό</strong> (π.χ. στους 10 °C).</li>
+<li>Μέσα σε αυτό, βυθίζουμε ένα μικρότερο, μεταλλικό δοχείο (ένα κουτάκι) που περιέχει <strong>ζεστό αναψυκτικό</strong> (π.χ. στους 60 °C).</li>
+<li>Βάζουμε από ένα θερμόμετρο στο καθένα και καταγράφουμε τις θερμοκρασίες κάθε 1 λεπτό, φτιάχνοντας έναν πίνακα τιμών.</li>
+<li>Μεταφέρουμε τις τιμές σε μια <strong>γραφική παράσταση</strong> Θερμοκρασίας - Χρόνου (T-t).</li>
+</ol>
+<p><em>Τι θα δούμε στη γραφική παράσταση;</em> 
+Η καμπύλη του ζεστού αναψυκτικού κατεβαίνει (κρυώνει), ενώ η καμπύλη του κρύου νερού ανεβαίνει (ζεσταίνεται). Μετά από λίγο χρόνο, <strong>οι δύο καμπύλες συναντιούνται</strong> σε μια ενδιάμεση θερμοκρασία (π.χ. στους 25 °C) και γίνονται οριζόντιες γραμμές. Από εκεί και πέρα δεν αλλάζουν!</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Η έννοια της Θερμικής Ισορροπίας</p>
+<p>Όταν δύο σώματα με διαφορετικές θερμοκρασίες έρθουν σε επαφή, μετά από κάποιο χρονικό διάστημα αποκτούν την <strong>ίδια, κοινή θερμοκρασία</strong>. Αυτή η κατάσταση ονομάζεται <strong>Θερμική Ισορροπία</strong>. </p>
+<p><em>Σημείωση:</em> Αυτό ισχύει ακόμα και χωρίς άμεση επαφή! Αν βάλουμε 3 σώματα (ένα ζεστό, ένα χλιαρό και ένα κρύο) μέσα σε ένα κλειστό δωμάτιο, μέσω του αέρα (που λειτουργεί ως "γέφυρα"), θα έρθουν τελικά και τα τρία σε θερμική ισορροπία με τον αέρα του δωματίου.</p>
+</div>
+<hr />
+<h2 id="_2">Μέρος Β: Το Μεγάλο Ξεκαθάρισμα (Θερμοκρασία, Θερμική Ενέργεια, Θερμότητα)</h2>
+<p>Στην καθημερινή γλώσσα τα μπερδεύουμε, αλλά στη Φυσική είναι τρεις εντελώς διαφορετικές έννοιες!</p>
+<div class="admonition info">
+<p class="admonition-title">1. Θερμοκρασία (Ο μέσος όρος)</p>
+<p>Είναι αυτό που μετράει το θερμόμετρο. Μικροσκοπικά, είναι η <strong>μέση</strong> κινητική ενέργεια των μορίων ενός σώματος. Δείχνει "πόσο γρήγορα" τρέχουν <em>κατά μέσο όρο</em> τα μόρια.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">2. Θερμική Ενέργεια (Το σύνολο)</p>
+<p>Είναι το <strong>άθροισμα</strong> των κινητικών ενεργειών <strong>όλων</strong> των μορίων του σώματος μαζί! Εξαρτάται από τη θερμοκρασία του, αλλά και από τη <strong>μάζα</strong> του (από το πόσα μόρια έχει).</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Η Αναλογία των δύο Χωρών (Ο Πλούτος)</p>
+<p>Σκέψου τη Θερμική Ενέργεια σαν τα <strong>χρήματα</strong> και τα μόρια σαν τους <strong>κατοίκους</strong>.</p>
+<ul>
+<li><strong>Χώρα Α (Ζεστό Κάρβουνο):</strong> Έχει ελάχιστους κατοίκους (μικρή μάζα), αλλά ο καθένας είναι εκατομμυριούχος (πολύ υψηλή θερμοκρασία).</li>
+<li><strong>Χώρα Β (Κρύο Παγόβουνο):</strong> Έχει εκατομμύρια κατοίκους (τεράστια μάζα). Ο καθένας έχει μόνο λίγα νομίσματα στην τσέπη του (χαμηλή θερμοκρασία).</li>
+<li><em>Ποια χώρα έχει τα περισσότερα συνολικά χρήματα (Θερμική Ενέργεια);</em> Το <strong>παγόβουνο</strong>! Αθροίζοντας τα εκατομμύρια νομίσματα των πολλών κατοίκων του, ξεπερνάει τα εκατομμύρια των ελάχιστων κατοίκων του κάρβουνου!</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">3. Θερμότητα (<span class="arithmatex">\(Q\)</span>): Η Ενέργεια σε Ταξίδι!</p>
+<p>Η θερμότητα <strong>δεν</strong> είναι κάτι που "έχουν" τα σώματα. Είναι η ενέργεια που <strong>μεταφέρεται (ταξιδεύει)</strong> από ένα πιο ζεστό σώμα σε ένα πιο κρύο σώμα, απλώς και μόνο λόγω της διαφοράς θερμοκρασίας τους! 
+<em>Παράδειγμα:</em> Αν ρίξεις το ζεστό κάρβουνο πάνω στο παγόβουνο, ποιος θα δώσει ενέργεια σε ποιον; <strong>Το κάρβουνο στο παγόβουνο!</strong> Η θερμότητα ρέει ΠΑΝΤΑ από την υψηλή θερμοκρασία προς τη χαμηλή (άσχετα με το ποιος έχει περισσότερη συνολική θερμική ενέργεια).</p>
+</div>
+<hr />
+<h2 id="_3">Μέρος Γ: Θερμιδομετρία και Μετεωρολογία (Η Φυσική της Φύσης)</h2>
+<p>Πόση ενέργεια χρειάζεται για να ζεστάνουμε ένα σώμα;</p>
+<div class="admonition quote">
+<p class="admonition-title">Ο Νόμος της Θερμιδομετρίας</p>
+<p>Η θερμότητα (<span class="arithmatex">\(Q\)</span>) που απορροφά ή αποβάλλει ένα σώμα, δίνεται από τον τύπο:</p>
+<div class="arithmatex">\[ Q = m \cdot c \cdot \Delta\theta \]</div>
+<ul>
+<li><span class="arithmatex">\(m\)</span>: Η μάζα του σώματος.</li>
+<li><span class="arithmatex">\(\Delta\theta\)</span>: Η μεταβολή της θερμοκρασίας (πόσο ζεστάθηκε ή κρύωσε).</li>
+<li><span class="arithmatex">\(c\)</span>: Η <strong>Ειδική Θερμότητα</strong>. Είναι ο "χαρακτήρας" του υλικού (δείχνει πόσο δύσκολα ή εύκολα αλλάζει θερμοκρασία ένα υλικό). Το νερό, για παράδειγμα, έχει τεράστια ειδική θερμότητα: ζεσταίνεται και κρυώνει πολύ δύσκολα!</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Στην Κουζίνα: Ο βρασμός των μακαρονιών</p>
+<p>Γιατί αν βάλεις ένα μπρίκι με νερό για καφέ βράζει σε 2 λεπτά, αλλά αν βάλεις μια τεράστια κατσαρόλα για μακαρόνια περιμένεις 15 λεπτά, παρόλο που χρησιμοποιείς το ίδιο μάτι κουζίνας; 
+Γιατί η κατσαρόλα έχει τεράστια <strong>μάζα</strong> νερού! Όπως λέει ο τύπος, η μεγάλη μάζα απαιτεί πολύ μεγαλύτερη ποσότητα θερμότητας (άρα και περισσότερο χρόνο) για να ανέβει η θερμοκρασία.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Μετεωρολογία: Θαλάσσια/Απόγειος Αύρα και Κλίμα</p>
+<ul>
+<li><strong>Η Άμμος vs. Το Νερό:</strong> Το καλοκαίρι, η άμμος στην παραλία "καίει" το μεσημέρι, ενώ η θάλασσα είναι δροσερή. Το βράδυ, η άμμος παγώνει, ενώ η θάλασσα παραμένει χλιαρή! Γιατί; Γιατί το νερό έχει μεγάλη <em>ειδική θερμότητα</em> (αλλάζει θερμοκρασία πολύ αργά), ενώ η άμμος μικρή (ζεσταίνεται και κρυώνει αμέσως).</li>
+<li><strong>Η Αύρα:</strong> Επειδή η στεριά ζεσταίνεται πιο γρήγορα από τη θάλασσα τη μέρα, ο αέρας πάνω από τη στεριά ανεβαίνει ψηλά, και δροσερός αέρας από τη θάλασσα έρχεται να πάρει τη θέση του (<strong>Θαλάσσια Αύρα</strong> / Μπάτης). Το βράδυ, το φαινόμενο αντιστρέφεται (<strong>Απόγειος Αύρα</strong>).</li>
+<li><strong>Το Κλίμα:</strong> Αυτός είναι ο λόγος που οι περιοχές δίπλα στη θάλασσα (Μεσογειακό κλίμα) έχουν ήπιους χειμώνες και δροσερά καλοκαίρια. Η θάλασσα λειτουργεί σαν θερμοστάτης! Αντίθετα, περιοχές μακριά από τη θάλασσα (Ηπειρωτικό κλίμα) έχουν καύσωνες το καλοκαίρι και ακραίο ψύχος τον χειμώνα.</li>
+</ul>
+</div>
+<hr />
+<h2 id="_4">Μέρος Δ: Μεταφορά Θερμότητας και Μόνωση</h2>
+<p>Πώς ακριβώς καταφέρνει και "ταξιδεύει" η θερμότητα; Μέσω 3 διαφορετικών τρόπων:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Τρόπος Μεταφοράς</th>
+<th style="text-align: left;">Πώς λειτουργεί;</th>
+<th style="text-align: left;">Πού συμβαίνει;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1. Αγωγή</strong></td>
+<td style="text-align: left;">Η ενέργεια περνάει από μόριο σε μόριο σαν σκυταλοδρομία, χωρίς να μετακινούνται τα ίδια τα μόρια. Εξαρτάται από το <strong>υλικό</strong> και το <strong>πάχος</strong> του (τα χοντρά ρούχα μας κρατάνε ζεστούς).</td>
+<td style="text-align: left;">Κυρίως στα <strong>στερεά</strong>. Μέταλλα = Καλοί αγωγοί. Ξύλο, πλαστικό, φελιζόλ, αέρας = Κακοί αγωγοί (Θερμομονωτικά).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2. Ρεύματα Μεταφοράς</strong></td>
+<td style="text-align: left;">Το ζεστό υλικό γίνεται πιο ελαφρύ, ανεβαίνει προς τα πάνω, και το κρύο κατεβαίνει (όπως στο νερό της κατσαρόλας που βράζει ή στον καυτό αέρα πάνω από το καλοριφέρ).</td>
+<td style="text-align: left;">Στα <strong>ρευστά</strong> (Υγρά και Αέρια). Εδώ μετακινείται η ίδια η ύλη!</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3. Ακτινοβολία</strong></td>
+<td style="text-align: left;">Η θερμότητα ταξιδεύει μέσω αόρατων κυμάτων (δεν χρειάζεται ύλη). Έτσι φτάνει η θερμότητα του Ήλιου στη Γη! Επηρεάζεται από το <strong>χρώμα</strong>: Τα σκούρα χρώματα απορροφούν περισσότερη θερμότητα (γι' αυτό φοράμε μαύρα τον χειμώνα), ενώ τα ανοιχτά χρώματα την ανακλούν.</td>
+<td style="text-align: left;">Παντού! Ακόμα και στο <strong>κενό του διαστήματος</strong>!</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">Δραστηριότητες για το Σπίτι (Θερμική Ισορροπία)</h2>
+<h3 id="_6">Ερωτήσεις Κλειστού Τύπου</h3>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 1: Απλή εφαρμογή (Σωστό / Λάθος)</p>
+<p><strong>Χαρακτήρισε τις παρακάτω προτάσεις με (Σ), αν είναι σωστές, ή με (Λ), αν είναι λανθασμένες.</strong></p>
+<p>α) Η θερμότητα μεταφέρεται πάντα από το ζεστό σώμα προς το κρύο σώμα.
+β) Το σύμβολο που χρησιμοποιούμε για τη θερμότητα είναι το Q.
+γ) Ένα σιδερένιο πόμολο είναι κακός αγωγός της θερμότητας.
+δ) Ρεύματα μεταφοράς θερμότητας δημιουργούνται και στην ατμόσφαιρα της Γης.</p>
+</div>
+<details class="success">
+<summary>Λύσεις Άσκησης 1</summary>
+<ul>
+<li><strong>α) Σωστό (Σ).</strong> Είναι ο χρυσός κανόνας της μεταφοράς θερμότητας!</li>
+<li><strong>β) Σωστό (Σ).</strong></li>
+<li><strong>γ) Λάθος (Λ).</strong> Ο σίδηρος είναι μέταλλο, άρα είναι πολύ <em>καλός</em> αγωγός της θερμότητας (γι' αυτό τον νιώθουμε κρύο όταν τον ακουμπάμε τον χειμώνα).</li>
+<li><strong>δ) Σωστό (Σ).</strong> Ο ζεστός αέρας ανεβαίνει, δημιουργώντας ανέμους και μετεωρολογικά φαινόμενα.</li>
+</ul>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 2: Κατάταξη Υλικών</p>
+<p>Τοποθέτησε στη σωστή στήλη του πίνακα που ακολουθεί τα παρακάτω υλικά: <em>φελιζόλ, χαλκός, αλουμίνιο, πλαστικό, αέρας, σίδηρος, χαρτί, γυαλί</em>.</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 2</summary>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Καλός αγωγός θερμότητας (Μέταλλα)</th>
+<th style="text-align: left;">Κακός αγωγός θερμότητας (Μονωτές)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Χαλκός</td>
+<td style="text-align: left;">Φελιζόλ</td>
+</tr>
+<tr>
+<td style="text-align: left;">Αλουμίνιο</td>
+<td style="text-align: left;">Πλαστικό</td>
+</tr>
+<tr>
+<td style="text-align: left;">Σίδηρος</td>
+<td style="text-align: left;">Αέρας</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Χαρτί</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Γυαλί</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h3 id="_7">Ερωτήσεις Ανοιχτού Τύπου</h3>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 3: Το ταψί</p>
+<p>Το κοτόπουλο με τις πατάτες έχουν μόλις ψηθεί, οπότε ο Αζίζ κλείνει τον φούρνο. Ο μικρός του αδελφός του λέει: «Πρόσεχε, γιατί το ταψί έχει πολύ υψηλή θερμότητα». Είναι σωστό αυτό που του είπε; Αν όχι, τι θα έπρεπε να έχει πει;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 3</summary>
+<p><strong>Δεν είναι σωστό.</strong> Στη Φυσική, τα σώματα δεν "έχουν" και δεν "αποθηκεύουν" θερμότητα. Έχουν θερμική ενέργεια και θερμοκρασία! Η θερμότητα εμφανίζεται μόνο όταν μεταφέρεται ενέργεια.
+<em>Το σωστό θα ήταν να πει:</em> «Πρόσεχε, γιατί το ταψί έχει πολύ <strong>υψηλή θερμοκρασία</strong> (ή τεράστια θερμική ενέργεια)».</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 4: Μαγειρικά σκεύη</p>
+<p>Όλα τα μαγειρικά σκεύη είναι φτιαγμένα από μέταλλο, αλλά τα περισσότερα έχουν χερούλια φτιαγμένα από πλαστικό. Μπορείς να εξηγήσεις γιατί;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 4</summary>
+<p>Το κύριο σώμα της κατσαρόλας είναι από μέταλλο (καλός αγωγός) για να μεταφέρει γρήγορα τη θερμότητα από το μάτι της κουζίνας στο φαγητό. 
+Τα χερούλια είναι από πλαστικό (κακός αγωγός / μονωτής) για να εμποδίσουν τη θερμότητα να φτάσει στα χέρια μας και να μη μας κάψουν!</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 5: Το αναψυκτικό στη θάλασσα</p>
+<p>Η θερμοκρασία του αναψυκτικού της Ισμήνης έφτασε τους 50 °C και το βύθισε στη θάλασσα (θερμοκρασία 20 °C) για να δροσιστεί. Σε ποια θερμοκρασία πιστεύεις ότι θα καταλήξει το αναψυκτικό μετά από ώρα; Σε τι θερμοκρασία θα καταλήξει η θάλασσα; Γιατί;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 5</summary>
+<ul>
+<li>Το αναψυκτικό θα καταλήξει στους <strong>20 °C</strong>. Θα δώσει θερμότητα στη θάλασσα μέχρι να έρθει σε θερμική ισορροπία μαζί της.</li>
+<li>Η θάλασσα θα καταλήξει επίσης στους <strong>20 °C</strong> (πρακτικά δεν θα αλλάξει καθόλου). Επειδή η θάλασσα έχει ασύλληπτα τεράστια μάζα σε σχέση με το κουτάκι, η ελάχιστη θερμότητα που θα πάρει δεν αρκεί για να αλλάξει τη θερμοκρασία της.</li>
+</ul>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 6: "Μην μπει μέσα το κρύο!"</p>
+<p>Ο Αντώνης αφήνει την εξώπορτα ανοικτή μια κρύα μέρα. Η γιαγιά του φωνάζει να κλείσει για να «μην μπει μέσα το κρύο». Συμφωνείς; Τι θα της έλεγες αν ήσουν στη θέση του Αντώνη;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 6</summary>
+<p><strong>Δεν συμφωνώ!</strong> Στη Φυσική, το "κρύο" δεν υπάρχει ως κάτι που μπορεί να κινηθεί ή να μπει μέσα στο σπίτι. Μόνο η θερμότητα μπορεί να ταξιδέψει.
+<em>Θα έλεγα στη γιαγιά:</em> «Κλείνω την πόρτα, γιαγιά, <strong>για να μη φύγει η θερμότητα</strong> από το ζεστό μας σπίτι προς τον κρύο αέρα έξω!»</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 7: Το πείραμα με μικρότερη μάζα</p>
+<p>Στο πείραμα της τάξης, μια ομάδα έβαλε πολύ λιγότερο ζεστό νερό στο μικρό μπουκάλι, σε σχέση με το κρύο νερό στο μεγάλο. Η τελική θερμοκρασία στο δικό τους πείραμα θα είναι μικρότερη ή μεγαλύτερη από αυτή της δικής σου ομάδας;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 7</summary>
+<p>Η τελική θερμοκρασία ισορροπίας θα είναι <strong>μικρότερη</strong> (πιο κοντά στη θερμοκρασία του κρύου νερού). Αφού η μάζα του ζεστού νερού ήταν μικρή, η θερμική του ενέργεια δεν ήταν αρκετή για να ζεστάνει πολύ τη μεγάλη ποσότητα του κρύου νερού.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 8: Το τζάκι και οι 3 τρόποι μεταφοράς</p>
+<p>Η Κατερίνα έβαλε τα χέρια της πάνω από τη φωτιά, ο Στέλιος μπροστά από τη φωτιά, και η Έλενα τακτοποιούσε τα ξύλα με ένα σιδερένιο εργαλείο. Ποιος είναι ο κυρίαρχος τρόπος με τον οποίο λαμβάνει θερμότητα ο καθένας τους;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 8</summary>
+<p>Εδώ βλέπουμε και τους τρεις τρόπους μεταφοράς θερμότητας ταυτόχρονα!</p>
+<ul>
+<li><strong>Η Κατερίνα (πάνω):</strong> Παίρνει θερμότητα με <strong>Ρεύματα Μεταφοράς</strong> (ο ζεστός αέρας ανεβαίνει προς τα πάνω).</li>
+<li><strong>Ο Στέλιος (μπροστά):</strong> Παίρνει θερμότητα με <strong>Ακτινοβολία</strong> (αφού ο ζεστός αέρας δεν πάει οριζόντια).</li>
+<li><strong>Η Έλενα (εργαλείο):</strong> Παίρνει θερμότητα με <strong>Αγωγή</strong> (μέσα από το στερεό μέταλλο).</li>
+</ul>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 9: Τα μπουκάλια 1.5 L και 0.5 L</p>
+<p>Δύο μπουκάλια (1.5 L και 0.5 L) με νερό έμειναν στον πάγκο όλο το βράδυ. 
+α) Ποιο έχει μεγαλύτερη θερμοκρασία; β) Ποιο έχει μεγαλύτερη μέση κινητική ενέργεια ανά άτομο; γ) Ποιο έχει μεγαλύτερη θερμική ενέργεια; δ) Αν τα βάλουμε στο ψυγείο, η θερμική τους ενέργεια θα αυξηθεί ή θα μειωθεί;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 9</summary>
+<ul>
+<li><strong>α)</strong> Έχουν την <strong>ίδια θερμοκρασία</strong> (αφού έμειναν όλο το βράδυ, ήρθαν σε θερμική ισορροπία με τον αέρα της κουζίνας).</li>
+<li><strong>β)</strong> Έχουν την <strong>ίδια μέση κινητική ενέργεια</strong>, επειδή έχουν ακριβώς την ίδια θερμοκρασία.</li>
+<li><strong>γ)</strong> Το μεγάλο μπουκάλι των <strong>1.5 L</strong> έχει μεγαλύτερη θερμική ενέργεια, γιατί έχει πολύ μεγαλύτερη μάζα (περισσότερα μόρια) από το μικρό.</li>
+<li><strong>δ)</strong> Αν τα βάλουμε στο ψυγείο θα κρυώσουν, άρα η θερμική τους ενέργεια θα <strong>μειωθεί</strong>.</li>
+</ul>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 10: Το μπουφάν του Γιώργου</p>
+<p>Στην παραλία, η Αμέλια τύλιξε ένα παγωμένο μπουκάλι με το μπουφάν της για να μείνει κρύο. Ο Γιώργος τής είπε ότι το νερό θα ζεσταθεί πιο γρήγορα έτσι γιατί "τα μπουφάν ζεσταίνουν". Ποιος έχει δίκιο;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 10</summary>
+<p>Η <strong>Αμέλια έχει δίκιο!</strong> Τα μπουφάν είναι κατασκευασμένα από θερμομονωτικά υλικά.
+Τα μπουφάν <em>δεν παράγουν</em> θερμότητα από μόνα τους. Τον χειμώνα μας κρατάνε ζεστούς γιατί δεν αφήνουν τη δική μας θερμότητα να φύγει. Το καλοκαίρι, το μπουφάν γύρω από το μπουκάλι λειτουργεί σαν ασπίδα: δεν αφήνει τη θερμότητα από τον ζεστό αέρα της παραλίας να φτάσει στο νερό. Άρα το νερό θα μείνει κρύο για πολλή ώρα!</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 11: Παγάκια σε χαρτί και αλουμινόχαρτο</p>
+<p>Πάρε δύο παγάκια. Τύλιξε το ένα με χαρτί κουζίνας και το άλλο με αλουμινόχαρτο. Ποιο θα λιώσει πρώτο και γιατί;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 11</summary>
+<p>Το παγάκι στο <strong>αλουμινόχαρτο</strong> θα λιώσει πρώτο! 
+Το αλουμίνιο (μέταλλο) είναι πολύ καλός αγωγός της θερμότητας. Έτσι, θα "τραβήξει" γρήγορα θερμότητα από το ζεστό δωμάτιο και θα τη μεταφέρει στο παγάκι. Αντίθετα, το χαρτί είναι μονωτής και θα καθυστερήσει τη μεταφορά θερμότητας προς το δεύτερο παγάκι.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Άσκηση 12: Το κρύο μέταλλο και το «ζεστό» ξύλο!</p>
+<p>Μπαίνεις σε ένα δωμάτιο όπου όλα τα αντικείμενα (ένα σιδερένιο πόμολο και μια ξύλινη πόρτα) βρίσκονται απολύτως στην ίδια θερμοκρασία περιβάλλοντος (π.χ. 20 °C). Όταν όμως ακουμπάς το μέταλλο, το νιώθεις <strong>παγωμένο</strong>, ενώ όταν ακουμπάς το ξύλο, το νιώθεις πιο <strong>«ζεστό»</strong> (κανονικό). </p>
+<p>α) Έχουν πράγματι διαφορετική θερμοκρασία τα δύο αντικείμενα; 
+β) Πώς εξηγείται το γεγονός ότι τα νιώθουμε διαφορετικά ενώ βρίσκονται στον ίδιο χώρο;</p>
+</div>
+<details class="success">
+<summary>Λύση Άσκησης 12</summary>
+<p><strong>α) Όχι!</strong> Τα δύο αντικείμενα βρίσκονται απολύτως στην <strong>ίδια θερμοκρασία</strong>, αφού βρίσκονται στο ίδιο δωμάτιο και έχουν έρθει σε θερμική ισορροπία με τον αέρα του.</p>
+<p><strong>β) Η εξήγηση (Η δουλειά των αγωγών):</strong> 
+Το σώμα μας έχει θερμοκρασία περίπου 36,6 °C, που είναι μεγαλύτερη από τους 20 °C του δωματίου. Άρα, όταν ακουμπάμε κάτι, η θερμότητα ρέει από το χέρι μας προς το αντικείμενο.</p>
+<ul>
+<li><strong>Το μέταλλο</strong> είναι <strong>καλός αγωγός</strong> της θερμότητας. Μόλις το αγγίξεις, "τραβάει" αμέσως τη θερμότητα από το χέρι σου με τεράστια ταχύτητα. Τα νεύρα του δέρματος αισθάνονται αυτή τη γρήγορη απώλεια ενέργειας και στέλνουν στον εγκέφαλο το σήμα: <em>"Προσοχή, παγώνω!"</em>.</li>
+<li><strong>Το ξύλο</strong> είναι <strong>κακός αγωγός (μονωτής)</strong>. Όταν το αγγίζεις, η θερμότητα φεύγει από το χέρι σου πολύ αργά, οπότε το δέρμα σου δεν κρυώνει απότομα, κι έτσι μας φαίνεται πιο "μαλακό" και ζεστό.</li>
+</ul>
+<p><em>Συμπέρασμα:</em> Η αφή μας δεν μετράει τη θερμοκρασία, αλλά το <strong>πόσο γρήγορα</strong> μεταφέρεται η θερμότητα από ή προς το χέρι μας!</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
