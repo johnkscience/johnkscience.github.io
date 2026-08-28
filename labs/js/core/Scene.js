@@ -16,8 +16,8 @@ export class Scene {
         // Ενημέρωση Φυσικής
         this.physicsBodies.forEach(body => body.update(dt));
         
-        // Ενημέρωση Οργάνων
-        this.instruments.forEach(inst => inst.update(dt));
+        // Ενημέρωση Οργάνων - ΔΙΟΡΘΩΣΗ: Προστέθηκε το sim εδώ!
+        this.instruments.forEach(inst => inst.update(dt, sim));
     }
 
     draw(ctx) {
