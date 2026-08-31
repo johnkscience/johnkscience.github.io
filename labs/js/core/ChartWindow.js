@@ -8,46 +8,47 @@ export class ChartWindow extends UIElement {
         this.yLabel = yLabel;
         this.data = []; 
         
-        // ΝΕΟ: Το παράθυρο ξεκινάει κρυμμένο!
         this.isVisible = false; 
         this.wasMouseDown = false;
+        
+        // Χρώματα για μέχρι 5 διαφορετικές καμπύλες
+        this.seriesColors = ["#2196F3", "#f44336", "#4CAF50", "#FF9800", "#9C27B0"];
     }
 
-    addDataPoint(xValue, yValue) {
-        this.data.push({ x: xValue, y: yValue });
+    // Το yValues μπορεί να είναι πλέον αριθμός Ή πίνακας αριθμών [y1, y2, y3]
+    addDataPoint(xValue, yValues) {
+        let yArray = Array.isArray(yValues) ? yValues : [yValues];
+        this.data.push({ x: xValue, y: yArray });
         if (this.data.length > 500) this.data.shift();
     }
 
     update(dt, sim) {
-        if (!this.isVisible) return; // Αν είναι κρυμμένο, δεν κάνει τίποτα!
+        if (!this.isVisible) return; 
 
         this.isHovered = this.containsPoint(sim.mouseX, sim.mouseY);
 
         if (this.isHovered && sim.isMouseDown && !this.wasMouseDown) {
-            // Έλεγχος αν πατήθηκε το κουμπί [-] πάνω δεξιά
             let btnSize = 30;
             let btnX = this.x + this.width - btnSize;
             
             if (sim.mouseX > btnX && sim.mouseY < this.y + btnSize) {
-                this.isVisible = false; // Το κρύβουμε εντελώς!
+                this.isVisible = false; 
             }
         }
         this.wasMouseDown = sim.isMouseDown;
     }
 
     draw(ctx) {
-        if (!this.isVisible) return; // Αν είναι κρυμμένο, δεν ζωγραφίζεται τίποτα!
+        if (!this.isVisible) return; 
 
         ctx.save();
         
-        // 1. Φόντο και Περίγραμμα
         ctx.fillStyle = "rgba(255, 255, 255, 0.95)";
         ctx.strokeStyle = "#455a64";
         ctx.lineWidth = 2;
         ctx.fillRect(this.x, this.y, this.width, this.height);
         ctx.strokeRect(this.x, this.y, this.width, this.height);
 
-        // 2. Μπάρα Τίτλου
         let titleHeight = 30;
         ctx.fillStyle = "#455a64";
         ctx.fillRect(this.x, this.y, this.width, titleHeight);
@@ -58,14 +59,12 @@ export class ChartWindow extends UIElement {
         ctx.textBaseline = "middle";
         ctx.fillText(`📊 ${this.title}`, this.x + 10, this.y + titleHeight / 2);
 
-        // 3. Κουμπί Κλεισίματος [-]
         ctx.fillStyle = "#f44336"; 
         ctx.fillRect(this.x + this.width - 30, this.y, 30, titleHeight);
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
         ctx.fillText("—", this.x + this.width - 15, this.y + titleHeight / 2);
 
-        // 4. Σχεδίαση του Γραφήματος
         this.drawGraphData(ctx, titleHeight);
         
         ctx.restore();
@@ -81,10 +80,12 @@ export class ChartWindow extends UIElement {
         let plotW = this.width - paddingX - 15;
         let plotH = this.height - titleHeight - paddingY - 15;
 
+        // Εξαγωγή όλων των Y για εύρεση καθολικού Min/Max
         let minXData = Math.min(...this.data.map(d => d.x));
         let maxXData = Math.max(...this.data.map(d => d.x));
-        let minYData = Math.min(...this.data.map(d => d.y));
-        let maxYData = Math.max(...this.data.map(d => d.y));
+        let allYData = this.data.flatMap(d => d.y);
+        let minYData = Math.min(...allYData);
+        let maxYData = Math.max(...allYData);
 
         if (maxXData === minXData) maxXData += 1;
         if (maxYData === minYData) maxYData += 1;
@@ -127,7 +128,7 @@ export class ChartWindow extends UIElement {
             ctx.fillText(val.toFixed(1), plotX - 8, py);
         }
 
-        // Ετικέτες Αξόνων
+        // Ετικέτες
         ctx.fillStyle = "#333";
         ctx.font = "bold 12px Arial";
         ctx.textAlign = "center";
@@ -139,28 +140,35 @@ export class ChartWindow extends UIElement {
         ctx.fillText(this.yLabel, 0, 0); 
         ctx.restore();
 
-        // Σχεδίαση Γραμμής Δεδομένων
-        ctx.beginPath();
-        ctx.strokeStyle = "#2196F3"; 
-        ctx.lineWidth = 2;
-        for (let i = 0; i < this.data.length; i++) {
-            let d = this.data[i];
-            let px = plotX + ((d.x - minXData) / (maxXData - minXData)) * plotW;
-            let py = (plotY + plotH) - ((d.y - minYData) / (maxYData - minYData)) * plotH;
-            if (i === 0) ctx.moveTo(px, py);
-            else ctx.lineTo(px, py);
-        }
-        ctx.stroke();
+        // Δυναμική σχεδίαση για ΚΑΘΕ καμπύλη (σειρά)
+        let numSeries = this.data[0].y.length;
 
-        // Σχεδίαση των σημείων (κουκκίδες)
-        ctx.fillStyle = "#f44336"; 
-        for (let i = 0; i < this.data.length; i++) {
-            let d = this.data[i];
-            let px = plotX + ((d.x - minXData) / (maxXData - minXData)) * plotW;
-            let py = (plotY + plotH) - ((d.y - minYData) / (maxYData - minYData)) * plotH;
+        for (let s = 0; s < numSeries; s++) {
+            let color = this.seriesColors[s % this.seriesColors.length];
+            
+            // Γραμμές
             ctx.beginPath();
-            ctx.arc(px, py, 4, 0, 2 * Math.PI); 
-            ctx.fill();
+            ctx.strokeStyle = color; 
+            ctx.lineWidth = 2;
+            for (let i = 0; i < this.data.length; i++) {
+                let d = this.data[i];
+                let px = plotX + ((d.x - minXData) / (maxXData - minXData)) * plotW;
+                let py = (plotY + plotH) - ((d.y[s] - minYData) / (maxYData - minYData)) * plotH;
+                if (i === 0) ctx.moveTo(px, py);
+                else ctx.lineTo(px, py);
+            }
+            ctx.stroke();
+
+            // Κουκκίδες
+            ctx.fillStyle = color; 
+            for (let i = 0; i < this.data.length; i++) {
+                let d = this.data[i];
+                let px = plotX + ((d.x - minXData) / (maxXData - minXData)) * plotW;
+                let py = (plotY + plotH) - ((d.y[s] - minYData) / (maxYData - minYData)) * plotH;
+                ctx.beginPath();
+                ctx.arc(px, py, 4, 0, 2 * Math.PI); 
+                ctx.fill();
+            }
         }
     }
 }
