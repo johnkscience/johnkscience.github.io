@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ηλεκτρικό Κύκλωμα και Κίνηση Ηλεκτρονίων - johnkscience</title>
+    <title>Κίνηση Brown και Διάχυση - johnkscience</title>
     <link rel="stylesheet" href="/theme/css/blog.css">
 	
 	<script>
@@ -54,9 +54,9 @@
     <div class="row">
         <div class="leftcolumn">
     <div class="article">
-        <h2 style="text-align: center; margin-bottom: 5px;">Ηλεκτρικό Κύκλωμα και Κίνηση Ηλεκτρονίων</h2>
+        <h2 style="text-align: center; margin-bottom: 5px;">Κίνηση Brown και Διάχυση</h2>
         <h5 style="text-align: center; color: #666; margin-top: 0;">
-            Δημοσιεύτηκε: 28-08-2026 | Κατηγορία: Εργαστήρια
+            Δημοσιεύτηκε: 31-08-2026 | Κατηγορία: Εργαστήρια
         </h5>
         
         <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
@@ -68,11 +68,11 @@
 
 <script type="module">
     import { Simulation } from '/labs/js/core/Simulation.js';
-    import { ElectricCircuitScene } from '/labs/js/scenes/ElectricCircuitScene.js';
+    import { DiffusionScene } from '/labs/js/scenes/DiffusionScene.js';
 
     window.onload = () => {
         const sim = new Simulation('labCanvas');
-        sim.sceneManager.switchScene(new ElectricCircuitScene());
+        sim.sceneManager.switchScene(new DiffusionScene());
         sim.start();
     };
 </script>
