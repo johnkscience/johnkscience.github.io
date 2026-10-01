@@ -1,0 +1,2048 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Λυμένες Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Γιάννης">
+      
+      
+      
+      
+        <link rel="next" href="../math_2_1_2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>1. Θεωρία - Μαθηματικά Β' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Μαθηματικά Β&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Μαθηματικά Β' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Μαθηματικά Β' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Θεωρία
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Μαθηματικά Β&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Μαθηματικά Β' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Μαθηματικά Β' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Βασικές Πράξεις και Έννοιες
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1. Βασικές Πράξεις και Έννοιες
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Θεωρία
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Θεωρία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_1_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Μάθημα 1 - Βασικές Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_1_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Μάθημα 2 - Βασικές Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_1_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Μάθημα 3 - Βασικές Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_1_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.4 Μάθημα 4 - Βασικές Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_1_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.5 Μάθημα 5 – Κλάσματα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_1_7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.6 Μάθημα 6 – Αναλογίες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_1_8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.7 Μάθημα 7 – Διανύσματα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Δυνάμεις Πραγματικών Αριθμών
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2. Δυνάμεις Πραγματικών Αριθμών
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_2_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Θεωρία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_2_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Μάθημα 1 - Ορισμός και ιδιότητες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_2_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Μάθημα 2 - Ορισμός και ιδιότητες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_2_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 Μάθημα 3 - Βασικές Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_2_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Μάθημα 4 - Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Η έννοια της Μεταβλητής
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3. Η έννοια της Μεταβλητής
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_3_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Θεωρία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_3_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Μάθημα 1 - Βασικές Έννοιες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_3_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Μάθημα 2 - Βασικές Έννοιες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Εξισώσεις 1ου Βαθμού
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. Εξισώσεις 1ου Βαθμού
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_4_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Θεωρία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_4_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Μάθημα 1 - Βασικές Έννοιες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_4_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Μάθημα 2 - Εξισώσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Ρίζες Θετικών Αριθμών
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5. Ρίζες Θετικών Αριθμών
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_5_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Θεωρία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_5_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 Μάθημα 1 - Βασικές Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_5_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 Μάθημα 2 - Βασικές Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_5_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.3 Μάθημα 3 - Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Ρητοί, Άρρητοι και Πραγματικοί Αριθμοί
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    6. Ρητοί, Άρρητοι και Πραγματικοί Αριθμοί
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_6_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Θεωρία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_6_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.1 Μάθημα 1 - Υπολογισμοί
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_6_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6.2 Μάθημα 2 - Προβλήματα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Συναρτήσεις
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    7. Συναρτήσεις
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_7_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Θεωρία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_7_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.1 Μάθημα 1 - Η έννοια της συνάρτησης
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_7_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.2 Μάθημα 2 - Γραφική παράσταση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_7_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.3 Μάθημα 3 - Ανάλογα ποσά
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_7_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7.4 Μάθημα 4 - Αντιστρόφως ανάλογα ποσά
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Στατιστική
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    8. Στατιστική
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_8_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Θεωρία
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_8_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.1 Μάθημα 1 - Πληθυσμός, δείγμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_8_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.2 Μάθημα 2 - Γραφικές παραστάσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../math_2_8_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8.3 Μάθημα 3 - Μέση τιμή, διάμεσος
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>1. Θεωρία</h1>
+
+<h2 id="_1">Θεωρία</h2>
+<ol>
+<li>
+<p>Το σύνολο <span class="arithmatex">\(\mathbb{N} = \left\{0 , 1 , 2 , 3 , \ldots\right\}\)</span> περιέχει τους <strong>φυσικούς</strong> αριθμούς.</p>
+</li>
+<li>
+<p>Το σύνολο <span class="arithmatex">\(\mathbb{Z} = \left\{\ldots - 2 , - 1 , 0 , 1 , 2 , \ldots\right\}\)</span> περιέχει τους <strong>ακέραιους</strong> αριθμούς.</p>
+</li>
+<li>
+<p>Οι αριθμοί που μπορούν να γραφούν με την μορφή κλάσματος <span class="arithmatex">\(\frac{\mu}{\nu}\)</span> με  <span class="arithmatex">\(\nu \ne 0\)</span>ονομάζονται <strong>ρητοί</strong> αριθμοί και το σύνολο που τους περιέχει συμβολίζεται με <span class="arithmatex">\(\mathbb{Q}\)</span>.</p>
+</li>
+<li>
+<p>Ο αριθμοί που δεν είναι ρητοί ονομάζονται <strong>άρρητοι</strong>, παραδείγματα τέτοιων αριθμών είναι το <span class="arithmatex">\(\pi = 3.14 \ldots\)</span>, <span class="arithmatex">\(e = 2 , 718 \ldots\)</span>, <span class="arithmatex">\(\sqrt{2}\)</span>, κτλ</p>
+</li>
+<li>
+<p>Το σύνολο όλων των παραπάνω αριθμών ονομάζεται σύνολο των <strong>πραγματικών αριθμών</strong> περιέχει δηλαδή τους ρητούς και τους άρρητους αριθμούς. Συμβολίζεται με <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+</li>
+<li>
+<p>Ο <strong>άξονας</strong> των πραγματικών αριθμών είναι μία ευθεία (χωρίς αρχή και τέλος). Η ευθεία αυτή αποτελείται από διαδοχικά σημεία το ένα δίπλα στο άλλο. Κάθε σημείο αναπαριστά και έναν πραγματικό αριθμό. Αφού τα σημεία της ευθείας είναι άπειρα, θα είναι άπειροι και οι αριθμοί. Το σημείο με τον αριθμό μηδέν 0 ονομάζεται <strong>αρχή</strong> του άξονα. Ο άξονας αυτός έχει προσανατολισμό, που είναι ένα βέλος που γράφουμε προς τα δεξιά. Αυτό σημαίνει ότι οι αριθμοί αυξάνονται προς στα δεξιά. Αυτό ονομάζεται και διάταξη.</p>
+</li>
+<li>
+<p>Αλγεβρικά η <strong>απόλυτη τιμή ενός</strong> αριθμού ορίζεται ώς: <span class="arithmatex">\(\left| x \right| = \left\{\begin{matrix}x &amp; \text{ αν } x \ge 0 \\ - x &amp; \text{ αν } x &lt; 0\end{matrix}\right.\)</span>, ενώ γραφικά είναι η <strong>απόσταση</strong> του αριθμού από το μηδέν (την αρχή του άξονα).</p>
+</li>
+<li>
+<p>Για κάθε αριθμό είναι <span class="arithmatex">\(\left| x \right| \ge 0\)</span></p>
+</li>
+<li>
+<p>Το αποτέλεσμα της πρόσθεσης ονομάζεται <strong>άθροισμα</strong> ενώ  οι αριθμοί που προσθέτουμε ονομάζονται <strong>προσθετέοι</strong> ή <strong>όροι</strong>.</p>
+</li>
+<li>
+<p><strong>Για να προσθέσουμε δύο αριθμούς</strong> παίρνουμε  πρόσημο από τον αριθμό με την μεγαλύτερη απόλυτη τιμή και εάν οι αριθμοί είναι ομόσημοι τους προσθέτουμε ενώ εάν είναι ετερόσημοι τους αφαιρούμε.</p>
+</li>
+<li>
+<p>Η πρόσθεση έχει τις παρακάτω ιδιότητες: (<strong>ιδιότητες της πρόσθεσης</strong>)</p>
+<ol>
+<li>
+<p><strong>Αντιμεταθετική</strong> ιδιότητα η οποία με λέει ότι δεν έχει σημασία με ποια σειρά θα προσθέσουμε τους δύο προσθετέους, έχει τύπο: <span class="arithmatex">\(\alpha + \beta = \beta + \alpha\)</span>.</p>
+</li>
+<li>
+<p><strong>Προσεταιριστική</strong> ιδιότητα που μας λέει ότι εάν έχουμε τρεις προσθετέους μπορούμε να τους προσθέσουμε με όποια σειρά θέλουμε, με τύπο <span class="arithmatex">\(\left(\alpha + \beta\right) + \gamma = \alpha + \left(\beta + \gamma\right)\)</span>.</p>
+</li>
+<li>
+<p><strong>Ουδέτερο στοιχείο</strong>, που είναι ο αριθμός μηδέν, ο οποίος όταν προστεθεί σε οποιαδήποτε άλλον αριθμό δίνει πάλη τον ίδιο αριθμό. Έχει τύπο <span class="arithmatex">\(\alpha + 0 = \alpha\)</span>.</p>
+</li>
+<li>
+<p>Ο <strong>αντίθετος</strong> ενός αριθμού <span class="arithmatex">\(\alpha\)</span> είναι ο <span class="arithmatex">\(- \alpha\)</span> με την ιδιότητα <span class="arithmatex">\(\alpha + \left(- \alpha\right) = 0\)</span>.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Το αποτέλεσμα του πολλαπλασιασμού ονομάζεται <strong>γινόμενο</strong> ενώ  οι αριθμοί που  πολλαπλασιάζουμε ονομάζονται <strong>παράγοντες</strong>.</p>
+</li>
+<li>
+<p><strong>Για να κάνουμε πολλαπλασιασμό</strong> υπολογίζουμε αρχικά το πρόσημο. Αν οι παράγοντες είναι ομόσημοι τότε παίρνουμε θετικό πρόσημο ενώ εάν οι παράγοντες είναι ετερόσημοι τότε παίρνουμε αρνητικό πρόσημο. Τέλος κάνουμε κανονικά τον πολλαπλασιασμό.</p>
+</li>
+<li>
+<p>Ο πολλαπλασιασμός έχει τις παρακάτω ιδιότητες.(<strong>Ιδιότητες του πολ/σμού</strong>)</p>
+<ol>
+<li>
+<p><strong>Αντιμεταθετική</strong> ιδιότητα η οποία με λέει ότι δεν έχει σημασία με ποια σειρά θα πολλαπλασιάσουμε τους δύο παράγοντες, έχει τύπο: <span class="arithmatex">\(\alpha \cdot \beta = \beta \cdot \alpha\)</span>.</p>
+</li>
+<li>
+<p><strong>Προσεταιριστική</strong> ιδιότητα που μας λέει ότι εάν έχουμε τρεις παράγοντες μπορούμε να τους πολλαπλασιάσουμε με όποια σειρά θέλουμε, με τύπο <span class="arithmatex">\(\left(\alpha \cdot \beta\right) \cdot \gamma = \alpha \cdot \left(\beta \cdot \gamma\right)\)</span>.</p>
+</li>
+<li>
+<p><strong>Ουδέτερο στοιχείο</strong>, που είναι ο αριθμός 1, οποίος όταν πολλαπλασιαστεί σε οποιαδήποτε άλλον αριθμό δίνει πάλη τον ίδιο αριθμό. Έχει τύπο <span class="arithmatex">\(\alpha \cdot 1 = \alpha\)</span>.</p>
+</li>
+<li>
+<p>Ο <strong>αντίστροφος</strong> ενός αριθμού <span class="arithmatex">\(\alpha\)</span> είναι ο <span class="arithmatex">\(\frac{1}{\alpha}\)</span> με την ιδιότητα <span class="arithmatex">\(\alpha \cdot \left(\frac{1}{\alpha}\right) = 1\)</span>.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Η <strong>επιμεριστική ιδιότητα</strong> είναι κοινή ιδιότητα του πολλαπλασιασμού και της πρόσθεσης. Αλγεβρικά γράφουμε: <span class="arithmatex">\(\alpha \cdot \left(\beta + \gamma\right) = \alpha \cdot \beta + \alpha \cdot \gamma\)</span>. Ακόμα έχουμε <span class="arithmatex">\(\left(\alpha + \beta\right) \left(\gamma + \delta\right) = \alpha \gamma + \alpha \delta + \beta \gamma + \beta \delta\)</span> κ.τ.λ.</p>
+</li>
+<li>
+<p>Προσοχή πρέπει να δίνουμε όταν έχουμε διαιρέσεις</p>
+<ol>
+<li><span class="arithmatex">\(\left(\alpha \pm \beta\right) : \gamma = \alpha : \gamma \pm \beta : \gamma\)</span> ή <span class="arithmatex">\(\frac{\alpha \pm \beta}{\gamma} = \frac{\alpha}{\gamma} \pm \left(\frac{\beta}{\gamma}\right)\)</span></li>
+<li>Δεν επιτρέπεται η  <span class="arithmatex">\(\gamma : \left(\alpha \pm \beta\right) = \gamma : \alpha \pm \gamma : \beta\)</span></li>
+</ol>
+</li>
+<li>
+<p>Για να υπολογίσουμε τον αντίθετο (x) ενός αριθμού (α) αρκεί να λύσουμε την εξίσωση: <span class="arithmatex">\(\alpha + x = 0\)</span>. Ενώ για να υπολογίσουμε τον αντίστροφο (x) ενός αριθμού (α) αρκεί να λύσουμε την εξίσωση: <span class="arithmatex">\(\alpha \cdot x = 1\)</span>.</p>
+</li>
+<li>
+<p><strong>Οι πράξεις είναι δύο</strong>: η πρόσθεση και ο πολλαπλασιασμός. Ορίζουμε την αφαίρεση και την διαίρεση με την βοήθεια των δύο παραπάνω.</p>
+</li>
+<li>
+<p>Το αποτέλεσμα της αφαίρεσης <span class="arithmatex">\(\alpha - \beta\)</span> ονομάζεται <strong>διαφορά</strong> ενώ οι δύο αριθμοί που αφαιρούμε ονομάζονται <strong>μειωτέος</strong> ο πρώτος (α)  και <strong>αφαιρετέος</strong> ο δεύτερος (β). Για να κάνουμε αφαίρεση προσθέτουμε στην μειωτέο τον αντίθετο του αφαιρετέου: <span class="arithmatex">\(\alpha - \beta = \alpha + \left(- \beta\right)\)</span></p>
+</li>
+<li>
+<p>Το αποτέλεσμα τη διαίρεσης <span class="arithmatex">\(\frac{\alpha}{\beta}\)</span> ονομάζεται και <strong>λόγος</strong>, συμβολίζεται δε με την μορφή κλάσματος. Ο αριθμητής του κλάσματος (α) είναι ο <strong>διαιρετέος</strong> ενώ ο παρανομαστής (β) είναι ο <strong>διαιρέτης</strong>. Για να κάνουμε διαίρεση πολλαπλασιάζουμε στον διαιρετέο τον αντίστροφο του διαιρέτη: <span class="arithmatex">\(\alpha \cdot \beta = \alpha \cdot \left(\frac{1}{\beta}\right)\)</span>. Εάν εφαρμόσουμε τον αλγόριθμο της <strong>Ευκλείδειας διαίρεσης</strong> θα υπολογίζουμε το <strong>πηλίκο</strong> (π) και το <strong>υπόλοιπο</strong> (υ). Ισχύει η ιδιότητα της Ευκλείδειας διαίρεσης <span class="arithmatex">\(\alpha = \beta \cdot \pi + \upsilon\)</span>.</p>
+</li>
+<li>
+<p><strong>Κλάσμα</strong> είναι ένας αριθμός της μορφής <span class="arithmatex">\(\frac{\alpha}{\beta}\)</span> με <span class="arithmatex">\(\beta \ne 0\)</span>. Το α ονομάζεται αριθμητής και το β παρανομαστής.</p>
+</li>
+<li>
+<p><strong>Για να απλοποιήσουμε ένα κλάσμα</strong>διαιρούμε τον αριθμητή και τον παρανομαστή με τον μέγιστο κοινό διαιρέτη του αριθμητή και του παρανομαστή. Το κλάσμα που δεν απλοποιείται περισσότερο ονομάζεται <strong>ανάγωγο</strong>.</p>
+</li>
+<li>
+<p><strong>Για να προσθέσουμε δύο κλάσματα</strong>πρέπει να είναι ομώνυμα δηλαδή να έχουν ίδιο παρανομαστή. Για να κάνουμε δύο κλάσματα ομώνυμα χρησιμοποιούμε το ελάχιστο κοινό πολλαπλάσιο των δύο παρανομαστών. Για να ολοκληρώσουμε την πρόσθεση πρέπει να προσθέσουμε τους δύο αριθμητές και να βάλουμε σαν παρανομαστή τον κοινό παρανομαστή των δύο κλασμάτων.</p>
+</li>
+<li>
+<p><strong>Για να πολλαπλασιάσουμε δύο κλάσματα</strong> πολλαπλασιάζουμε τους αριθμητές και τους παρανομαστές των δύο κλασμάτων.</p>
+</li>
+<li><strong>Για να διαιρέσουμε δύο κλάσματα</strong> αλλάζουμε την διαίρεση σε πολλαπλασιασμό και αντιστρέφουμε το δεύτερο κλάσμα.</li>
+<li>
+<p><strong>Λόγος</strong> δύο αριθμών είναι το κλάσμα <span class="arithmatex">\(\frac{x}{y}\)</span> με <span class="arithmatex">\(y \ne 0\)</span>.</p>
+</li>
+<li>
+<p><strong>Αναλογία</strong> είναι η ισότητα δύο λόγων: <span class="arithmatex">\(\frac{x}{y} = \frac{\phi}{\omega}\)</span>, <span class="arithmatex">\(x \cdot \omega \ne 0\)</span>, οι αριθμητές ονομάζονται και <strong>ηγούμενοι όροι</strong> ενώ οι παρανομαστές και <strong>επόμενοι όροι</strong>. Ακόμα τα x και ω ονομάζονται <strong>άκροι</strong> και οι y και φ <strong>μέσοι όροι</strong>.</p>
+</li>
+<li>
+<p>Οι αναλογίες έχουν τις παρακάτω <strong>ιδιότητες</strong>:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{x}{y} = \frac{\phi}{\omega} \iff x \cdot \omega = y \cdot \phi\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x}{y} = \frac{\phi}{\omega} \iff \frac{\omega}{y} = \frac{\phi}{x}\)</span>  ή <span class="arithmatex">\(\frac{x}{\phi} = \frac{y}{\omega}\)</span>  ή <span class="arithmatex">\(\frac{\omega}{\phi} = \frac{y}{x}\)</span> δηλαδή μετακινώ τις μεταβλητές διαγώνια.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x}{y} = \frac{\phi}{\omega} \iff \frac{x \pm y}{y} = \frac{\phi \pm \omega}{\omega}\)</span>  ή <span class="arithmatex">\(\frac{x}{y \pm x} = \frac{\phi}{\omega \pm \phi}\)</span> δηλαδή προσθέτω τους αριθμητές ή τους παρανομαστές.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x}{y} = \frac{\phi}{\omega} = \frac{x + \phi}{y + \omega}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Οι πράξει γίνονται με την παρακάτω <strong>προτεραιότητα</strong>:</p>
+<ol>
+<li>
+<p>Παρενθέσεις</p>
+</li>
+<li>
+<p>Απόλυτες τιμές</p>
+</li>
+<li>
+<p>Δυνάμεις</p>
+</li>
+<li>
+<p>Πολλαπλασιασμοί και διαιρέσεις</p>
+</li>
+<li>
+<p>Προσθέσεις και αφαιρέσεις</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Δύο αριθμοί ονομάζονται <strong>ομόσημοι</strong> όταν έχουν ίδιο πρόσημο, ισχύει <span class="arithmatex">\(\alpha \cdot \beta &gt; 0\)</span> και <span class="arithmatex">\(\frac{\alpha}{\beta} &gt; 0 , \beta \ne 0\)</span>. Ενώ ονομάζονται <strong>ετερόσημοι</strong> όταν έχουν αντίθετο πρόσημο, ισχύει ότι <span class="arithmatex">\(\alpha \cdot \beta &lt; 0\)</span> και <span class="arithmatex">\(\frac{\alpha}{\beta} &lt; 0 , \beta \ne 0\)</span></p>
+</li>
+<li>
+<p>Το <strong>μηδέν</strong> (0) δεν έχει πρόσημο, ούτε αντίθετο και αντίστροφο. Ότι πολλαπλασιάζουμε με το μηδέν δίνει αποτέλεσμα μηδέν και ότι προσθέτουμε με το μηδέν δίνει ως αποτέλεσμα τον ίδιο τον αριθμό που προσθέτουμε.</p>
+</li>
+<li>
+<p>Όταν μπροστά από μία παρένθεση υπάρχει το – τότε βγάζουμε την παρένθεση αλλάζοντας όλα τα πρόσημα μέσα στην παρένθεση, ενώ αν υπάρχει το + τότε βγάζουμε την παρένθεση χωρίς να αλλάξουμε τα πρόσημα.</p>
+</li>
+<li>
+<p>Το γινόμενο άρτιου πλήθους παραγόντων έχει θετικό πρόσημο ενώ το γινόμενο περιττού πλήθους παραγόντων έχει αρνητικό πρόσημο.</p>
+</li>
+<li>
+<p>Ένας δεκαδικός αριθμός με άπειρο αριθμό δεκαδικών ψηφίων όπου ένα τμήμα αυτών των ψηφίων επαναλαμβάνεται ονομάζεται απειροψήφιος περιοδικός δεκαδικός αριθμός ή απλά <strong>περιοδικός αριθμός</strong>, π.χ. <span class="arithmatex">\(0.34565656 \ldots = 0.34 \overline{56}\)</span> Οι αριθμοί αυτοί είναι ρητοί και μπορούν να γραφούν με την μορφή κλάσματος. Για να γίνει η μετατροπή σε κλάσμα ακολουθούμε τον παρακάτω αλγόριθμο:</p>
+<ol>
+<li>
+<p>Έστω α ο περιοδικός αριθμός</p>
+</li>
+<li>
+<p>Εντοπίζουμε το πρώτο και το δεύτερο μέρος της περιόδου.</p>
+</li>
+<li>
+<p>Πολλαπλασιάζουμε με κατάλληλες δυνάμεις του 10 ώστε η υποδιαστολή να βρεθεί μπροστά από το πρώτο και το δεύτερο μέρος της περιόδου.</p>
+</li>
+<li>
+<p>Αφαιρούμε τις δύο σχέσεις</p>
+</li>
+<li>
+<p>Ακολουθεί ένα παράδειγμα μετατροπής του αριθμού 0.3456565656…</p>
+</li>
+<li>
+<p>Έστω α=0.34565656…</p>
+</li>
+<li>
+<p>Η περίοδος είναι το 56 και πρώτη φορά εμφανίζεται στο 0.34<strong>56</strong>5656… και δεύτερη φορά στο 0.3456<strong>56</strong>56…</p>
+</li>
+<li>
+<p>Πολλαπλασιάζουμε με 100 και 10000 αντίστοιχα: <span class="arithmatex">\(100 \alpha = 34.565656 \ldots\)</span> και <span class="arithmatex">\(10000 \alpha = 3456.565656 \ldots\)</span></p>
+</li>
+<li>
+<p>Αφαιρούμε κατά μέλη αυτές τις δύο σχέσεις: <span class="arithmatex">\(10000 \alpha - 100 \alpha = 3422\)</span> ή <span class="arithmatex">\(9900 \alpha = 3422\)</span> ή <span class="arithmatex">\(\alpha = \frac{3422}{9900}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Για να υπολογίσουμε τον <strong>μέσο όρο</strong> ή <strong>μέση τιμή</strong> ενός πλήθους δεδομένων αρκεί να τα προσθέσουμε και να διαιρέσουμε με το πλήθος τους, π.χ. αν στο μάθημα των μαθηματικών έχετε πάρει τους βαθμούς 13, 15, 12, 14 και 15 τότε η μέση τιμή αυτών των βαθμολογιών είναι</p>
+<div class="arithmatex">\[\frac{13 + 15 + 12 + 14 + 15}{5} =\frac{12 \cdot 1 + 13 \cdot 1 + 14 \cdot 1 + 15 \cdot 2}{5} = \frac{69}{5} = 13.8\]</div>
+</li>
+<li>
+<p>Σε κάθε σημείο ενός άξονα έχουμε αντιστοιχίσει και έναν αριθμό, που η απόλυτή του τιμή είναι η απόσταση του σημείου από την αρχή. Τον αριθμό αυτό μπορούμε να τον ονομάζουμε  <strong>θέση</strong> και την απόλυτη τιμή του <strong>μέτρο</strong> της θέσης. Έτσι εάν ένα αυτοκίνητο βρίσκεται κάποια χρονική στιγμή σε κάποιο σημείο του άξονα, το σημείο αυτό θα το ονομάζουμε θέση του αυτοκινήτου, π.χ. εάν είναι βρίσκεται στον αριθμό -3 θέση του είναι <span class="arithmatex">\(x = - 3\)</span> και απέχει από το μηδέν <span class="arithmatex">\(\left| - 3 \right| = 3\)</span> μονάδες. Αργότερα θα δούμε ότι η θέση είναι ένα διάνυσμα (βέλος) που έχει αρχή το σημείο αναφοράς (αρχή του άξονα) και πέρας το σημείο στο οποίο βρίσκεται το αυτοκίνητο. Τα διανύσματα έχουν μέτρο (=μήκος), διεύθυνση (=ευθεία) και φορά (=προσανατολισμός).</p>
+</li>
+<li>
+<p>Ας υποθέσουμε  τώρα ότι ένα αυτοκίνητο βρίσκεται αρχικά στην θέση Ο(0km). Βλέπε το σχήμα στην σελίδα 15 του σχολικού. Το αυτοκίνητο μετακινείται προς τα αριστερά στην θέση Β(-4km) και μετά προς τα δεξιά στην θέση Γ(5Km). Το συνολικό <strong>διάστημα</strong> που έχει διανύσει το όχημα είναι η συνολική απόσταση που έχει κάνει σε όλη την διαδρομή, δηλαδή 4km προς τα αριστερά και 9km προς τα δεξιά, συνολικά 13km. Το διάστημα είναι μονόμετρο μέγεθος.</p>
+</li>
+<li>
+<p>Στο παραπάνω παράδειγμα αν το όχημα ξεκινούσε από την αρχική θέση Ο(0km) και κατευθυνόταν κατευθείαν προς την τελική θέση Γ(5km) τότε θα έκανε μόνο 5km. Αυτό είναι το μέτρο της <strong>μετατόπισης</strong>. Αργότερα θα δούμε ότι η μετατόπιση είναι ένα διανυσματικό μέγεθος (βέλος) που έχει αρχή το σημείο όπου ξεκινάει την κίνηση το όχημα και τέλος το σημείο όπου τελειώνει την κίνηση το όχημα.</p>
+</li>
+<li>
+<p>Η έκφραση <span class="arithmatex">\(x \cdot y \ne 0\)</span> σημαίνει ότι το <span class="arithmatex">\(x \ne 0\)</span> και ταυτόχρονα το <span class="arithmatex">\(y \ne 0\)</span></p>
+</li>
+<li>
+<p>Η έκφραση <span class="arithmatex">\(x \cdot y &gt; 0\)</span> σημαίνει ότι οι αριθμοί x και y είναι ομόσημοι.</p>
+</li>
+<li>
+<p>Η έκφραση <span class="arithmatex">\(x \cdot y &lt; 0\)</span> σημαίνει ότι οι αριθμοί x και y είναι ετερόσημοι.</p>
+</li>
+<li>
+<p>Η έκφραση <span class="arithmatex">\(x \cdot y = 0\)</span> σημαίνει ότι <span class="arithmatex">\(x = 0\)</span> ή  <span class="arithmatex">\(y = 0\)</span>.</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
