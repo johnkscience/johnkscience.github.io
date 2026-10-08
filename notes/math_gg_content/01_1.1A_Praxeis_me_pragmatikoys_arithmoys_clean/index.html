@@ -1,0 +1,2047 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Λυμένες Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Γιάννης">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../02_1.1V_Dynameis_clean/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Πράξεις με πραγματικούς αριθμούς - Μαθηματικά Γ' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Μαθηματικά Γ' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Πράξεις με πραγματικούς αριθμούς
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Μαθηματικά Γ' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αρχική
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Μέρος Α: Άλγεβρα
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Μέρος Α: Άλγεβρα
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με πραγματικούς αριθμούς
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με πραγματικούς αριθμούς
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_1.1V_Dynameis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Δυνάμεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_1.1G_Tetragoniki_riza_pragmatikoy_arithmoy_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Τετραγωνική ρίζα πραγματικού αριθμού
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_1.2A__Algevrikes_parastaseis_-_Mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αλγεβρικές παραστάσεις - Μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_1.2V_Praxeis_me_mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_1.3_Polyonyma_--_Prosthesi_kai_Afairesi_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολυώνυμα - Πρόσθεση και αφαίρεση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_1.4_Pollaplasiasmos_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολλαπλασιασμός πολυωνύμων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_1.5_Axiosimeiotes_taytotites_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αξιοσημείωτες ταυτότητες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_1.8_E.K.P._kai_M.K.D._akeraion_algevrikon_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ε.Κ.Π. και Μ.Κ.Δ. αλγεβρικών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_1.6_Paragontopoiisi_algevrikon_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_1_6_V_Prochorimeni_paragontopoiisi_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Προχωρημένη Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_1.9_Rites_algevrikes_parastaseis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ρητές αλγεβρικές παραστάσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_1.10_Praxeis_riton_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις ρητών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_Genikes_askiseis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Γενικές Ασκήσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Πράξεις με πραγματικούς αριθμούς</h1>
+
+<h2 id="_1">Θεωρία</h2>
+<ol>
+<li>
+<p>Το σύνολο <span class="arithmatex">\(\mathbb{N}={0,1,2,3,...}\)</span>  περιέχει τους <strong>φυσικούς</strong> αριθμούς.</p>
+</li>
+<li>
+<p>Το σύνολο <span class="arithmatex">\(\mathbb{Z}={\dots{}-2,-1,0,1,2,\dots{}}\)</span>  περιέχει τους <strong>ακέραιους</strong> αριθμούς.</p>
+</li>
+<li>
+<p>Οι αριθμοί που μπορούν να γραφούν με την μορφή κλάσματος <span class="arithmatex">\(\frac{\mu }{\nu }\)</span> με   <span class="arithmatex">\(\nu
+    \neq 0\)</span> ονομάζονται <strong>ρητοί</strong> αριθμοί και το σύνολο που τους περιέχει συμβολίζεται με  <span class="arithmatex">\(\mathbb{Q}\)</span> .</p>
+</li>
+<li>
+<p>Ο αριθμοί που δεν είναι ρητοί ονομάζονται <strong>άρρητοι</strong>, παραδείγματα τέτοιων αριθμών είναι το <span class="arithmatex">\(\pi =3.14\dots{}\)</span> , <span class="arithmatex">\(e=2,718\dots{}\)</span> , <span class="arithmatex">\(\sqrt 2\)</span> , κτλ</p>
+</li>
+<li>
+<p>Το σύνολο όλων των παραπάνω αριθμών ονομάζεται σύνολο των <strong>πραγματικών αριθμών</strong> περιέχει δηλαδή τους ρητούς και τους άρρητους αριθμούς. Συμβολίζεται με  <span class="arithmatex">\(\mathbb{R}\)</span> .</p>
+</li>
+<li>
+<p>Ο <strong>άξονας</strong> των πραγματικών αριθμών είναι μία ευθεία (χωρίς αρχή και τέλος). Η ευθεία αυτή αποτελείται από διαδοχικά σημεία το ένα δίπλα στο άλλο. Κάθε σημείο αναπαριστά και έναν πραγματικό αριθμό. Αφού τα σημεία της ευθείας είναι άπειρα, θα είναι άπειροι και οι αριθμοί. Το σημείο με τον αριθμό μηδέν 0 ονομάζεται <strong>αρχή</strong> του άξονα. Ο άξονας αυτός έχει προσανατολισμό, που είναι ένα βέλος που γράφουμε προς τα δεξιά. Αυτό σημαίνει ότι οι αριθμοί αυξάνονται προς στα δεξιά. Αυτό ονομάζεται και διάταξη.</p>
+</li>
+<li>
+<p>Αλγεβρικά η <strong>απόλυτη τιμή ενός</strong> αριθμού ορίζεται ως: 
+<span class="arithmatex">\(\vert x \vert = \begin{cases} x, &amp; \text{αν } x \ge 0 \\ -x, &amp; \text{αν } x &lt; 0 \end{cases}\)</span>, ενώ γραφικά είναι η <strong>απόσταση</strong> του αριθμού από το μηδέν (την αρχή του άξονα).</p>
+</li>
+<li>
+<p>Για κάθε αριθμό είναι <span class="arithmatex">\(\left|x\right|\ge 0\)</span></p>
+</li>
+<li>
+<p>Το αποτέλεσμα της πρόσθεσης ονομάζεται <strong>άθροισμα</strong> ενώ  οι αριθμοί που προσθέτουμε ονομάζονται <strong>προσθετέοι</strong> ή <strong>όροι</strong>.</p>
+</li>
+<li>
+<p><strong>Για να προσθέσουμε δύο αριθμούς</strong> παίρνουμε  πρόσημο από τον αριθμό με την μεγαλύτερη απόλυτη τιμή και εάν οι αριθμοί είναι ομόσημοι τους προσθέτουμε ενώ εάν είναι ετερόσημοι τους αφαιρούμε.</p>
+</li>
+<li>
+<p>Η πρόσθεση έχει τις παρακάτω ιδιότητες: (<strong>ιδιότητες της πρόσθεσης</strong>)</p>
+<ol>
+<li>
+<p><strong>Αντιμεταθετική</strong> ιδιότητα η οποία με λέει ότι δεν έχει σημασία με ποια σειρά θα προσθέσουμε τους δύο προσθετέους, έχει τύπο: <span class="arithmatex">\(\alpha +\beta =\beta +\alpha\)</span> .</p>
+</li>
+<li>
+<p><strong>Προσεταιριστική</strong> ιδιότητα που μας λέει ότι εάν έχουμε τρεις προσθετέους μπορούμε να τους προσθέσουμε με όποια σειρά θέλουμε, με τύπο <span class="arithmatex">\((\alpha +\beta )+\gamma =\alpha +(\beta +\gamma )\)</span> .</p>
+</li>
+<li>
+<p><strong>Ουδέτερο στοιχείο</strong>, που είναι ο αριθμός μηδέν, οποίος όταν προστεθεί σε οποιαδήποτε άλλον αριθμό δίνει πάλη τον ίδιο αριθμό. Έχει τύπο <span class="arithmatex">\(\alpha +0=\alpha\)</span> .</p>
+</li>
+<li>
+<p>Ο <strong>αντίθετος</strong> ενός αριθμού <span class="arithmatex">\(\alpha\)</span>  είναι ο <span class="arithmatex">\(-\alpha\)</span>  με την ιδιότητα <span class="arithmatex">\(\alpha +(-\alpha )=0\)</span> .</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Το αποτέλεσμα του πολλαπλασιασμού ονομάζεται <strong>γινόμενο</strong> ενώ  οι αριθμοί που  πολλαπλασιάζουμε ονομάζονται <strong>παράγοντες</strong>.</p>
+</li>
+<li>
+<p><strong>Για να κάνουμε πολλαπλασιασμό</strong> υπολογίζουμε αρχικά το πρόσημο. Αν οι παράγοντες είναι ομόσημοι τότε παίρνουμε θετικό πρόσημο ενώ εάν οι παράγοντες είναι ετερόσημοι τότε παίρνουμε αρνητικό πρόσημο. Τέλος κάνουμε κανονικά τον πολλαπλασιασμό.</p>
+</li>
+<li>
+<p>Ο πολλαπλασιασμός έχει τις παρακάτω ιδιότητες.(<strong>Ιδιότητες του πολ/σμού</strong>)</p>
+<ol>
+<li>
+<p><strong>Αντιμεταθετική</strong> ιδιότητα η οποία με λέει ότι δεν έχει σημασία με ποια σειρά θα πολλαπλασιάσουμε τους δύο παράγοντες, έχει τύπο: <span class="arithmatex">\(\alpha \cdot \beta =\beta \cdot \alpha\)</span> .</p>
+</li>
+<li>
+<p><strong>Προσεταιριστική</strong> ιδιότητα που μας λέει ότι εάν έχουμε τρεις <span class="arithmatex">\(\pi\)</span>αράγοντες μπορούμε να τους πολλαπλασιάσουμε με όποια σειρά θέλουμε, με τύπο <span class="arithmatex">\((\alpha
+    \cdot \beta )\cdot \gamma =\alpha \cdot (\beta \cdot \gamma )\)</span> .</p>
+</li>
+<li>
+<p><strong>Ουδέτερο στοιχείο</strong>, που είναι ο αριθμός 1, οποίος όταν <span class="arithmatex">\(\pi\)</span>ολλαπλασιαστεί σε οποιαδήποτε άλλον αριθμό δίνει πάλη τον ίδιο αριθμό. Έχει τύπο <span class="arithmatex">\(\alpha
+    \cdot 1=\alpha\)</span> .</p>
+</li>
+<li>
+<p>Ο <strong><span class="arithmatex">\(\alpha\)</span>ντίστροφος</strong> ενός αριθμού <span class="arithmatex">\(\alpha\)</span>  είναι ο <span class="arithmatex">\(\frac 1{\alpha }\)</span>  με την ιδιότητα <span class="arithmatex">\(\alpha \cdot \frac 1{\alpha }=1\)</span> .</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Η <strong>επιμεριστική ιδιότητα</strong> είναι κοινή ιδιότητα του πολλαπλασιασμού και της πρόσθεσης. </p>
+<ol>
+<li><span class="arithmatex">\(\alpha \cdot (\beta + \gamma) = \alpha \cdot \beta + \alpha \cdot \gamma\)</span>. </li>
+<li><span class="arithmatex">\((\alpha + \beta)(\gamma + \delta) = \alpha\gamma + \alpha\delta + \beta\gamma + \beta\delta\)</span></li>
+</ol>
+</li>
+<li>
+<p>Προσοχή πρέπει να δίνουμε όταν έχουμε διαιρέσεις</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((\alpha \pm \beta ):\gamma =\alpha :\gamma \pm \beta :\gamma\)</span>  ή <span class="arithmatex">\(\frac{\alpha \pm \beta }{\gamma }=\frac{\alpha
+    }{\gamma }\pm \frac{\beta }{\gamma }\)</span></p>
+</li>
+<li>
+<p>Δεν επιτρέπεται η  <span class="arithmatex">\(\gamma :(\alpha \pm \beta )=\gamma :\alpha \pm \gamma :\beta\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Για να υπολογίσουμε τον αντίθετο (x) ενός αριθμού (α) αρκεί να λύσουμε την εξίσωση: <span class="arithmatex">\(\alpha +x=0\)</span> . Ενώ για να υπολογίσουμε τον αντίστροφο (x) ενός αριθμού (α) αρκεί να λύσουμε την εξίσωση: <span class="arithmatex">\(\alpha
+    \cdot x=1\)</span> .</p>
+</li>
+<li>
+<p><strong>Οι πράξεις είναι δύο</strong>: η πρόσθεση και ο πολλαπλασιασμός. Ορίζουμε την αφαίρεση και την διαίρεση με την βοήθεια των δύο παραπάνω.</p>
+</li>
+<li>
+<p>Το αποτέλεσμα της αφαίρεσης <span class="arithmatex">\(\alpha -\beta\)</span>  ονομάζεται <strong>διαφορά</strong> ενώ οι δύο αριθμοί που αφαιρούμε ονομάζονται <strong>μειωτέος</strong> ο πρώτος (α)  και <strong>αφαιρετέος</strong> ο δεύτερος (β). Για να κάνουμε αφαίρεση προσθέτουμε στην μειωτέο τον αντίθετο του αφαιρετέου: <span class="arithmatex">\(\alpha -\beta =\alpha +(-\beta )\)</span>  </p>
+</li>
+<li>
+<p>Το αποτέλεσμα τη διαίρεσης <span class="arithmatex">\(\frac{\alpha }{\beta }\)</span>  ονομάζεται και <strong>λόγος</strong>, συμβολίζεται δε με την μορφή κλάσματος. Ο αριθμητής του κλάσματος (α) είναι ο <strong>διαιρετέος</strong> ενώ ο παρανομαστής (β) είναι ο <strong>διαιρέτης</strong>. Για να κάνουμε διαίρεση πολλαπλασιάζουμε στον διαιρετέο τον αντίστροφο του διαιρέτη: <span class="arithmatex">\(\alpha \cdot \beta =\alpha \cdot
+    \frac 1{\beta }\)</span> . Εάν εφαρμόσουμε τον αλγόριθμο της <strong>Ευκλείδειας διαίρεσης</strong> θα υπολογίζουμε το <strong>πηλίκο</strong> (π) και το <strong>υπόλοιπο</strong> (υ). Ισχύει η ιδιότητα της Ευκλείδειας διαίρεσης <span class="arithmatex">\(\alpha =\beta \cdot \pi +\upsilon\)</span> .</p>
+</li>
+<li>
+<p><strong>Κλάσμα</strong> είναι ένας αριθμός της μορφής <span class="arithmatex">\(\frac{\alpha }{\beta }\)</span>  με <span class="arithmatex">\(\beta \neq 0\)</span> . Το α ονομάζεται αριθμητής και το β παρανομαστής.</p>
+</li>
+<li>
+<p><strong>Για να απλοποιήσουμε ένα κλάσμα</strong> διαιρούμε τον αριθμητή και τον παρανομαστή με τον μέγιστο κοινό διαιρέτη του αριθμητή και του παρανομαστή. Το κλάσμα που δεν απλοποιείται περισσότερο ονομάζεται <strong>ανάγωγο</strong>.</p>
+</li>
+<li>
+<p><strong>Για να προσθέσουμε δύο κλάσματα</strong> πρέπει να είναι ομώνυμα δηλαδή να έχουν ίδιο παρανομαστή. Για να κάνουμε δύο κλάσματα ομώνυμα χρησιμοποιούμε το ελάχιστο κοινό πολλαπλάσιο των δύο παρανομαστών. Για να ολοκληρώσουμε την πρόσθεση πρέπει να προσθέσουμε τους δύο αριθμητές και να βάλουμε σαν παρανομαστή τον κοινό παρανομαστή των δύο κλασμάτων.</p>
+</li>
+<li>
+<p><strong>Για να πολλαπλασιάσουμε δύο κλάσματα</strong> πολλαπλασιάζουμε τους αριθμητές και τους παρανομαστές των δύο κλασμάτων.</p>
+</li>
+<li>
+<p><strong>Για να διαιρέσουμε δύο κλάσματα</strong> αλλάζουμε την διαίρεση σε πολλαπλασιασμό και αντιστρέφουμε το δεύτερο κλάσμα.</p>
+</li>
+<li>
+<p><strong>Λόγος</strong> δύο αριθμών είναι το κλάσμα <span class="arithmatex">\(\frac x y\)</span>  με <span class="arithmatex">\(y\neq 0\)</span>.</p>
+</li>
+<li>
+<p><strong>Αναλογία</strong> είναι η ισότητα δύο λόγων: <span class="arithmatex">\(\frac x y=\frac{\varphi }{\omega }\)</span>, <span class="arithmatex">\(x\cdot \omega \neq 0\)</span>, οι αριθμητές ονομάζονται και <strong>ηγούμενοι όροι</strong> ενώ οι παρανομαστές και <strong>επόμενοι όροι</strong>. Ακόμα τα x και ω ονομάζονται <strong>άκροι</strong> και οι y και φ <strong>μέσοι όροι</strong>.</p>
+</li>
+<li>
+<p>Οι αναλογίες έχουν τις παρακάτω <strong>ιδιότητες</strong>:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac x y=\frac{\varphi }{\omega }\Leftrightarrow x\cdot \omega =y\cdot \varphi\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac x y=\frac{\varphi }{\omega }\Leftrightarrow \frac{\omega } y=\frac{\varphi }
+    x\ \text{ή}\ \frac x{\varphi }=\frac y{\omega }\ \text{ή}\ \frac{\omega }{\varphi }=\frac y x\)</span>, δηλαδή μετακινώ τις μεταβλητές διαγώνια.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac x y=\frac{\varphi }{\omega }\Leftrightarrow \frac{x\pm y} y=\frac{\varphi \pm \omega
+    }{\omega }\ \text{ή}\ \frac x{y\pm x}=\frac{\varphi }{\omega \pm \varphi }\)</span>, δηλαδή προσθέτω τους αριθμητές ή τους παρανομαστές.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac x y=\frac{\varphi }{\omega }=\frac{x+\varphi }{y+\omega }\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Οι πράξει γίνονται με την παρακάτω <strong>προτεραιότητα</strong>:</p>
+<ol>
+<li>
+<p>Παρενθέσεις</p>
+</li>
+<li>
+<p>Απόλυτες τιμές</p>
+</li>
+<li>
+<p>Δυνάμεις</p>
+</li>
+<li>
+<p>Πολλαπλασιασμοί και διαιρέσεις</p>
+</li>
+<li>
+<p>Προσθέσεις και αφαιρέσεις</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Δύο αριθμοί ονομάζονται <strong>ομόσημοι</strong> όταν έχουν ίδιο πρόσημο, ισχύει <span class="arithmatex">\(\alpha \cdot \beta &gt;0\)</span>  και  <span class="arithmatex">\(\frac{\alpha }{\beta }&gt;0,\beta \neq 0\)</span> . Ενώ ονομάζονται <strong>ετερόσημοι</strong> όταν έχουν αντίθετο πρόσημο, ισχύει ότι <span class="arithmatex">\(\alpha \cdot \beta &lt;0\)</span>  και <span class="arithmatex">\(\frac{\alpha }{\beta }&lt;0,\beta \neq 0\)</span></p>
+</li>
+<li>
+<p>Το <strong>μηδέν</strong> (0) δεν έχει πρόσημο, ούτε αντίθετο και αντίστροφο. Ότι πολλαπλασιάζουμε με το μηδέν δίνει αποτέλεσμα μηδέν και ότι προσθέτουμε με το μηδέν δίνει ως αποτέλεσμα τον ίδιο τον αριθμό που προσθέτουμε.</p>
+</li>
+<li>
+<p>Όταν μπροστά από μία παρένθεση υπάρχει το -- τότε βγάζουμε την παρένθεση αλλάζοντας όλα τα πρόσημα μέσα στην παρένθεση.</p>
+</li>
+<li>
+<p>Το γινόμενο άρτιου πλήθους παραγόντων έχει θετικό πρόσημο ενώ το γινόμενο περιττού πλήθους παραγόντων έχει αρνητικό πρόσημο.</p>
+</li>
+<li>
+<p>Ένας δεκαδικός αριθμός με άπειρο αριθμό δεκαδικών ψηφίων όπου ένα τμήμα αυτών των ψηφίων επαναλαμβάνεται ονομάζεται απειροψήφιος περιοδικός δεκαδικός αριθμός ή απλά <strong>περιοδικός αριθμός</strong>, π.χ. <span class="arithmatex">\(0.34565656...=0.34\overline{56}\)</span>  Οι αριθμοί αυτοί είναι ρητοί και μπορούν να γραφούν με την μορφή κλάσματος. Για να γίνει η μετατροπή σε κλάσμα ακολουθούμε τον παρακάτω αλγόριθμο:</p>
+<ol>
+<li>
+<p>Έστω α ο περιοδικός αριθμός</p>
+</li>
+<li>
+<p>Εντοπίζουμε το πρώτο και το δεύτερο μέρος της περιόδου.</p>
+</li>
+<li>
+<p>Πολλαπλασιάζουμε με κατάλληλες δυνάμεις του 10 ώστε η υποδιαστολή να βρεθεί μπορστά από το πρώτο και το δεύτερο μέρος της περιόδου.</p>
+</li>
+<li>
+<p>Αφαιρούμε τις δύο σχέσεις</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Ακολουθεί ένα παράδειγμα μετατροπής του αριθμού 0.3456565656...</p>
+<ol>
+<li>
+<p>Έστω α=0.34565656...</p>
+</li>
+<li>
+<p>Η περίοδος είναι το 56 και πρώτη φορά εμφανίζεται στο 0.34<strong>56</strong>5656... και δεύτερη φορά στο 0.3456<strong>56</strong>56...</p>
+</li>
+<li>
+<p>Πολλαπλασιάζουμε με 100 και 10000 αντίστοιχα: <span class="arithmatex">\(100\alpha =34.565656\dots{}\)</span>  και <span class="arithmatex">\(10000\alpha =3456.565656\dots{}\)</span> </p>
+</li>
+<li>
+<p>Αφαιρούμε κατά μέλη αυτές τις δύο σχέσεις: <span class="arithmatex">\(10000\alpha -100\alpha =3422\)</span>  ή <span class="arithmatex">\(9900\alpha =3422\)</span>  ή <span class="arithmatex">\(\alpha=\frac{3422}{9900}\)</span>  </p>
+</li>
+</ol>
+</li>
+<li>
+<p>Για να υπολογίσουμε τον μέσο όρο ή μέση τιμή ενός πλήθους δεδομένων αρκεί να τα προσθέσουμε και να διαιρέσουμε με το πλήθος τους, π.χ. αν στο μάθημα των μαθηματικών έχετε πάρει τους βαθμούς 13, 15, 12, 14 και 15 τότε η μέση τιμή αυτών των βαθμολογιών είναι <span class="arithmatex">\(\frac{13+15+12+14+15} 5=\)</span> <span class="arithmatex">\(\frac{12\cdot 1+13\cdot 1+14\cdot 1+15\cdot 2} 5=\frac{69} 5=13.8\)</span> </p>
+</li>
+<li>
+<p>Σε κάθε σημείο ενός άξονα έχουμε αντιστοιχίσει και έναν αριθμό, που είναι η απόσταση του σημείου από την αρχή. Τον αριθμό αυτό μπορούμε να τον ονομάζουμε "μέτρο της θέσης" ή και <strong>θέση</strong>. Έτσι εάν ένα αυτοκίνητο βρίσκεται κάποια χρονική στιγμή σε κάποιο σημείο του άξονα, το σημείο αυτό θα το ονομάζουμε θέση του αυτοκινήτου. Αργότερα θα δούμε ότι η θέση είναι ένα διάνυσμα (βέλος) που έχει αρχή το σημείο αναφοράς (αρχή του άξονα) και πέρας το σημείο στο οποίο βρίσκεται το αυτοκίνητο. Τα διανύσματα έχουν μέτρο (=μήκος), διεύθυνση (=ευθεία) και φορά (=προσανατολισμός). </p>
+</li>
+<li>
+<p>Ας υποθέσουμε  τώρα ότι ένα αυτοκίνητο βρίσκεται αρχικά στην θέση Ο(0km). Βλέπε το σχήμα στην σελίδα 15 του σχολικού. Το αυτοκίνητο μετακινείται προς τα αριστερά στην θέση Β(-4km) και μετά προς τα δεξιά στην θέση Γ(5Km). Το συνολικό <strong>διάστημα</strong> που έχει διανύσει το όχημα είναι η συνολική απόσταση που έχει κάνει σε όλη την διαδρομή, δηλαδή 4km προς τα αριστερά και 9km προς τα δεξιά, συνολικά 13km. Το διάστημα είναι μονόμετρο μέγεθος.</p>
+</li>
+<li>
+<p>Στο παραπάνω παράδειγμα αν το όχημα ξεκινούσε από την αρχική θέση Ο(0km) και κατευθυνόταν κατευθείαν προς την τελική θέση Γ(5km) τότε θα έκανε μόνο 5km. Αυτό είναι το μέτρο της <strong>μετατόπισης</strong>. Αργότερα θα δούμε ότι η μετατόπιση είναι ένα διανυσματικό μέγεθος (βέλος) που έχει αρχή το σημείο όπου ξεκινάει την κίνηση το όχημα και τέλος το σημείο όπου τελειώνει την κίνηση το όχημα.</p>
+</li>
+<li>
+<p>Η έκφραση  <span class="arithmatex">\(x\cdot y\neq 0\)</span>  σημαίνει ότι το <span class="arithmatex">\(x\neq 0\)</span>  και ταυτόχρονα το <span class="arithmatex">\(y\neq 0\)</span></p>
+</li>
+<li>
+<p>Η έκφραση <span class="arithmatex">\(x\cdot y&gt;0\)</span>  σημαίνει ότι οι αριθμοί x και y είναι ομόσημοι.</p>
+</li>
+<li>
+<p>Η έκφραση <span class="arithmatex">\(x\cdot y&lt;0\)</span>  σημαίνει ότι οι αριθμοί x και y είναι ετερόσημοι.</p>
+</li>
+<li>
+<p>Η έκφραση <span class="arithmatex">\(x\cdot y=0\)</span>  σημαίνει ότι <span class="arithmatex">\(x=0\)</span>  ή  <span class="arithmatex">\(y=0\)</span> .</p>
+</li>
+</ol>
+<h2 id="1">Μάθημα 1</h2>
+<ol>
+<li>
+<p>Δίνονται οι αριθμοί <span class="arithmatex">\(1\)</span> , <span class="arithmatex">\(-2\)</span> , <span class="arithmatex">\(0.6\)</span> , <span class="arithmatex">\(\sqrt{2}\)</span> , <span class="arithmatex">\(2/3\)</span> , <span class="arithmatex">\(\sqrt{25}\)</span> , <span class="arithmatex">\(\left|-3\right|\)</span> ,  <span class="arithmatex">\(\pi\)</span> ,  <span class="arithmatex">\(e\)</span> ,  <span class="arithmatex">\(\cos (30^\circ)\)</span> . Να γράψετε ποιοι από τους παραπάνω αριθμούς είναι φυσικοί ακέραιοι, ρητοί, άρρητοι και πραγματικοί. Προσοχή κάποιοι αριθμοί μπορεί να ανήκουν σε δυο σύνολα.</p>
+</li>
+<li>
+<p>Να τοποθετήσετε πάνω στο άξονα των πραγματικών αριθμών τους αριθμούς 0, <span class="arithmatex">\(1\)</span> , <span class="arithmatex">\(-2\)</span> , <span class="arithmatex">\(0.6\)</span> ,  <span class="arithmatex">\(\sqrt{2}\)</span> , <span class="arithmatex">\(2/3\)</span> , <span class="arithmatex">\(\sqrt{25}\)</span> , <span class="arithmatex">\(\left|-3\right|\)</span> ,  <span class="arithmatex">\(\pi\)</span> ,  <span class="arithmatex">\(e\)</span> ,  <span class="arithmatex">\(\cos (30^\circ)\)</span></p>
+</li>
+<li>
+<p>Να υπολογίσετε τις απόλυτες τιμές:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\left|2\right|\)</span> , <span class="arithmatex">\(\left|-2\right|\)</span> , <span class="arithmatex">\(\left|-2+3\right|\)</span> ,  <span class="arithmatex">\(\left|-2\right|+\left|4\right|\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-3+\left|-2\right|\)</span> ,  <span class="arithmatex">\(\left|-2+\left|-3\right|+2\right|\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left|\left|-2-3\right|\right|\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να υπολογίσετε τα γινόμενα:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2\cdot 5\)</span> , <span class="arithmatex">\(-2\cdot 5\)</span> , <span class="arithmatex">\(-2\cdot (-5)\)</span> ,  <span class="arithmatex">\(2\cdot (-5)\)</span>  </p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 1 2\cdot \frac 3 4\)</span> ,  <span class="arithmatex">\(\frac 2{-4}\cdot \frac{-5}{-4}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να υπολογίσετε τα αθροίσματα:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2+5\)</span> , <span class="arithmatex">\(-2+5\)</span> , <span class="arithmatex">\(-2-5\)</span> , <span class="arithmatex">\(2-5\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 1 2+\frac 3 4\)</span> , <span class="arithmatex">\(\frac 2{-4}+\frac{-5}{-4}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2+4+5\)</span> , <span class="arithmatex">\(2-4+5\)</span> , <span class="arithmatex">\(-2-4+5\)</span> , <span class="arithmatex">\(-2-4-5\)</span> , <span class="arithmatex">\(2+4-5\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\cdot 4\cdot 5\)</span> , <span class="arithmatex">\(-2\cdot 4\cdot 5\)</span> , <span class="arithmatex">\(2\cdot (-4)\cdot 5\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(-1\cdot (-1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-1\cdot (-1)\cdot (-1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-1\cdot (-1)\cdot (-1)\cdot (-1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-1\cdot (-1)\cdot (-1)\cdot (-1)\cdot (-1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-1\cdot (-1)\cdot (-1)\cdot (-1)\cdot (-1)\cdot (-1)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(4\cdot (5+6)\)</span> ,  <span class="arithmatex">\(4\cdot (3-5)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-4\cdot (-3+4)\)</span> ,  <span class="arithmatex">\(-5\cdot (6-5)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(5\cdot 7+5\cdot 3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-5\cdot 7-5\cdot 3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(6\cdot 7+3\cdot 6\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις με την βοήθεια της επιμεριστικής ιδιότητας.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((1+3)(4+5)\)</span>, <span class="arithmatex">\((-3+4)(7-4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((4-2)(6-3)\)</span>, <span class="arithmatex">\((3+2-1)(3-4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2(3-4)+(3+4+1)(4+2-6)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις, διαγράφοντας τους αντίθετους.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(-2+2,\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-2+3+2,\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-3-5+3+5,\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-5+2023+5-2023+7\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις λαμβάνοντας υπόψιν τους αντίστροφους:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\cdot \frac 1 3,\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4\cdot (-\frac 1 4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3\cdot 4\cdot \frac 1 3\cdot \frac 1 4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3\cdot (-4)\cdot (-\frac 1 3)\cdot \frac 1 4\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να απαντήσετε στις παρακάτω ερωτήσεις:</p>
+<ol>
+<li>
+<p>Ποιο είναι το πρόσημο ενός γινομένου που  έχει πέντε αρνητικούς παράγοντες;</p>
+</li>
+<li>
+<p>Μπορεί το αποτέλεσμα της απόλυτης τιμής να είναι αρνητικός αριθμός;</p>
+</li>
+<li>
+<p>Μπορεί το αποτέλεσμα της απόλυτης τιμής να είναι μη αρνητικό;</p>
+</li>
+<li>
+<p>Η πρόταση που ακολουθεί είναι αληθής ή ψευδής; "Εάν <span class="arithmatex">\(\frac{\alpha }{\beta }=1\)</span> , τότε <span class="arithmatex">\(\alpha =\beta\)</span> ."</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="2">Μάθημα 2</h2>
+<ol>
+<li>
+<p>Να μετατρέψετε σε μορφή κλάσματος τους αριθμούς <span class="arithmatex">\(0.3333\dots{}\)</span> , <span class="arithmatex">\(1.3333\dots{}\)</span> , <span class="arithmatex">\(0.56666...\)</span></p>
+</li>
+<li>
+<p>Δίνονται οι αριθμοί <span class="arithmatex">\(-3\)</span> , <span class="arithmatex">\(\frac 1 2\)</span> , <span class="arithmatex">\(6\)</span> , <span class="arithmatex">\(0.\bar 3\)</span> , <span class="arithmatex">\(-0.8\)</span> , <span class="arithmatex">\(\sqrt{3}\)</span> , <span class="arithmatex">\(\sqrt{16}\)</span> , <span class="arithmatex">\(3.14\)</span> ,  <span class="arithmatex">\(\pi\)</span> , <span class="arithmatex">\(\frac{22} 7\)</span> . Να γράψετε ποιοι από τους παραπάνω αριθμούς είναι φυσικοί ακέραιοι, ρητοί, άρρητοι και πραγματικοί. Προσοχή κάποιοι αριθμοί μπορεί να ανήκουν σε περισσότερα σύνολα.</p>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(-3+7\)</span> , <span class="arithmatex">\(-6+6\)</span> ,  <span class="arithmatex">\(-2-9\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-2)\cdot \frac 1 3\)</span> , <span class="arithmatex">\(0\cdot (-\frac 2 7)\)</span> ,  <span class="arithmatex">\((-\frac 4 5)\cdot (-\frac 5 4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-6):(-\frac{12} 5)\)</span> , <span class="arithmatex">\((-\frac 8 5):(+4)\)</span> , <span class="arithmatex">\((-\frac 4 3):(+\frac 4 3)\)</span> .</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις με την σειρά που πρέπει.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((-3)\cdot 4+2\)</span> ,  <span class="arithmatex">\(4\cdot (-6)-4\cdot (-2)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-2):(-1)+4\cdot (-2)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2+3\cdot 4-12:(-4)+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2+3\cdot (4-12):(-4+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-3\cdot (-2)-5+4:(-2)-6\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-8:(-3+5)-4\cdot (-2+6)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(-(5-4)-(+2)+(-6+4)-(-7)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4-(-2+6-3)+(-9+6)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(14+(-6+5-3)-(-4-1)\cdot (-2)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-3)\cdot (-2)+4-(+5)-(-1):(-1)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Ένα αυτοκίνητο ξεκίνησε από την θέση Ο(0), κινήθηκε πάνω στον άξονα x'x προς τα αριστερά στη θέση Β(-4km) και στη συνέχεια προς τα δεξιά στη θέση Γ(5km). Nα βρείτε πόσο διάστημα διήνυσε το αυτοκίνητο και πόσο μετακινήθηκε από την αρχική του θέση</p>
+</li>
+<li>
+<p>Να υπολογίσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 2 3-(-\frac 1 4)+(-\frac 1 2)-(+\frac 1{12})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-(-\frac 1 3+\frac 3 2-\frac 5 6)+(-\frac 1 2+\frac 5 3-\frac{11} 6)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-5\cdot \frac 1 2-\frac 2 3-5\cdot (\frac 1 2-\frac 2 3)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((1-\frac 7 2)\cdot (\frac 1 2-\frac 4 5)-\frac 3 5:(-\frac 2 5+\frac 2 3)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να υπολογίσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{-\frac 1 2+\frac 2 3-1}{3-\frac{1}{6}+\frac{1}{2}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{-2\cdot 3-\frac{1}{4}}{-2\cdot (3-\frac{1}{4})}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-7+\frac{-3-\frac{1}{3}}{-2+\frac{1}{3}}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να επιλέξετε την σωστή απάντηση. Αν δύο αριθμοί είναι αντίθετοι, τότε:</p>
+<ol>
+<li>
+<p>είναι ομόσημοι,</p>
+</li>
+<li>
+<p>έχουν ίσες απόλυτες τιμές,</p>
+</li>
+<li>
+<p>έχουν γινόμενο μηδέν,</p>
+</li>
+<li>
+<p>έχουν γινόμενο την μονάδα.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να επιλέξετε την σωστή απάντηση. Αν δύο αριθμοί είναι αντίστροφοι, τότε:</p>
+<ol>
+<li>
+<p>είναι ετερόσημοι,</p>
+</li>
+<li>
+<p>έχουν άθροισμα μηδέν,</p>
+</li>
+<li>
+<p>έχουν ίσες απόλυτες τιμές,</p>
+</li>
+<li>
+<p>έχουν γινόμενο τη μονάδα.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="3">Μάθημα 3</h2>
+<ol>
+<li>
+<p>Να γίνουν οι πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((-2+4)\cdot (-3)+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-(-3-(-2+3)-4)+2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-22):2+11\cdot 2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να γίνουν οι πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 3 4-(-\frac 4 2)+\frac 6 8\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 7 8-\frac 5 4+3-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-\frac 1 3+\frac 2 4-3)-(-\frac 7 3-\frac 2 8)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να γίνουν οι επιμεριστικές ιδιότητες</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\cdot (2-5)\)</span> , <span class="arithmatex">\(6\cdot (-6-7)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-4\cdot (-3-5)\)</span> , <span class="arithmatex">\(-6\cdot (-6+5-1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(5\cdot (-4)+5\cdot (-6)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4\cdot (-3)+4\cdot (-2)+4\cdot (-5)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις με την βοήθεια της επιμεριστικής ιδιότητας.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((1+3)(4+5)\)</span> , <span class="arithmatex">\((-3+4)(7-4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((4-2)(6-3)\)</span> , <span class="arithmatex">\((3+2-1)(3-4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2(3-4)+(3+4+1)(4+2-6)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Χωρίς να γίνουν οι πράξεις να βρείτε τα πρόσημα:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(4\cdot (-3)\cdot (-4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(1\cdot (-1)\cdot (-1)\cdot (-1)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να γίνουν οι πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{\frac 9 5-2+\frac 1 4}{\frac 2{10}+3+\frac 1 5}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-10-\frac{-3+\frac 1 6}{-2+\frac{2}{5}}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αφού κάνετε τις πράξεις στην παράσταση Α που ακολουθεί να υπολογίσετε τον αντίστροφο και τον αντίθετο της παράστασης. <span class="arithmatex">\(A=\frac{-1+\frac 1 2}{4-\frac 2 3}-\frac{(\frac 1 3-1):(-2)}{(\frac{1}{5}+2):(-5)}-(-4):\frac{1}{5}\)</span></p>
+</li>
+<li>
+<p>Αφού κάνετε τις πράξεις στην παράσταση Α που ακολουθεί να υπολογίσετε τον αντίστροφο και τον αντίθετο της παράστασης. <span class="arithmatex">\(A=-2\cdot \left|4-5\right|+\left|-2+3\right|-\left|4-7+\frac{3}{4}\right|\)</span></p>
+</li>
+<li>
+<p>Να αποδείξετε τις παρακάτω ισότητες:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(8-(\alpha -\beta )+(\alpha -5-\beta )=3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2-(\alpha +\beta -\gamma )-(4+\gamma -\beta )+2+\alpha =0\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-2\cdot (\alpha -3)+\alpha \cdot (-7+9)-3\cdot (+2)=0\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Οι ελάχιστες θερμοκρασίες μιας πόλης το πρώτο δεκαήμερο του έτους ήταν: 1, -3, 0, 2, 1, -2, -5, 0, -3, -1. Να βρείτε τη μέση ελάχιστη θερμοκρασία της πόλης το δεκαήμερο αυτό.</p>
+</li>
+</ol>
+<h2 id="4">Μάθημα 4</h2>
+<ol>
+<li>
+<p>Ένα όχημα κινείται προς τα αριστερά πάνω σε έναν ευθύγραμμο δρόμο και την αρχική χρονική στιγμή <span class="arithmatex">\(t_{0}=0\)</span> βρίσκεται στην θέση Α(2km). Μετά από κάποιο χρονικό διάστημα βρίσκεται στην θέση Β(-5km). Μετά αλλάζει κατεύθυνση κίνησης και κινείται προς τα δεξιά μέχρι την θέση Γ(6km). Να υπολογίσετε το διάστημα που έχει διατρέξει το όχημα καθώς και το μέτρο της μετατόπισης.</p>
+</li>
+<li>
+<p>Δίνονται οι αριθμοί -1, 0, 1.5,  <span class="arithmatex">\(0.34\overline 5\)</span> . Να τους μετατρέψετε σε ομώνυμα κλάσματα (ρητούς) να τους τοποθετήσετε πάνω σε έναν άξονα.</p>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(-2\cdot (-3+4\cdot (3-5)-5)+3\cdot (-6)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\cdot (-3-\left|(-4)\right|)-(-3+4\cdot (-3-5))\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 2 3\cdot (\frac 5 2-\frac{6}{5}-\frac{\left|-4\right|} 2)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(--\frac{2}{5}--\frac{5}{2}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να υπολογίσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((2\alpha - 3\beta + \gamma) - (\alpha - 2\beta + \gamma) + 4\beta\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha - 2(\beta - \gamma) - \left( -(3\beta - 4\gamma) + 2(3\beta - 2\gamma + \alpha) - 4\beta \right)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(8(\beta - \gamma) - \left\{ -\left[ \alpha - \beta - 3(\gamma - \beta + \alpha) \right] \right\}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-\left\{ -\left[ -(-x) \right] \right\} - \left[ -(-y) \right]\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αν <span class="arithmatex">\(xy\neq 0\)</span>  να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x\cdot \frac 1 x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x\cdot (\frac 1 x+\frac 2 x)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x\cdot y\cdot (\frac 1 x+\frac 1 y)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αν οι αριθμοί x και y είναι αντίστροφοι να βρείτε την τιμή των παραστάσεων</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x\cdot y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\cdot x\cdot 3\cdot y\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αν <span class="arithmatex">\(x\cdot y&gt;0\)</span>  απλοποιείστε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\left|x+y\right|\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left|x\right|+\left|y\right|\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να διαλέξετε την σωστή απάντηση στην ερώτηση που ακολουθεί. Αν <span class="arithmatex">\(x&gt;0\)</span>  και <span class="arithmatex">\(y&gt;0\)</span>  τότε η παράσταση <span class="arithmatex">\(\left|x+y\right|\)</span> είναι:</p>
+<ol>
+<li>
+<p>θετική,</p>
+</li>
+<li>
+<p>αρνητική,</p>
+</li>
+<li>
+<p>θετική ή μηδέν,</p>
+</li>
+<li>
+<p>μηδέν,</p>
+</li>
+<li>
+<p>τίποτα από τα παραπάνω.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να διαλέξετε την σωστή απάντηση στην ερώτηση που ακολουθεί. Αν <span class="arithmatex">\(x&lt;0\)</span>  και <span class="arithmatex">\(y&gt;0\)</span>  τότε η παράσταση <span class="arithmatex">\(\left|x+y\right|\)</span>  είναι:</p>
+<ol>
+<li>
+<p>μη αρνητική</p>
+</li>
+<li>
+<p>θετική</p>
+</li>
+<li>
+<p>μηδέν</p>
+</li>
+<li>
+<p>τίποτα από τα παραπάνω.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="5">Μάθημα 5</h2>
+<ol>
+<li>
+<p>Υπολογίστε:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{2\cdot (-6)-(-4)\cdot (-3)}{-(-3\cdot (-3)-6\cdot (-1))}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{2:(-2\cdot (-5)+(-3)\cdot (-1))}{-2-(2+4-6\cdot (-1)):(-(-2))}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Βρείτε τον αντίθετο και τον αντίστροφο των αριθμών:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(-\frac 1 2-(-(-\frac 1 2-\frac{-1}{-2}))\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((1-\frac 7 3)\cdot (\frac 2 4-\frac 3 2)-\frac 4 2:(-\frac 5 6+\frac 9{12})\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αν <span class="arithmatex">\(x+y=10\)</span>  να υπολογίσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x+y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\cdot (x+y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\cdot (-7)+2\cdot (-3)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\cdot x+2\cdot y\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αν <span class="arithmatex">\(x+y=-5\)</span>  και <span class="arithmatex">\(\omega +\varphi =-7\)</span> , να υπολογίσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(A=4-(x-\omega )-(y-\varphi )\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(B=-(-5-x+\varphi )+(-8+y)-(\omega -4)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αν α και β είναι οι διαστάσεις ενός ορθογωνίου, που έχει περίμετρο 56, τότε ποια αλγεβρική σχέση μπορούμε να γράψουμε;</p>
+</li>
+<li>
+<p>Αν α και β είναι οι διαστάσεις ενός ορθογωνίου, που έχει εμβαδόν 56, τότε ποια αλγεβρική σχέση μπορούμε να γράψουμε;</p>
+</li>
+<li>
+<p>Αν α και β είναι οι διαστάσεις ενός ορθογωνίου, που έχει περίμετρο 56 και γ,δ οι διαστάσεις ενός άλλου ορθογωνίου με περίμετρο 32, να υπολογίσετε την παράσταση <span class="arithmatex">\(A=\alpha -(9-2\gamma
+    )-(15-\beta -2\delta )\)</span> .</p>
+</li>
+<li>
+<p>Αν <span class="arithmatex">\(x\cdot y=0\)</span>  και <span class="arithmatex">\(x\neq 0\)</span>  τότε να δείξετε ότι <span class="arithmatex">\(y=0\)</span> . Υπόδειξη: (α) πολλαπλασιάστε και τα δύο μέλη της υπόθεσης με <span class="arithmatex">\(\frac 1 x\)</span> , (β) εφαρμόστε την προσεταιριστική ιδιότητα.</p>
+</li>
+<li>
+<p>Διαλέξτε την σωστή απάντηση στην ερώτηση που ακολουθεί. Αν <span class="arithmatex">\(x&gt;0\)</span>  και <span class="arithmatex">\(y&gt;0\)</span>  τότε η σχέση <span class="arithmatex">\(x+y\)</span>   είναι:</p>
+<ol>
+<li>
+<p>μη αρνητική</p>
+</li>
+<li>
+<p>θετική</p>
+</li>
+<li>
+<p>μηδέν</p>
+</li>
+<li>
+<p>αρνητική</p>
+</li>
+<li>
+<p>τίποτα από τα παραπάνω</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Διαλέξτε την σωστή απάντηση στην ερώτηση που ακολουθεί. Αν <span class="arithmatex">\(x&lt;0\)</span>  και <span class="arithmatex">\(y&lt;0\)</span>  τότε η σχέση <span class="arithmatex">\(x+y\)</span>   είναι:</p>
+<ol>
+<li>
+<p>μη θετική</p>
+</li>
+<li>
+<p>θετική</p>
+</li>
+<li>
+<p>μηδέν</p>
+</li>
+<li>
+<p>αρνητική</p>
+</li>
+<li>
+<p>όλα τα παραπάνω</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Δίνεται η παράσταση <span class="arithmatex">\(A=-x\)</span> .</p>
+<ol>
+<li>
+<p>Τι τιμή (αποτέλεσμα) έχει η παράσταση Α για <span class="arithmatex">\(x=1\)</span> .</p>
+</li>
+<li>
+<p>Τι τιμή έχει η παράσταση Α για <span class="arithmatex">\(x=-1\)</span> .</p>
+</li>
+<li>
+<p>Τι τιμή έχει η παράσταση Α για <span class="arithmatex">\(x=0\)</span> .</p>
+</li>
+<li>
+<p>Τι πρόσημο έχει η παράσταση Α για <span class="arithmatex">\(x&lt;0\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αν <span class="arithmatex">\(A=3+4\alpha\)</span>  και <span class="arithmatex">\(B=-3-5\alpha\)</span> , να υπολογίσετε:</p>
+<ol>
+<li>
+<p>την τιμή της παράστασης Α+Β</p>
+</li>
+<li>
+<p>τον αντίστροφο του Α+Β</p>
+</li>
+<li>
+<p>τον αντίθετο του Α+Β</p>
+</li>
+<li>
+<p>τι πρόσημο έχει η παράσταση <span class="arithmatex">\(\left|A+B\right|\)</span>  για  <span class="arithmatex">\(\alpha \neq 0\)</span> .</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="1_1">Κριτήριο 1</h2>
+<ol>
+<li>
+<p>Δίνονται οι αριθμοί <span class="arithmatex">\(1\)</span> , <span class="arithmatex">\(-2\)</span> , <span class="arithmatex">\(0.6\)</span> , <span class="arithmatex">\(\sqrt{2}\)</span> , <span class="arithmatex">\(2/3\)</span> , <span class="arithmatex">\(\sqrt{25}\)</span> , <span class="arithmatex">\(\left|-3\right|\)</span> ,  <span class="arithmatex">\(\pi\)</span> ,  <span class="arithmatex">\(e\)</span> ,  <span class="arithmatex">\(\cos (30^\circ)\)</span> . Να γράψετε ποιοι από τους παραπάνω αριθμούς είναι φυσικοί ακέραιοι, ρητοί, άρρητοι και πραγματικοί. Προσοχή κάποιοι αριθμοί μπορεί να ανήκουν σε δυο σύνολα.</p>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(4\cdot (5+6)\)</span> ,  <span class="arithmatex">\(4\cdot (3-5)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-4\cdot (-3+4)\)</span> ,  <span class="arithmatex">\(-5\cdot (6-5)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2(3-4)+(3+4+1)(4+2-6)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(1\cdot (-1)\cdot (-1)\cdot (-1)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να γίνουν οι πράξεις: <span class="arithmatex">\(\frac{\frac 9 5-2+\frac 1 4}{\frac 2{10}+3+\frac 1 5}\)</span></p>
+</li>
+<li>
+<p>Να υπολογίσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((2\alpha - 3\beta + \gamma) - (\alpha - 2\beta + \gamma) + 4\beta\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(8(\beta - \gamma) - \left\{ -\left[ \alpha - \beta - 3(\gamma - \beta + \alpha) \right] \right\}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να διαλέξετε την σωστή απάντηση στην ερώτηση που ακολουθεί. Αν <span class="arithmatex">\(x&lt;0\)</span>  και <span class="arithmatex">\(y&gt;0\)</span>  τότε η παράσταση <span class="arithmatex">\(\left|x+y\right|\)</span>  είναι:</p>
+<ol>
+<li>
+<p>μη αρνητική</p>
+</li>
+<li>
+<p>θετική</p>
+</li>
+<li>
+<p>μηδέν</p>
+</li>
+<li>
+<p>τίποτα από τα παραπάνω.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="2_1">Κριτήριο 2</h2>
+<ol>
+<li>
+<p>Αν <span class="arithmatex">\(A=3+4\alpha\)</span>  και <span class="arithmatex">\(B=-3-5\alpha\)</span> , να υπολογίσετε:</p>
+<ol>
+<li>
+<p>την τιμή της παράστασης Α+Β</p>
+</li>
+<li>
+<p>τον αντίστροφο του Α+Β</p>
+</li>
+<li>
+<p>τον αντίθετο του Α+Β</p>
+</li>
+<li>
+<p>τι πρόσημο έχει η παράσταση <span class="arithmatex">\(\left|A+B\right|\)</span>  για  <span class="arithmatex">\(\alpha \neq 0\)</span> .</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Ένα όχημα κινείται προς τα αριστερά πάνω σε έναν ευθύγραμμο δρόμο και την αρχική χρονική στιγμή <span class="arithmatex">\(t_{0}=0\)</span> βρίσκεται στην θέση Α(2km). Μετά από κάποιο χρονικό διάστημα βρίσκεται στην θέση Β(-5km). Μετά αλλάζει κατεύθυνση κίνησης και κινείται προς τα δεξιά μέχρι την θέση Γ(6km). Να υπολογίσετε το διάστημα που έχει διατρέξει το όχημα καθώς και το μέτρο της μετατόπισης.</p>
+</li>
+<li>
+<p>Κάνετε τις πράξεις: <span class="arithmatex">\(A=\frac{-1+\frac 1 2}{4-\frac 2 3}-\frac{(\frac 1 3-1):(-2)}{(\frac{1}{5}+2):(-5)}-(-4):\frac{1}{5}\)</span></p>
+</li>
+<li>
+<p>Να υπολογίσετε τις απόλυτες τιμές:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\left|2\right|\)</span> , <span class="arithmatex">\(\left|-2\right|\)</span> , <span class="arithmatex">\(\left|-2+3\right|\)</span> ,  <span class="arithmatex">\(\left|-2\right|+\left|4\right|\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-3+\left|-2\right|\)</span> ,  <span class="arithmatex">\(\left|-2+\left|-3\right|+2\right|\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left|\left|-2-3\right|\right|\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Τι σημαίνει η έκφραση <span class="arithmatex">\(\alpha \cdot \beta &gt;0\)</span>;</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

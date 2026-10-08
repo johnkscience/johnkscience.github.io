@@ -1,0 +1,1702 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Λυμένες Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Γιάννης">
+      
+      
+      
+        <link rel="prev" href="../02_1.1V_Dynameis_clean/">
+      
+      
+        <link rel="next" href="../04_1.2A__Algevrikes_parastaseis_-_Mononyma_clean/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Τετραγωνική ρίζα πραγματικού αριθμού - Μαθηματικά Γ' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Μαθηματικά Γ' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Τετραγωνική ρίζα πραγματικού αριθμού
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Μαθηματικά Γ' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αρχική
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Μέρος Α: Άλγεβρα
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Μέρος Α: Άλγεβρα
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_1.1A_Praxeis_me_pragmatikoys_arithmoys_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με πραγματικούς αριθμούς
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_1.1V_Dynameis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Δυνάμεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Τετραγωνική ρίζα πραγματικού αριθμού
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Τετραγωνική ρίζα πραγματικού αριθμού
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_1.2A__Algevrikes_parastaseis_-_Mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αλγεβρικές παραστάσεις - Μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_1.2V_Praxeis_me_mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_1.3_Polyonyma_--_Prosthesi_kai_Afairesi_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολυώνυμα - Πρόσθεση και αφαίρεση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_1.4_Pollaplasiasmos_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολλαπλασιασμός πολυωνύμων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_1.5_Axiosimeiotes_taytotites_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αξιοσημείωτες ταυτότητες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_1.8_E.K.P._kai_M.K.D._akeraion_algevrikon_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ε.Κ.Π. και Μ.Κ.Δ. αλγεβρικών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_1.6_Paragontopoiisi_algevrikon_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_1_6_V_Prochorimeni_paragontopoiisi_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Προχωρημένη Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_1.9_Rites_algevrikes_parastaseis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ρητές αλγεβρικές παραστάσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_1.10_Praxeis_riton_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις ρητών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_Genikes_askiseis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Γενικές Ασκήσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Τετραγωνική ρίζα πραγματικού αριθμού</h1>
+
+<h2 id="_1">Θεωρία</h2>
+<ol>
+<li>
+<p>Η <strong>τετραγωνική ρίζα</strong> ενός θετικού αριθμού x συμβολίζεται με  <span class="arithmatex">\(\sqrt x\)</span>  και είναι ο θετικός αριθμός που όταν υψωθεί στο τετράγωνο μας δίνει τον αριθμό x. Δηλαδή:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x\in \mathbb{R}\)</span>  και  <span class="arithmatex">\(x\ge 0\)</span></p>
+</li>
+<li>
+<p>Όταν το <span class="arithmatex">\(x&lt;0\)</span>  δεν ορίζεται η ρίζα <span class="arithmatex">\(\sqrt x\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt x\ge 0\)</span></p>
+</li>
+<li>
+<p>Το αποτέλεσμα (τιμή) της  <span class="arithmatex">\(\sqrt x\)</span>  δεν μπορεί ποτέ να είναι αρνητικό.</p>
+</li>
+<li>
+<p>Ακόμα,  <span class="arithmatex">\(\sqrt{x^2}=\left|x\right|\)</span>, εδώ το x μπορεί να πάρει ότι τιμή θέλουμε (θετική, μηδέν, αρνητική)</p>
+</li>
+<li>
+<p>Ακόμα για <span class="arithmatex">\(x\ge 0\)</span>  είναι  <span class="arithmatex">\((\sqrt x)^2=x\)</span>, εδώ το x παίρνει μόνο μη αρνητικές τιμές.</p>
+</li>
+<li>
+<p>Ο συμβολισμός  <span class="arithmatex">\((\sqrt x)^2\)</span>  είναι ίδιος με τον  <span class="arithmatex">\(\sqrt x^2\)</span>, αλλά διαφορετικός από τον  <span class="arithmatex">\(\sqrt{x^2}\)</span>. Δηλαδή το τετράγωνο στις πρώτες δύο περιπτώσεις είναι έξω από την ρίζα ενώ στην τρίτη είναι μέσα στην ρίζα.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Οι ρίζες έχουν τις παρακάτω <strong>ιδιότητες</strong>:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{x\cdot y}=\sqrt x\cdot \sqrt y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{\frac x y}=\frac{\sqrt x}{\sqrt y}\)</span>, με <span class="arithmatex">\(y&gt;0\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Οι ιδιότητα <span class="arithmatex">\(\sqrt{x\cdot y}=\sqrt x\cdot \sqrt y\)</span>  <strong>αποδεικνύεται</strong> ως εξής:</p>
+<ol>
+<li>
+<p>Υψώνουμε στο τετράγωνο κάθε μέλος: <span class="arithmatex">\((\sqrt{x\cdot y})^2=(\sqrt x\cdot \sqrt y)^2\)</span> </p>
+</li>
+<li>
+<p>Στο δεύτερο μέλος εφαρμόζουμε την ιδιότητα των δυνάμεων: <span class="arithmatex">\((\sqrt{x\cdot y})^2=(\sqrt x)^2\cdot
+    (\sqrt y)^2\)</span> </p>
+</li>
+<li>
+<p>Απλοποιούμε τα τετράγωνα με τις ρίζες: <span class="arithmatex">\(x\cdot y=x\cdot y\)</span></p>
+</li>
+<li>
+<p>Επομένως αφού (α) αυτές οι πράξεις γίνονται και προς την αντίθετη κατεύθυνση και (β) η τελευταία σχέση είναι αληθής, θα είναι αληθής και όλες, δηλαδή και η πρώτη που μας ενδιαφέρει!</p>
+</li>
+<li>
+<p>Με ίδιο τρόπο αποδεικνύεται και η <span class="arithmatex">\(\sqrt{\frac x y}=\frac{\sqrt x}{\sqrt y}\)</span> </p>
+</li>
+</ol>
+</li>
+<li>
+<p>Προφανώς δεν ισχύουν τα παρακάτω</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{x+y}=\sqrt x+\sqrt y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{x-y}=\sqrt x-\sqrt y\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Οι παραστάσεις <span class="arithmatex">\((x+y)\)</span>  και <span class="arithmatex">\((x-y)\)</span>  ονομάζονται <strong>συζυγείς</strong>. Εάν κάνουμε τον πολλαπλασιασμό είναι: <span class="arithmatex">\((x+y)(x-y)=xx-xy+yx+yy=x^2-y^2\)</span></p>
+</li>
+<li>
+<p><strong>Πυθαγόρειο θεώρημα</strong>: Σε ένα ορθογώνιο τρίγωνο το τετράγωνο της υποτείνουσας ισούται με το άθροισμα των τετραγώνων των δύο κάθετων πλευρών.</p>
+</li>
+</ol>
+<h2 id="1">Μάθημα 1</h2>
+<ol>
+<li>
+<p>Να υπολογίσετε τα τετράγωνα των αριθμών: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12</p>
+</li>
+<li>
+<p>Να υπολογίστε τις τετραγωνικές ρίζες:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt 0\)</span>, <span class="arithmatex">\(\sqrt 1\)</span>, <span class="arithmatex">\(\sqrt 4\)</span>, <span class="arithmatex">\(\sqrt 9\)</span>, <span class="arithmatex">\(\sqrt{16}\)</span>, <span class="arithmatex">\(\sqrt{25}\)</span>, <span class="arithmatex">\(\sqrt{36}\)</span>, <span class="arithmatex">\(\sqrt{49}\)</span>, <span class="arithmatex">\(\sqrt{64}\)</span>, <span class="arithmatex">\(\sqrt{81}\)</span>, <span class="arithmatex">\(\sqrt{100}\)</span>, <span class="arithmatex">\(\sqrt{121}\)</span>, <span class="arithmatex">\(\sqrt{144}\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{0.04}\)</span>, <span class="arithmatex">\(\sqrt{0.0004}\)</span>, <span class="arithmatex">\(\sqrt{0.0016}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να αναλύσετε τους παρακάτω αριθμούς σε γινόμενο δύο παραγόντων όπου ο ένας από αυτούς να είναι ο 1, 4, 9, 16, 25 , ...</p>
+<ol>
+<li>45, 12, 8, 75, 72, 27, 18, 40</li>
+</ol>
+</li>
+<li>
+<p>Να απλοποιήσετε τις ρίζες:</p>
+<ol>
+<li><span class="arithmatex">\(\sqrt{45}\)</span>, <span class="arithmatex">\(\sqrt{12}\)</span>, <span class="arithmatex">\(\sqrt{8}\)</span>, <span class="arithmatex">\(\sqrt{75}\)</span>, <span class="arithmatex">\(\sqrt{72}\)</span>, <span class="arithmatex">\(\sqrt{27}\)</span>, <span class="arithmatex">\(\sqrt{18}\)</span>, <span class="arithmatex">\(\sqrt{40}\)</span></li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε, αν γίνονται, τις προσθέσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2\sqrt{3}+5\sqrt{3}\)</span>, <span class="arithmatex">\(6\sqrt{5}+24\sqrt{5}\)</span>,</p>
+</li>
+<li>
+<p><span class="arithmatex">\(3\sqrt{7}+2\sqrt{7}\)</span>, <span class="arithmatex">\(\sqrt{2}+3\sqrt{2}+5\sqrt{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\sqrt{3}-5\sqrt{3}\)</span>, <span class="arithmatex">\(4\sqrt{3}-23\sqrt{3}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{3}+\sqrt{5}\)</span>, <span class="arithmatex">\(2\sqrt{3}+3\sqrt{3}-5\sqrt{7}\)</span>,</p>
+</li>
+<li>
+<p><span class="arithmatex">\(-5\sqrt{7}-4\sqrt{7}+2\sqrt{5}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις και να απλοποιήσετε το αποτέλεσμα.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{3}\cdot \sqrt{4}\)</span>, <span class="arithmatex">\(\sqrt{5}\cdot \sqrt 4\)</span>, <span class="arithmatex">\(\sqrt 7\cdot 2\cdot \sqrt{5}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{12}:\sqrt{4}\)</span>, <span class="arithmatex">\(3\sqrt{4}:\sqrt{12}\)</span>,</p>
+</li>
+<li>
+<p><span class="arithmatex">\((\sqrt{75}\cdot \sqrt{12}):\sqrt{3}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να αποδείξετε ότι [ <span class="arithmatex">\(\sqrt{20}=2\sqrt{5}\)</span>  και γενικά για μη αρνητικούς αριθμούς α, β ότι ισχύει <span class="arithmatex">\(\sqrt{\alpha ^2\beta
+    }=\alpha \sqrt{\beta }\)</span>.</p>
+</li>
+<li>
+<p>Να αποδειχθεί ότι:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\sqrt{3}+2\sqrt{3}=5\sqrt{3},\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{3}\cdot \sqrt{24}=6\sqrt{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{50}-\sqrt{18}=2\sqrt{2}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βρείτε την συζυγή παράσταση των παρακάτω παραστάσεων:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((1-2)\)</span>, <span class="arithmatex">\((1+2)\)</span>, <span class="arithmatex">\((0-2)\)</span>, <span class="arithmatex">\((0+3)\)</span>, <span class="arithmatex">\(-2\)</span>, <span class="arithmatex">\(+3\)</span> </p>
+</li>
+<li>
+<p><span class="arithmatex">\((1-\sqrt{3})\)</span>, <span class="arithmatex">\((1+\sqrt{5})\)</span>, <span class="arithmatex">\((2-3\sqrt{3})\)</span>, <span class="arithmatex">\((0-\sqrt{3})\)</span>, <span class="arithmatex">\((0+3\sqrt{5})\)</span>, <span class="arithmatex">\(-\sqrt{3}\)</span>, <span class="arithmatex">\(\sqrt{5}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να γίνουν οι πράξεις με την βοήθεια της επιμεριστικής ιδιότητας.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((1-5)(6-3)\)</span>, <span class="arithmatex">\((2-3+4)(5-5+3)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2(4-6+3)-(3+4-2)(-2-3)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}(\sqrt{5}+\sqrt{7})\)</span>, <span class="arithmatex">\(\sqrt{5}(\sqrt{3}-\sqrt{5})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\sqrt{5}-\sqrt{3})(\sqrt{5}+\sqrt{3})\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να γίνουν οι πράξεις με την βοήθεια της επιμεριστικής ιδιότητας.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((1-\sqrt{2})(1+\sqrt{2})\)</span>, <span class="arithmatex">\((5-\sqrt{7})(5+\sqrt{7})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((1-3\sqrt{2})(1+3\sqrt{2})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\sqrt{5}-\sqrt{7})(\sqrt{5}+\sqrt{7})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\sqrt{5}-\sqrt{7})(\sqrt{5}+\sqrt{7})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-\sqrt{5}-\sqrt{7})(\sqrt{5}-\sqrt{7})\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να μετατραπούν τα παρακάτω κλάσματα, που έχουν άρρητο παρανομαστή, σε ισοδύναμο κλάσμα με ρητό παρανομαστή.</p>
+<ol>
+<li><span class="arithmatex">\(\frac 5{\sqrt{3}}\)</span>, <span class="arithmatex">\(\frac 3{\sqrt{5}}\)</span>, <span class="arithmatex">\(-\frac 4{2\sqrt{7}}\)</span></li>
+</ol>
+</li>
+</ol>
+<h2 id="2">Μάθημα 2</h2>
+<ol>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\sqrt{3}+\sqrt{3}\)</span>, <span class="arithmatex">\(5\sqrt{2}-3\sqrt{2}\)</span>,</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{5}+4\sqrt{5}-5\sqrt{5}\)</span>, <span class="arithmatex">\(\sqrt{12}\cdot \sqrt{3}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{18}:\sqrt{2}\)</span>, <span class="arithmatex">\(3\sqrt{2}\cdot \sqrt{8}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να αντιστοιχίσετε τα στοιχεία της πρώτης στήλης με αυτά της δεύτερης</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Στήλη Α</th>
+<th>Στήλη Β</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(α) <span class="arithmatex">\(\sqrt{25}\)</span></td>
+<td>(i) -5</td>
+</tr>
+<tr>
+<td>(β) <span class="arithmatex">\(\sqrt{-25}\)</span></td>
+<td>(ii) Δεν ορίζεται</td>
+</tr>
+<tr>
+<td>(γ) <span class="arithmatex">\(-\sqrt{25}\)</span></td>
+<td>(iii) 5</td>
+</tr>
+<tr>
+<td>(δ) <span class="arithmatex">\(\sqrt{(-5)}\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td>(ε) <span class="arithmatex">\(\sqrt{5^2}\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td>(στ) <span class="arithmatex">\(\sqrt{-5^2}\)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>Να υπολογίσετε τις <span class="arithmatex">\(\sqrt x\)</span>, <span class="arithmatex">\(\sqrt y\)</span>, <span class="arithmatex">\(\sqrt{x+y}\)</span>, <span class="arithmatex">\(\sqrt x+\sqrt y\)</span>, <span class="arithmatex">\(\sqrt{xy}\)</span>, <span class="arithmatex">\(\sqrt x\sqrt y\)</span>, <span class="arithmatex">\(\sqrt{\frac x y}\)</span>, <span class="arithmatex">\(\frac{\sqrt x}{\sqrt
+    y}\)</span></p>
+<ol>
+<li>
+<p>Για x =4 και y =1,</p>
+</li>
+<li>
+<p>Για x =9 και y =16,</p>
+</li>
+<li>
+<p>Για x =64 και y =36</p>
+</li>
+<li>
+<p>Να διατυπώσετε τα παραπάνω αποτελέσματα σε μορφή κανόνων</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να χαρακτηρίσετε τις παρακάτω προτάσεις με (Σ) εάν είναι αληθείς και με (Λ) εάν είναι ψευδείς</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}\cdot \sqrt{3}=\sqrt{6}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}+\sqrt{3}=\sqrt{5}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{(-3)^2}=3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{\frac{9}{4}}=\frac{3}{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{(\frac{1}{2}-1)^2}=\frac{1}{2}-1\)</span></p>
+</li>
+<li>
+<p>το διπλάσιο του <span class="arithmatex">\(\sqrt{5}\)</span>  είναι το <span class="arithmatex">\(\sqrt{10}\)</span></p>
+</li>
+<li>
+<p>το μισό του  <span class="arithmatex">\(\sqrt{12}\)</span>  είναι το <span class="arithmatex">\(\sqrt{3}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Εάν η πλευρά ενός τετραγώνου είναι <span class="arithmatex">\(5\sqrt{2}\)</span>  μέτρα, πόσο είναι το εμβαδόν του;</p>
+</li>
+<li>
+<p>Να βρείτε την πλευρά ενός τετραγώνου που έχει εμβαδόν <span class="arithmatex">\(50m^2\)</span></p>
+</li>
+<li>
+<p>Ένα τετράγωνο έχει εμβαδόν  <span class="arithmatex">\(50m^2\)</span>. Είναι σωστό να ισχυριστούμε ότι η πλευρά του είναι  <span class="arithmatex">\(5\sqrt{2}\)</span>  μέτρα;</p>
+</li>
+<li>
+<p>Να υπολογίσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\sqrt{5}-7\sqrt{5}+2\sqrt{5}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(5\sqrt{7}-8\sqrt{3}-2\sqrt{7}+4\sqrt{3}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{\frac 5 2}\cdot \sqrt{\frac{5}{8}}-\sqrt{\frac{3}{7}}\cdot \sqrt{\frac{12}{7}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{\frac{14}{5}}\cdot \sqrt{\frac{10}{7}}+\sqrt{\frac{21}{2}}\cdot \sqrt{\frac{14}{3}}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να αποδείξετε τις ισότητες:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\sqrt{2}-\sqrt{50}+\sqrt{32}-6\sqrt{8}=-10\sqrt{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{27}-\sqrt{20}+\sqrt{12}-\sqrt{5}=5\sqrt{3}-3\sqrt{5}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{3}\cdot \sqrt{18}-\sqrt{2}\cdot
+    \sqrt{48}+\frac{\sqrt{120}}{\sqrt{5}}=\sqrt{6}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{3.6}\cdot \sqrt{4.9}-\sqrt{0.8}\cdot \sqrt{0.2}=3.8\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{\sqrt{16}}\)</span>, <span class="arithmatex">\(\sqrt{\sqrt{\sqrt{256}}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{\sqrt{0.0001}}\)</span>, <span class="arithmatex">\(\sqrt{\sqrt{0.0016}}\)</span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="3">Μάθημα 3</h2>
+<ol>
+<li>
+<p>Να απλοποιήσετε τις ρίζες: <span class="arithmatex">\(\sqrt{75}\)</span>, <span class="arithmatex">\(\sqrt{32}\)</span>, <span class="arithmatex">\(\sqrt{27}\)</span>, <span class="arithmatex">\(\sqrt{125}\)</span></p>
+</li>
+<li>
+<p>Στις παρακάτω παραστάσεις να βάλετε μέσα στην ρίζα τους αριθμούς που είναι απέξω και να κάνετε πράξεις.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\sqrt{2}\)</span>, <span class="arithmatex">\(4\sqrt{5}\)</span>, <span class="arithmatex">\(-2\sqrt{3}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x\sqrt y\)</span>, <span class="arithmatex">\(x\sqrt{\frac y x}\)</span>, <span class="arithmatex">\(-xy\sqrt{\frac 1{xy}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2\sqrt{\frac y{x^4}}\)</span>, <span class="arithmatex">\(xy^2\sqrt{\frac{x^3}{y^3}}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να μετατρέψετε τα παρακάτω κλάσματα σε ισοδύναμα με ρητό παρανομαστή:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 1{\sqrt{3}}\)</span>, <span class="arithmatex">\(\frac 2{3+\sqrt{5}}\)</span>, <span class="arithmatex">\(\frac{\sqrt{5}}{\sqrt{2}-\sqrt{5}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 1{\sqrt x}\)</span>, <span class="arithmatex">\(\frac 2{1+\sqrt x}\)</span>, <span class="arithmatex">\(\frac{\sqrt x}{\sqrt y}\)</span>, <span class="arithmatex">\(\frac{xy}{\sqrt{x^2y^3}}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις (αν γίνονται) και να δώσετε τα αποτελέσματα απλοποιημένα.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}\cdot (1+\sqrt{2})\)</span>, <span class="arithmatex">\((1+\sqrt{2})\cdot \sqrt{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}:(1+\sqrt{2})\)</span> , <span class="arithmatex">\((1+\sqrt{2}):\sqrt{2}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να υπολογίστε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{12+\sqrt{16}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{86+2\sqrt{52-\sqrt{9}}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{6\sqrt{12\sqrt{3\sqrt 9}}}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να υπολογίσετε την περίμετρο και το εμβαδόν ενός ορθογωνίου που έχει πλευρές:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(5\sqrt{2}\)</span>  και <span class="arithmatex">\(\sqrt{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4\sqrt{2}\)</span>  και <span class="arithmatex">\(2\sqrt{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3\sqrt{2}\)</span>  και <span class="arithmatex">\(3\sqrt{2}\)</span>  </p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}(\sqrt{18}+\sqrt{8})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{6}(\sqrt{27}-\sqrt{3})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\sqrt{75}+\sqrt{45}-\sqrt{300}):\sqrt{15}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\sqrt{7}-\sqrt{5})(\sqrt{7}+\sqrt{5})\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να μετατρέψετε τα παρακάτω κλάσματα, που έχουν άρρητους παρανομαστές, σε ισοδύναμα κλάσματα με ρητούς παρανομαστές.</p>
+<ol>
+<li><span class="arithmatex">\(\frac 1{\sqrt{2}}\)</span>, <span class="arithmatex">\(\frac 4{\sqrt{6}}\)</span>, <span class="arithmatex">\(\frac 5{2\sqrt{5}}\)</span>, <span class="arithmatex">\(\frac{2\sqrt{3}+\sqrt{6}}{\sqrt{3}}\)</span></li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{4-\sqrt{7+\sqrt{4}}}+\sqrt{3\sqrt{9\sqrt{16}}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{\frac{2}{3}\sqrt{\frac{9}{2}\sqrt{\frac{1}{4}}}}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((1+\sqrt{3})^2\)</span>, <span class="arithmatex">\((\sqrt{2}-\sqrt{3})^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((1+\sqrt{3})^2\)</span>, <span class="arithmatex">\((\sqrt{2}-\sqrt{3})^2\)</span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="4">Μάθημα 4</h2>
+<ol>
+<li>
+<p>Λαμβάνοντας υπόψιν τις διάφορες τιμές που παίρνει ο πραγματικός αριθμός x</p>
+<ol>
+<li>
+<p>να εξετάσετε πότε ορίζεται η τετραγωνική ρίζα  <span class="arithmatex">\(\sqrt x\)</span></p>
+</li>
+<li>
+<p>καθώς και το πρόσημο της.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Λαμβάνοντας υπόψιν τις διάφορες τιμές που παίρνει ο πραγματικός αριθμός x</p>
+<ol>
+<li>
+<p>να εξετάσετε πότε ορίζεται η τετραγωνική ρίζα  <span class="arithmatex">\(\sqrt{x^2}\)</span></p>
+</li>
+<li>
+<p>καθώς και το πρόσημο της.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Λαμβάνοντας υπόψιν τις διάφορες τιμές που παίρνει ο πραγματικός αριθμός x</p>
+<ol>
+<li>
+<p>να εξετάσετε πότε ορίζεται η τετραγωνική ρίζα  <span class="arithmatex">\(\sqrt{x^3}\)</span></p>
+</li>
+<li>
+<p>καθώς και το πρόσημο της.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Σε ορθογώνιο τρίγωνο με κάθετες πλευρές <span class="arithmatex">\(\sqrt 5\)</span>  και <span class="arithmatex">\(3\sqrt{5}\)</span>  να υπολογίσετε την υποτείνουσα.</p>
+</li>
+<li>
+<p>Σε ορθογώνιο τρίγωνο με υποτείνουσα α και κάθετες πλευρές β και γ ισχύει ότι <span class="arithmatex">\(\alpha ^2=\beta ^2+\gamma ^2\)</span>. Να υπολογίσετε:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{a^2-\beta \sqrt{\alpha ^2-\gamma ^2}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{\alpha ^2+\alpha \sqrt{\beta ^2+\gamma ^2}}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Στις κάθετες πλευρές ΑΒ=3 και ΑΓ=6 ορθογωνίου τριγώνου ΑΒΓ, να πάρετε αντιστοίχως τα σημεία Δ, Ε, έτσι ώστε ΑΔ=2 και ΑΕ=1. Να αποδείξετε ότι ΒΓ=3ΔΕ</p>
+</li>
+<li>
+<p>Σε ισοσκελές τρίγωνο ΑΒΓ (ΑΒ=ΑΓ) είναι το ύψος ΑΔ=4 και η πλευρά ΒΓ=4.</p>
+<ol>
+<li>
+<p>Να υπολογίσετε την πλευρά ΑΓ και στη συνέχεια να αποδείξετε ότι η περίμετρος του τριγώνου ΑΒΓ είναι <span class="arithmatex">\(4+4\sqrt{5}\)</span></p>
+</li>
+<li>
+<p>Στην προηγούμενη ερώτηση 4 μαθητές έδωσαν τις παρακάτω απαντήσεις:  <span class="arithmatex">\(4+\sqrt{20}\)</span>, <span class="arithmatex">\(4+2\sqrt{20}\)</span>, <span class="arithmatex">\(8\sqrt{5}\)</span>, <span class="arithmatex">\(2(2+\sqrt{20})\)</span> ποιες από αυτές είναι σωστές;</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Λαμβάνοντας υπόψιν τις διάφορες τιμές που παίρνει ο πραγματικός αριθμός x</p>
+<ol>
+<li>
+<p>να εξετάσετε πότε ορίζεται η τετραγωνική ρίζα  <span class="arithmatex">\(\sqrt{-x}\)</span></p>
+</li>
+<li>
+<p>καθώς και το πρόσημο της.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="1_1">Κριτήριο 1</h2>
+<ol>
+<li>
+<p>Να υπολογίστε τις τετραγωνικές ρίζες:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt 0\)</span> , <span class="arithmatex">\(\sqrt 1\)</span> , <span class="arithmatex">\(\sqrt 4\)</span> , <span class="arithmatex">\(\sqrt 9\)</span> , <span class="arithmatex">\(\sqrt{16}\)</span> , <span class="arithmatex">\(\sqrt{25}\)</span> , <span class="arithmatex">\(\sqrt{36}\)</span> , <span class="arithmatex">\(\sqrt{49}\)</span> , <span class="arithmatex">\(\sqrt{64}\)</span> , <span class="arithmatex">\(\sqrt{81}\)</span> , <span class="arithmatex">\(\sqrt{100}\)</span> , <span class="arithmatex">\(\sqrt{121}\)</span> , <span class="arithmatex">\(\sqrt{144}\)</span> .</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{0.04}\)</span> , <span class="arithmatex">\(\sqrt{0.0004}\)</span> , <span class="arithmatex">\(\sqrt{0.0016}\)</span> </p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να αποδειχθεί ότι:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\sqrt{3}+2\sqrt{3}=5\sqrt{3},\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{3}\cdot \sqrt{24}=6\sqrt{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{50}-\sqrt{18}=2\sqrt{2}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να χαρακτηρίσετε τις παρακάτω προτάσεις με (Σ) εάν είναι αληθείς και με (Λ) εάν είναι ψευδείς</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}\cdot \sqrt{3}=\sqrt{6}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}+\sqrt{3}=\sqrt{5}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{(-3)^2}=3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{\frac{9}{4}}=\frac{3}{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{(\frac{1}{2}-1)^2}=\frac{1}{2}-1\)</span></p>
+</li>
+<li>
+<p>το διπλάσιο του <span class="arithmatex">\(\sqrt{5}\)</span>  είναι το <span class="arithmatex">\(\sqrt{10}\)</span></p>
+</li>
+<li>
+<p>το μισό του  <span class="arithmatex">\(\sqrt{12}\)</span>  είναι το <span class="arithmatex">\(\sqrt{3}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να υπολογίστε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{12+\sqrt{16}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{86+2\sqrt{52-\sqrt{9}}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{6\sqrt{12\sqrt{3\sqrt 9}}}\)</span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="2_1">Κριτήριο 2</h2>
+<ol>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}(\sqrt{18}+\sqrt{8})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{6}(\sqrt{27}-\sqrt{3})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\sqrt{75}+\sqrt{45}-\sqrt{300}):\sqrt{15}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\sqrt{7}-\sqrt{5})(\sqrt{7}+\sqrt{5})\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να μετατρέψετε τα παρακάτω κλάσματα σε ισοδύναμα με ρητό παρανομαστή:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 1{\sqrt{3}}\)</span> , <span class="arithmatex">\(\frac 2{3+\sqrt{5}}\)</span> , <span class="arithmatex">\(\frac{\sqrt{5}}{\sqrt{2}-\sqrt{5}}\)</span> </p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 1{\sqrt x}\)</span> , <span class="arithmatex">\(\frac 2{1+\sqrt x}\)</span> , <span class="arithmatex">\(\frac{\sqrt x}{\sqrt y}\)</span> , <span class="arithmatex">\(\frac{xy}{\sqrt{x^2y^3}}\)</span> </p>
+</li>
+</ol>
+</li>
+<li>
+<p>Λαμβάνοντας υπόψιν τις διάφορες τιμές που παίρνει ο πραγματικός αριθμός x</p>
+<ol>
+<li>
+<p>να εξετάσετε πότε ορίζεται η τετραγωνική ρίζα  <span class="arithmatex">\(\sqrt{x^2}\)</span></p>
+</li>
+<li>
+<p>καθώς και το πρόσημο της.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Σε ισοσκελές τρίγωνο ΑΒΓ (ΑΒ=ΑΓ) είναι το ύψος ΑΔ=4 και η πλευρά ΒΓ=4.</p>
+<ol>
+<li>
+<p>Να υπολογίσετε την πλευρά ΑΓ και στη συνέχεια να αποδείξετε ότι η περίμετρος του τριγώνου ΑΒΓ είναι <span class="arithmatex">\(4+4\sqrt{5}\)</span></p>
+</li>
+<li>
+<p>Στην προηγούμενη ερώτηση 4 μαθητές έδωσαν τις παρακάτω απαντήσεις:  <span class="arithmatex">\(4+\sqrt{20}\)</span> , <span class="arithmatex">\(4+2\sqrt{20}\)</span> , <span class="arithmatex">\(8\sqrt{5}\)</span> , <span class="arithmatex">\(2(2+\sqrt{20})\)</span> ποιες από αυτές είναι σωστές;</p>
+</li>
+</ol>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

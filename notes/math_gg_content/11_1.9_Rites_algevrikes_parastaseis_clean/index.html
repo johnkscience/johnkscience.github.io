@@ -1,0 +1,1438 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Λυμένες Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Γιάννης">
+      
+      
+      
+        <link rel="prev" href="../10_1_6_V_Prochorimeni_paragontopoiisi_clean/">
+      
+      
+        <link rel="next" href="../12_1.10_Praxeis_riton_parastaseon_clean/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Ρητές αλγεβρικές παραστάσεις - Μαθηματικά Γ' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Μαθηματικά Γ' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ρητές αλγεβρικές παραστάσεις
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Μαθηματικά Γ' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αρχική
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Μέρος Α: Άλγεβρα
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Μέρος Α: Άλγεβρα
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_1.1A_Praxeis_me_pragmatikoys_arithmoys_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με πραγματικούς αριθμούς
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_1.1V_Dynameis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Δυνάμεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_1.1G_Tetragoniki_riza_pragmatikoy_arithmoy_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Τετραγωνική ρίζα πραγματικού αριθμού
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_1.2A__Algevrikes_parastaseis_-_Mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αλγεβρικές παραστάσεις - Μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_1.2V_Praxeis_me_mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_1.3_Polyonyma_--_Prosthesi_kai_Afairesi_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολυώνυμα - Πρόσθεση και αφαίρεση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_1.4_Pollaplasiasmos_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολλαπλασιασμός πολυωνύμων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_1.5_Axiosimeiotes_taytotites_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αξιοσημείωτες ταυτότητες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_1.8_E.K.P._kai_M.K.D._akeraion_algevrikon_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ε.Κ.Π. και Μ.Κ.Δ. αλγεβρικών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_1.6_Paragontopoiisi_algevrikon_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_1_6_V_Prochorimeni_paragontopoiisi_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Προχωρημένη Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ρητές αλγεβρικές παραστάσεις
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ρητές αλγεβρικές παραστάσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_1.10_Praxeis_riton_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις ρητών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_Genikes_askiseis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Γενικές Ασκήσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Ρητές αλγεβρικές παραστάσεις</h1>
+
+<h2 id="_1">Θεωρία</h2>
+<ol>
+<li>
+<p>Το σύμβολο <span class="arithmatex">\(\frac 1{\nu }\)</span> (ν φυσικός, <span class="arithmatex">\(\neq 0\)</span>) που εκφράζει το ένα από τα ν ίσα μέρη, στα οποία χωρίζεται μία ποσότητα, ονομάζεται <strong>κλασματική μονάδα</strong>. </p>
+</li>
+<li>
+<p><strong>Κλάσμα</strong> ή <strong>κλασματικός αριθμός</strong> ονομάζεται κάθε αριθμός <span class="arithmatex">\(\frac{\kappa }{\nu }\)</span>  όπου κ, ν φυσικοί αριθμοί και  <span class="arithmatex">\(\nu \neq 0\)</span>. </p>
+<ul>
+<li>To κλάσμα <span class="arithmatex">\(\frac{\kappa }{\nu }\)</span>  εκφράζει τα κ μέρη από τα ν ίσα μέρη στα οποία έχει χωριστεί μία ποσότητα. </li>
+<li>Γενικά: <span class="arithmatex">\(\frac{\kappa }{\nu }=\kappa \cdot \frac 1{\nu }\)</span> , όπου κ, ν φυσικοί αριθμοί και <span class="arithmatex">\(\nu \neq 0\)</span>. </li>
+<li>Κάθε κλάσμα παριστάνει και το πηλίκο της διαίρεσης του αριθμητή διά του παρονομαστή. </li>
+<li>Γενικά ισχύει <span class="arithmatex">\(\frac{\kappa }{\nu }=\kappa :\nu\)</span>  όπου κ, ν φυσικοί αριθμοί και  <span class="arithmatex">\(\nu \neq 0\)</span>. </li>
+<li>Κάθε φυσικός αριθμός κ μπορεί να έχει τη μορφή κλάσματος με παρονομαστή το 1, γιατί <span class="arithmatex">\(\kappa =\kappa :1=\frac{\kappa } 1\)</span>. </li>
+<li>Η έννοια του κλάσματος επεκτείνεται και στην περίπτωση που ο αριθμητής είναι μεγαλύτερος από τον παρονομαστή. Τότε το κλάσμα είναι μεγαλύτερο από το 1.</li>
+</ul>
+</li>
+<li>
+<p>Δύο κλάσματα <span class="arithmatex">\(\frac{\alpha }{\beta }\)</span>  και <span class="arithmatex">\(\frac{\gamma }{\delta }\)</span>  λέγονται <strong>ισοδύναμα</strong> ή <strong>ίσα</strong> όταν εκφράζουν το ίδιο τμήμα ενός μεγέθους ή ίσων μεγεθών. </p>
+<ul>
+<li>Επειδή ακριβώς εκφράζουν το ίδιο τμήμα ενός μεγέθους είναι και ίσα και γράφουμε: <span class="arithmatex">\(\frac{\alpha }{\beta }=\frac{\gamma }{\delta }\)</span>.  </li>
+<li>Αν δύο κλάσματα <span class="arithmatex">\(\frac{\alpha }{\beta }\)</span>  και <span class="arithmatex">\(\frac{\gamma }{\delta }\)</span>  είναι ισοδύναμα τότε τα "χιαστί γινόμενα" <span class="arithmatex">\(\alpha \cdot \delta\)</span>  και <span class="arithmatex">\(\beta \cdot \gamma\)</span>  είναι ίσα και αντιστρόφως. </li>
+<li>Δηλαδή: αν <span class="arithmatex">\(\frac{\alpha }{\beta }=\frac{\gamma }{\delta }\)</span>  τότε <span class="arithmatex">\(\alpha \cdot \delta =\beta \cdot \gamma\)</span>  και αντιστρόφως. </li>
+<li>
+<p>Για να κατασκευάσουμε ισοδύναμα κλάσματα ή για να διαπιστώσουμε ότι δύο κλάσματα είναι ισοδύναμα, μπορούμε να εφαρμόζουμε τους παρακάτω κανόνες:</p>
+</li>
+<li>
+<p>Όταν πολλαπλασιαστούν οι όροι ενός κλάσματος με τον ίδιο φυσικό αριθμό ( <span class="arithmatex">\(\neq 0\)</span>) προκύπτει κλάσμα ισοδύναμο. </p>
+</li>
+<li>
+<p>Όταν οι όροι ενός κλάσματος διαιρεθούν με τον ίδιο φυσικό αριθμό ( <span class="arithmatex">\(\neq 0\)</span>) προκύπτει κλάσμα ισοδύναμο. Η διαδικασία αυτή λέγεται <strong>απλοποίηση</strong> του κλάσματος και έχει ως αποτέλεσμα ένα κλάσμα ισοδύναμο με το αρχικό με μικρότερους όρους.   </p>
+<p>Το κλάσμα εκείνο που δεν μπορεί να απλοποιηθεί (δεν υπάρχει άλλος κοινός διαιρέτης του αριθμητή και του  παρονομαστή εκτός από τη μονάδα) λέγεται <strong>ανάγωγο</strong>.  </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Όταν δύο ή περισσότερα κλάσματα έχουν τον ίδιο παρονομαστή λέγονται <strong>ομώνυμα</strong> και όταν έχουν διαφορετικούς παρονομαστές ονομάζονται <strong>ετερώνυμα</strong>.</p>
+</li>
+<li>
+<p>Γενικά, για τη σύγκριση κλασμάτων ισχύουν τα εξής:</p>
+<ol>
+<li>
+<p>Από δύο ομώνυμα κλάσματα, εκείνο που έχει τον μεγαλύτερο αριθμητή είναι μεγαλύτερο.</p>
+</li>
+<li>
+<p>Για να συγκρίνουμε ετερώνυμα κλάσματα τα μετατρέπουμε σε ομώνυμα και συγκρίνουμε τους αριθμητές τους.</p>
+</li>
+<li>
+<p>Από δύο κλάσματα με τον ίδιο αριθμητή μεγαλύτερο είναι εκείνο με τον μικρότερο παρονομαστή</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Μια αλγεβρική παράσταση (π.χ. <span class="arithmatex">\(\frac{x^3+4}{x-1}\)</span> , <span class="arithmatex">\(\frac{xy\omega }{x+y}\)</span> , <span class="arithmatex">\(\frac 2{x^2+4}\)</span> ) που είναι κλάσμα και οι όροι του είναι πολυώνυμα, λέγεται <strong>ρητή αλγεβρική παράσταση</strong> ή απλώς ρητή παράσταση. Για τις ρητές παραστάσεις ισχύουν ότι και στα κλάσματα φυσικών αριθμών.</p>
+<ol>
+<li>
+<p><strong>Ο παρανομαστής δεν μπορεί να είναι μηδέν</strong>, επομένως οι μεταβλητές μιας ρητής παράστασης δεν μπορούν να πάρουν τιμές που μηδενίζουν τον παρανομαστή της. Για να βρούμε αυτές τις τιμές πρέπει να παραγοντοποιήσουμε τον παρανομαστή.</p>
+</li>
+<li>
+<p>Για να <strong>απλοποιήσουμε</strong> μια ρητή παράσταση μπορούμε, να α) παραγοντοποιήσουμε τον αριθμητή και τον παρανομαστή, β) να διαγράψουμε τους κοινούς παράγοντες των όρων της.</p>
+</li>
+<li>
+<p>Εναλλακτικά, για να <strong>απλοποιήσουμε</strong> μία ρητή παράσταση διαιρούμε  και τους δύο όρους του κλάσματος με τον ΜΚΔ του αριθμητή και του παρανομαστή. Για να προχωρήσουμε με αυτή την διαδικασία πρέπει να παραγοντοποιήσουμε τους όρους του κλάσματος.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="1">Μάθημα 1</h2>
+<ol>
+<li>
+<p>Ποιες από τις παρακάτω ποσότητες είναι κλάσματα ή μπορούν να γραφούν με την μορφή κλάσματος</p>
+<ol>
+<li>
+<p>5</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 3 4\)</span></p>
+</li>
+<li>
+<p>-5</p>
+</li>
+<li>
+<p>3.14</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\pi\)</span>, <span class="arithmatex">\(e\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3.\overline{14}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}\)</span>, <span class="arithmatex">\(\sqrt{3}\)</span>, <span class="arithmatex">\(\sqrt{5}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{4}\)</span>, <span class="arithmatex">\(\sqrt{16}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Ποιο από τα παρακάτω ζεύγη είναι ισοδύναμα κλάσματα:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 1 2\)</span>, <span class="arithmatex">\(\frac 3 6\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 4 5\)</span>, <span class="arithmatex">\(\frac 8 9\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αφού υπολογίστε τον ΜΚΔ των αριθμητών και των παρανομαστών να μετατρέψετε τα κλάσματα σε ανάγωγα.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 4{16}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{25} 5\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{125}{75}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{1233}{45}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(4\cdot \frac 3 5\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 3 5\cdot 4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 2 5\cdot \frac 3 4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 2 5:\frac 4 7\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{\frac 2 5}{\frac 4 7}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 2 3+\frac 4 3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 2 3+\frac 3 4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 2 3\cdot (-4)-(\frac 3 4)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 2 3+1\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((\frac 2 5)^2-2(\frac 2 3^{-2})^{-1}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\left|-(\frac 2 3)^2+\frac 3 2\right|^{-2}-1\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις: <span class="arithmatex">\(A=\frac{-1+\frac 1 2}{4-\frac 2 3}-\frac{(\frac 1 3-1):(-2)}{(\frac{1}{5}+2):(-5)}-(-4):\frac{1}{5}\)</span></p>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις: <span class="arithmatex">\(\frac{2^{-3}+(\frac 3 4)^{-4}\cdot (\frac{-1} 2)^2}{(\frac 1 6)^0-12\cdot 3^{-3}}\)</span></p>
+</li>
+<li>
+<p>Αφού μετατρέψετε τις δυνάμεις στην ίδια βάση να εφαρμόσετε τις ιδιότητες ώστε να γράψετε τις παρακάτω παραστάσεις ως μία δύναμη.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\left[(-\frac 1 2)^{-2}\right]^{-4}:\left[(-\frac 1 2)^5\right]^{-4}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{[-3^{-2}]^3[(-9)^{-2}]}{(-9)^3(-3)^2}\)</span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="2">Μάθημα 2</h2>
+<ol>
+<li>
+<p>Να βρείτε για ποιες τιμές των μεταβλητών ορίζονται οι παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{x^2+7x+2} x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x^2+6}{x+2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x^2+y^2}{x-y}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να απλοποιηθούν οι παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{12x^3y\omega }{8xy^3}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{3x^2-3}{6x^2-6x}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x^2-2xy+y^2}{x^3-y^3}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βρείτε τις τιμές των μεταβλητών για τις οποίες ορίζονται οι παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 1{x-4}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{y+3}{2y-5}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{\omega -2}{(\omega +1)^2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{6x+1}{x(x-3)}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να απλοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{4x}{6x}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{3y^2}{12y}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{2x\omega ^2}{8x^2\omega }\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{5\alpha ^2\beta \gamma ^3}{10\alpha \beta ^2\gamma }\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x+4}{4+x}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{y-1}{1-y}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{\omega -2}{(2-\omega )^2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{(\alpha -\beta )(\beta -\gamma )}{(\beta -\alpha )(\gamma -\beta )}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να απλοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{6x}{2x^2+4x}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{3y-9}{y^2-3y}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x^2+x\omega }{\omega ^2+x\omega }\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{5\alpha ^2-20}{(\alpha -2)^2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x^2-16}{x^2-4x}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{y^2-1}{y^2+2y+1}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{6x^2+3x\omega }{4x^2-\omega ^2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{\alpha ^2+\alpha \beta +\beta ^2}{\alpha ^3-\beta ^3}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να απλοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{x^2+3x+2}{x^2+4x+4}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{y^2-5y+4}{y^2-6y+8}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{\omega ^3-2\omega ^2+\omega }{\omega ^3-\omega }\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να απλοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{x(x-1)+4(x-1)}{x^2+2x-3}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{y(y-3)+y^2-9}{4y^2-9}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{(2\omega +1)^2-(\omega +2)^2}{\omega ^4-1}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{(\alpha +1)(\alpha -2)^2-4(\alpha +1)}{\alpha ^3+\alpha ^2}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Ένας λαμπαδηδρόμος κατά τα τελευταία μέτρα της διαδρομής του διήνυσε την απόσταση ΑΒ με σταθερή ταχύτητα <span class="arithmatex">\(5m/sec\)</span>. Φτάνοντας στο σημείο Β ένας άλλος λαμπαδηδρόμος ξεκινώντας από το σημείο Β διήνυσε την απόσταση ΒΓ με σταθερή επιτάχυνση <span class="arithmatex">\(4m/sec^2\)</span>. Αν ο χρόνος που κινήθηκε κάθε αθλητής ήταν <span class="arithmatex">\(tsec\)</span>  να αποδείξετε ότι η μέση ταχύτητα με την οποία διανύθηκε η απόσταση ΑΓ ήταν <span class="arithmatex">\((t+\frac 5 2)\ \ m/sec\)</span></p>
+</li>
+</ol>
+<h2 id="3">Μάθημα 3</h2>
+<ol>
+<li>
+<p>Να βρείτε τις τιμές των μεταβλητών για τις οποίες δεν ορίζονται οι παρακάτω αλγεβρικές παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 1{2x-1}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 4{4x-12}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-\frac{5x}{y-3}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 3 x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac x 3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 1{x^2-1}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 1{x^2+1}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Για <span class="arithmatex">\(x\cdot y\cdot z\neq 0\)</span>  και <span class="arithmatex">\(x,z\neq 1\)</span> ν<span class="arithmatex">\(\alpha\)</span> απλοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{12x^2y}{6x^3y}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{6xyz^3} z\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{xyz^3}{xy(x-1)}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{12(x+y)x}{xy(z-1)}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Για κατάλληλες τιμές των μεταβλητών ώστε να ορίζονται τα κλάσματα να απλοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{2(x-2)}{4(x-2)}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{12(x-1)}{6(1-x)}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{-2-x}{x+1}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{12x}{2x^2+4x}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Για κατάλληλες τιμές των μεταβλητών ώστε να ορίζονται τα κλάσματα να απλοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{12(x+y)^2}{6(x+y)}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{12(x+y)}{6(x+y)^2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{(x-y)^2}{(y-x)}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{(y-x)^3}{(x-y)}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Δίνεται τρίγωνο ΑΒΓ με βάση ΒΓ <span class="arithmatex">\(\frac 1{x^2+4x+4}\)</span>  και ύψος που αντιστοιχεί στην βάση ΒΓ ίσο με  <span class="arithmatex">\(2(x+2)\)</span>. Δίνεται ορθογώνιο με διαστάσεις <span class="arithmatex">\(\frac 1{x^2-4}\)</span>  και <span class="arithmatex">\(x^2+4x+4\)</span>. Να βρείτε τον λόγο των εμβαδών τους <span class="arithmatex">\(\frac{E_{\tau \rho \iota \gamma }}{E_{o\rho \theta }}\)</span>.</p>
+</li>
+</ol>
+<h2 id="1_1">Κριτήριο 1</h2>
+<ol>
+<li>
+<p>Ποιο από τα παρακάτω ζεύγη είναι ισοδύναμα κλάσματα:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac 1 2\)</span> , <span class="arithmatex">\(\frac 3 6\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac 4 5\)</span> , <span class="arithmatex">\(\frac 8 9\)</span> </p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις: <span class="arithmatex">\(A=\frac{-1+\frac 1 2}{4-\frac 2 3}-\frac{(\frac 1 3-1):(-2)}{(\frac{1}{5}+2):(-5)}-(-4):\frac{1}{5}\)</span></p>
+</li>
+<li>
+<p>Να βρείτε για ποιες τιμές των μεταβλητών ορίζονται οι παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{x^2+7x+2} x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x^2+6}{x+2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x^2+y^2}{x-y}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να απλοποιηθούν οι παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{12x^3y\omega }{8xy^3}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{3x^2-3}{6x^2-6x}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x^2-2xy+y^2}{x^3-y^3}\)</span></p>
+</li>
+</ol>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

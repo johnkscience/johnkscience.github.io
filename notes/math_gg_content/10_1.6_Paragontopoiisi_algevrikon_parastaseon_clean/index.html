@@ -1,0 +1,2349 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Λυμένες Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Γιάννης">
+      
+      
+      
+        <link rel="prev" href="../09_1.8_E.K.P._kai_M.K.D._akeraion_algevrikon_parastaseon_clean/">
+      
+      
+        <link rel="next" href="../10_1_6_V_Prochorimeni_paragontopoiisi_clean/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Παραγοντοποίηση - Μαθηματικά Γ' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Μαθηματικά Γ' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Παραγοντοποίηση
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Μαθηματικά Γ' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αρχική
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Μέρος Α: Άλγεβρα
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Μέρος Α: Άλγεβρα
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_1.1A_Praxeis_me_pragmatikoys_arithmoys_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με πραγματικούς αριθμούς
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_1.1V_Dynameis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Δυνάμεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_1.1G_Tetragoniki_riza_pragmatikoy_arithmoy_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Τετραγωνική ρίζα πραγματικού αριθμού
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_1.2A__Algevrikes_parastaseis_-_Mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αλγεβρικές παραστάσεις - Μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_1.2V_Praxeis_me_mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_1.3_Polyonyma_--_Prosthesi_kai_Afairesi_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολυώνυμα - Πρόσθεση και αφαίρεση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_1.4_Pollaplasiasmos_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολλαπλασιασμός πολυωνύμων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_1.5_Axiosimeiotes_taytotites_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αξιοσημείωτες ταυτότητες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_1.8_E.K.P._kai_M.K.D._akeraion_algevrikon_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ε.Κ.Π. και Μ.Κ.Δ. αλγεβρικών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_1_6_V_Prochorimeni_paragontopoiisi_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Προχωρημένη Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_1.9_Rites_algevrikes_parastaseis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ρητές αλγεβρικές παραστάσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_1.10_Praxeis_riton_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις ρητών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_Genikes_askiseis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Γενικές Ασκήσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Θεωρία
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Μάθημα 5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Κριτήριο 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Παραγοντοποίηση</h1>
+
+<h2 id="_1">Θεωρία</h2>
+<ol>
+<li>
+<p><strong>Γινόμενο</strong> ονομάζεται το αποτέλεσμα του πολλαπλασιασμού.</p>
+</li>
+<li>
+<p><strong>Παράγοντες</strong> είναι οι δύο ή περισσότεροι αριθμοί που πολλαπλασιάζουμε κατά την πράξη του πολλαπλασιασμού. Οι παράγοντες μπορεί να εμφανίζονται ως μεταβλητές ή ως σύνθετες μαθηματικές εκφράσεις, π.χ. παρακάτω βλέπουμε γινόμενα δύο παραγόντων:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2\cdot 3\)</span>, παράγοντες είναι οι αριθμοί 2 και 3.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\cdot x\)</span>, παράγοντες είναι ο αριθμός 2 και η μεταβλητή x. </p>
+</li>
+<li>
+<p><span class="arithmatex">\(x\cdot y\)</span>, παράγοντες είναι οι μεταβλητές x και y.</p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+1)\cdot 3\)</span>, παράγοντες είναι το πολυώνυμο <span class="arithmatex">\(x+1\)</span>  και ο αριθμός 3.</p>
+</li>
+<li>
+<p><span class="arithmatex">\((x^2+x+1)\cdot x\)</span>, παράγοντες είναι το πολυώνυμο <span class="arithmatex">\(x^2+x+1\)</span>  και το μονώνυμο x.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Πρώτος παράγοντας</strong> είναι το πολυώνυμο που δεν μπορεί να αναλυθεί περισσότερο ως γινόμενο άλλων <em>μη σταθερών</em> πολυωνύμων. Μπορεί να είναι πρώτου ή και μεγαλύτερου βαθμού π.χ. δεύτερου. Δείτε τα παρακάτω παραδείγματα:</p>
+<ol>
+<li>
+<p>Το πολυώνυμο <span class="arithmatex">\(x^2+x\)</span>  δεν είναι πρώτος παράγοντας αφού γράφεται ως <span class="arithmatex">\(x^2+x=x\cdot (x+1)\)</span>, δηλαδή βρήκαμε δύο πολυώνυμα μικρότερου βαθμού που όταν πολλαπλασιάζονται δίνουν το <span class="arithmatex">\(x^2+x\)</span>.</p>
+</li>
+<li>
+<p>Το πολυώνυμο <span class="arithmatex">\(x+2\)</span>  είναι πρώτος παράγοντας, αφού δεν μπορούμε να βρούμε δύο πολυώνυμα μικρότερου βαθμού που όταν πολλαπλασιάζονται να δίνουν το <span class="arithmatex">\(x+2\)</span>.</p>
+</li>
+<li>
+<p>Για να μην είναι πρώτος παράγοντας, το πολυώνυμο θα πρέπει να γράφεται ως γινόμενο άλλων μη σταθερών πολυώνυμων, π.χ. ενώ το <span class="arithmatex">\(x+2\)</span>  μπορεί να γραφεί ως <span class="arithmatex">\(x+2=\frac 1 2\cdot (2x+1)\)</span>, δηλαδή ως γινόμενο ενός σταθερού πολυωνύμου ( <span class="arithmatex">\(\frac 1 2\)</span>) και του <span class="arithmatex">\(2x+1\)</span>  θεωρείται πρώτος παράγοντας.</p>
+</li>
+<li>
+<p>Το πολυώνυμο <span class="arithmatex">\(x^2+x+1\)</span>  είναι πρώτος παράγοντας διότι δεν αναλύεται περισσότερο.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Παραγοντοποίηση</strong> είναι η διαδικασία με την οποία μία παράσταση μετατρέπεται σε γινόμενο παραγόντων. Μας ενδιαφέρει ιδιαιτέρως η περίπτωση όπου η παράσταση παραγοντοποιείται σε γινόμενο πρώτων παραγόντων.</p>
+</li>
+<li>
+<p><strong>Για να κάνουμε παραγοντοποίηση</strong>, μεταξύ άλλων, εφαρμόζουμε μία ή περισσότερες από τις παρακάτω μεθόδους:</p>
+<ol>
+<li>
+<p><strong>Κοινός παράγοντας</strong>, που γίνεται με την βοήθεια της <em>επιμεριστικής ιδιότητας</em>.</p>
+</li>
+<li>
+<p><strong>Κοινός παράγοντας κατά ομάδες</strong>, που γίνεται με την βοήθεια της επιμεριστικής ιδιότητας.</p>
+</li>
+<li>
+<p><strong>Διαφορά τετραγώνων</strong>, που γίνεται με την βοήθεια της ταυτότητας: <span class="arithmatex">\(\alpha ^2-\beta ^2=(\alpha -\beta )(\alpha +\beta )\)</span>.</p>
+</li>
+<li>
+<p><strong>Ανάπτυγμα τετραγώνου</strong>, με την βοήθεια της ταυτότητας <span class="arithmatex">\((\alpha \pm \beta )^2=\alpha ^2\pm 2\beta +\beta ^2\)</span>.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Η διαδικασία της παραγοντοποιησης είναι κατά κύριο ρόλο θέμα εμπειρίας παρόλα αυτά έχουμε τις παρακάτω περιπτώσεις:</p>
+<ol>
+<li>
+<p>Εξετάζουμε αν υπάρχει κοινός παράγοντας και εφαρμόζουμε την επιμεριστική ιδιότητα.</p>
+</li>
+<li>
+<p>Στον κοινό παράγοντα μπορεί να χρειαστεί να αλλάξουμε τα πρόσημα κάποιων όρων ή παρενθέσεων.</p>
+</li>
+<li>
+<p>Ο κοινός παράγοντας γίνεται και κατά ομάδες. Σε αυτή την περίπτωση μπορεί να χρειαστεί να διασπάσουμε κάποιον όρο.</p>
+</li>
+<li>
+<p>Αν η έκφραση έχει τρεις όρους εξετάζουμε εάν είναι α) ανάπτυγμα τετραγώνου, β) τριώνυμο, γ) εάν μπορούμε να διασπάσουμε έναν όρο, έτσι ώστε συνολικά να έχουμε τέσσερις όρους και να κάνουμε κοινό παράγοντα κατά ομάδες.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Προσοχή στην σχέση: <span class="arithmatex">\(x\cdot y=0\Leftrightarrow x=0\text{ ή }y=0\)</span>,</p>
+<p>Για παράδειγμα,</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\alpha \cdot \beta =0\Leftrightarrow \alpha =0\text{ ή }\beta =0\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\chi -1)\cdot (\chi -2)=0\Leftrightarrow \chi -1=0\ \text{ή}\ \chi -2=0\Leftrightarrow x=1\ \text{ή}\ \chi =2\)</span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="1">Μάθημα 1</h2>
+<ol>
+<li>
+<p>Να αναλύσετε τους παρακάτω αριθμούς σε γινόμενο πρώτων παραγόντων: 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20, 21.</p>
+</li>
+<li>
+<p>Να αναλύσετε τους παρακάτω αριθμούς σε γινόμενο πρώτων παραγόντων: 110, 245, 169, 342.</p>
+</li>
+<li>
+<p>Αφού αναλύσετε τους αριθμούς σε γινόμενο πρώτων παραγόντων να εφαρμόσετε την επιμεριστική ιδιότητα. Εργαστείτε όπως το παράδειγμα: <span class="arithmatex">\(16+18=2\cdot 2\cdot 2\cdot 2+2\cdot 3\cdot 3=2(8+9)\)</span>.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(4+6\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4+10\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βρείτε τον μέγιστο κοινό διαιρέτη των αριθμών:</p>
+<ol>
+<li>
+<p>4, 6</p>
+</li>
+<li>
+<p>4, 10</p>
+</li>
+<li>
+<p>16, 18</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}\)</span>, <span class="arithmatex">\(\sqrt{8}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αφού βρείτε τον μέγιστο κοινό διαιρέτη, εργαστείτε όπως το παράδειγμα που ακολουθεί: <span class="arithmatex">\(16+18=2\cdot (\frac{16}{2}+\frac{18}{2})=2\cdot (8+9)\)</span></p>
+<ol>
+<li>
+<p><span class="arithmatex">\(4+6\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4+10\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(18+16\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(20+21\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}+\sqrt{8}\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Με την βοήθεια της επιμεριστικής ιδιότητας να παραγοντοποιήσετε και εν συνεχεία να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(7.32\cdot 25+7.32\cdot 75\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(374\cdot \frac{7}{6}-374\cdot \frac{1}{6}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(73\cdot 2+73\cdot 8\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(125\cdot 13-125\cdot 3\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Με την βοήθεια της επιμεριστικής ιδιότητας να αναπτύξετε τις παρακάτω εκφράσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\cdot (\alpha +\beta +\gamma )\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\cdot (x+y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4\cdot (x+3y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+y)\cdot 3\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Με την βοήθεια της επιμεριστικής ιδιότητας να παραγοντοποιήσετε τις παρακάτω εκφράσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\alpha +3\beta +3\gamma\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x+2y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4x+12y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3x+3y\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αφού υπολογίσετε τον μέγιστο κοινό διαιρέτη των συντελεστών να διαιρέσετε με σκοπό να γίνει η παραγοντοποίηση. Εργαστείτε όπως το παράδειγμα: <span class="arithmatex">\(4x+12y=4\cdot (\frac{4x}{4}+\frac{12y}{4})=4\cdot (x+3y)\)</span></p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2+12x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(24y+36x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(8x+10y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(8x+4y+2z\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να υπολογιστούν οι αριθμητικές παραστάσεις χωρίς να χρησιμοποιηθεί υπολογιστής τσέπης:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(786\cdot 45+786\cdot 55\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2005^2-1995^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(565\cdot 499+565\cdot 66-435^2\)</span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="2">Μάθημα 2</h2>
+<p>Να κάνετε τις παρακάτω ασκήσεις με την βοήθεια του κοινού παράγοντα.</p>
+<ol>
+<li>
+<p>Ποιες από τις παρακάτω παραστάσεις είναι γινόμενα παραγόντων;</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3\cdot 4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3\cdot (x+3)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x-3)(x+4)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(y(x^2+x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2(x-y)(x+y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3+4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3+(x+3)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3+(x+3)(x-3)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+2)(x+2)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+2)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2+(x+2)^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αφού υπολογίσετε τον ΜΚΔ των συντελεστών να παραγοντοποιήσετε τις παρακάτω εκφράσεις, όπως το παράδειγμα: <span class="arithmatex">\(2\alpha +4\beta =2(\frac{2\alpha}{2}+\frac{4\beta}{2})=2(\alpha +2\beta )\)</span></p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2x+16\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x+2y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x+18y+4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}x+\sqrt{8}y\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Ποιες από τις επόμενες παραστάσεις είναι γινόμενα παραγόντων;</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2(x-y)(x+y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2+(x-y)(x+y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4(x-y)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4+(\alpha -\beta )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+2y)x-y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+2y)(x-y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\alpha +\beta )(\alpha +3\beta )+1\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε με την βοήθεια του κοινού παράγοντα, λαμβάνοντας υπόψιν τους συντελεστές και τις μεταβλητές:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2x+3x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3y+4y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x^2+3x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^3+x^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2+x^3+x^4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x^2+16x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(5x^3-15y^2x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(25x-50x^3\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Από τις παρακάτω εκφράσεις να βγάλετε κοινό παράγοντα το -1</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(-1+x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-x-2y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-2x+y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x+y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x+y-3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-2x^2+5x-9\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Από τις παρακάτω εκφράσεις να βγάλετε κοινό παράγοντα το <span class="arithmatex">\(\sqrt{2}\)</span></p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}x+\sqrt{2}y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{2}x+\sqrt{8}y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{18}x+\sqrt{8}y\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Από τις παρακάτω εκφράσεις να βγάλετε κοινό παράγοντα το <span class="arithmatex">\(\frac 1 2\)</span>.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{1}{2}x+\frac{1}{2}y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{1}{2}x+\frac{3}{2}y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{1}{4}x+\frac{1}{10}y\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να σημειώσετε (Σ) εάν η πρόταση είναι αληθής και (Λ) εάν είναι ψευδής:</p>
+<ol>
+<li>
+<p>Το x+1 είναι παράγοντας της έκφρασης: 2x+2</p>
+</li>
+<li>
+<p>To x+1 είναι παράγοντας της έκφρασης x+2</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Μία από τις παρακάτω εκφράσεις έχει κοινό παράγοντα. Να την επιλέξετε.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2+y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2+x+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(ax^2y+\frac{1}{2}y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(z(x-y)+a(\beta -\gamma )\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2+x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2y^2-5y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\omega (\omega -3)-2(3-\omega )\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha (3\alpha +1)-4\alpha\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις εκφράσεις. Υπόδειξη βρείτε τον ΜΚΔ και χρησιμοποιήστε τις ιδιότητες των δυνάμεων, όπως το παράδειγμα: <span class="arithmatex">\(x^a+x^{2a}=x^a(\frac{x^a}{x^a}+\frac{x^{2a}}{x^a})=x^a(1+x^a)\)</span>.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2x^a+16x^{2a}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^{2a+1}+x^{2a}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^{2a-1}+x^{2a}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^{2a}y^{3a}+x^{3a}y^{2a}\)</span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="3">Μάθημα 3</h2>
+<p>Κοινός παράγοντας κατά ομάδες (Ομαδοποίηση).</p>
+<ol>
+<li>
+<p>Σε ποιες από τις παρακάτω εκφράσεις το (x+1) είναι κοινός παράγοντας:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2(x+1)+3(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+1)^2+(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+1)^2+x(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+1)^3+(x^3+1^3)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+1)+3(x+1)-5(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3(x+1)^3-2(x+1^2)-2(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+1)-2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x+1-2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x+1-2(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-(-x-1)+(x+1)^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βρείτε τον κοινό παράγοντα στις παρακάτω εκφράσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((x+1)^2+(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x-y)+3x(x-y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x-a)^2+4x^2y(x-a)^3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-(-x+a)+3x^2(x-a)\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να γράψετε τις παρακάτω εκφράσεις με την μορφή παρενθέσεων με ένα (-) μπροστά, όπως το παράδειγμα:  <span class="arithmatex">\(x^2-x+1=-(-x^2+x-1)\)</span>.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2z-4x^3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-1+a\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-x^2+2x-1\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Μπορεί μία από τις παρακάτω εκφράσεις να διαφέρει από τις υπόλοιπες. Ποια είναι αυτή;</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x-a\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x-a)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-a+x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-(-x+a)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-(a-x)\)</span></p>
+</li>
+<li>
+<p>Όλες οι παραπάνω εκφράσεις είναι ταυτόσημες.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βγάλετε κοινό παράγοντα το x+1:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2(x+1)+(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x(x+1)-y(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4y^2(x+1)^2-(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x+1-(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-(-x-1)-(x+1)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-x-1)^2+(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-x-1)^3+(-x-1)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x(-x-1)^5+3y(x+1)^4\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βγάλετε κοινό παράγοντα το x-1:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((x-1)(x^2+4)-2(x-1)-3x(x-1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-(-x+1)x^2-2(x-1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x-1)^2-3x(1-x)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-x+1)^2+x(x-1)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-x+1)^3+x(x-1)^3\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x(\alpha -\beta )+y(\alpha -\beta )\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha (x+y)+\beta (x+y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((3x-1)(x-2)-(x+4)(x-2)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha ^2(\alpha -2)-3(2-\alpha )\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4x(x-1)-x+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x^2(x-3)-6x(x-3)^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(ax+by+bx+ay\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(ax+ay-by-bx\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(ax-bx-ay+by\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2+xy+\alpha x+\alpha y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^3-x^2+x-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^3-5x^2+4x-20\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x^3-3x^2+4x-6\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4x^2-8x-\alpha x+2\alpha\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(9\alpha \beta -18\beta ^2+10\beta -5\alpha\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(12x^2-8xy-15x+10y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^3+\sqrt{2}x^2+x+\sqrt{2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{6}x^2+2\sqrt{2}x-\sqrt{3}x-2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(7\alpha ^2+10\alpha \beta +3\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(5x^2-8xy+3y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(3x^2-xy-2y^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Λύστε τα παρακάτω:</p>
+<ol>
+<li>
+<p>Να αναλύσετε σε γινόμενο παραγόντων την παράσταση <span class="arithmatex">\(\alpha ^2\beta +\alpha \beta ^2-\alpha -\beta\)</span>.</p>
+</li>
+<li>
+<p>Αν για τους αριθμούς α, β ισχύει <span class="arithmatex">\(\alpha ^2\beta +\alpha \beta ^2=\alpha +\beta\)</span>, να αποδείξετε ότι οι αριθμοί α, β είναι αντίθετοι ή αντίστροφοι.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2\alpha ^2-2\alpha +\alpha \beta -\beta +\alpha x-x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\alpha \beta -4\beta +5\alpha -10+2\alpha \gamma -4\gamma\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε αφού κάνετε πρώτα τις πράξεις στην παρακάτω έκφραση:</p>
+<div class="arithmatex">\[\alpha \beta (x^2+y^2)+xy(\alpha ^2+\beta ^2)\]</div>
+</li>
+<li>
+<p>Να γραφεί με μορφή γινομένου η έκφραση:</p>
+<div class="arithmatex">\[\alpha x^{\nu +1}+\alpha y^{\mu }x+\beta x^{\nu +1}+\beta y^{\mu }x\]</div>
+</li>
+</ol>
+<h2 id="4">Μάθημα 4</h2>
+<p>Διαφορά τετραγώνου</p>
+<ol>
+<li>
+<p>Να παραγοντοποιήσετε τις παρακάτω εκφράσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2-y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(a^2-x^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(9-x^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-4y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(1-2x^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-36z^2y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^4-y^4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^4-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^8-64\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να πραγματοποιήσετε τις παρακάτω εκφράσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((x+y)^2-x^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+y)^2-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(1-(\alpha -\beta )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\alpha ^2+2\beta )^2-\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha ^2-(\beta -\alpha )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((2\alpha +\beta +\gamma )^2-(\alpha -\beta +\gamma )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\chi ^2-(\chi +\psi )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4\chi ^2-(\chi -3\psi )^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παρακάτω εκφράσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\alpha \beta ^2-\alpha \gamma ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\chi ^4-4\chi ^2\psi ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\chi ^3-\chi (\psi -\zeta )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha \chi ^3-\alpha ^3\chi (\psi +\zeta )^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να γραφούν ως γινόμενο οι παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\alpha \chi ^2+\beta \chi ^2-\alpha \psi ^2-\beta \psi ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(12\chi -20\psi +5\alpha ^2\psi -3\alpha ^2\chi\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(9\alpha ^2\chi ^2-4\alpha ^2-9\beta ^2\chi ^2+4\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\chi ^3-\chi ^2\psi -\chi \psi ^2+\psi ^3\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να κάνετε τις πράξεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(29^2-21^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(51^2-49^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^{2a}-y^{2a}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^{2v+1}-xy^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αφού διασπάσετε να παραγοντοποιήσετε:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(-\chi ^3+2\chi ^2-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\chi ^3-3\chi +2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2-9\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(16x^2-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha ^2-9\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha ^2\beta ^2-4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(36\omega ^2-(\omega +5)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4(x+1)^2-9(x-2)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-\frac{1}{16}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-2y\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2x^2-32\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(28-7y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2x^3-2x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(5\alpha x^2-80\alpha\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2(x-1)^2-8\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Σε ορθογώνιο τρίγωνο ΑΒΓ να υπολογίσετε την πλευρά γ, όταν:</p>
+<ol>
+<li>
+<p>α = 53, β = 28</p>
+</li>
+<li>
+<p>α = 0.37, β = 0.12</p>
+</li>
+<li>
+<p>α = 26λ, β = 10λ</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να επιλύσετε τις εξισώσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2-49=0\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(9x^3-4x=0\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x(x+1)^2=4x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+2)^3=x+2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Αν για τους αριθμούς x και y ισχύει ότι <span class="arithmatex">\(x\cdot y=0\)</span>  τότε τι συμπέρασμα μπορούμε να βγάλουμε για τα x και y;</p>
+</li>
+</ol>
+<h2 id="5">Μάθημα 5</h2>
+<p>Στο μάθημα αυτό θα ασχοληθούμε τα τέλεια τετράγωνα και με προχωρημένες ασκήσεις παραγοντοποίησης.</p>
+<ol>
+<li>
+<p>Να κάνετε τις ταυτότητες:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((\chi +\psi )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\chi -\zeta )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((2\xi +3\zeta )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((2\xi -1)^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Ποιες από τις παρακάτω εκφράσεις είναι τέλεια τετράγωνα;</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2+2xy+y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4x^2+2xy+y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\psi ^2-8\psi +16\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-10x+25\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\chi +\psi )^2+2(\chi +\psi )+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(9\chi ^{2\lambda }-30\chi ^{\lambda }+25\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x+2\sqrt x\sqrt y+y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2+2\sqrt{2}x+2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^4-2x^2y^2+y^4\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2-2x+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(y^2+4y+4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\omega ^2-6\omega +9\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha ^2+10\alpha +25\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(1-4\beta +4\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(9x^4+6x^2+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4y^2-12y+9\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(16x^2+8xy+y^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(25\alpha ^2-10\alpha \beta +\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\alpha +\beta )^2-2(\alpha +\beta )+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{y^2} 9-2y+9\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2+x+\frac 1 4\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3x^2+24x+48\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-y^2+4y-4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\alpha ^2-8\alpha \beta +8\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4\alpha ^3+12\alpha ^2+9\alpha\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βρείτε:    <br />
+<img alt="image" src="../images/a2023090120CE91CEBBCEB3CEB5CEB2CF81CEB120CE9320CE93CF85CEBCCEBDCEB1CF83CEAFCEBFCF8520CE9CCEADCF81CEBFCF8220CE91-img005.png" /></p>
+<ol>
+<li>
+<p>Ένα πολυώνυμο που να εκφράζει το εμβαδόν του παραπάνω σχήματος.</p>
+</li>
+<li>
+<p>Την πλευρά ενός τετραγώνου που έχει εμβαδόν ίσο με το εμβαδόν του παραπάνω σχήματος.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βρείτε την πλευρά ενός τετραγώνου, που έχει εμβαδόν ίσο με το εμβαδόν του τετραπλεύρου ΑΒΓΔ. 
+    <img alt="image" src="../images/a2023090120CE91CEBBCEB3CEB5CEB2CF81CEB120CE9320CE93CF85CEBCCEBDCEB1CF83CEAFCEBFCF8520CE9CCEADCF81CEBFCF8220CE91-img006.png" /></p>
+</li>
+<li>
+<p>Να υπολογίσετε τις αριθμητικές παραστάσεις χωρίς να χρησιμοποιήσετε υπολογιστή τσέπης.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(1453\cdot 1821-1453\cdot 821\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(8012+199\cdot 801\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(9982-4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(999\cdot 1001+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(9992+2\cdot 999+1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(972+6\cdot 97+9\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\chi ^2\psi ^2-4\psi ^2-\chi ^2+4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^4-1+x^3-x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^3(x^2-1)+1-x^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x^2+9)^2-36x^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha ^2-2\alpha \beta +\beta ^2-\alpha +\beta\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-2xy+y^2-\omega ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(1-\alpha ^2+2\alpha \beta -\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(y^2-x^2-10y+25\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2(x-1)(x^2-4)-5(x-1)(x-2)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((y^2-4)^2-(y+2)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\alpha ^2+\beta ^2-\gamma ^2)^2-4\alpha ^2\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x^2+9)(\alpha ^2+4)-(\alpha x+6)^2\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(3^{\chi }+3^{2\chi }\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(e^{3x}+e^{2x}+e^x\)</span>, e σταθερός αριθμός.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha ^2+4\alpha \beta +4\beta ^2-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4(\alpha +\beta )^2-9(\alpha -\beta )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\alpha ^2+1)(\chi ^2+4)-(\alpha \chi +2)^2\)</span>, να κάνετε πρώτα τις πράξεις</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να απλοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\sqrt{x^2-2xy+y^2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sqrt{\chi ^4+2\chi ^3\psi +\chi ^2\psi ^2}\)</span>, να κάνετε κοινό παράγοντα.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="1_1">Κριτήριο 1</h2>
+<ol>
+<li>
+<p>Ποιες από τις επόμενες παραστάσεις είναι γινόμενα παραγόντων;</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2(x-y)(x+y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2+(x-y)(x+y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4(x-y)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4+(\alpha -\beta )^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+2y)x-y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+2y)(x-y)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\alpha +\beta )(\alpha +3\beta )+1\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2+x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2y^2-5y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\omega (\omega -3)-2(3-\omega )\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha (3\alpha +1)-4\alpha\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να γράψετε τις παρακάτω εκφράσεις με την μορφή παρενθέσεων με ένα (-) μπροστά, όπως το παράδειγμα:  <span class="arithmatex">\(x^2-x+1=-(-x^2+x-1)\)</span> .</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2z-4x^3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-1+a\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-x^2+2x-1\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βγάλετε κοινό παράγοντα το x+1:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2(x+1)+(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x(x+1)-y(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4y^2(x+1)^2-(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x+1-(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-(-x-1)-(x+1)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-x-1)^2+(x+1)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((-x-1)^3+(-x-1)^2\)</span></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="2_1">Κριτήριο 2</h2>
+<ol>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(x^2-9\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(16x^2-1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha ^2-9\beta ^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\alpha ^2\beta ^2-4\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(36\omega ^2-(\omega +5)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(4(x+1)^2-9(x-2)^2\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-\frac{1}{16}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^2-2y\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να παραγοντοποιήσετε τις παραστάσεις:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2\alpha ^2-2\alpha +\alpha \beta -\beta +\alpha x-x\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(2\alpha \beta -4\beta +5\alpha -10+2\alpha \gamma -4\gamma\)</span></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Να βρείτε την πλευρά ενός τετραγώνου, που έχει εμβαδόν ίσο με το εμβαδόν του τετραπλεύρου ΑΒΓΔ. 
+    <img alt="image" src="../images/a2023090120CE91CEBBCEB3CEB5CEB2CF81CEB120CE9320CE93CF85CEBCCEBDCEB1CF83CEAFCEBFCF8520CE9CCEADCF81CEBFCF8220CE91-img006.png" /></p>
+</li>
+<li>
+<p>Αν για τους αριθμούς x και y ισχύει ότι <span class="arithmatex">\(x\cdot y=0\)</span>  τότε τι συμπέρασμα μπορούμε να βγάλουμε για τα x και y;</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

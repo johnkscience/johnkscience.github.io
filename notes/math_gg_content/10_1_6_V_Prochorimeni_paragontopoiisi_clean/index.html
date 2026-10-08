@@ -1,0 +1,1504 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Λυμένες Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Γιάννης">
+      
+      
+      
+        <link rel="prev" href="../10_1.6_Paragontopoiisi_algevrikon_parastaseon_clean/">
+      
+      
+        <link rel="next" href="../11_1.9_Rites_algevrikes_parastaseis_clean/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Προχωρημένη Παραγοντοποίηση - Μαθηματικά Γ' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Μαθηματικά Γ' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Προχωρημένη Παραγοντοποίηση
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Μαθηματικά Γ&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Μαθηματικά Γ' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Μαθηματικά Γ' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αρχική
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Μέρος Α: Άλγεβρα
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Μέρος Α: Άλγεβρα
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_1.1A_Praxeis_me_pragmatikoys_arithmoys_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με πραγματικούς αριθμούς
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_1.1V_Dynameis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Δυνάμεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_1.1G_Tetragoniki_riza_pragmatikoy_arithmoy_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Τετραγωνική ρίζα πραγματικού αριθμού
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_1.2A__Algevrikes_parastaseis_-_Mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αλγεβρικές παραστάσεις - Μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_1.2V_Praxeis_me_mononyma_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις με μονώνυμα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_1.3_Polyonyma_--_Prosthesi_kai_Afairesi_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολυώνυμα - Πρόσθεση και αφαίρεση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_1.4_Pollaplasiasmos_polyonymon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πολλαπλασιασμός πολυωνύμων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_1.5_Axiosimeiotes_taytotites_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αξιοσημείωτες ταυτότητες
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_1.8_E.K.P._kai_M.K.D._akeraion_algevrikon_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ε.Κ.Π. και Μ.Κ.Δ. αλγεβρικών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_1.6_Paragontopoiisi_algevrikon_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Προχωρημένη Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Προχωρημένη Παραγοντοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Οδικός Χάρτης και Στρατηγικές Επίλυσης
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Οδικός Χάρτης και Στρατηγικές Επίλυσης">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#horner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Το Σχήμα Horner
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Α' ΟΜΑΔΑ - Μέρος 1ο)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Α' ΟΜΑΔΑ - Μέρος 2ο)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Β' ΟΜΑΔΑ - Μέρος 1ο)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Β' ΟΜΑΔΑ - Μέρος 2ο)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΕΙΔΙΚΕΣ ΚΑΤΗΓΟΡΙΕΣ ΚΑΙ ΘΕΜΑΤΑ ΔΙΑΓΩΝΙΣΜΩΝ
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11_1.9_Rites_algevrikes_parastaseis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ρητές αλγεβρικές παραστάσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_1.10_Praxeis_riton_parastaseon_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Πράξεις ρητών παραστάσεων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13_Genikes_askiseis_clean/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Γενικές Ασκήσεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Οδικός Χάρτης και Στρατηγικές Επίλυσης
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Οδικός Χάρτης και Στρατηγικές Επίλυσης">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#horner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Το Σχήμα Horner
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Α' ΟΜΑΔΑ - Μέρος 1ο)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Α' ΟΜΑΔΑ - Μέρος 2ο)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Β' ΟΜΑΔΑ - Μέρος 1ο)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Β' ΟΜΑΔΑ - Μέρος 2ο)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ΕΙΔΙΚΕΣ ΚΑΤΗΓΟΡΙΕΣ ΚΑΙ ΘΕΜΑΤΑ ΔΙΑΓΩΝΙΣΜΩΝ
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Προχωρημένη Παραγοντοποίηση</h1>
+
+<h2 id="_1">Οδικός Χάρτης και Στρατηγικές Επίλυσης</h2>
+<p>Η παραγοντοποίηση αποτελεί ένα από τα σημαντικότερα εργαλεία της Άλγεβρας, καθώς μας επιτρέπει να απλοποιούμε πολύπλοκες παραστάσεις και να επιλύουμε εξισώσεις. Συχνά, οι παραστάσεις που καλούμαστε να παραγοντοποιήσουμε απαιτούν συνδυαστική σκέψη. Για τον λόγο αυτό, ακολουθούμε έναν συγκεκριμένο "Οδικό Χάρτη", θέτοντας τα παρακάτω ερωτήματα με τη σειρά:</p>
+<p><strong>ΒΗΜΑ 1ο: Ο Κοινός Παράγοντας</strong> Πάντα ξεκινάμε ελέγχοντας αν υπάρχει κάποιος κοινός παράγοντας (αριθμός, μεταβλητή ή ολόκληρη παρένθεση) σε <em>όλους</em> τους όρους της παράστασης.
+<em>Σημείωση:</em> Αν παρατηρήσουμε αντίθετα πρόσημα, όπως <span class="arithmatex">\((a-\beta)\)</span> και <span class="arithmatex">\((\beta-a)\)</span>, εξάγουμε ως κοινό παράγοντα το <span class="arithmatex">\(-1\)</span>.</p>
+<p><strong>ΒΗΜΑ 2ο: Το Πλήθος των Όρων</strong> Αν δεν υπάρχει άλλος κοινός παράγοντας, μετράμε τους όρους της παράστασης για να επιλέξουμε την κατάλληλη μέθοδο:</p>
+<ul>
+<li><strong>Αν έχουμε 2 όρους:</strong> Ελέγχουμε για διαφορά τετραγώνων <span class="arithmatex">\(a^2 - \beta^2 = (a-\beta)(a+\beta)\)</span> ή για άθροισμα/διαφορά κύβων <span class="arithmatex">\(a^3 \pm \beta^3\)</span>.</li>
+<li><strong>Αν έχουμε 3 όρους:</strong> Εξετάζουμε αν πρόκειται για ανάπτυγμα τέλειου τετραγώνου <span class="arithmatex">\((a \pm \beta)^2\)</span> ή για τριώνυμο της μορφής <span class="arithmatex">\(x^2 - Sx + P\)</span> (όπου ψάχνουμε δύο αριθμούς με άθροισμα <span class="arithmatex">\(S\)</span> και γινόμενο <span class="arithmatex">\(P\)</span>).</li>
+<li><strong>Αν έχουμε 4 όρους (ή περισσότερους):</strong> Εφαρμόζουμε τη μέθοδο της ομαδοποίησης. Συνήθως χωρίζουμε ανά δύο (2-2) αναζητώντας κοινό παράγοντα, ή ανά τρεις (3-1) αν οι τρεις πρώτοι όροι σχηματίζουν τέλειο τετράγωνο, δημιουργώντας έτσι μια διαφορά τετραγώνων.</li>
+</ul>
+<p><strong>ΒΗΜΑ 3ο: Ειδικές Τεχνικές</strong> Αν οι βασικές μέθοδοι δεν επαρκούν, καταφεύγουμε σε ειδικές τεχνικές, όπως η προσθαφαίρεση όρων (για τη συμπλήρωση τέλειου τετραγώνου), η αλλαγή μεταβλητής ή η εκτέλεση επιμέρους πράξεων.</p>
+<p>Ορίστε η ενότητα ανανεωμένη. Το βήμα του αλγορίθμου έχει αναλυθεί σε πολύ πιο ξεκάθαρα, πρακτικά βήματα και προστέθηκε ένα αναλυτικό παράδειγμα με τη χρήση πίνακα:</p>
+<h3 id="horner">Το Σχήμα Horner</h3>
+<p>Όπως θα δούμε και σε πιο σύνθετες περιπτώσεις, το σχήμα Horner αποτελεί μια πρακτική και σύντομη μέθοδο διαίρεσης ενός πολυωνύμου <span class="arithmatex">\(P(x)\)</span> με ένα διώνυμο της μορφής <span class="arithmatex">\((x-\rho)\)</span>.</p>
+<p>Χρησιμοποιούμε έναν πίνακα ακολουθώντας τα εξής βήματα:</p>
+<ol>
+<li><strong>Στήσιμο του πίνακα:</strong> Στην πρώτη γραμμή τοποθετούμε τους συντελεστές του πολυωνύμου κατά φθίνουσα σειρά (είναι πολύ σημαντικό να βάλουμε <span class="arithmatex">\(0\)</span> αν λείπει κάποια δύναμη του <span class="arithmatex">\(x\)</span>). Πάνω δεξιά σημειώνουμε την τιμή του <span class="arithmatex">\(\rho\)</span>.</li>
+<li><strong>Ο πρώτος όρος:</strong> "Κατεβάζουμε" τον πρώτο συντελεστή ακριβώς όπως είναι στην τρίτη γραμμή (γραμμή αποτελεσμάτων).</li>
+<li><strong>Ο αλγόριθμος "Πολλαπλασιάζω και Προσθέτω":</strong><ul>
+<li><strong>Πολλαπλασιάζουμε</strong> τον αριθμό που μόλις κατεβάσαμε στην τρίτη γραμμή με το <span class="arithmatex">\(\rho\)</span>.</li>
+<li>Τοποθετούμε το αποτέλεσμα στη δεύτερη γραμμή, ακριβώς κάτω από τον <em>επόμενο</em> συντελεστή του πολυωνύμου.</li>
+<li><strong>Προσθέτουμε</strong> κάθετα τους δύο αριθμούς (τον συντελεστή και το γινόμενο που γράψαμε) και γράφουμε το άθροισμα κάτω-κάτω, στην τρίτη γραμμή.</li>
+<li>Επαναλαμβάνουμε την ίδια διαδικασία (πολλαπλασιασμός του νέου αριθμού με το <span class="arithmatex">\(\rho\)</span> και κάθετη πρόσθεση) μέχρι την τελευταία στήλη.</li>
+</ul>
+</li>
+<li><strong>Ανάγνωση αποτελέσματος:</strong> Ο τελευταίος αριθμός που προκύπτει κάτω δεξιά είναι το <strong>υπόλοιπο (<span class="arithmatex">\(υ\)</span>)</strong> της διαίρεσης. Οι προηγούμενοι αριθμοί είναι οι συντελεστές του <strong>πηλίκου</strong>, το οποίο έχει πάντα βαθμό κατά <span class="arithmatex">\(1\)</span> μικρότερο από το αρχικό πολυώνυμο. Αν το υπόλοιπο είναι <span class="arithmatex">\(0\)</span>, η διαίρεση είναι τέλεια (το <span class="arithmatex">\(\rho\)</span> είναι ρίζα).</li>
+</ol>
+<p><strong>Παράδειγμα 1:</strong>
+Ας κάνουμε τη διαίρεση του πολυωνύμου <span class="arithmatex">\(P(x) = 2x^3 - 5x^2 + x + 8\)</span> με το <span class="arithmatex">\(x - 2\)</span>.
+<em>Εδώ το <span class="arithmatex">\(\rho = 2\)</span> και οι συντελεστές είναι: <span class="arithmatex">\(2, -5, 1, 8\)</span></em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="arithmatex">\(x^3\)</span></th>
+<th><span class="arithmatex">\(x^2\)</span></th>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>Σταθερός</th>
+<th><span class="arithmatex">\(\rho = 2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Συντελεστές <span class="arithmatex">\(P(x)\)</span></strong></td>
+<td>2</td>
+<td>-5</td>
+<td>1</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Γινόμενα με το <span class="arithmatex">\(\rho\)</span></strong></td>
+<td><span class="arithmatex">\(\downarrow\)</span></td>
+<td>4</td>
+<td>-2</td>
+<td>-2</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Αποτελέσματα (+)</strong></td>
+<td><strong>2</strong></td>
+<td><strong>-1</strong></td>
+<td><strong>-1</strong></td>
+<td><strong>6</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Βήμα προς βήμα η εκτέλεση:</strong></p>
+<ul>
+<li>Κατεβάζουμε το <strong><span class="arithmatex">\(2\)</span></strong>.</li>
+<li>Πολλαπλασιάζουμε <span class="arithmatex">\(2 \cdot 2 = 4\)</span>. Το γράφουμε κάτω από το <span class="arithmatex">\(-5\)</span>. Προσθέτουμε: <span class="arithmatex">\(-5 + 4 =\)</span> <strong><span class="arithmatex">\(-1\)</span></strong>.</li>
+<li>Πολλαπλασιάζουμε <span class="arithmatex">\(-1 \cdot 2 = -2\)</span>. Το γράφουμε κάτω από το <span class="arithmatex">\(1\)</span>. Προσθέτουμε: <span class="arithmatex">\(1 + (-2) =\)</span> <strong><span class="arithmatex">\(-1\)</span></strong>.</li>
+<li>Πολλαπλασιάζουμε <span class="arithmatex">\(-1 \cdot 2 = -2\)</span>. Το γράφουμε κάτω από το <span class="arithmatex">\(8\)</span>. Προσθέτουμε: <span class="arithmatex">\(8 + (-2) =\)</span> <strong><span class="arithmatex">\(6\)</span></strong>.</li>
+</ul>
+<p><strong>Συμπέρασμα:</strong>
+Ο τελευταίος αριθμός (<span class="arithmatex">\(6\)</span>) είναι το <strong>υπόλοιπο</strong>.
+Οι αριθμοί <span class="arithmatex">\(2, -1, -1\)</span> είναι οι συντελεστές του πηλίκου. Επειδή το αρχικό πολυώνυμο ήταν 3ου βαθμού, το πηλίκο θα είναι 2ου βαθμού: <span class="arithmatex">\(Q(x) = 2x^2 - x - 1\)</span>.</p>
+<p><strong>Παράδειγμα 2: Όταν λείπει μια δύναμη του <span class="arithmatex">\(x\)</span> (Η παγίδα με το μηδέν)</strong></p>
+<p>Ας κάνουμε τη διαίρεση του πολυωνύμου <span class="arithmatex">\(P(x) = 3x^3 - 2x + 4\)</span> με το <span class="arithmatex">\(x + 1\)</span>.</p>
+<blockquote>
+<p><strong>Προσοχή:</strong> Στο πολυώνυμο αυτό απουσιάζει ο όρος του <span class="arithmatex">\(x^2\)</span>. Για να δουλέψει σωστά το σχήμα Horner, <strong>πρέπει υποχρεωτικά</strong> να συμπληρώσουμε τη θέση του με μηδέν. Άρα το γράφουμε στο μυαλό μας ως: <span class="arithmatex">\(P(x) = 3x^3 \mathbf{+ 0x^2} - 2x + 4\)</span>.</p>
+</blockquote>
+<p>Επίσης, αφού διαιρούμε με το <span class="arithmatex">\(x + 1\)</span>, το οποίο γράφεται ως <span class="arithmatex">\(x - (-1)\)</span>, το <span class="arithmatex">\(\rho\)</span> μας είναι το <strong><span class="arithmatex">\(-1\)</span></strong>.</p>
+<p>Ας φτιάξουμε τον πίνακα:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><span class="arithmatex">\(x^3\)</span></th>
+<th><span class="arithmatex">\(x^2\)</span></th>
+<th><span class="arithmatex">\(x\)</span></th>
+<th>Σταθερός</th>
+<th><span class="arithmatex">\(\rho = -1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Συντελεστές <span class="arithmatex">\(P(x)\)</span></strong></td>
+<td>3</td>
+<td><strong>0</strong></td>
+<td>-2</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Γινόμενα με το <span class="arithmatex">\(\rho\)</span></strong></td>
+<td><span class="arithmatex">\(\downarrow\)</span></td>
+<td>-3</td>
+<td>3</td>
+<td>-1</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Αποτελέσματα (+)</strong></td>
+<td><strong>3</strong></td>
+<td><strong>-3</strong></td>
+<td><strong>1</strong></td>
+<td><strong>3</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Βήμα προς βήμα η εκτέλεση:</strong></p>
+<ul>
+<li>Κατεβάζουμε το <strong><span class="arithmatex">\(3\)</span></strong>.</li>
+<li>Πολλαπλασιάζουμε <span class="arithmatex">\(3 \cdot (-1) = -3\)</span>. Το γράφουμε κάτω από το <span class="arithmatex">\(0\)</span>. Προσθέτουμε: <span class="arithmatex">\(0 + (-3) =\)</span> <strong><span class="arithmatex">\(-3\)</span></strong>.</li>
+<li>Πολλαπλασιάζουμε <span class="arithmatex">\(-3 \cdot (-1) = 3\)</span>. Το γράφουμε κάτω από το <span class="arithmatex">\(-2\)</span>. Προσθέτουμε: <span class="arithmatex">\(-2 + 3 =\)</span> <strong><span class="arithmatex">\(1\)</span></strong>.</li>
+<li>Πολλαπλασιάζουμε <span class="arithmatex">\(1 \cdot (-1) = -1\)</span>. Το γράφουμε κάτω από το <span class="arithmatex">\(4\)</span>. Προσθέτουμε: <span class="arithmatex">\(4 + (-1) =\)</span> <strong><span class="arithmatex">\(3\)</span></strong>.</li>
+</ul>
+<p><strong>Συμπέρασμα:</strong>
+Ο τελευταίος αριθμός (<span class="arithmatex">\(3\)</span>) είναι το <strong>υπόλοιπο</strong> (<span class="arithmatex">\(υ=3\)</span>).
+Οι αριθμοί <span class="arithmatex">\(3, -3, 1\)</span> είναι οι συντελεστές του πηλίκου. Αφού ξεκινήσαμε με πολυώνυμο 3ου βαθμού, το πηλίκο θα είναι 2ου βαθμού:
+<span class="arithmatex">\(Q(x) = 3x^2 - 3x + 1\)</span>.</p>
+<p><em>(Αν είχαμε ξεχάσει να βάλουμε το 0, το αποτέλεσμα θα έβγαινε εντελώς λάθος! Αυτό είναι το πιο συνηθισμένο λάθος που κάνουμε στο σχήμα Horner).</em></p>
+<h2 id="-1">ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Α' ΟΜΑΔΑ - Μέρος 1ο)</h2>
+<ol>
+<li>
+<p><strong>Εξαγωγή Κοινού Παράγοντα</strong> Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\(2\alpha\beta - 2\alpha\gamma =\)</span> <span class="arithmatex">\(2\alpha(\beta-\gamma)\)</span></li>
+<li><span class="arithmatex">\(6x^{2} + 3x =\)</span> <span class="arithmatex">\(3x(2x+1)\)</span></li>
+<li><span class="arithmatex">\(12x^{2}y + 6xy^{2} - 3xy =\)</span> <span class="arithmatex">\(3xy(4x+2y-1)\)</span></li>
+<li><span class="arithmatex">\(15\alpha^{3}\beta^{2}y - 5\alpha^{2}\beta^{3}y - 20\alpha^{4}\beta^{4}y^{3}x =\)</span> <span class="arithmatex">\(5\alpha^{2}\beta^{2}y(3\alpha - \beta - 4\alpha^{2}\beta^{2}y^{2}x)\)</span></li>
+<li><span class="arithmatex">\(\alpha(x+y) - \beta(x+y) =\)</span> <span class="arithmatex">\((x+y)(\alpha-\beta)\)</span></li>
+<li><span class="arithmatex">\(x(2\alpha-\beta) + y(\beta-2\alpha) =\)</span> <span class="arithmatex">\(x(2\alpha-\beta) - y(2\alpha-\beta) =\)</span> <span class="arithmatex">\((2\alpha-\beta)(x-y)\)</span></li>
+<li><span class="arithmatex">\(u(x-1) - x + 1 =\)</span> <span class="arithmatex">\(u(x-1) - (x-1) =\)</span> <span class="arithmatex">\((x-1)(u-1)\)</span></li>
+<li><span class="arithmatex">\(\alpha(x-y) - (y-x) =\)</span> <span class="arithmatex">\(\alpha(x-y) + (x-y) =\)</span> <span class="arithmatex">\((x-y)(\alpha+1)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Σύνθετος Κοινός Παράγοντας</strong> Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\((\alpha+\beta)(x-3y) - 2\alpha(x-3y) =\)</span> <span class="arithmatex">\((x-3y)(\alpha+\beta-2\alpha) =\)</span> <span class="arithmatex">\((x-3y)(\beta-\alpha)\)</span></li>
+<li><span class="arithmatex">\((4\alpha-2\beta)(2x-3y) + (3y-2x)(\beta-2\alpha) =\)</span> <span class="arithmatex">\(2(2\alpha-\beta)(2x-3y) - (2x-3y)(\beta-2\alpha) =\)</span> <span class="arithmatex">\((2x-3y)[4\alpha-2\beta-\beta+2\alpha] =\)</span> <span class="arithmatex">\(3(2x-3y)(2\alpha-\beta)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{2}(x-1)(\alpha+\beta) + \alpha^{2}(1-x) =\)</span> <span class="arithmatex">\(\alpha^{2}(x-1)(\alpha+\beta) - \alpha^{2}(x-1) =\)</span>  <span class="arithmatex">\(\alpha^{2}(x-1)(\alpha+\beta-1)\)</span></li>
+<li><span class="arithmatex">\(\alpha(x-y)^{2} - \beta(x-y) =\)</span> <span class="arithmatex">\((x-y)[\alpha(x-y)-\beta] =\)</span> <span class="arithmatex">\((x-y)(\alpha x-\alpha y-\beta)\)</span></li>
+<li><span class="arithmatex">\((2x+y) - \alpha(2x+y) - (2x+y)^{2} =\)</span>  <span class="arithmatex">\((2x+y)[1-\alpha-(2x+y)] =\)</span> <span class="arithmatex">\((2x+y)(1-\alpha-2x-y)\)</span></li>
+<li><span class="arithmatex">\((x+y)^{3} - (x+y)^{2} =\)</span> <span class="arithmatex">\((x+y)^{2}(x+y-1)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Ομαδοποίηση (Μέθοδος 2-2)</strong> Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\(\alpha x + \alpha y + 3x + 3y =\)</span> <span class="arithmatex">\(\alpha(x+y) + 3(x+y) =\)</span> <span class="arithmatex">\((x+y)(\alpha+3)\)</span></li>
+<li><span class="arithmatex">\(x^{2} + xy - x - y =\)</span> <span class="arithmatex">\(x(x+y) - (x+y) =\)</span> <span class="arithmatex">\((x+y)(x-1)\)</span></li>
+<li><span class="arithmatex">\(x^{3} + x^{2} + x + 1 =\)</span> <span class="arithmatex">\(x^{2}(x+1) + (x+1) =\)</span> <span class="arithmatex">\((x+1)(x^{2}+1)\)</span></li>
+<li><span class="arithmatex">\(3\alpha^{3} - 6\alpha^{2} + 5\alpha - 10 =\)</span> <span class="arithmatex">\(3\alpha^{2}(\alpha-2) + 5(\alpha-2) =\)</span> <span class="arithmatex">\((\alpha-2)(3\alpha^{2}+5)\)</span></li>
+<li><span class="arithmatex">\(2x^{4} - 2x^{3} + 3x - 3 =\)</span> <span class="arithmatex">\(2x^{3}(x-1) + 3(x-1) =\)</span> <span class="arithmatex">\((x-1)(2x^{3}+3)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{3} - \alpha^{2}\beta - \alpha\beta^{2} + \beta^{3} =\)</span> <span class="arithmatex">\(\alpha^{2}(\alpha-\beta) - \beta^{2}(\alpha-\beta) =\)</span> <span class="arithmatex">\((\alpha-\beta)(\alpha^{2}-\beta^{2}) =\)</span> <span class="arithmatex">\((\alpha-\beta)^{2}(\alpha+\beta)\)</span></li>
+<li><span class="arithmatex">\(6x^{2} + xy + 18xw + 3y\omega =\)</span> <span class="arithmatex">\(x(6x+y) + 3w(6x+y) =\)</span> <span class="arithmatex">\((6x+y)(x+3w)\)</span></li>
+<li><span class="arithmatex">\(8xy^{3} - 24y^{2} - 7\alpha xy + 21\alpha =\)</span> <span class="arithmatex">\(8y^{2}(xy-3) - 7\alpha(xy-3) =\)</span> <span class="arithmatex">\((xy-3)(8y^{2}-7\alpha)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Διαφορά Τετραγώνων</strong> Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\(x^{2} - 9 =\)</span> <span class="arithmatex">\((x-3)(x+3)\)</span></li>
+<li><span class="arithmatex">\(25x^{2} - 4 =\)</span> <span class="arithmatex">\((5x-2)(5x+2)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{2}\beta^{2} - y^{2} =\)</span> <span class="arithmatex">\((\alpha\beta-y)(\alpha\beta+y)\)</span></li>
+<li><span class="arithmatex">\(81\alpha^{2} - 49\beta^{2} =\)</span> <span class="arithmatex">\((9\alpha-7\beta)(9\alpha+7\beta)\)</span></li>
+<li><span class="arithmatex">\(16\alpha^{2} - x^{2}y^{2} =\)</span> <span class="arithmatex">\((4\alpha-xy)(4\alpha+xy)\)</span></li>
+<li><span class="arithmatex">\(4\alpha^{4} - 9\beta^{2} =\)</span> <span class="arithmatex">\((2\alpha^{2}-3\beta)(2\alpha^{2}+3\beta)\)</span></li>
+<li><span class="arithmatex">\(25\alpha^{2}x^{2} - 9\beta^{2} =\)</span> <span class="arithmatex">\((5\alpha x-3\beta)(5\alpha x+3\beta)\)</span></li>
+<li><span class="arithmatex">\(x^{5}y^{4} - x =\)</span> <span class="arithmatex">\(x(x^{4}y^{4}-1) =\)</span> <span class="arithmatex">\(x(x^{2}y^{2}-1)(x^{2}y^{2}+1) =\)</span> <span class="arithmatex">\(x(xy-1)(xy+1)(x^{2}y^{2}+1)\)</span></li>
+<li><span class="arithmatex">\((x-y)^{2} - 1 =\)</span> <span class="arithmatex">\((x-y-1)(x-y+1)\)</span></li>
+<li><span class="arithmatex">\((\alpha-2\beta)^{2} - 4\beta^{2} =\)</span> <span class="arithmatex">\((\alpha-2\beta-2\beta)(\alpha-2\beta+2\beta) =\)</span> <span class="arithmatex">\(\alpha(\alpha-4\beta)\)</span></li>
+<li><span class="arithmatex">\((\alpha+\beta)^{2} - (\alpha-\beta)^{2} =\)</span> <span class="arithmatex">\([(\alpha+\beta)-(\alpha-\beta)][(\alpha+\beta)+(\alpha-\beta)] =\)</span> <span class="arithmatex">\(4\alpha\beta\)</span></li>
+<li><span class="arithmatex">\((4x+2y)^{2} - (2x-3y)^{2} =\)</span> <span class="arithmatex">\((4x+2y-2x+3y)(4x+2y+2x-3y) =\)</span> <span class="arithmatex">\((2x+5y)(6x-y)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Συνδυαστικές (Κοινός Παράγοντας &amp; Διαφορά Τετραγώνων)</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\(3x^{3} - 3x =\)</span> <span class="arithmatex">\(3x(x^{2}-1) =\)</span> <span class="arithmatex">\(3x(x-1)(x+1)\)</span></li>
+<li><span class="arithmatex">\(x^{\mu+2} - x^{\mu} =\)</span> <span class="arithmatex">\(x^{\mu}(x^{2}-1) =\)</span> <span class="arithmatex">\(x^{\mu}(x-1)(x+1)\)</span></li>
+<li><span class="arithmatex">\(x^{4} - y^{4} =\)</span> <span class="arithmatex">\((x^{2}-y^{2})(x^{2}+y^{2}) =\)</span> <span class="arithmatex">\((x-y)(x+y)(x^{2}+y^{2})\)</span></li>
+<li><span class="arithmatex">\(3\alpha^{3}\beta - 27\alpha\beta^{3} =\)</span> <span class="arithmatex">\(3\alpha\beta(\alpha^{2}-9\beta^{2}) =\)</span> <span class="arithmatex">\(3\alpha\beta(\alpha-3\beta)(\alpha+3\beta)\)</span></li>
+<li><span class="arithmatex">\((x-y) - (\alpha+\beta)^{2}(x-y) =\)</span> <span class="arithmatex">\((x-y)[1-(\alpha+\beta)^{2}] =\)</span> <span class="arithmatex">\((x-y)(1-\alpha-\beta)(1+\alpha+\beta)\)</span></li>
+<li><span class="arithmatex">\((\alpha^{2}-12)^{2} - 4 =\)</span> <span class="arithmatex">\((\alpha^{2}-12-2)(\alpha^{2}-12+2) =\)</span> <span class="arithmatex">\((\alpha^{2}-14)(\alpha^{2}-10)\)</span></li>
+<li><span class="arithmatex">\(5x^{5}y - 20xy^{3} =\)</span> <span class="arithmatex">\(5xy(x^{4}-4y^{2}) =\)</span> <span class="arithmatex">\(5xy(x^{2}-2y)(x^{2}+2y)\)</span></li>
+<li><span class="arithmatex">\((5\alpha^{2}+2\alpha-3)^{2} - (\alpha^{2}-2\alpha-3)^{2} =\)</span> <span class="arithmatex">\([5\alpha^{2}+2\alpha-3-(\alpha^{2}-2\alpha-3)][5\alpha^{2}+2\alpha-3+(\alpha^{2}-2\alpha-3)] =\)</span> <span class="arithmatex">\((4\alpha^{2}+4\alpha)(6\alpha^{2}-6) =\)</span> <span class="arithmatex">\(4\alpha(\alpha+1) \cdot 6(\alpha-1)(\alpha+1) =\)</span> <span class="arithmatex">\(24\alpha(\alpha-1)(\alpha+1)^{2}\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Εφαρμογή Διαφοράς Τετραγώνων</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\(3x^{2} - 12y^{2} =\)</span> <span class="arithmatex">\(3(x^{2}-4y^{2}) =\)</span> <span class="arithmatex">\(3(x-2y)(x+2y)\)</span></li>
+<li><span class="arithmatex">\(9(\alpha+\beta)^{2} - 4(\alpha-\beta)^{2} =\)</span> <span class="arithmatex">\([3(\alpha+\beta)-2(\alpha-\beta)][3(\alpha+\beta)+2(\alpha-\beta)] =\)</span> <span class="arithmatex">\((\alpha+5\beta)(5\alpha+\beta)\)</span></li>
+<li><span class="arithmatex">\(4x^{3} - 49x =\)</span> <span class="arithmatex">\(x(4x^{2}-49) =\)</span> <span class="arithmatex">\(x(2x-7)(2x+7)\)</span></li>
+<li><span class="arithmatex">\(x^{8} - 16y^{4} =\)</span> <span class="arithmatex">\((x^{4}-4y^{2})(x^{4}+4y^{2}) =\)</span> <span class="arithmatex">\((x^{2}-2y)(x^{2}+2y)(x^{4}+4y^{2})\)</span></li>
+<li><span class="arithmatex">\((2x-y)^{2} - 1 =\)</span> <span class="arithmatex">\((2x-y-1)(2x-y+1)\)</span></li>
+</ul>
+</li>
+</ol>
+<h2 id="-2">ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Α' ΟΜΑΔΑ - Μέρος 2ο)</h2>
+<ol>
+<li>
+<p><strong>Αθροίσματα &amp; Διαφορές Κύβων</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις κάνοντας χρήση των ταυτοτήτων <span class="arithmatex">\(a^3 \pm \beta^3\)</span>:</p>
+<ul>
+<li><span class="arithmatex">\(\alpha^{3} - 8 =\)</span> <span class="arithmatex">\((\alpha-2)(\alpha^{2}+2\alpha+4)\)</span></li>
+<li><span class="arithmatex">\(1 - 64x^{3} =\)</span> <span class="arithmatex">\((1-4x)(1+4x+16x^{2})\)</span></li>
+<li><span class="arithmatex">\(\alpha^{6} - \beta^{6} =\)</span> <span class="arithmatex">\((\alpha^{3}-\beta^{3})(\alpha^{3}+\beta^{3}) =\)</span> <span class="arithmatex">\((\alpha-\beta)(\alpha^{2}+\alpha\beta+\beta^{2})(\alpha+\beta)(\alpha^{2}-\alpha\beta+\beta^{2})\)</span></li>
+<li><span class="arithmatex">\(8x^{3} + 27 =\)</span> <span class="arithmatex">\((2x+3)(4x^{2}-6x+9)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{3} - (\beta-y)^{3} =\)</span> <span class="arithmatex">\([\alpha-(\beta-y)][\alpha^{2}+\alpha(\beta-y)+(\beta-y)^{2}]\)</span></li>
+<li><span class="arithmatex">\(-3x^{6} + 3 =\)</span> <span class="arithmatex">\(-3(x^{6}-1) =\)</span> <span class="arithmatex">\(-3(x^{3}-1)(x^{3}+1) =\)</span> <span class="arithmatex">\(-3(x-1)(x^{2}+x+1)(x+1)(x^{2}-x+1)\)</span></li>
+<li><span class="arithmatex">\(x^{3}y^{3} - 1 =\)</span> <span class="arithmatex">\((xy-1)(x^{2}y^{2}+xy+1)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{4}\beta - \alpha\beta^{4} =\)</span> <span class="arithmatex">\(\alpha\beta(\alpha^{3}-\beta^{3}) =\)</span> <span class="arithmatex">\(\alpha\beta(\alpha-\beta)(\alpha^{2}+\alpha\beta+\beta^{2})\)</span></li>
+<li><span class="arithmatex">\(\alpha^{7} - \alpha =\)</span> <span class="arithmatex">\(\alpha(\alpha^{6}-1) =\)</span> <span class="arithmatex">\(\alpha(\alpha-1)(\alpha^{2}+\alpha+1)(\alpha+1)(\alpha^{2}-\alpha+1)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Κύβοι και Ταυτότητες</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\(2x^{3}-16 =\)</span> <span class="arithmatex">\(2(x^{3}-8) =\)</span> <span class="arithmatex">\(2(x-2)(x^{2}+2x+4)\)</span></li>
+<li><span class="arithmatex">\(x^{6}-y^{6} =\)</span> <span class="arithmatex">\((x^{3}-y^{3})(x^{3}+y^{3}) =\)</span> <span class="arithmatex">\((x-y)(x^{2}+xy+y^{2})(x+y)(x^{2}-xy+y^{2})\)</span></li>
+<li><span class="arithmatex">\((\alpha+\beta)^{3}+(\alpha-\beta)^{3} =\)</span> <span class="arithmatex">\([(\alpha+\beta)+(\alpha-\beta)][(\alpha+\beta)^{2}-(\alpha+\beta)(\alpha-\beta)+(\alpha-\beta)^{2}] =\)</span> <span class="arithmatex">\(2\alpha(\alpha^{2}+3\beta^{2}) =\)</span> <span class="arithmatex">\(2\alpha^{3}+6\alpha\beta^{2}\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Τέλεια Τετράγωνα</strong> Να αναγνωρίσετε και να συμπτύξετε τα παρακάτω αναπτύγματα τετραγώνου:</p>
+<ul>
+<li><span class="arithmatex">\(x^{2}+10x+25 =\)</span> <span class="arithmatex">\((x+5)^{2}\)</span></li>
+<li><span class="arithmatex">\(x^{2}-x+\frac{1}{4} =\)</span> <span class="arithmatex">\(\left(x-\frac{1}{2}\right)^{2}\)</span></li>
+<li><span class="arithmatex">\(4x^{4}+1+4x^{2} =\)</span> <span class="arithmatex">\((2x^{2})^{2}+2(2x^{2})(1)+1^{2} =\)</span> <span class="arithmatex">\((2x^{2}+1)^{2}\)</span></li>
+<li><span class="arithmatex">\(\frac{2xy}{3}+\frac{y^{2}}{9}+\frac{x^{2}}{9} =\)</span> <span class="arithmatex">\(\left(\frac{x}{3}+\frac{y}{3}\right)^{2}\)</span>)</li>
+<li><span class="arithmatex">\(\alpha^{4}+9\beta^{2}-6\alpha^{2}\beta =\)</span> <span class="arithmatex">\((\alpha^{2})^{2}-2(\alpha^{2})(3\beta)+(3\beta)^{2} =\)</span> <span class="arithmatex">\((\alpha^{2}-3\beta)^{2}\)</span></li>
+<li><span class="arithmatex">\(25x^{2}y^{2}-20xy+4 =\)</span> <span class="arithmatex">\((5xy)^{2}-2(5xy)(2)+2^{2} =\)</span> <span class="arithmatex">\((5xy-2)^{2}\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Τριώνυμα (Μορφή Vieta και Διάσπαση Όρων)</strong> Να παραγοντοποιήσετε τα παρακάτω τριώνυμα αναζητώντας δύο αριθμούς με το κατάλληλο άθροισμα και γινόμενο, ή μέσω διάσπασης του μεσαίου όρου:</p>
+<ul>
+<li><span class="arithmatex">\(x^{2}-4x+3\)</span> (Γινόμενο <span class="arithmatex">\(3\)</span>, Άθροισμα <span class="arithmatex">\(-4\)</span>): <span class="arithmatex">\((x-1)(x-3)\)</span></li>
+<li><span class="arithmatex">\(x^{2}-8x+7\)</span> (Γινόμενο <span class="arithmatex">\(7\)</span>, Άθροισμα <span class="arithmatex">\(-8\)</span>): <span class="arithmatex">\((x-1)(x-7)\)</span></li>
+<li><span class="arithmatex">\(x^{2}+5x+4\)</span> (Γινόμενο <span class="arithmatex">\(4\)</span>, Άθροισμα <span class="arithmatex">\(5\)</span>): <span class="arithmatex">\((x+1)(x+4)\)</span></li>
+<li><span class="arithmatex">\(x^{2}-3xy-4y^{2}\)</span> (Γινόμενο <span class="arithmatex">\(-4y^2\)</span>, Άθροισμα <span class="arithmatex">\(-3y\)</span>): <span class="arithmatex">\((x-4y)(x+y)\)</span></li>
+<li><span class="arithmatex">\(x^{2}-3x-10\)</span> (Γινόμενο <span class="arithmatex">\(-10\)</span>, Άθροισμα <span class="arithmatex">\(-3\)</span>): <span class="arithmatex">\((x-5)(x+2)\)</span></li>
+<li><span class="arithmatex">\(2x^{2}-5x-3\)</span> (Διάσπαση): <span class="arithmatex">\(2x^{2}-6x+x-3 =\)</span> <span class="arithmatex">\(2x(x-3)+1(x-3) =\)</span> <span class="arithmatex">\((2x+1)(x-3)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{2}-3\alpha\beta+2\beta^{2}\)</span> (Γινόμενο <span class="arithmatex">\(2\beta^2\)</span>, Άθροισμα <span class="arithmatex">\(-3\beta\)</span>): <span class="arithmatex">\((\alpha-\beta)(\alpha-2\beta)\)</span></li>
+<li><span class="arithmatex">\(6x^{2}+7x-3\)</span> (Διάσπαση): <span class="arithmatex">\(6x^{2}+9x-2x-3 =\)</span> <span class="arithmatex">\(3x(2x+3)-(2x+3) =\)</span> <span class="arithmatex">\((3x-1)(2x+3)\)</span></li>
+<li><span class="arithmatex">\(6x^{2}+x-2\)</span> (Διάσπαση): <span class="arithmatex">\(6x^{2}+4x-3x-2 =\)</span> <span class="arithmatex">\(2x(3x+2)-(3x+2) =\)</span> <span class="arithmatex">\((2x-1)(3x+2)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Σύνθετη Ομαδοποίηση</strong>
+Να παραγοντοποιήσετε με τη μέθοδο της ομαδοποίησης:</p>
+<ul>
+<li><span class="arithmatex">\(\alpha^{2}\gamma-\alpha^{2}\delta-\beta^{2}\delta+\beta^{2}\gamma =\)</span> <span class="arithmatex">\(\alpha^{2}(\gamma-\delta) + \beta^{2}(\gamma-\delta) =\)</span> <span class="arithmatex">\((\gamma-\delta)(\alpha^{2}+\beta^{2})\)</span></li>
+<li><span class="arithmatex">\(a^{2}-b^{2}-2a+2b =\)</span> <span class="arithmatex">\((a-b)(a+b) - 2(a-b) =\)</span> <span class="arithmatex">\((a-b)(a+b-2)\)</span></li>
+<li><span class="arithmatex">\(4x-4y+ay-ax =\)</span> <span class="arithmatex">\(4(x-y) - a(x-y) =\)</span> <span class="arithmatex">\((x-y)(4-a)\)</span></li>
+<li><span class="arithmatex">\(x^{2}+y\omega-xy-x\omega =\)</span> <span class="arithmatex">\(x^{2}-xy - x\omega+y\omega =\)</span> <span class="arithmatex">\(x(x-y) - \omega(x-y) =\)</span> <span class="arithmatex">\((x-y)(x-\omega)\)</span></li>
+<li><span class="arithmatex">\(\beta \gamma-\alpha^{2}+\alpha \gamma-\alpha\beta =\)</span> <span class="arithmatex">\((\gamma\beta + \gamma\alpha) - (\alpha^{2} + \alpha\beta) =\)</span> <span class="arithmatex">\(\gamma(\beta+\alpha) - \alpha(\alpha+\beta) =\)</span> <span class="arithmatex">\((\alpha+\beta)(\gamma-\alpha)\)</span></li>
+<li><span class="arithmatex">\(x^{3}-15+5x^{2}-3x =\)</span> <span class="arithmatex">\((x^{3}+5x^{2}) - (3x+15) =\)</span> <span class="arithmatex">\(x^{2}(x+5) - 3(x+5) =\)</span> <span class="arithmatex">\((x+5)(x^{2}-3)\)</span></li>
+<li><span class="arithmatex">\(a^{2}b^{2}-1+b^{2}-a^{2} =\)</span> <span class="arithmatex">\((a^{2}b^{2}-a^{2}) + (b^{2}-1) =\)</span> <span class="arithmatex">\(a^{2}(b^{2}-1) + 1(b^{2}-1) =\)</span> <span class="arithmatex">\((b^{2}-1)(a^{2}+1) =\)</span> <span class="arithmatex">\((b-1)(b+1)(a^{2}+1)\)</span></li>
+<li><span class="arithmatex">\(x^{3}-2x^{2}-x+2 =\)</span> <span class="arithmatex">\(x^{2}(x-2) - 1(x-2) =\)</span> <span class="arithmatex">\((x-2)(x^{2}-1) =\)</span> <span class="arithmatex">\((x-2)(x-1)(x+1)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Συνδυαστικές Παραγοντοποιήσεις (Μέθοδος 3-1)</strong>
+Να αναγνωρίσετε τις ταυτότητες τέλειου τετραγώνου που "κρύβονται" σε πολυώνυμα 4 όρων, οδηγώντας σε διαφορά τετραγώνων:</p>
+<ul>
+<li><span class="arithmatex">\(\alpha^{2}+2\alpha\beta+\beta^{2}-y^{2} =\)</span> <span class="arithmatex">\((\alpha+\beta)^{2} - y^{2} =\)</span> <span class="arithmatex">\((\alpha+\beta-y)(\alpha+\beta+y)\)</span></li>
+<li><span class="arithmatex">\(x^{2}-y^{2}-2\alpha y-\alpha^{2} =\)</span> <span class="arithmatex">\(x^{2} - (y^{2}+2\alpha y+\alpha^{2}) =\)</span> <span class="arithmatex">\(x^{2} - (y+\alpha)^{2} =\)</span> <span class="arithmatex">\((x-y-\alpha)(x+y+\alpha)\)</span></li>
+<li><span class="arithmatex">\(9-9\alpha^{2}-\beta^{2}+6\alpha\beta =\)</span> <span class="arithmatex">\(9 - (9\alpha^{2}-6\alpha\beta+\beta^{2}) =\)</span> <span class="arithmatex">\(3^{2} - (3\alpha-\beta)^{2} =\)</span> <span class="arithmatex">\((3-3\alpha+\beta)(3+3\alpha-\beta)\)</span></li>
+<li><span class="arithmatex">\(4\alpha^{2}-\beta^{2}+4\beta x-4x^{2} =\)</span> <span class="arithmatex">\(4\alpha^{2} - (\beta^{2}-4\beta x+4x^{2}) =\)</span> <span class="arithmatex">\((2\alpha)^{2} - (\beta-2x)^{2} =\)</span> <span class="arithmatex">\((2\alpha-\beta+2x)(2\alpha+\beta-2x)\)</span></li>
+<li><span class="arithmatex">\(x^{4}-x^{2}-2x-1 =\)</span> <span class="arithmatex">\((x^{2})^{2} - (x^{2}+2x+1) =\)</span> <span class="arithmatex">\((x^{2})^{2} - (x+1)^{2} =\)</span> <span class="arithmatex">\((x^{2}-x-1)(x^{2}+x+1)\)</span></li>
+<li><span class="arithmatex">\(y^{2}-x^{2}+2x-1 =\)</span> <span class="arithmatex">\(y^{2} - (x^{2}-2x+1) =\)</span> <span class="arithmatex">\(y^{2} - (x-1)^{2} =\)</span> <span class="arithmatex">\((y-x+1)(y+x-1)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Προχωρημένες και Σύνθετες Μορφές</strong>
+Να παραγοντοποιήσετε τις παρακάτω σύνθετες αλγεβρικές παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\(5\alpha^{2}+10\alpha\beta+5\beta^{2}-5 =\)</span> <span class="arithmatex">\(5(\alpha^{2} + 2\alpha\beta + \beta^{2} - 1) =\)</span> <span class="arithmatex">\(5[(\alpha+\beta)^{2} - 1^{2}] =\)</span> <span class="arithmatex">\(5(\alpha+\beta-1)(\alpha+\beta+1)\)</span></li>
+<li><span class="arithmatex">\((2x^{2}-5x+2)^{2}-4x^{2}+4x-1 =\)</span> <span class="arithmatex">\((2x^{2}-5x+2)^{2} - (2x-1)^{2} =\)</span> <span class="arithmatex">\((2x^{2}-7x+3)(2x^{2}-3x+1) =\)</span> <span class="arithmatex">\((2x-1)^{2}(x-3)(x-1)\)</span></li>
+<li><span class="arithmatex">\((x^{2}-5x+6)(x-1)-(x-3)(x^{2}-1) =\)</span> <span class="arithmatex">\((x-2)(x-3)(x-1) - (x-3)(x-1)(x+1) =\)</span> <span class="arithmatex">\((x-3)(x-1) [(x-2) - (x+1)] =\)</span> <span class="arithmatex">\(-3(x-3)(x-1)\)</span></li>
+<li><span class="arithmatex">\((a-3)^{2}-a+3 =\)</span> <span class="arithmatex">\((a-3)^{2} - (a-3) =\)</span> <span class="arithmatex">\((a-3) [(a-3) - 1] =\)</span> <span class="arithmatex">\((a-3)(a-4)\)</span></li>
+<li><span class="arithmatex">\((3x-6)(x^{2}-1)-(5x-10)(x-1)^{2} =\)</span> <span class="arithmatex">\(3(x-2)(x-1)(x+1) - 5(x-2)(x-1)^{2} =\)</span> <span class="arithmatex">\((x-2)(x-1) [3(x+1) - 5(x-1)] =\)</span> <span class="arithmatex">\(-2(x-2)(x-1)(x-4)\)</span></li>
+<li><span class="arithmatex">\(3(x+5)(x+2)^{2}-12x-60 =\)</span> <span class="arithmatex">\(3(x+5)(x+2)^{2} - 12(x+5) =\)</span> <span class="arithmatex">\(3(x+5) [(x+2)^{2} - 4] =\)</span> <span class="arithmatex">\(3(x+5) (x+2-2)(x+2+2) =\)</span> <span class="arithmatex">\(3x(x+5)(x+4)\)</span></li>
+<li><span class="arithmatex">\(x^{4}-y^{4}-(x-y)(x+y)^{3} =\)</span> <span class="arithmatex">\((x-y)(x+y)(x^{2}+y^{2}) - (x-y)(x+y)(x+y)^{2} =\)</span> <span class="arithmatex">\((x-y)(x+y) [ (x^{2}+y^{2}) - (x^{2}+2xy+y^{2}) ] =\)</span> <span class="arithmatex">\(-2xy(x-y)(x+y)\)</span></li>
+</ul>
+</li>
+</ol>
+<h2 id="-1_1">ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Β' ΟΜΑΔΑ - Μέρος 1ο)</h2>
+<ol>
+<li>
+<p><strong>Παραγοντοποίηση κατά Ομάδες</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις με τη μέθοδο της ομαδοποίησης:</p>
+<ul>
+<li><span class="arithmatex">\(\alpha x^{2}-\alpha y^{2}+\beta x^{2}-\beta y^{2} =\)</span> <span class="arithmatex">\(\alpha(x^{2}-y^{2}) + \beta(x^{2}-y^{2}) =\)</span> <span class="arithmatex">\((x^{2}-y^{2})(\alpha+\beta) =\)</span> <span class="arithmatex">\((x-y)(x+y)(\alpha+\beta)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{2}x-\alpha^{2}y+y-x =\)</span> <span class="arithmatex">\(\alpha^{2}(x-y) - (x-y) =\)</span> <span class="arithmatex">\((x-y)(\alpha^{2}-1) =\)</span> <span class="arithmatex">\((x-y)(\alpha-1)(\alpha+1)\)</span></li>
+<li><span class="arithmatex">\(x^{2}y^{2}-9y^{2}-x^{2}+9 =\)</span> <span class="arithmatex">\(y^{2}(x^{2}-9) - (x^{2}-9) =\)</span> <span class="arithmatex">\((x^{2}-9)(y^{2}-1) =\)</span> <span class="arithmatex">\((x-3)(x+3)(y-1)(y+1)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{5}-1+\alpha^{4}-\alpha =\)</span> <span class="arithmatex">\((\alpha^{5}+\alpha^{4}) - (\alpha+1) =\)</span> <span class="arithmatex">\(\alpha^{4}(\alpha+1) - (\alpha+1) =\)</span> <span class="arithmatex">\((\alpha+1)(\alpha^{4}-1) =\)</span> <span class="arithmatex">\((\alpha+1)(\alpha^{2}-1)(\alpha^{2}+1) =\)</span> <span class="arithmatex">\((\alpha+1)^{2}(\alpha-1)(\alpha^{2}+1)\)</span></li>
+<li><span class="arithmatex">\(5(4-x^{2})-(x-2)^{2} =\)</span> <span class="arithmatex">\(5(2-x)(2+x) - (x-2)^{2} =\)</span> <span class="arithmatex">\(-5(x-2)(x+2) - (x-2)^{2} =\)</span> <span class="arithmatex">\((x-2)[-5(x+2)-(x-2)] =\)</span> <span class="arithmatex">\((x-2)(-5x-10-x+2) =\)</span> <span class="arithmatex">\(-2(x-2)(3x+4)\)</span></li>
+<li><span class="arithmatex">\((5-3x)(x+4)+(3x-5)(2x-3)+9x^{2}-25 =\)</span> <span class="arithmatex">\((5-3x)(x+4) - (5-3x)(2x-3) + (3x-5)(3x+5) =\)</span> <span class="arithmatex">\((5-3x)[x+4 - (2x-3) - (3x+5)] =\)</span> <span class="arithmatex">\((5-3x)(x+4-2x+3-3x-5) =\)</span> <span class="arithmatex">\(2(5-3x)(1-2x)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Κύβοι και Πολυώνυμα</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\(\alpha^{3}x^{3}-\beta^{3}x^{3}+\alpha^{3}-\beta^{3} =\)</span> <span class="arithmatex">\(x^{3}(\alpha^{3}-\beta^{3}) + (\alpha^{3}-\beta^{3}) =\)</span> <span class="arithmatex">\((\alpha^{3}-\beta^{3})(x^{3}+1) =\)</span> <span class="arithmatex">\((\alpha-\beta)(\alpha^{2}+\alpha\beta+\beta^{2})(x+1)(x^{2}-x+1)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{3}+\beta^{3}+\alpha^{2}\beta+\alpha\beta^{2} =\)</span> <span class="arithmatex">\((\alpha+\beta)(\alpha^{2}-\alpha\beta+\beta^{2}) + \alpha\beta(\alpha+\beta) =\)</span> <span class="arithmatex">\((\alpha+\beta)(\alpha^{2}-\alpha\beta+\beta^{2}+\alpha\beta) =\)</span> <span class="arithmatex">\((\alpha+\beta)(\alpha^{2}+\beta^{2})\)</span></li>
+<li><span class="arithmatex">\((x-1)^{3}(x^{2}-4)-(x^{2}-4) =\)</span> <span class="arithmatex">\((x^{2}-4)[(x-1)^{3}-1] =\)</span> <span class="arithmatex">\((x-2)(x+2)(x-1-1)[(x-1)^{2}+(x-1)+1] =\)</span> <span class="arithmatex">\((x-2)^{2}(x+2)(x^{2}-x+1)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Τέλειες Ταυτότητες</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις αναγνωρίζοντας το ανάπτυγμα τέλειου τετραγώνου:</p>
+<ul>
+<li><span class="arithmatex">\((\alpha+\beta)^{2}-2(\alpha+\beta)+1 =\)</span> <span class="arithmatex">\((\alpha+\beta-1)^{2}\)</span> <em>(Είναι της μορφής <span class="arithmatex">\(u^{2}-2u+1 =\)</span> <span class="arithmatex">\((u-1)^{2}\)</span>)</em></li>
+<li><span class="arithmatex">\(x^{2}-4x^{3}+4x^{4} =\)</span> <span class="arithmatex">\(x^{2}(1-4x+4x^{2}) =\)</span> <span class="arithmatex">\(x^{2}(1-2x)^{2} =\)</span> <span class="arithmatex">\([x(1-2x)]^{2}\)</span></li>
+<li><span class="arithmatex">\(9(x+y)^{2}-6y(x+y)+y^{2} =\)</span> <span class="arithmatex">\([3(x+y)-y]^{2} =\)</span> <span class="arithmatex">\((3x+3y-y)^{2} =\)</span> <span class="arithmatex">\((3x+2y)^{2}\)</span></li>
+<li><span class="arithmatex">\(x^{3}+2x^{2}+x+xy+y =\)</span> <span class="arithmatex">\(x(x^{2}+2x+1) + y(x+1) =\)</span> <span class="arithmatex">\(x(x+1)^{2} + y(x+1) =\)</span> <span class="arithmatex">\((x+1)(x^{2}+x+y)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Παραγοντοποίηση με Συμπλήρωση Τετραγώνου</strong>
+Στις παρακάτω ασκήσεις, η βασική ιδέα είναι να προσθέσουμε και να αφαιρέσουμε έναν κατάλληλο όρο ώστε να σχηματιστεί ένα τέλειο τετράγωνο και στη συνέχεια να εφαρμόσουμε τη διαφορά τετραγώνων <span class="arithmatex">\(A^2 - B^2\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\(x^{4} + 3x^{2}y^{2} + 4y^{4}\)</span>: Για να είναι το <span class="arithmatex">\(x^4 + 4y^4\)</span> τέλειο τετράγωνο, χρειαζόμαστε το διπλάσιο γινόμενο <span class="arithmatex">\(2 \cdot x^2 \cdot 2y^2 =\)</span> <span class="arithmatex">\(4x^2y^2\)</span>. Άρα προσθαφαιρούμε το <span class="arithmatex">\(x^2y^2\)</span>: <span class="arithmatex">\((x^{4} + 4x^{2}y^{2} + 4y^{4}) - x^{2}y^{2} =\)</span> <span class="arithmatex">\((x^{2} + 2y^{2})^{2} - (xy)^{2} =\)</span> <span class="arithmatex">\((x^{2} + 2y^{2} - xy)(x^{2} + 2y^{2} + xy)\)</span>.</li>
+<li><span class="arithmatex">\(16\alpha^{4} + 4\alpha^{2}\beta^{2} + \beta^{4}\)</span>: Χρειαζόμαστε διπλάσιο γινόμενο <span class="arithmatex">\(2 \cdot 4\alpha^2 \cdot \beta^2 =\)</span> <span class="arithmatex">\(8\alpha^2\beta^2\)</span>. Άρα: <span class="arithmatex">\((16\alpha^{4} + 8\alpha^{2}\beta^{2} + \beta^{4}) - 4\alpha^{2}\beta^{2} =\)</span> <span class="arithmatex">\((4\alpha^{2} + \beta^{2})^{2} - (2\alpha\beta)^{2} =\)</span> <span class="arithmatex">\((4\alpha^{2} + \beta^{2} - 2\alpha\beta)(4\alpha^{2} + \beta^{2} + 2\alpha\beta)\)</span>.</li>
+<li><span class="arithmatex">\(\mu^{4} + 3\mu^{2}\nu^{2} + 4\nu^{4}\)</span>: Χρειαζόμαστε <span class="arithmatex">\(4\mu^2\nu^2\)</span>. Άρα: <span class="arithmatex">\((\mu^{4} + 4\mu^{2}\nu^{2} + 4\nu^{4}) - \mu^{2}\nu^{2} =\)</span> <span class="arithmatex">\((\mu^{2} + 2\nu^{2})^{2} - (\mu\nu)^{2} =\)</span> <span class="arithmatex">\((\mu^{2} + 2\nu^{2} - \mu\nu)(\mu^{2} + 2\nu^{2} + \mu\nu)\)</span>.</li>
+<li><span class="arithmatex">\(16x^{4} + 36x^{2}y^{2} + 25y^{4}\)</span>: Χρειαζόμαστε <span class="arithmatex">\(2 \cdot 4x^2 \cdot 5y^2 =\)</span> <span class="arithmatex">\(40x^2y^2\)</span>. Άρα: <span class="arithmatex">\((16x^{4} + 40x^{2}y^{2} + 25y^{4}) - 4x^{2}y^{2} =\)</span> <span class="arithmatex">\((4x^{2} + 5y^{2})^{2} - (2xy)^{2} =\)</span> <span class="arithmatex">\((4x^{2} + 5y^{2} - 2xy)(4x^{2} + 5y^{2} + 2xy)\)</span>.</li>
+<li><span class="arithmatex">\(4x^{4} + 16x^{2}y^{2} + 25y^{4}\)</span>: Χρειαζόμαστε <span class="arithmatex">\(2 \cdot 2x^2 \cdot 5y^2 =\)</span> <span class="arithmatex">\(20x^2y^2\)</span>. Άρα: <span class="arithmatex">\((4x^{4} + 20x^{2}y^{2} + 25y^{4}) - 4x^{2}y^{2} =\)</span> <span class="arithmatex">\((2x^{2} + 5y^{2})^{2} - (2xy)^{2} =\)</span> <span class="arithmatex">\((2x^{2} + 5y^{2} - 2xy)(2x^{2} + 5y^{2} + 2xy)\)</span>.</li>
+<li><span class="arithmatex">\(9a^{4} + 26a^{2}\beta^{2} + 25\beta^{4}\)</span>: Χρειαζόμαστε <span class="arithmatex">\(2 \cdot 3a^2 \cdot 5\beta^2 =\)</span> <span class="arithmatex">\(30a^2\beta^2\)</span>. Άρα: <span class="arithmatex">\((9a^{4} + 30a^{2}\beta^{2} + 25\beta^{4}) - 4a^{2}\beta^{2} =\)</span> <span class="arithmatex">\((3a^{2} + 5\beta^{2})^{2} - (2a\beta)^{2} =\)</span> <span class="arithmatex">\((3a^{2} + 5\beta^{2} - 2a\beta)(3a^{2} + 5\beta^{2} + 2a\beta)\)</span>.</li>
+<li><span class="arithmatex">\(x^{4} + 5x^{2}y^{2} + 9y^{4}\)</span>: Χρειαζόμαστε <span class="arithmatex">\(2 \cdot x^2 \cdot 3y^2 =\)</span> <span class="arithmatex">\(6x^2y^2\)</span>. Άρα: <span class="arithmatex">\((x^{4} + 6x^{2}y^{2} + 9y^{4}) - x^{2}y^{2} =\)</span> <span class="arithmatex">\((x^{2} + 3y^{2})^{2} - (xy)^{2} =\)</span> <span class="arithmatex">\((x^{2} + 3y^{2} - xy)(x^{2} + 3y^{2} + xy)\)</span>.</li>
+<li><span class="arithmatex">\(x^{4} + x^{2} + 1\)</span>: Χρειαζόμαστε <span class="arithmatex">\(2x^2\)</span>. Άρα: <span class="arithmatex">\((x^{4} + 2x^{2} + 1) - x^{2} =\)</span> <span class="arithmatex">\((x^{2} + 1)^{2} - x^{2} =\)</span> <span class="arithmatex">\((x^{2} + 1 - x)(x^{2} + 1 + x)\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Συνδυασμός Ταυτοτήτων</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις συνδυάζοντας την ομαδοποίηση με ταυτότητες:</p>
+<ul>
+<li><span class="arithmatex">\(\alpha^{2}-2\alpha\beta+\beta^{2}-\gamma^{2} =\)</span> <span class="arithmatex">\((\alpha-\beta)^{2}-\gamma^{2} =\)</span> <span class="arithmatex">\((\alpha-\beta-\gamma)(\alpha-\beta+\gamma)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{2}+2a\beta+\beta^{2}-x^{2}+4x-4 =\)</span> <span class="arithmatex">\((\alpha^{2}+2a\beta+\beta^{2}) - (x^{2}-4x+4) =\)</span> <span class="arithmatex">\((\alpha+\beta)^{2} - (x-2)^{2} =\)</span> <span class="arithmatex">\((\alpha+\beta-x+2)(\alpha+\beta+x-2)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{2}-2\alpha\beta+\beta^{2}-\alpha+\beta =\)</span> <span class="arithmatex">\((\alpha-\beta)^{2} - (\alpha-\beta) =\)</span> <span class="arithmatex">\((\alpha-\beta)(\alpha-\beta-1)\)</span></li>
+<li><span class="arithmatex">\((\alpha^{2}+\beta^{2}+y^{2})^{2}-4\alpha^{2}\beta^{2} =\)</span> <span class="arithmatex">\((\alpha^{2}+\beta^{2}+y^{2}-2\alpha\beta)(\alpha^{2}+\beta^{2}+y^{2}+2\alpha\beta) =\)</span> <span class="arithmatex">\([(\alpha-\beta)^{2}+y^{2}][(\alpha+\beta)^{2}+y^{2}]\)</span></li>
+<li><span class="arithmatex">\((\alpha^{2}+1)^{2}-4\alpha^{2} =\)</span> <span class="arithmatex">\((\alpha^{2}+1-2\alpha)(\alpha^{2}+1+2\alpha) =\)</span> <span class="arithmatex">\((\alpha-1)^{2}(\alpha+1)^{2} =\)</span> <span class="arithmatex">\([(\alpha-1)(\alpha+1)]^{2}\)</span></li>
+<li><span class="arithmatex">\(\alpha^{4}+4\beta^{4}-13\alpha^{2}\beta^{2} =\)</span> <span class="arithmatex">\((\alpha^{4}-4\alpha^{2}\beta^{2}+4\beta^{4}) - 9\alpha^{2}\beta^{2} =\)</span> <span class="arithmatex">\((\alpha^{2}-2\beta^{2})^{2} - (3\alpha\beta)^{2} =\)</span> <span class="arithmatex">\((\alpha^{2}-2\beta^{2}-3\alpha\beta)(\alpha^{2}-2\beta^{2}+3\alpha\beta)\)</span></li>
+<li><span class="arithmatex">\(x^{4}+5x^{2}y^{2}+9y^{4} =\)</span> <span class="arithmatex">\((x^{4}+6x^{2}y^{2}+9y^{4}) - x^{2}y^{2} =\)</span> <span class="arithmatex">\((x^{2}+3y^{2})^{2} - (xy)^{2} =\)</span> <span class="arithmatex">\((x^{2}+3y^{2}-xy)(x^{2}+3y^{2}+xy)\)</span></li>
+<li><span class="arithmatex">\((3x-6)(x^2-1)-(5x-10)(x-1)^2 =\)</span> <span class="arithmatex">\(3(x-2)(x-1)(x+1) - 5(x-2)(x-1)^{2} =\)</span> <span class="arithmatex">\((x-2)(x-1) [3(x+1) - 5(x-1)] =\)</span> <span class="arithmatex">\((x-2)(x-1) (-2x+8) =\)</span> <span class="arithmatex">\(-2(x-2)(x-1)(x-4)\)</span></li>
+<li><span class="arithmatex">\(y^{2}+2x-x^{2}-1 =\)</span> <span class="arithmatex">\(y^{2} - (x^{2}-2x+1) =\)</span> <span class="arithmatex">\(y^{2} - (x-1)^{2} =\)</span> <span class="arithmatex">\((y-x+1)(y+x-1)\)</span></li>
+<li><span class="arithmatex">\((\alpha^{2}-9)^{2}-(\alpha+3)^{2} =\)</span> <span class="arithmatex">\([(\alpha^{2}-9)-(\alpha+3)] \cdot [(\alpha^{2}-9)+(\alpha+3)] =\)</span> <span class="arithmatex">\((\alpha^{2}-\alpha-12) \cdot (\alpha^{2}+\alpha-6) =\)</span> <span class="arithmatex">\((\alpha-4)(\alpha+3)^{2}(\alpha-2)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Σύνθετες Μορφές</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις, προσέχοντας τα πρόσημα κατά την ομαδοποίηση:</p>
+<ul>
+<li><span class="arithmatex">\(4\alpha^{2}-4\alpha\beta+\beta^{2}-9\alpha^{2}\beta^{2} =\)</span> <span class="arithmatex">\((2\alpha-\beta)^{2} - (3\alpha\beta)^{2} =\)</span> <span class="arithmatex">\((2\alpha-\beta-3\alpha\beta)(2\alpha-\beta+3\alpha\beta)\)</span></li>
+<li><span class="arithmatex">\(4w^{2}+4w+1-4v^{2}+4v-1 =\)</span> <span class="arithmatex">\((4w^{2}+4w+1) - (4v^{2}-4v+1) =\)</span> <span class="arithmatex">\((2w+1)^{2} - (2v-1)^{2} =\)</span> <span class="arithmatex">\((2w-2v+2)(2w+2v) =\)</span> <span class="arithmatex">\(4(w-v+1)(w+v)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{2}-\beta^{2}+2\beta-1 =\)</span> <span class="arithmatex">\(\alpha^{2} - (\beta^{2}-2\beta+1) =\)</span> <span class="arithmatex">\(\alpha^{2} - (\beta-1)^{2} =\)</span> <span class="arithmatex">\((\alpha-\beta+1)(\alpha+\beta-1)\)</span></li>
+<li><span class="arithmatex">\(2xy+1-x^{2}-y^{2} =\)</span> <span class="arithmatex">\(1 - (x^{2}-2xy+y^{2}) =\)</span> <span class="arithmatex">\(1^{2} - (x-y)^{2} =\)</span> <span class="arithmatex">\((1-x+y)(1+x-y)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{2}+2\alpha\beta+\beta^{2}-\gamma^{2}-2\gamma\delta-\delta^{2} =\)</span> <span class="arithmatex">\((\alpha^{2}+2\alpha\beta+\beta^{2}) - (\gamma^{2}+2\gamma\delta+\delta^{2}) =\)</span> <span class="arithmatex">\((\alpha+\beta)^{2} - (\gamma+\delta)^{2} =\)</span> <span class="arithmatex">\((\alpha+\beta-\gamma-\delta)(\alpha+\beta+\gamma+\delta)\)</span></li>
+<li><span class="arithmatex">\((a^{2}-9)^{2}-(a+3)^{2} =\)</span> <span class="arithmatex">\([(a^{2}-9) - (a+3)] \cdot [(a^{2}-9) + (a+3)] =\)</span> <span class="arithmatex">\((a^{2}-a-12) \cdot (a^{2}+a-6) =\)</span> <span class="arithmatex">\((a-4)(a-2)(a+3)^{2}\)</span></li>
+</ul>
+</li>
+</ol>
+<h2 id="-2_1">ΛΥΜΕΝΕΣ ΑΣΚΗΣΕΙΣ (Β' ΟΜΑΔΑ - Μέρος 2ο)</h2>
+<ol>
+<li>
+<p><strong>Διάσπαση και Σχήμα Horner</strong>
+Να παραγοντοποιήσετε τις παρακάτω παραστάσεις με χρήση διάσπασης όρων ή ομαδοποίησης:</p>
+<ul>
+<li><span class="arithmatex">\(\alpha^{3}+2\alpha^{2}-1 =\)</span> <span class="arithmatex">\(\alpha^{3}+\alpha^{2}+\alpha^{2}-1 =\)</span> <span class="arithmatex">\(\alpha^{2}(\alpha+1) + (\alpha-1)(\alpha+1) =\)</span> <span class="arithmatex">\((\alpha+1)(\alpha^{2}+\alpha-1)\)</span></li>
+<li><span class="arithmatex">\(x^{3}-3\alpha^{2}x+2\alpha^{3} =\)</span> <span class="arithmatex">\(x^{3}-\alpha^{2}x-2\alpha^{2}x+2\alpha^{3} =\)</span> <span class="arithmatex">\(x(x^{2}-\alpha^{2}) - 2\alpha^{2}(x-\alpha) =\)</span> <span class="arithmatex">\((x-\alpha)(x^{2}+\alpha x-2\alpha^{2}) =\)</span> <span class="arithmatex">\((x-\alpha)^{2}(x+2\alpha)\)</span></li>
+<li><span class="arithmatex">\(x^{7}+8x^{4}-x^{3}-8 =\)</span> <span class="arithmatex">\(x^{4}(x^{3}+8) - (x^{3}+8) =\)</span> <span class="arithmatex">\((x^{3}+8)(x^{4}-1) =\)</span> <span class="arithmatex">\((x+2)(x^{2}-2x+4)(x-1)(x+1)(x^{2}+1)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{4}-\alpha^{3}-3\alpha^{2}+5\alpha-2 =\)</span> <span class="arithmatex">\((\alpha-1)(\alpha^{3}-3\alpha+2) =\)</span> <span class="arithmatex">\((\alpha-1)(\alpha-1)(\alpha^{2}+\alpha-2) =\)</span> <span class="arithmatex">\((\alpha-1)^{3}(\alpha+2)\)</span></li>
+<li><span class="arithmatex">\(a^{2}-ab-b-1 =\)</span> <span class="arithmatex">\((a^{2}-1) - (ab+b) =\)</span> <span class="arithmatex">\((a-1)(a+1) - b(a+1) =\)</span> <span class="arithmatex">\((a+1)(a-1-b)\)</span></li>
+<li><span class="arithmatex">\(x^{2}+y^{2}-4x+4y-2xy =\)</span> <span class="arithmatex">\((x^{2}-2xy+y^{2}) - 4x+4y =\)</span> <span class="arithmatex">\((x-y)^{2} - 4(x-y) =\)</span> <span class="arithmatex">\((x-y)(x-y-4)\)</span></li>
+<li><span class="arithmatex">\(x^{3}+2x^{2}-3 =\)</span> <span class="arithmatex">\(x^{3}-1 + 2x^{2}-2 =\)</span> <span class="arithmatex">\((x-1)(x^{2}+x+1) + 2(x^{2}-1) =\)</span> <span class="arithmatex">\((x-1)(x^{2}+3x+3)\)</span></li>
+<li><span class="arithmatex">\((a^{2}-16)^{2}-(a+4)^{2} =\)</span> <span class="arithmatex">\([(a^{2}-16) - (a+4)] \cdot [(a^{2}-16) + (a+4)] =\)</span> <span class="arithmatex">\((a^{2}-a-20) \cdot (a^{2}+a-12) =\)</span> <span class="arithmatex">\((a-5)(a-3)(a+4)^{2}\)</span></li>
+<li><span class="arithmatex">\(1-2\alpha+2\beta\gamma+\alpha^{2}-\beta^{2}-\gamma^{2} =\)</span> <span class="arithmatex">\((1-2\alpha+\alpha^{2}) - (\beta^{2}-2\beta\gamma+\gamma^{2}) =\)</span> <span class="arithmatex">\((1-\alpha)^{2} - (\beta-\gamma)^{2} =\)</span> <span class="arithmatex">\((1-\alpha-\beta+\gamma)(1-\alpha+\beta-\gamma)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{2}\beta+\beta^{2}\gamma+\gamma^{2}\alpha-\alpha\beta^{2}-\beta\gamma^{2}-\gamma\alpha^{2} =\)</span> <span class="arithmatex">\(\alpha^{2}(\beta-\gamma) - \alpha(\beta^{2}-\gamma^{2}) + \beta\gamma(\beta-\gamma) =\)</span> <span class="arithmatex">\(-(\alpha-\beta)(\beta-\gamma)(\gamma-\alpha)\)</span> <em>(Κυκλική παράσταση)</em></li>
+</ul>
+</li>
+<li>
+<p><strong>Επαναληπτικές, Κυκλικές και Ειδικές Μορφές</strong>
+Να παραγοντοποιήσετε τις ακόλουθες απαιτητικές παραστάσεις:</p>
+<ul>
+<li><span class="arithmatex">\(4x^{2}y^{2}-(x^{2}+y^{2}-w^{2})^{2} =\)</span> <span class="arithmatex">\([2xy-(x^{2}+y^{2}-w^{2})][2xy+(x^{2}+y^{2}-w^{2})] =\)</span> <span class="arithmatex">\((w-x+y)(w+x-y)(x+y-w)(x+y+w)\)</span></li>
+<li><span class="arithmatex">\(\alpha^{4}-\alpha^{2}-2\alpha-1 =\)</span> <span class="arithmatex">\(\alpha^{4} - (\alpha^{2}+2\alpha+1) =\)</span> <span class="arithmatex">\((\alpha^{2})^{2} - (\alpha+1)^{2} =\)</span> <span class="arithmatex">\((\alpha^{2}-\alpha-1)(\alpha^{2}+\alpha+1)\)</span></li>
+<li><span class="arithmatex">\((5x-10)(x^{2}-1)-(7x-14)(x-1)^{2} =\)</span> <span class="arithmatex">\(5(x-2)(x-1)(x+1) - 7(x-2)(x-1)^{2} =\)</span> <span class="arithmatex">\(-2(x-2)(x-1)(x-6)\)</span></li>
+<li><span class="arithmatex">\(x^{3}-x^{2}-x+1 =\)</span> <span class="arithmatex">\(x^{2}(x-1) - (x-1) =\)</span> <span class="arithmatex">\((x-1)^{2}(x+1)\)</span></li>
+<li><span class="arithmatex">\(y^{4}+6y^{2}+8 =\)</span> <span class="arithmatex">\((y^{2}+4)(y^{2}+2)\)</span> <em>(Τριώνυμο ως προς <span class="arithmatex">\(y^2\)</span>)</em></li>
+<li><span class="arithmatex">\(2x(2x+a)-y(y+a) =\)</span> <span class="arithmatex">\(4x^{2} + 2ax - y^{2} - ay =\)</span> <span class="arithmatex">\((4x^{2} - y^{2}) + (2ax - ay) =\)</span> <span class="arithmatex">\((2x-y)(2x+y+a)\)</span></li>
+<li><span class="arithmatex">\(1+xy+a(x+y)-(x+y)-a(1+xy) =\)</span> <span class="arithmatex">\((1+xy)(1-a) - (x+y)(1-a) =\)</span> <span class="arithmatex">\((1-a)(1-x)(1-y)\)</span></li>
+<li><span class="arithmatex">\(x^{3\mu}-3x^{2\mu}+3x^{\mu}-1 =\)</span> <span class="arithmatex">\((x^{\mu}-1)^{3}\)</span> <em>(Ταυτότητα κύβου διαφοράς)</em></li>
+<li><span class="arithmatex">\((3x^{2}-27+a^{2})^{2}-(3x^{2}-27-a^{2})^{2} =\)</span> <span class="arithmatex">\((2a^{2})(6x^{2}-54) =\)</span> <span class="arithmatex">\(12a^{2}(x-3)(x+3)\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>Μελέτη Πολυωνύμου</strong>
+Δίνεται το πολυώνυμο <span class="arithmatex">\(A =\)</span> <span class="arithmatex">\(9x^{2} - (2x+1)^{2}\)</span>.</p>
+<ul>
+<li><strong>Να γραφεί στην ανηγμένη του μορφή:</strong> Αναπτύσσουμε την ταυτότητα: <span class="arithmatex">\(A =\)</span> <span class="arithmatex">\(9x^{2} - (4x^{2} + 4x + 1) =\)</span> <span class="arithmatex">\(5x^{2} - 4x - 1\)</span>.</li>
+<li><strong>Να αναλυθεί σε γινόμενο παραγόντων:</strong> Εφαρμόζουμε διαφορά τετραγώνων: <span class="arithmatex">\(A =\)</span> <span class="arithmatex">\((3x)^{2} - (2x+1)^{2} =\)</span> <span class="arithmatex">\([3x - (2x+1)][3x + (2x+1)] =\)</span> <span class="arithmatex">\((x-1)(5x+1)\)</span>.</li>
+<li><strong>Να επιλυθεί η εξίσωση <span class="arithmatex">\(A =\)</span> <span class="arithmatex">\(0\)</span>:</strong> Χρησιμοποιούμε τη μορφή γινομένου: <span class="arithmatex">\((x-1)(5x+1) =\)</span> <span class="arithmatex">\(0\)</span>. Άρα <span class="arithmatex">\(x =\)</span> <span class="arithmatex">\(1\)</span> ή <span class="arithmatex">\(x =\)</span> <span class="arithmatex">\(-1/5\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Συνδυαστική Άσκηση</strong>
+Δίνονται οι παραστάσεις <span class="arithmatex">\(A =\)</span> <span class="arithmatex">\(x(x+3)\)</span> και <span class="arithmatex">\(B =\)</span> <span class="arithmatex">\((x+1)(x+2)\)</span>.</p>
+<ul>
+<li><strong>Να αποδείξετε ότι <span class="arithmatex">\(B =\)</span> <span class="arithmatex">\(A + 2\)</span>:</strong> Είναι <span class="arithmatex">\(A =\)</span> <span class="arithmatex">\(x^{2} + 3x\)</span> και <span class="arithmatex">\(B =\)</span> <span class="arithmatex">\(x^{2} + 2x + x + 2 =\)</span> <span class="arithmatex">\(x^{2} + 3x + 2\)</span>. Παρατηρούμε πράγματι ότι <span class="arithmatex">\(B =\)</span> <span class="arithmatex">\(A + 2\)</span>.</li>
+<li><strong>Να αποδείξετε ότι <span class="arithmatex">\(AB + 1 =\)</span> <span class="arithmatex">\((A+1)^{2}\)</span>:</strong> Αντικαθιστούμε το <span class="arithmatex">\(B\)</span> με <span class="arithmatex">\(A+2\)</span>: <span class="arithmatex">\(AB + 1 =\)</span> <span class="arithmatex">\(A(A+2) + 1 =\)</span> <span class="arithmatex">\(A^{2} + 2A + 1 =\)</span> <span class="arithmatex">\((A+1)^{2}\)</span>.</li>
+<li><strong>Να παραγοντοποιήσετε την παράσταση <span class="arithmatex">\([x(x+3)] \cdot [(x+1)(x+2)] + 1\)</span>:</strong> Αυτό ισούται με <span class="arithmatex">\(A \cdot B + 1\)</span>. Από το προηγούμενο ερώτημα, γνωρίζουμε ότι <span class="arithmatex">\(AB + 1 =\)</span> <span class="arithmatex">\((A+1)^{2}\)</span>. Αντικαθιστώντας το <span class="arithmatex">\(A =\)</span> <span class="arithmatex">\(x^{2} + 3x\)</span>, προκύπτει τελικά η παράσταση: <span class="arithmatex">\((x^{2} + 3x + 1)^{2}\)</span>.</li>
+</ul>
+</li>
+</ol>
+<h2 id="_2">ΕΙΔΙΚΕΣ ΚΑΤΗΓΟΡΙΕΣ ΚΑΙ ΘΕΜΑΤΑ ΔΙΑΓΩΝΙΣΜΩΝ</h2>
+<p><strong>Η Ταυτότητα Sophie Germain</strong>
+Η ταυτότητα αυτή αφορά παραστάσεις της μορφής <span class="arithmatex">\(x^{4} + 4y^{4}\)</span>, οι οποίες αν και αποτελούν άθροισμα, παραγοντοποιούνται μέσω του τεχνάσματος της προσθαφαίρεσης του διπλάσιου γινομένου.</p>
+<ol>
+<li>
+<p><strong>Μορφές της Ταυτότητας Sophie Germain</strong>
+Να παραγοντοποιηθούν οι χαρακτηριστικές μορφές:</p>
+<ul>
+<li><strong>Η Κλασική Μορφή (<span class="arithmatex">\(x^{4} + 4y^{4}\)</span>):</strong> Προσθαφαιρούμε το <span class="arithmatex">\(4x^{2}y^{2}\)</span>:
+<span class="arithmatex">\((x^{4} + 4y^{4} + 4x^{2}y^{2}) - 4x^{2}y^{2} =\)</span> <span class="arithmatex">\((x^{2} + 2y^{2})^{2} - (2xy)^{2} =\)</span> <span class="arithmatex">\((x^{2} + 2y^{2} - 2xy)(x^{2} + 2y^{2} + 2xy)\)</span>.</li>
+<li><strong>Η Αριθμητική Εφαρμογή (<span class="arithmatex">\(x^{4} + 64\)</span>):</strong> Έχουμε <span class="arithmatex">\((x^{2})^{2}\)</span> και <span class="arithmatex">\(8^{2}\)</span>. Προσθαφαιρούμε το <span class="arithmatex">\(16x^{2}\)</span>:
+<span class="arithmatex">\((x^{4} + 64 + 16x^{2}) - 16x^{2} =\)</span> <span class="arithmatex">\((x^{2} + 8)^{2} - (4x)^{2} =\)</span> <span class="arithmatex">\((x^{2} - 4x + 8)(x^{2} + 4x + 8)\)</span>.</li>
+<li><strong>Ο "Ξάδερφος" (<span class="arithmatex">\(x^{4} + x^{2} + 1\)</span>):</strong> Προσθέτουμε και αφαιρούμε <span class="arithmatex">\(x^{2}\)</span> για να δημιουργήσουμε το <span class="arithmatex">\((x^2+1)^2\)</span>:
+<span class="arithmatex">\((x^{4} + 2x^{2} + 1) - x^{2} =\)</span> <span class="arithmatex">\((x^{2} + 1)^{2} - x^{2} =\)</span> <span class="arithmatex">\((x^{2} - x + 1)(x^{2} + x + 1)\)</span>.</li>
+<li><strong>Η Δύσκολη Εκδοχή (<span class="arithmatex">\(4x^{4} + 1\)</span>):</strong> Προσθαφαιρούμε το <span class="arithmatex">\(4x^{2}\)</span>:
+<span class="arithmatex">\((4x^{4} + 1 + 4x^{2}) - 4x^{2} =\)</span> <span class="arithmatex">\((2x^{2} + 1)^{2} - (2x)^{2} =\)</span> <span class="arithmatex">\((2x^{2} - 2x + 1)(2x^{2} + 2x + 1)\)</span>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Προχωρημένα Θέματα (Advanced Factorization)</strong>
+Οι παρακάτω ασκήσεις ελέγχουν την ικανότητα εφαρμογής της μαθηματικής φαντασίας σε εξειδικευμένα προβλήματα, συχνά συναντώμενα σε διαγωνισμούς.</p>
+<ul>
+<li><strong>Ο "Κρυμμένος" Σύνθετος Αριθμός:</strong> Να αποδείξετε ότι ο αριθμός <span class="arithmatex">\(A =\)</span> <span class="arithmatex">\(9991\)</span> δεν είναι πρώτος.<br />
+<em>Λύση:</em> Ο αριθμός είναι κοντά σε δύναμη του <span class="arithmatex">\(10\)</span>. Γράφεται: <span class="arithmatex">\(A =\)</span> <span class="arithmatex">\(10000 - 9 =\)</span> <span class="arithmatex">\(100^2 - 3^2 =\)</span> <span class="arithmatex">\((100-3)(100+3) =\)</span> <span class="arithmatex">\(97 \cdot 103\)</span>. Αφού αναλύεται σε γινόμενο, δεν είναι πρώτος.</li>
+<li><strong>Η Ταυτότητα του Euler (Κυκλική Συμμετρία):</strong> Να παραγοντοποιήσετε την παράσταση <span class="arithmatex">\(K =\)</span> <span class="arithmatex">\((x-y)^3 + (y-z)^3 + (z-x)^3\)</span>.<br />
+<em>Λύση:</em> Ελέγχουμε τις βάσεις: <span class="arithmatex">\((x-y) + (y-z) + (z-x) =\)</span> <span class="arithmatex">\(0\)</span>. Σύμφωνα με το Θεώρημα του Euler (αν <span class="arithmatex">\(A+B+\Gamma=0\)</span> τότε <span class="arithmatex">\(A^3+B^3+\Gamma^3 =\)</span> <span class="arithmatex">\(3AB\Gamma\)</span>), προκύπτει απευθείας: <span class="arithmatex">\(K =\)</span> <span class="arithmatex">\(3(x-y)(y-z)(z-x)\)</span>.</li>
+<li><strong>Το Άθροισμα Τετραγώνων:</strong> Να βρείτε τους <span class="arithmatex">\(x, y\)</span> αν ισχύει: <span class="arithmatex">\(x^2 + y^2 - 4x + 6y + 13 =\)</span> <span class="arithmatex">\(0\)</span>.<br />
+<em>Λύση:</em> Κάνουμε συμπλήρωση τετραγώνου σπάζοντας το <span class="arithmatex">\(13\)</span> σε <span class="arithmatex">\(4 + 9\)</span>: <span class="arithmatex">\((x^2 - 4x + 4) + (y^2 + 6y + 9) =\)</span> <span class="arithmatex">\(0 \Rightarrow (x-2)^2 + (y+3)^2 =\)</span> <span class="arithmatex">\(0\)</span>. Το άθροισμα μη αρνητικών είναι μηδέν μόνο αν και τα δύο είναι μηδέν. Άρα <span class="arithmatex">\(x =\)</span> <span class="arithmatex">\(2\)</span> και <span class="arithmatex">\(y =\)</span> <span class="arithmatex">\(-3\)</span>.</li>
+<li><strong>Η Διάσπαση του "Πονηρού" Τριωνύμου:</strong> Να παραγοντοποιήσετε το <span class="arithmatex">\(P(x) =\)</span> <span class="arithmatex">\(x^3 - 7x + 6\)</span><br />
+<em>Λύση:</em> Με διάσπαση του μεσαίου όρου: <span class="arithmatex">\(P(x) =\)</span> <span class="arithmatex">\(x^3 - x - 6x + 6 =\)</span> <span class="arithmatex">\(x(x^2 - 1) - 6(x - 1) =\)</span> <span class="arithmatex">\(x(x-1)(x+1) - 6(x-1) =\)</span> <span class="arithmatex">\((x-1)(x^2 + x - 6) =\)</span> <span class="arithmatex">\((x-1)(x-2)(x+3)\)</span>.</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
