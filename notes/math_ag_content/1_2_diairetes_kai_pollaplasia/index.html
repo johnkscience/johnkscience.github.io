@@ -1,0 +1,1612 @@
+
+<!doctype html>
+<html lang="el" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Σημειώσεις, Θεωρία και Ασκήσεις">
+      
+      
+        <meta name="author" content="Κουμουνδούρος Ιωάννης">
+      
+      
+      
+        <link rel="prev" href="../1_1_prakseis/">
+      
+      
+        <link rel="next" href="../1_3_dynameis/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Ασκήσεις με Πολλαπλάσια, Διαιρέτες, ΕΚΠ, ΜΚΔ και Ευκλείδεια Διαίρεση - Μαθηματικά Α' Γυμνασίου</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arial";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Μετάβαση στο περιεχόμενο
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Κεφαλίδα">
+    <a href=".." title="Μαθηματικά Α&#39; Γυμνασίου" class="md-header__button md-logo" aria-label="Μαθηματικά Α' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Μαθηματικά Α' Γυμνασίου
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ασκήσεις με Πολλαπλάσια, Διαιρέτες, ΕΚΠ, ΜΚΔ και Ευκλείδεια Διαίρεση
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Αναζήτηση" placeholder="Αναζήτηση" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Αναζήτηση">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Καθαρισμός" aria-label="Καθαρισμός" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Αρχικοποίηση αναζήτησης
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Πλοήγηση" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Μαθηματικά Α&#39; Γυμνασίου" class="md-nav__button md-logo" aria-label="Μαθηματικά Α' Γυμνασίου" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Μαθηματικά Α' Γυμνασίου
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://johnkscience.gr" title="Μετάβαση στο αποθετήριο" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Επιστροφή στο johnkscience
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Αρχική
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Φυσικοί αριθμοί
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1 Φυσικοί αριθμοί
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_0_fysikoi_arithmoi_theoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.0 Θεωρία, Φυσικοί Αριμοί
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_1_prakseis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.1 Πράξεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Διαιρέτες και πολλαπλάσια
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.2 Διαιρέτες και πολλαπλάσια
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ασκήσεις
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Υποδείξεις στις απαντήσεις με αστερίσκο
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_3_dynameis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.3 Δυνάμεις
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_4_systhmata_arithmishs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.4 Συστήματα αρίθμησης
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_5_provlimata_fysikoi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.5 Προβλήματα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_6_swsto_lathos_fysikoi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1.6 Ερωτήσεις Σωστού ή Λάθους
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 Κλάσματα
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2 Κλάσματα
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_0_klasmata_theoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.0 Θεωρία, Κλάσματα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_1_ennoia_klasmatos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.1 Η έννοια του κλάσματος
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_2_isodynama_klasmata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.2 Ισοδύναμα κλάσματα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_3_sygkrisi_klasmatwn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.3 Σύγκριση κλασμάτων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_4_provlimata_klasmata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.4 Προβλήματα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2_5_prakseis_me_klasmata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2.5 Πράξεις με κλάσματα
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 Δεκαδικά Κλάσματα
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3 Δεκαδικά Κλάσματα
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dekadika_klasmata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.1 Δεκαδικά κλάσματα - Δεκαδικοί αριθμοί - Διάταξη δεκαδικών αριθμών - Στρογγυλοποίηση
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prakseis_dekadikoi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.2 Πράξεις με δεκαδικούς αριθμούς - Δυνάμεις με βάση δεκαδικό αριθμό
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typopoihmeni_morfi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.3 Τυποποιημένη μορφή μεγάλων αριθμών
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../monades_metrisis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3.4 Μονάδες μέτρησης
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 Εξισώσεις
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4 Εξισώσεις
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ennoia_eksiswsis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.1 Η έννοια της εξίσωσης
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epilisi_provlimatwn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4.2 Επίλυση προβλημάτων
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Ποσοστά
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5 Ποσοστά
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pososta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.1 Ποσοστά
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../provlimata_pososta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5.2 Προβλήματα με ποσοστά
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Πίνακας περιεχομένων">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Πίνακας περιεχομένων
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ασκήσεις
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Υποδείξεις στις απαντήσεις με αστερίσκο
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>1.2 Διαιρέτες και πολλαπλάσια</h1>
+
+<h2 id="_1">Ασκήσεις</h2>
+<ol>
+<li>
+<p>Να γράψετε τα δέκα πρώτα πολλαπλάσια των παρακάτω αριθμών: <span class="arithmatex">\(2\)</span>, <span class="arithmatex">\(3\)</span>, <span class="arithmatex">\(4\)</span>, <span class="arithmatex">\(5\)</span>, <span class="arithmatex">\(6\)</span>, <span class="arithmatex">\(7\)</span>, <span class="arithmatex">\(8\)</span> <span class="arithmatex">\(9\)</span>, <span class="arithmatex">\(11\)</span>, <span class="arithmatex">\(12\)</span>, <span class="arithmatex">\(13\)</span>, <span class="arithmatex">\(14\)</span></p>
+</li>
+<li>
+<p>Να βρείτε τους διαιρέτες των παρακάτω αριθμών: <span class="arithmatex">\(8\)</span>, <span class="arithmatex">\(10\)</span>, <span class="arithmatex">\(13\)</span>, <span class="arithmatex">\(18\)</span>, <span class="arithmatex">\(25\)</span>, <span class="arithmatex">\(30\)</span></p>
+</li>
+<li>
+<p>Να αναλύσετε σε γινόμενο πρώτων παραγόντων τους παρακάτω αριθμούς: <span class="arithmatex">\(120\)</span>, <span class="arithmatex">\(160\)</span>, <span class="arithmatex">\(54\)</span>, <span class="arithmatex">\(42\)</span>, <span class="arithmatex">\(3000\)</span>, <span class="arithmatex">\(78\)</span>, <span class="arithmatex">\(2940\)</span></p>
+</li>
+<li>
+<p>Συμπληρώστε τις παρακάτω σειρές</p>
+<ol>
+<li><span class="arithmatex">\(2, 4, 8, 16, ..., 1024\)</span></li>
+<li><span class="arithmatex">\(3, 9, ..., 729\)</span></li>
+<li><span class="arithmatex">\(4, 16, ..., 1024\)</span></li>
+<li><span class="arithmatex">\(5, ..., 625\)</span></li>
+</ol>
+</li>
+<li>
+<p>(*) Να αποδείξετε τις παρακάτω προτάσεις:</p>
+<ol>
+<li>Όταν ο δ διαιρεί τον α τότε διαιρεί και τα πολλαπλάσιά του.</li>
+<li>Όταν ο δ διαιρεί τον α και τον β τότε διαιρεί και το άθροισμά τους.</li>
+<li>Όταν ο δ διαιρεί τον α και τον β (α &gt; β) τότε διαιρεί και τη διαφορά τους.</li>
+</ol>
+</li>
+<li>
+<p>Να κάνεις τις παρακάτω Ευκλείδειες διαιρέσεις με τις δοκιμές τους</p>
+<ol>
+<li><span class="arithmatex">\(1232:69\)</span></li>
+<li><span class="arithmatex">\(567:23\)</span></li>
+<li><span class="arithmatex">\(123:34\)</span></li>
+<li><span class="arithmatex">\(836:3\)</span></li>
+</ol>
+</li>
+<li>
+<p>Να εξετάσετε ποιες από τις παρακάτω ισότητες παριστάνουν Ευκλείδειες διαιρέσεις. Κάθε ισότητα να την αναλύσετε σε δύο Ευκλείδειες διαιρέσεις.</p>
+<ol>
+<li><span class="arithmatex">\(125 = 35 \cdot 3 + 1\)</span></li>
+<li><span class="arithmatex">\(125 = 35 \cdot 3 + 20\)</span></li>
+<li><span class="arithmatex">\(125 = 41 \cdot 3 + 1\)</span></li>
+<li><span class="arithmatex">\(125 = 41 \cdot 3 + 2\)</span></li>
+</ol>
+</li>
+<li>
+<p>Αν ν είναι φυσικός αριθμός να βρείτε τα υπόλοιπα της διαίρεσης <span class="arithmatex">\(ν:5\)</span></p>
+</li>
+<li>
+<p>Συμπληρώστε τα κενά όπως το πρώτο παράδειγμα</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(\Delta:\delta\)</span></th>
+<th><span class="arithmatex">\(\Delta\)</span></th>
+<th><span class="arithmatex">\(\delta\)</span></th>
+<th><span class="arithmatex">\(\pi\)</span></th>
+<th><span class="arithmatex">\(\upsilon\)</span></th>
+<th>Ταυτότητα</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(125:3\)</span></td>
+<td><span class="arithmatex">\(125\)</span></td>
+<td><span class="arithmatex">\(3\)</span></td>
+<td><span class="arithmatex">\(41\)</span></td>
+<td><span class="arithmatex">\(2\)</span></td>
+<td><span class="arithmatex">\(125=3 \cdot 41 + 2\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(356:7\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><span class="arithmatex">\(539\)</span></td>
+<td><span class="arithmatex">\(34\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><span class="arithmatex">\(23\)</span></td>
+<td><span class="arithmatex">\(26\)</span></td>
+<td><span class="arithmatex">\(2\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><span class="arithmatex">\(467=9 \cdot 51 + 8\)</span></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>Ένα αριθμός διαιρείται με το 4 και δίνει πηλίκο 5. Ποιος είναι αυτός ο αριθμός;</p>
+</li>
+<li>
+<p>(*) Ο αριθμός 7 διαιρεί τους αριθμούς 35 και 49. Να δείξετε ότι ο 7 διαιρεί και το υπόλοιπο της διαίρεσης του 49 με τον 35</p>
+</li>
+<li>
+<p>Βρίσκω το ΕΚΠ των παρακάτω αριθμών, όπως το παράδειγμα.</p>
+<p><strong>Παράδειγμα:</strong> ΕΚΠ(3,4). Γράφω τα πολλαπλάσια του μεγαλύτερου αριθμού: <span class="arithmatex">\(4, 8, 12, 16, ...\)</span>. Ελέγχω με την σειρά από το μικρότερο προς το μεγαλύτερο ποιο από αυτά διαιρείται με το 3. Το πρώτο που θα βρούμε είναι το ΕΚΠ. Εδώ είναι το 12.</p>
+<p><strong>Με το μυαλό:</strong> Καθώς λέω την προπαίδεια του μεγαλύτερου αριθμού ελέγχω αν το αποτέλεσμα της προπαίδειας διαιρείται με τον άλλον. Το πρώτο που θα βρούμε να διαιρείται είναι το ΕΚΠ.</p>
+<ol>
+<li><span class="arithmatex">\(ΕΚΠ(2,5)\)</span></li>
+<li><span class="arithmatex">\(ΕΚΠ(3,6)\)</span></li>
+<li><span class="arithmatex">\(ΕΚΠ(5,10,15)\)</span></li>
+<li><span class="arithmatex">\(ΕΚΠ(2,5,8)\)</span></li>
+</ol>
+</li>
+<li>
+<p>Να βρεις το ΕΚΠ των παρακάτω αριθμών. Υπόδειξη: ανάλυσε του αριθμούς σε γινόμενα πρώτων παραγόντων. </p>
+<ol>
+<li><span class="arithmatex">\(ΕΚΠ(123, 3)\)</span></li>
+<li><span class="arithmatex">\(ΕΚΠ(243, 64)\)</span></li>
+<li><span class="arithmatex">\(ΕΚΠ(9240, 3520)\)</span></li>
+</ol>
+</li>
+<li>
+<p>Να βρεις τους διαιρέτες των παρακάτω αριθμών, όπως το παράδειγμα:</p>
+<p><strong>Παράδειγμα:</strong> Για τους διαιρέτες του 8: γράφουμε όλους τους φυσικούς αριθμούς από το 1 μέχρι τον μισό του 8, και μετά τον 8. Δηλαδή <span class="arithmatex">\(1, 2, 3, 4, 8\)</span>. Εξετάζουμε με την σειρά ποιοι από αυτούς διαιρούν το 8. Βρίσκουμε τους <span class="arithmatex">\(1, 2, 4, 8\)</span>.</p>
+<p><span class="arithmatex">\(4\)</span>, <span class="arithmatex">\(5\)</span>, <span class="arithmatex">\(6\)</span>, <span class="arithmatex">\(10\)</span>, <span class="arithmatex">\(11\)</span>, <span class="arithmatex">\(12\)</span>, <span class="arithmatex">\(15\)</span>, <span class="arithmatex">\(1\)</span></p>
+</li>
+<li>
+<p>Να βρεις τον ΜΚΔ των παρακάτω αριθμών, όπως το παράδειγμα.</p>
+<p><strong>Παράδειγμα:</strong> ΕΚΠ(8,10). Γράφω όλους τους διαιρέτες του μικρότερου αριθμού: <span class="arithmatex">\(1, 2, 4, 8\)</span>. Ελέγχω με την σειρά από το μεγαλύτερο προς το μικρότερο ποιο από αυτά διαιρεί το 10. Το πρώτο που θα βρούμε είναι ο ΜΚΔ. Εδώ είναι το 2.</p>
+<ol>
+<li><span class="arithmatex">\(ΜΚΔ(10,15)\)</span></li>
+<li><span class="arithmatex">\(ΜΚΔ(8, 12)\)</span></li>
+<li><span class="arithmatex">\(ΜΚΔ(12, 15)\)</span></li>
+<li><span class="arithmatex">\(ΜΚΔ(3,4)\)</span></li>
+</ol>
+</li>
+<li>
+<p>Να βρεις τον ΜΚΔ των παρακάτω αριθμών. Υπόδειξη: ανάλυσε του αριθμούς σε γινόμενα πρώτων παραγόντων. </p>
+<ol>
+<li><span class="arithmatex">\(ΕΚΠ(123, 3)\)</span></li>
+<li><span class="arithmatex">\(ΕΚΠ(243, 64)\)</span></li>
+<li><span class="arithmatex">\(ΕΚΠ(9240, 3520)\)</span></li>
+</ol>
+</li>
+<li>
+<p>Με την μέθοδο των υπολοίπων του Ευκλείδη να εξετάσετε ποια από τα επόμενα ζεύξη αριθμών είναι πρώτα μεταξύ τους.</p>
+<p>Υπόδειξη: α) Κατεβάζουμε τον μικρότερο και β) δίπλα γράφουμε το υπόλοιπο γ) σταματάμε όταν βρούμε υπόλοιπο 0.</p>
+<ol>
+<li>12 και 8</li>
+<li>5 και 7</li>
+<li>28 και 15</li>
+</ol>
+</li>
+<li>
+<p>Με την μέθοδο των διαφορών του Ευκλείδη να εξετάσετε ποια από τα επόμενα ζεύξη αριθμών είναι πρώτα μεταξύ τους.</p>
+<p>Υπόδειξη: α) Κατεβάζουμε τον μικρότερο και β) δίπλα γράφουμε την διαφορά γ) σταματάμε όταν ο μικρότερος διαιρεί τον μεγαλύτερο.</p>
+<ol>
+<li>16 και 9</li>
+<li>6 και 3</li>
+<li>31 και 32</li>
+</ol>
+</li>
+<li>
+<p>Απάντησε τις παρακάτω ερωτήσεις</p>
+<ol>
+<li>Ποιοι αριθμοί ονομάζονται πρώτοι;</li>
+<li>Πότε ο α και β είναι πρώτοι μεταξύ τους;</li>
+<li>Γράψτε μερικούς πρώτους αριθμούς;</li>
+<li>Τι ονομάζουμε παράγοντα;</li>
+<li>Τι είναι το γινόμενο παραγόντων;</li>
+</ol>
+</li>
+<li>
+<p>(*) Να δικαιολογήσετε γιατί οι αριθμοί που τα δύο τελευταία ψηφία διαιρούνται με το 25, διαιρούνται με
+το 25.</p>
+</li>
+<li>
+<p>(*) Να εξηγήσετε γιατί ένας διψήφιος αριθμός που το ψηφίο των μονάδων του είναι διπλάσιο από το ψηφίο των δεκάδων του διαιρείται με τον 3.</p>
+</li>
+<li>
+<p>(*) Να δικαιολογήσετε γιατί ένας τριψήφιος φυσικός με τρία ίδια ψηφία διαιρείται με το 3.</p>
+</li>
+<li>
+<p>(*) Να βρείτε δύο διψήφιους φυσικούς αριθμούς που
+έχουν ΕΚΠ το 60 και ΜΚΔ το 5.</p>
+</li>
+<li>
+<p>(*) Να βρείτε δύο διψήφιους φυσικούς αριθμούς που έχουν ΜΚΔ το 19 και ΕΚΠ το 76.</p>
+</li>
+<li>
+<p>(*) Όταν δύο αριθμοί είναι πρώτοι μεταξύ τους, το ΕΚΠ αυτών είναι το γινόμενό τους. Να επαληθεύσετε την πρόταση με τα ζεύγη των αριθμών 18 και 35, 100
+και 63. Να δικαιολογήσετε την πρόταση.</p>
+</li>
+<li>
+<p>(*) Δύο αριθμοί έχουν ΜΚΔ το 13 και ΕΚΠ το 78. Ποιοι είναι οι αριθμοί;</p>
+</li>
+<li>
+<p>(*) Δύο αριθμοί έχουν ΜΚΔ το 15. Να δικαιολογήσετε γιατί έχουν και άλλους κοινούς διαιρέτες εκτός από τη μονάδα.</p>
+</li>
+<li>
+<p>(*) Μπορεί το άθροισμα δύο πρώτων αριθμών να είναι πρώτος; Αν ναι, σε ποιες περιπτώσεις;</p>
+</li>
+<li>
+<p>(*) Η ανάλυση ενός αριθμού σε γινόμενο πρώτων παραγόντων έχει τη μορφή <span class="arithmatex">\(2^2 \cdot 3^{2} \cdot 5 \cdot 7\)</span>. Να εξηγήσετε γιατί ο αριθμός αυτός διαιρείται με τον: </p>
+<p><strong>α)</strong> 6 <strong>β)</strong> 12 <strong>γ)</strong> 45 <strong>δ)</strong> 28 <strong>ε)</strong> 30</p>
+</li>
+</ol>
+<h2 id="_2">Υποδείξεις στις απαντήσεις με αστερίσκο</h2>
+<p><strong>5. Αποδείξεις προτάσεων</strong>
+    1. Έστω ότι ο <span class="arithmatex">\(δ\)</span> διαιρεί τον <span class="arithmatex">\(α\)</span>. Αυτό σημαίνει ότι υπάρχει ακέραιος <span class="arithmatex">\(κ\)</span> τέτοιος ώστε <span class="arithmatex">\(α = κ \cdot δ\)</span>. Ένα πολλαπλάσιο του <span class="arithmatex">\(α\)</span> έχει τη μορφή <span class="arithmatex">\(μ \cdot α\)</span> (όπου <span class="arithmatex">\(μ\)</span> ακέραιος). Αντικαθιστώντας το <span class="arithmatex">\(α\)</span>, έχουμε: <span class="arithmatex">\(μ \cdot α = μ \cdot (κ \cdot δ) = (μ \cdot κ) \cdot δ\)</span>. Επειδή το <span class="arithmatex">\((μ \cdot κ)\)</span> είναι ακέραιος, προκύπτει ότι ο <span class="arithmatex">\(δ\)</span> διαιρεί και το <span class="arithmatex">\(μ \cdot α\)</span>.
+    2. Έστω ότι ο <span class="arithmatex">\(δ\)</span> διαιρεί τον <span class="arithmatex">\(α\)</span> και τον <span class="arithmatex">\(β\)</span>. Άρα <span class="arithmatex">\(α = κ \cdot δ\)</span> και <span class="arithmatex">\(β = λ \cdot δ\)</span> (με <span class="arithmatex">\(κ, λ\)</span> ακεραίους). Το άθροισμά τους είναι <span class="arithmatex">\(α + β = κ \cdot δ + λ \cdot δ = (κ + λ) \cdot δ\)</span>. Επειδή το <span class="arithmatex">\((κ + λ)\)</span> είναι ακέραιος, ο <span class="arithmatex">\(δ\)</span> διαιρεί και το άθροισμά τους.
+    3. Με την ίδια λογική όπως παραπάνω, η διαφορά τους είναι <span class="arithmatex">\(α - β = κ \cdot δ - λ \cdot δ = (κ - λ) \cdot δ\)</span>. Επειδή το <span class="arithmatex">\((κ - λ)\)</span> είναι ακέραιος, ο <span class="arithmatex">\(δ\)</span> διαιρεί και τη διαφορά τους.</p>
+<p><strong>11. Απόδειξη για το υπόλοιπο της διαίρεσης</strong>
+    Η Ευκλείδεια διαίρεση του 49 με το 35 γράφεται ως: <span class="arithmatex">\(49 = 1 \cdot 35 + 14\)</span>. Το υπόλοιπο της διαίρεσης είναι το 14.
+    Αφού ο 7 διαιρεί το 49 (<span class="arithmatex">\(49 = 7 \cdot 7\)</span>) και το 35 (<span class="arithmatex">\(35 = 5 \cdot 7\)</span>), μπορούμε να γράψουμε το υπόλοιπο ως διαφορά: <span class="arithmatex">\(14 = 49 - 35\)</span>. Σύμφωνα με την ιδιότητα 5.3 που αποδείχτηκε παραπάνω, αφού ο 7 διαιρεί τον μειωτέο και τον αφαιρετέο, διαιρεί αναγκαστικά και τη διαφορά τους. Πράγματι, <span class="arithmatex">\(14 = 2 \cdot 7\)</span>, άρα ο 7 διαιρεί το υπόλοιπο.</p>
+<p><strong>20. Διαιρετότητα με το 25 βάσει των δύο τελευταίων ψηφίων</strong>
+    Κάθε φυσικός αριθμός μπορεί να αναλυθεί σε άθροισμα, ξεχωρίζοντας τα δύο τελευταία ψηφία του (έστω <span class="arithmatex">\(x\)</span>). Για παράδειγμα, ο 3475 γράφεται ως <span class="arithmatex">\(3400 + 75\)</span>, άρα γενικά <span class="arithmatex">\(100 \cdot κ + x\)</span>.
+    Το πρώτο μέρος (<span class="arithmatex">\(100 \cdot κ\)</span>) διαιρείται πάντα με το 25, αφού το 100 διαιρείται με το 25 (<span class="arithmatex">\(100 = 4 \cdot 25\)</span>). Για να διαιρείται ολόκληρος ο αριθμός με το 25, αρκεί να διαιρείται και το <span class="arithmatex">\(x\)</span> (τα δύο τελευταία ψηφία) με το 25, σύμφωνα με την ιδιότητα της διαιρετότητας αθροίσματος.</p>
+<p><strong>21. Διαιρετότητα με το 3 διψήφιου με ψηφίο μονάδων διπλάσιο των δεκάδων</strong>
+    Έστω ότι το ψηφίο των δεκάδων είναι <span class="arithmatex">\(x\)</span>. Τότε το ψηφίο των μονάδων είναι <span class="arithmatex">\(2x\)</span>.
+    Η αξία του διψήφιου αριθμού είναι <span class="arithmatex">\(10 \cdot x + 2x = 12x\)</span>.
+    Ο αριθμός 12 διαιρείται με το 3 (<span class="arithmatex">\(12x = 3 \cdot 4x\)</span>). Εφόσον το αποτέλεσμα γράφεται ως πολλαπλάσιο του 3, ο αριθμός διαιρείται πάντα με το 3. (Παραδείγματα: 12, 24, 36, 48).</p>
+<p><strong>22. Διαιρετότητα με το 3 τριψήφιου με τρία ίδια ψηφία</strong>
+    Έστω <span class="arithmatex">\(x\)</span> το ψηφίο που επαναλαμβάνεται. Ο αριθμός γράφεται ως: <span class="arithmatex">\(100x + 10x + x = 111x\)</span>.
+    Το 111 διαιρείται με το 3 (<span class="arithmatex">\(111 = 3 \cdot 37\)</span>). Συνεπώς, ο αριθμός <span class="arithmatex">\(111x\)</span> μπορεί να γραφτεί ως <span class="arithmatex">\(3 \cdot (37x)\)</span>, που σημαίνει ότι διαιρείται με το 3.
+    (Εναλλακτικά, βάσει του κριτηρίου διαιρετότητας του 3: Το άθροισμα των ψηφίων του είναι <span class="arithmatex">\(x + x + x = 3x\)</span>. Αφού το άθροισμα των ψηφίων είναι πολλαπλάσιο του 3, ο αριθμός διαιρείται με το 3).</p>
+<p><strong>23. Δύο διψήφιοι με ΕΚΠ=60 και ΜΚΔ=5</strong>
+Αφού ο ΜΚΔ είναι 5, οι δύο αριθμοί μπορούν να γραφτούν ως <span class="arithmatex">\(5x\)</span> και <span class="arithmatex">\(5y\)</span>, όπου τα <span class="arithmatex">\(x\)</span> και <span class="arithmatex">\(y\)</span> είναι πρώτοι μεταξύ τους.
+Γνωρίζουμε ότι <span class="arithmatex">\(\text{ΜΚΔ} \cdot \text{ΕΚΠ} = Α \cdot Β\)</span>.
+Άρα: <span class="arithmatex">\(5 \cdot 60 = (5x) \cdot (5y) \Rightarrow 300 = 25xy \Rightarrow xy = 12\)</span>.
+Τα ζεύγη <span class="arithmatex">\((x,y)\)</span> που δίνουν γινόμενο 12 και είναι πρώτοι μεταξύ τους είναι το (1, 12) και το (3, 4).</p>
+<ul>
+<li>Για <span class="arithmatex">\(x=1, y=12\)</span>: Οι αριθμοί είναι <span class="arithmatex">\(5 \cdot 1 = 5\)</span> και <span class="arithmatex">\(5 \cdot 12 = 60\)</span>. Απορρίπτεται γιατί το 5 δεν είναι διψήφιος.</li>
+<li>Για <span class="arithmatex">\(x=3, y=4\)</span>: Οι αριθμοί είναι <span class="arithmatex">\(5 \cdot 3 = 15\)</span> και <span class="arithmatex">\(5 \cdot 4 = 20\)</span>.
+Οι αριθμοί είναι το 15 και το 20.</li>
+</ul>
+<p><strong>24. Δύο διψήφιοι με ΜΚΔ=19 και ΕΚΠ=76</strong>
+    Με την ίδια λογική, οι αριθμοί γράφονται ως <span class="arithmatex">\(19x\)</span> και <span class="arithmatex">\(19y\)</span>, με τα <span class="arithmatex">\(x,y\)</span> πρώτα μεταξύ τους.
+    Ισχύει: <span class="arithmatex">\(19 \cdot 76 = (19x) \cdot (19y) \Rightarrow 1444 = 361xy \Rightarrow xy = 4\)</span>.
+    Τα ζεύγη <span class="arithmatex">\((x,y)\)</span> με γινόμενο 4 είναι το (1, 4) και το (2, 2). Το (2, 2) απορρίπτεται γιατί δεν είναι πρώτοι μεταξύ τους (έχουν κοινό διαιρέτη το 2).
+    Άρα επιλέγουμε <span class="arithmatex">\(x=1\)</span> και <span class="arithmatex">\(y=4\)</span>.
+    Οι αριθμοί είναι <span class="arithmatex">\(19 \cdot 1 = 19\)</span> και <span class="arithmatex">\(19 \cdot 4 = 76\)</span>.</p>
+<p><strong>25. Επαλήθευση και δικαιολόγηση για πρώτους μεταξύ τους αριθμούς</strong></p>
+<ul>
+<li><strong>Επαλήθευση με το 18 και 35:</strong> Ο ΜΚΔ(18, 35) = 1. Το γινόμενό τους είναι <span class="arithmatex">\(18 \cdot 35 = 630\)</span>. Αν βρούμε το ΕΚΠ(18, 35) με ανάλυση σε γινόμενο πρώτων παραγόντων (<span class="arithmatex">\(18 = 2 \cdot 3^2\)</span>, <span class="arithmatex">\(35 = 5 \cdot 7\)</span>), το ΕΚΠ είναι <span class="arithmatex">\(2 \cdot 3^2 \cdot 5 \cdot 7 = 630\)</span>.</li>
+<li><strong>Επαλήθευση με το 100 και 63:</strong> Ο ΜΚΔ(100, 63) = 1. Το γινόμενό τους είναι <span class="arithmatex">\(100 \cdot 63 = 6300\)</span>. Με ανάλυση (<span class="arithmatex">\(100 = 2^2 \cdot 5^2\)</span>, <span class="arithmatex">\(63 = 3^2 \cdot 7\)</span>), το ΕΚΠ είναι <span class="arithmatex">\(2^2 \cdot 5^2 \cdot 3^2 \cdot 7 = 6300\)</span>.</li>
+<li><strong>Δικαιολόγηση:</strong> Για οποιουσδήποτε δύο αριθμούς <span class="arithmatex">\(α, β\)</span> ισχύει η σχέση <span class="arithmatex">\(\text{ΜΚΔ}(α,β) \cdot \text{ΕΚΠ}(α,β) = α \cdot β\)</span>. Όταν οι αριθμοί είναι πρώτοι μεταξύ τους, ισχύει εξ ορισμού ότι <span class="arithmatex">\(\text{ΜΚΔ}(α,β) = 1\)</span>. Αντικαθιστώντας στη σχέση, προκύπτει: <span class="arithmatex">\(1 \cdot \text{ΕΚΠ}(α,β) = α \cdot β\)</span>, δηλαδή το ΕΚΠ ισούται με το γινόμενό τους.</li>
+</ul>
+<p><strong>26. Δύο αριθμοί με ΜΚΔ=13 και ΕΚΠ=78</strong>
+Έστω οι αριθμοί <span class="arithmatex">\(13x\)</span> και <span class="arithmatex">\(13y\)</span> (<span class="arithmatex">\(x,y\)</span> πρώτοι μεταξύ τους).
+<span class="arithmatex">\(\text{ΜΚΔ} \cdot \text{ΕΚΠ} = A \cdot B \Rightarrow 13 \cdot 78 = 13x \cdot 13y \Rightarrow 1014 = 169xy \Rightarrow xy = 6\)</span>.
+Τα ζεύγη <span class="arithmatex">\((x,y)\)</span> πρώτων μεταξύ τους ακεραίων με γινόμενο 6 είναι:</p>
+<ul>
+<li><span class="arithmatex">\(x=1, y=6 \Rightarrow\)</span> Οι αριθμοί είναι <span class="arithmatex">\(13 \cdot 1 = 13\)</span> και <span class="arithmatex">\(13 \cdot 6 = 78\)</span>.</li>
+<li><span class="arithmatex">\(x=2, y=3 \Rightarrow\)</span> Οι αριθμοί είναι <span class="arithmatex">\(13 \cdot 2 = 26\)</span> και <span class="arithmatex">\(13 \cdot 3 = 39\)</span>.
+Οι αριθμοί μπορεί να είναι το ζεύγος (13, 78) ή το ζεύγος (26, 39).</li>
+</ul>
+<p><strong>27. Κοινοί διαιρέτες όταν ο ΜΚΔ είναι 15</strong>
+    Οι κοινοί διαιρέτες οποιωνδήποτε δύο αριθμών ταυτίζονται με τους διαιρέτες του Μέγιστου Κοινού Διαιρέτη τους. Εφόσον ο ΜΚΔ είναι το 15, οι δύο αριθμοί θα διαιρούνται ταυτόχρονα από όλους τους διαιρέτες του 15. Οι διαιρέτες του 15 είναι το 1, το 3, το 5 και το 15. Επομένως, εκτός από τη μονάδα (1), οι αριθμοί έχουν κοινούς διαιρέτες το 3, το 5 και το 15.</p>
+<p><strong>28. Άθροισμα δύο πρώτων αριθμών και αν μπορεί να είναι πρώτος</strong>
+    Ναι, μπορεί, αλλά <strong>μόνο</strong> εάν ο ένας από τους δύο πρώτους αριθμούς είναι το 2.
+    Όλοι οι πρώτοι αριθμοί, εκτός από το 2, είναι περιττοί. Το άθροισμα δύο περιττών αριθμών δίνει πάντα άρτιο αριθμό (που θα είναι μεγαλύτερος του 2, άρα θα είναι σύνθετος γιατί θα διαιρείται με το 2). Επομένως, για να είναι το άθροισμα περιττός (και ενδεχομένως πρώτος), ο ένας από τους προσθετέους πρέπει υποχρεωτικά να είναι το 2 (ο μόνος άρτιος πρώτος).
+    Παραδείγματα: <span class="arithmatex">\(2 + 3 = 5\)</span> (πρώτος), <span class="arithmatex">\(2 + 5 = 7\)</span> (πρώτος), <span class="arithmatex">\(2 + 11 = 13\)</span> (πρώτος).</p>
+<p><strong>29. Δικαιολόγηση διαιρετότητας από ανάλυση πρώτων παραγόντων</strong>
+Ο αριθμός είναι ο <span class="arithmatex">\(A = 2^2 \cdot 3^2 \cdot 5 \cdot 7\)</span>. Ένας αριθμός διαιρεί τον <span class="arithmatex">\(A\)</span> αν και μόνο αν η ανάλυσή του σε πρώτους παράγοντες "περιέχεται" (εμφανίζεται αυτούσια ή με μικρότερους εκθέτες) μέσα στην ανάλυση του <span class="arithmatex">\(A\)</span>.</p>
+<ul>
+<li><strong>α) 6:</strong> Αναλύεται σε <span class="arithmatex">\(2 \cdot 3\)</span>. Περιέχεται στον <span class="arithmatex">\(A\)</span> (που έχει <span class="arithmatex">\(2^2\)</span> και <span class="arithmatex">\(3^2\)</span>). Άρα διαιρείται.</li>
+<li><strong>β) 12:</strong> Αναλύεται σε <span class="arithmatex">\(2^2 \cdot 3\)</span>. Περιέχεται στον <span class="arithmatex">\(A\)</span>. Άρα διαιρείται.</li>
+<li><strong>γ) 45:</strong> Αναλύεται σε <span class="arithmatex">\(3^2 \cdot 5\)</span>. Περιέχεται στον <span class="arithmatex">\(A\)</span>. Άρα διαιρείται.</li>
+<li><strong>δ) 28:</strong> Αναλύεται σε <span class="arithmatex">\(2^2 \cdot 7\)</span>. Περιέχεται στον <span class="arithmatex">\(A\)</span>. Άρα διαιρείται.</li>
+<li><strong>ε) 30:</strong> Αναλύεται σε <span class="arithmatex">\(2 \cdot 3 \cdot 5\)</span>. Περιέχεται στον <span class="arithmatex">\(A\)</span>. Άρα διαιρείται.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026-2027 Κουμουνδούρος Γιάννης - johnkscience (johnkscience@yahoo.com)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03ac\u03c6\u03b7\u03ba\u03b5 \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "clipboard.copy": "\u0391\u03bd\u03c4\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c3\u03c4\u03bf \u03c0\u03c1\u03cc\u03c7\u03b5\u03b9\u03c1\u03bf", "search.result.more.one": "1 \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.more.other": "# \u03b1\u03ba\u03cc\u03bc\u03b1 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03ae\u03bd \u03c4\u03b7 \u03c3\u03b5\u03bb\u03af\u03b4\u03b1", "search.result.none": "\u03b4\u03b5\u03bd \u03b2\u03c1\u03ae\u03ba\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf", "search.result.one": "1 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03bf \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03b5\u03b9", "search.result.other": "# \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c0\u03bf\u03c5 \u03c4\u03b1\u03b9\u03c1\u03b9\u03ac\u03b6\u03bf\u03c5\u03bd", "search.result.placeholder": "\u03a0\u03bb\u03b7\u03ba\u03c4\u03c1\u03bf\u03bb\u03bf\u03b3\u03ae\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03b1\u03c1\u03c7\u03af\u03c3\u03b5\u03b9 \u03b7 \u03b1\u03bd\u03b1\u03b6\u03ae\u03c4\u03b7\u03c3\u03b7", "search.result.term.missing": "\u039b\u03b5\u03af\u03c0\u03b5\u03b9", "select.version": "\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03ad\u03ba\u03b4\u03bf\u03c3\u03b7\u03c2"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
